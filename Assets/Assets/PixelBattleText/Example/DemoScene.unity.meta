@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 485d8c325a64d20438972141375ffecc
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 189358
+  packageName: PixelBattleText
+  packageVersion: 1.0
+  assetPath: Assets/PixelBattleText/Example/DemoScene.unity
+  uploadId: 419684
