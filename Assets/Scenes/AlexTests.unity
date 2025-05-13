@@ -706,6 +706,7 @@ MonoBehaviour:
   fastForwardActiveSprite: {fileID: 21300000, guid: 738d0386f7ab1b242b3cca6cedcb2106, type: 3}
   playActiveSprite: {fileID: 21300000, guid: 738d0386f7ab1b242b3cca6cedcb2106, type: 3}
   pauseActiveSprite: {fileID: 21300000, guid: 738d0386f7ab1b242b3cca6cedcb2106, type: 3}
+  eventsManager: {fileID: 2088039804}
 --- !u!4 &851101274
 Transform:
   m_ObjectHideFlags: 0
@@ -936,6 +937,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1419372547}
   m_CullTransparentMesh: 1
+--- !u!1 &1433683617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1433683619}
+  - component: {fileID: 1433683618}
+  m_Layer: 0
+  m_Name: ResourceManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1433683618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433683617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fa03e6c18dbb9a4caa0f1c807000f14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foreignAffairs: {fileID: 0}
+  eurosceptisism: {fileID: 0}
+  budget: {fileID: 0}
+  quizzes: {fileID: 0}
+  minForeign: 0.2
+  maxEurosceptisism: 0.85
+  minBudget: 1000
+  maxQuizTries: 10
+--- !u!4 &1433683619
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433683617}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1727692113
 GameObject:
   m_ObjectHideFlags: 0
@@ -949,7 +1002,7 @@ GameObject:
   - component: {fileID: 1727692115}
   - component: {fileID: 1727692114}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: HUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1443,6 +1496,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2019996172}
   m_CullTransparentMesh: 1
+--- !u!1 &2088039803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2088039805}
+  - component: {fileID: 2088039804}
+  m_Layer: 0
+  m_Name: EventsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2088039804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088039803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2fa81ad0c5e8b8419f5f49680aaf0c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventsDatabase: {fileID: 11400000, guid: 472e4734c348c204a86a850133cee2c8, type: 2}
+  budgetDatabase: {fileID: 11400000, guid: 4b37ffe19bf38af418d7503d2e2512d2, type: 2}
+  quizzesDatabase: {fileID: 11400000, guid: 51ed50341e2344b4dab3e73eecba06ac, type: 2}
+  electionsDatabase: {fileID: 11400000, guid: 1682233db3cf6fd49a3458c3f53c8d6e, type: 2}
+  timeManager: {fileID: 851101273}
+  resourceManager: {fileID: 1433683618}
+--- !u!4 &2088039805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088039803}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1451,3 +1554,5 @@ SceneRoots:
   - {fileID: 1727692117}
   - {fileID: 935503946}
   - {fileID: 851101274}
+  - {fileID: 2088039805}
+  - {fileID: 1433683619}

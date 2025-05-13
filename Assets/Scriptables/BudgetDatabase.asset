@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447910aaeb19e534697963168a6aa3ee, type: 3}
   m_Name: BudgetDatabase
   m_EditorClassIdentifier: 
-  budgetAllocationDate: 
-  budget: 0
+  budgets:
+  - budgetAllocationDate: 10/01/2003
+    budget: 100

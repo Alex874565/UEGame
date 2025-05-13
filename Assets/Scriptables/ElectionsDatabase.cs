@@ -7,6 +7,7 @@ public class ElectionsDatabase : ScriptableObject
 {
     public List<Election> elections;
 
+    [System.Serializable]
     public class Election
     {
         public string electionDate;

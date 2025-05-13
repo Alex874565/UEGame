@@ -6,6 +6,7 @@ public class BudgetDatabase : ScriptableObject
 {
     public List<Budget> budgets;
 
+    [System.Serializable]
     public class Budget
     {
         public string budgetAllocationDate;

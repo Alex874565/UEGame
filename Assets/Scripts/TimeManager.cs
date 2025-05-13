@@ -29,7 +29,7 @@ public class TimeManager : MonoBehaviour
     public Sprite pauseActiveSprite;
 
     [Header("Event Manager")]
-    public EventManager eventManager;
+    public EventsManager eventsManager;
 
 
     private float timer;
@@ -78,7 +78,7 @@ public class TimeManager : MonoBehaviour
             }
         }
 
-         eventManager.CheckForEvent(GetDateString());
+         eventsManager.CheckForEvent(GetDateString());
     }
 
     public string GetDateString()
