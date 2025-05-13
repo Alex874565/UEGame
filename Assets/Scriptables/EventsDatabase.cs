@@ -31,8 +31,8 @@ public class EventsDatabase : ScriptableObject
             [TextArea] public string description;
             [TextArea] public string consequences;
             public string euroscepticismModifier;
-            public string moneyModifier;
             public string foreignAffairsModifier;
+            public string moneyModifier;
             public Sprite eventIcon;
             public Dictionary<string, string> partyApprovalChances;
         }
