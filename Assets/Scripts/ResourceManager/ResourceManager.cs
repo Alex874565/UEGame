@@ -112,5 +112,22 @@ public class ResourceManager : MonoBehaviour
         }
     }
 
+    public int GetCurrentBudget()
+    {
+        return currentBudget;
+    }
+    public int GetCurrentQuizFails()
+    {
+        return currentQuizFails;
+    }
+    public float GetCurrentForeignAffairs()
+    {
+        return currentForeignAffairs;
+    }
+    public float GetCurrentEurosceptisism()
+    {
+        return currentEurosceptisism;
+    }
+
     #endregion
 }

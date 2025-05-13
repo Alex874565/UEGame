@@ -29,26 +29,28 @@ public class EventsManager : MonoBehaviour
     {
         if(eventsDatabase.events.Count > eventIndex && date == eventsDatabase.events[eventIndex].eventDate)
         {
+            QuizManager.Instance.StartMainEvent();
             Debug.Log("Event Triggered: " + eventsDatabase.events[eventIndex].title);
-            //Time.timeScale = 0;
+            //timeManager.SetTimeScale(0);
             eventIndex++;
         }
         if (budgetDatabase.budgets.Count > budgetIndex && date == budgetDatabase.budgets[budgetIndex].budgetAllocationDate)
         {
             Debug.Log("Budget Triggered: " + budgetDatabase.budgets[budgetIndex].budget);
-            //Time.timeScale = 0;
+            //timeManager.timeScale = 0;
             budgetIndex++;
         }
         if (quizzesDatabase.quizzes.Count > quizIndex && date == quizzesDatabase.quizzes[quizIndex].quizDate)
         {
+            QuizManager.Instance.StartMainEvent();
             Debug.Log("Quiz Triggered: " + quizzesDatabase.quizzes[quizIndex].quizName);
-            //Time.timeScale = 0;
+            //timeManager.timeScale = 0;
             quizIndex++;
         }
         if (electionsDatabase.elections.Count > electionIndex && date == electionsDatabase.elections[electionIndex].electionDate)
         {
             Debug.Log("Election Triggered: " + electionsDatabase.elections[electionIndex].electionDate);
-            //Time.timeScale = 0;
+            //timeManager.timeScale = 0;
             electionIndex++;
         }
     }

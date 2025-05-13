@@ -5,6 +5,9 @@ using TMPro;
 
 public class TimeManager : MonoBehaviour
 {
+    public EventsManager eventsManager;
+    public GameEndManager gameEndManager;
+
     [Header("Time Settings")]
     public int day = 1;
     public int month = 1;
@@ -12,7 +15,8 @@ public class TimeManager : MonoBehaviour
     public int hour = 6;
     public int minute = 0;
 
-    public float timeScale = 60f;
+    public float defaultTimeScale;
+    public float fastForwardTimeScale;
 
     [Header("UI Elements")]
     public TMP_Text HUDDate;
@@ -28,11 +32,16 @@ public class TimeManager : MonoBehaviour
     public Sprite playActiveSprite;
     public Sprite pauseActiveSprite;
 
-    [Header("Event Manager")]
-    public EventsManager eventsManager;
-
-
+    private float timeScale;
     private float timer;
+
+    void Start()
+    {
+        timeScale = defaultTimeScale;
+        timer = 0f;
+        UpdateHUDDate();
+        PlayTime();
+    }
 
     void Update()
     {
@@ -105,7 +114,7 @@ public class TimeManager : MonoBehaviour
 
     public void PlayTime()
     {
-        timeScale = 1f;
+        timeScale = defaultTimeScale;
         pauseButton.interactable = true;
         playButton.interactable = false;
         fastForwardButton.interactable = true;
@@ -116,12 +125,17 @@ public class TimeManager : MonoBehaviour
 
     public void FastForwardTime()
     {
-        timeScale = 10f;
+        timeScale = fastForwardTimeScale;
         pauseButton.interactable = true;
         playButton.interactable = true;
         fastForwardButton.interactable = false;
         pauseButton.GetComponent<Image>().sprite = pauseSprite;
         playButton.GetComponent<Image>().sprite = playSprite;
         fastForwardButton.GetComponent<Image>().sprite = fastForwardActiveSprite;
+    }
+
+    public void SetTimeScale(float newTimeScale)
+    {
+        timeScale = newTimeScale;
     }
 }

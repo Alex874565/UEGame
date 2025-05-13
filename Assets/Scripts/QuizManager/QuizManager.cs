@@ -45,8 +45,6 @@ public class QuizManager : MonoBehaviour
         currentMainEvent = eventsDatabase.events[currentMainEventIndex];
 
         PopupManager.Instance.ShowEvent(currentMainEvent);
-
-        currentMainEventIndex++;
     }
 
     private void OnQuestionAnswered()
