@@ -12,4 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dfb28c6104ed0341a29bb09def709d2, type: 3}
   m_Name: EventsDatabase
   m_EditorClassIdentifier: 
-  events: []
+  events:
+  - eventDate: 01/02/2003
+    title: Treaty of Nice
+    description: "The EU adopted the Treaty of Nice! \nIt presumes: \n1. Assigning
+      a weighted number of votes for each country based on its population; \n2. Limiting
+      the number of comission members to 1 per state; \n3. Improved the functioning
+      of the European Court of Justice;  \n4. Allowed groups of minimum 9 countries
+      to collaborate in specific areas, even if not all countries are ready or want
+      to join. \nIt sets the grounds for a future enlargement."
+    location: {fileID: 0}
+    question: 
+    eventIcon: {fileID: 0}
+    EuChoice:
+      title: 
+      description: 
+      euroscepticismModifier: 
+      moneyModifier: 
+      foreignAffairsModifier: 
+      eventIcon: {fileID: 0}
+    choices: []

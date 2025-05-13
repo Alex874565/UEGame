@@ -15,20 +15,21 @@ public class EventsDatabase : ScriptableObject
     {
         public string eventDate;
         public string title;
-        public string description;
+        [TextArea] public string description;
         public GameObject location;
         public string question;
         public Sprite eventIcon;
-        public Choice EuChoice;
+        public string EuChoice;
+        [TextArea] public string EuChoiceDescription;
 
         [SerializeField] public List<Choice> choices;
-
 
         [System.Serializable]
         public class Choice
         {
             public string title;
-            public string description;
+            [TextArea] public string description;
+            [TextArea] public string consequences;
             public string euroscepticismModifier;
             public string moneyModifier;
             public string foreignAffairsModifier;
