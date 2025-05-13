@@ -26,7 +26,14 @@ MonoBehaviour:
     eventIcon: {fileID: 0}
     EuChoice: 
     EuChoiceDescription: 
-    choices: []
+    choices:
+    - title: 
+      description: 
+      consequences: 
+      euroscepticismModifier: 0.2
+      foreignAffairsModifier: 0.2
+      moneyModifier: 10000
+      eventIcon: {fileID: 0}
   - eventDate: 11/03/2004
     title: Madrid Train Bombings
     description: 'In Madrid, Spain, there was a high-casualty bombing of the commuter
