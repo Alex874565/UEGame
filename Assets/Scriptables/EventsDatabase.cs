@@ -30,9 +30,9 @@ public class EventsDatabase : ScriptableObject
             public string title;
             [TextArea] public string description;
             [TextArea] public string consequences;
-            public string euroscepticismModifier;
-            public string foreignAffairsModifier;
-            public string moneyModifier;
+            public float euroscepticismModifier;
+            public float foreignAffairsModifier;
+            public int moneyModifier;
             public Sprite eventIcon;
             public Dictionary<string, string> partyApprovalChances;
         }
