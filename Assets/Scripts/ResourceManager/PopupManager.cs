@@ -59,37 +59,64 @@ public class PopupManager : MonoBehaviour
     public void ShowEvent(EventsDatabase.Event eventData)
     {
         currentEvent = eventData;
-        quizPanel.SetActive(true);
-        quizPopupAnimator.Play("QuizPopup");
-
-        currentPanelIndex = 0;
-
-        eventTitleText.text = currentEvent.title;
-        eventDateText.text = currentEvent.eventDate;
-        eventQuestionText.text = currentEvent.question;
-
-        for (int i = 0; i < answerPanels.Length; i++)
+        // Cannot event with nothing to do
+        if (eventData.choices.Count == 1)
         {
-            GameObject panel = answerPanels[i];
-            panel.SetActive(i == currentPanelIndex && i < currentEvent.choices.Count);
+            DisableArrows();
 
-            if (i < currentEvent.choices.Count)
-            {
-                var choice = currentEvent.choices[i];
-                var title = panel.transform.Find("Event Choice Title").GetComponent<TextMeshProUGUI>();
-                var desc = panel.transform.Find("Event Description").GetComponent<TextMeshProUGUI>();
-                var button = panel.GetComponentInChildren<Button>();
+            quizPanel.SetActive(true);
+            quizPopupAnimator.Play("QuizPopup");
 
-                title.text = choice.title;
-                desc.text = choice.description;
+            eventTitleText.text = currentEvent.title;
+            eventDateText.text = currentEvent.eventDate;
+            eventQuestionText.text = "";
 
-                int answerIndex = i;
-                button.onClick.RemoveAllListeners();
-                button.onClick.AddListener(() => AnswerSelected(answerIndex));
-            }
+            GameObject panel = answerPanels[0];
+            panel.SetActive(true);
+
+            var title = panel.transform.Find("Event Choice Title").GetComponent<TextMeshProUGUI>();
+            var desc = panel.transform.Find("Event Description").GetComponent<TextMeshProUGUI>();
+
+            title.text = "";
+            desc.text = currentEvent.description;
+
+            var button = panel.GetComponentInChildren<Button>();
+            button.onClick.AddListener(() => AnswerSelected(0));
         }
+        else
+        {
+            quizPanel.SetActive(true);
+            quizPopupAnimator.Play("QuizPopup");
 
-        UpdateArrowVisibility();
+            currentPanelIndex = 0;
+
+            eventTitleText.text = currentEvent.title;
+            eventDateText.text = currentEvent.eventDate;
+            eventQuestionText.text = currentEvent.question;
+
+            for (int i = 0; i < answerPanels.Length; i++)
+            {
+                GameObject panel = answerPanels[i];
+                panel.SetActive(i == currentPanelIndex && i < currentEvent.choices.Count);
+
+                if (i < currentEvent.choices.Count)
+                {
+                    var choice = currentEvent.choices[i];
+                    var title = panel.transform.Find("Event Choice Title").GetComponent<TextMeshProUGUI>();
+                    var desc = panel.transform.Find("Event Description").GetComponent<TextMeshProUGUI>();
+                    var button = panel.GetComponentInChildren<Button>();
+
+                    title.text = choice.title;
+                    desc.text = choice.description;
+
+                    int answerIndex = i;
+                    button.onClick.RemoveAllListeners();
+                    button.onClick.AddListener(() => AnswerSelected(answerIndex));
+                }
+            }
+
+            UpdateArrowVisibility();
+        }
     }
 
     private void ShowNextPanel()
@@ -118,6 +145,12 @@ public class PopupManager : MonoBehaviour
     {
         leftArrow.gameObject.SetActive(currentPanelIndex > 0);
         rightArrow.gameObject.SetActive(currentPanelIndex < currentEvent.choices.Count - 1);
+    }
+
+    private void DisableArrows()
+    {
+        leftArrow.gameObject.SetActive(false);
+        rightArrow.gameObject.SetActive(false);
     }
 
     private void AnswerSelected(int index)
