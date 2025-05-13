@@ -12,4 +12,134 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dfb28c6104ed0341a29bb09def709d2, type: 3}
   m_Name: EventsDatabase
   m_EditorClassIdentifier: 
-  events: []
+  events:
+  - eventDate: 01/02/2003
+    title: Treaty of Nice
+    description: "The EU adopted the Treaty of Nice! \nIt presumes: \n1. Assigning
+      a weighted number of votes for each country based on its population; \n2. Limiting
+      the number of comission members to 1 per state; \n3. Improved the functioning
+      of the European Court of Justice;  \n4. Allowed groups of minimum 9 countries
+      to collaborate in specific areas, even if not all countries are ready or want
+      to join. \nIt sets the grounds for a future enlargement."
+    location: {fileID: 0}
+    question: 
+    eventIcon: {fileID: 0}
+    EuChoice: 
+    EuChoiceDescription: 
+    choices: []
+  - eventDate: 11/03/2004
+    title: Madrid Train Bombings
+    description: 'In Madrid, Spain, there was a high-casualty bombing of the commuter
+      rail system made by Islamist extremists, three days before the elections, leading
+      to public anger and suspicion. This lead to the Spanish troops withdrawing
+      from Iraq after the election.
+
+      The EU decided to take measures against
+      terrorist acts, by improving its counterterrorism and intelligence services,
+      surveilance, intelligence sharing, and border controls, all while strengthening
+      anti-terror laws.'
+    location: {fileID: 0}
+    question: What response should the EU have to these terrorist acts?
+    eventIcon: {fileID: 0}
+    EuChoice: Unity and Action
+    EuChoiceDescription: "Following the 2004 Madrid train bombings, the EU responded
+      with strong solidarity and took decisive action to improve internal security.
+      A Counter-Terrorism Coordinator was appointed, and intelligence-sharing between
+      member states was strengthened. These moves boosted public trust in the EU\u2019s
+      unity and ability to act in times of crisis. However, the expansion of surveillance
+      and data-sharing also raised concerns about civil liberties, sparking debates
+      about how to balance security with fundamental rights."
+    choices:
+    - title: Unity and Action
+      description: 'Issue a strong solidarity statemenet with Spain
+
+
+        Issue
+        a centralized terrorism task force under Europol
+
+
+        Fund community-based
+        anti-radicalization systems
+
+
+        Publicly question EU involvement in
+        foreign conflicts to address root causes.
+
+
+        Encourage Spain to delay
+        elections for stability'
+      consequences: 'Increased EU Security: Enhanced cooperation among member states
+        in intelligence sharing and counterterrorism efforts resulted in more efficient
+        response times to future threats
+
+
+        Public Trust in the EU Grows:
+        The strong response of the EU boosts its reputation as a united, proactive
+        force against terrorism
+
+
+        Civil Liberties Concerns: The push for
+        more surveillance and intelligence-sharing lead to concerns about privacy
+        and the erosion of civil liberties
+
+
+        Internal EU Unity: The EU is
+        seen as more united and coordinated, but the potential conflict between national
+        sovereignty and EU centralization could create division in future decision-making'
+      euroscepticismModifier: -10
+      foreignAffairsModifier: 10
+      moneyModifier: -100000
+      eventIcon: {fileID: 0}
+    - title: Balance of Power and Privacy
+      description: "Issue a neutral, factual public statement\n\nPromote regional
+        cooperation between member states\n\nProvide optional frameworks for intelligence-sharing;
+        no mandates\n\nOffer grants to national anti-radicalization programs\n\nSupport
+        Spain\u2019s decision to hold timely elections as a sign of resilience"
+      consequences: "Moderate Security Gains: The EU encourages cooperation without
+        centralization. Some member states take proactive steps in improving counterterrorism
+        measures and intelligence-sharing, but without a unified framework, some
+        gaps remain in overall security effectiveness\n\nPreserved Civil Liberties:
+        The EU prioritizes the protection of civil liberties, avoiding mass surveillance
+        programs. This leads to higher public trust, particularly in countries with
+        a strong tradition of individual freedoms, though some critics argue the
+        EU isn\u2019t doing enough to secure its borders\n\nMixed Public Perception:
+        The EU\u2019s balanced approach is seen as pragmatic by some, but ineffective
+        by others. The lack of decisive action in addressing threats might leads
+        to dissatisfaction in member states facing growing security risks. Citizens
+        begin questioning whether the EU is strong enough to handle such crises\n\nInternal
+        Division on Security: Member states retain significant autonomy, and some
+        countries feel they are left to handle security on their own. This leads
+        to varying levels of commitment to EU-wide counterterrorism efforts, and
+        future cooperation may be less unified\n\nStay silent on Iraq to avoid dividing
+        EU foreign policy\n\nModerate Influence on Global Stage: The EU avoids significant
+        rifts with non-EU countries but also doesn\u2019t assert itself as a strong
+        global player in counterterrorism, leaving a gap in its role as a major diplomatic
+        force"
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0
+      moneyModifier: -100000
+      eventIcon: {fileID: 0}
+    - title: Cautious Sovereignism
+      description: "Refrain from public comment until investigations are complete.\n\nLeave
+        all counterterrorism efforts to national governments.\n\nAvoid any new surveillance
+        or intelligence-sharing initiatives.\n\nFocus solely on policing and justice,
+        not social programs.\n\nMake no comment on Spain\u2019s election timing to
+        respect sovereignty."
+      consequences: 'Parliament''s authority is challenged, leading to growing institutional
+        tension.
+
+
+        Public protests and media criticism increase, especially
+        from human rights groups.
+
+
+        Member states feel empowered, but critics
+        accuse the EU of tolerating outdated values.
+
+
+        Long-term democratic
+        legitimacy of the Commission is questioned.'
+      euroscepticismModifier: 10
+      foreignAffairsModifier: -10
+      moneyModifier: 0
+      eventIcon: {fileID: 0}
