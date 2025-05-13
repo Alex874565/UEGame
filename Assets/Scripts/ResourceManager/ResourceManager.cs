@@ -24,10 +24,10 @@ public class ResourceManager : MonoBehaviour
     [SerializeField] private float minBudget = 1000f;
     [SerializeField] private int maxQuizTries = 10;
 
-    private float currentForeignAffairs = 0;
-    private float currentEurosceptisism = 0;
-    private float currentBudget = 0;
+    private float currentForeignAffairs = 0.8f;
+    private float currentEurosceptisism = 0.65f;
 
+    private int currentBudget = 1000;
     private int currentQuizFails = 0;
 
     private void Awake()
@@ -39,11 +39,12 @@ public class ResourceManager : MonoBehaviour
     void Start()
     {
         Load();
+        UpdateUI();
     }
 
     private void Load()
     {
-        print("Need save manager here");
+        print("Need to load stats from save manager here");
     }
 
     #region Private Functions
@@ -59,15 +60,7 @@ public class ResourceManager : MonoBehaviour
         foreignAffairs.value = currentForeignAffairs / 1f;
         eurosceptisism.value = currentEurosceptisism / 1f;
         budget.text = currentBudget.ToString();
-        quizzes.text = currentQuizFails.ToString() + "/" + maxQuizTries + "€";
-    }
-
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.K))
-        {
-            UpdateBudget(-100);
-        }
+        quizzes.text = currentQuizFails.ToString() + "/" + maxQuizTries;
     }
 
     #endregion
@@ -97,7 +90,7 @@ public class ResourceManager : MonoBehaviour
         }
     }
 
-    public void UpdateBudget(float budget)
+    public void UpdateBudget(int budget)
     {
         currentBudget += budget;
 
