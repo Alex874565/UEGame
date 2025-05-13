@@ -2,9 +2,10 @@ using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
 
-[CreateAssetMenu(fileName = "PartiesDatabase", menuName = "Scriptable Objects/PartiesDatabase")]
-public class PartiesDatabase : ScriptableObject
+[CreateAssetMenu(fileName = "ElectionsDatabase", menuName = "Scriptable Objects/ElectionsDatabase")]
+public class ElectionsDatabase : ScriptableObject
 {
+    public string electionDate;
     [SerializeField] public List<Party> parties;
 
     [System.Serializable]
@@ -12,6 +13,5 @@ public class PartiesDatabase : ScriptableObject
     {
         public string partyName;
         public int seats;
-        public string joinDate;
     }
 }

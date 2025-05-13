@@ -13,24 +13,27 @@ public class EventsDatabase : ScriptableObject
     [System.Serializable]
     public class Event
     {
-        [SerializeField] public List<Choice> choices;
-
-        public string date;
+        public string eventDate;
         public string title;
         public string description;
         public GameObject location;
         public string question;
         public Sprite eventIcon;
-        public int EUChoiceIndex;
+        public Choice EuChoice;
+
+        [SerializeField] public List<Choice> choices;
+
 
         [System.Serializable]
         public class Choice
         {
             public string title;
             public string description;
-            public Dictionary<string, string> loyaltyModifiers;
-            public Dictionary<string, string> partyApprovalChances;
+            public string euroscepticismModifier;
+            public string moneyModifier;
+            public string foreignAffairsModifier;
             public Sprite eventIcon;
+            public Dictionary<string, string> partyApprovalChances;
         }
     }
 }

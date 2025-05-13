@@ -10,7 +10,7 @@ public class QuizzesDatabase : ScriptableObject
     [System.Serializable]
     public class Quiz
     {
-        public string date;
+        public string quizDate;
         public string quizName;
         public string question;
         [SerializeField] public List<Answer> answers;
