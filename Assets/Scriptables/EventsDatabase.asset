@@ -419,3 +419,263 @@ MonoBehaviour:
       foreignAffairsModifier: 0.01
       moneyModifier: -2000000
       eventIcon: {fileID: 0}
+  - eventDate: 01/12/2009
+    title: Lisbon Treaty
+    countryName: Lisbon
+    description: After the rejection of the EU Constitution in 2005, the Lisbon Treaty
+      was introduced as a streamlined alternative to improve the functioning of the
+      EU. Its goals included stronger institutions, more democratic accountability,
+      and clearer rules for decision-making in an expanding Union. But national referenda,
+      fears of losing sovereignty, and institutional fatigue made the process tense
+      and politically risky.
+    question: 
+    EuChoice: "Push for Ratification \u2013 Modernize the EU"
+    EuChoiceDescription: "Despite setbacks\u2014including Ireland\u2019s initial
+      rejection in 2008\u2014the Lisbon Treaty was finally ratified and entered into
+      force in December 2009. Key features included a permanent Council President,
+      High Representative for Foreign Affairs, and stronger parliamentary powers.\n\nThere
+      was streamlined decision-making and better external representation.\n\nThe
+      institutional clarity helped the EU navigate future crises.\n\nConcerns were
+      raised in some countries about democratic accountability, but it was still
+      a major step in EU integration.\n\n"
+    eventIcon: {fileID: 0}
+    choices:
+    - title: "Push for Ratification \u2013 Modernize the EU"
+      description: Proceed with ratifying the Lisbon Treaty across all member states,
+        even if it means facing tough referenda or political backlash.
+      consequences: "The treaty strengthens the EU\u2019s global voice, simplifies
+        voting, and creates new leadership roles (e.g., permanent Council President).\n\nIt
+        also sparks resistance in some member states (like Ireland), requiring repeat
+        referenda and legal clarifications.\n\nIt is accused by some of bypassing
+        public opinion."
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: 0.01
+      moneyModifier: -50000000
+      eventIcon: {fileID: 0}
+    - title: "Scale It Back \u2013 Treaty Lite"
+      description: Remove the most controversial elements and pursue a lighter intergovernmental
+        agreement instead.
+      consequences: "The treaty strengthens the EU\u2019s global voice, simplifies
+        voting, and creates new leadership roles (e.g., permanent Council President).\n\nIt
+        also sparks resistance in some member states (like Ireland), requiring repeat
+        referenda and legal clarifications.\n\nIt is accused by some of bypassing
+        public opinion."
+      euroscepticismModifier: 0
+      foreignAffairsModifier: -0.01
+      moneyModifier: -20000000
+      eventIcon: {fileID: 0}
+    - title: "Abandon the Treaty \u2013 Preserve the Status Quo"
+      description: Accept the 2005 constitutional failure and keep operating under
+        the Nice Treaty rules.
+      consequences: "The treaty avoids political battles, but leaves institutions
+        strained under enlargement.\n\nIt hampers EU\u2019s ability to act efficiently,
+        especially with 27+ members.\n\nIt is widely seen as a retreat from ambition."
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: 0
+      eventIcon: {fileID: 0}
+  - eventDate: 11/02/2010
+    title: SWIFT Agreement
+    countryName: Strassbourg
+    description: In the wake of the 9/11 attacks, the U.S. launched the Terrorist
+      Finance Tracking Program (TFTP), which used data from the SWIFT financial network
+      (based in Belgium) to monitor and block terrorist financing. The EU has to
+      decide whether to sign a new agreement allowing the U.S. access to European
+      financial transaction data, triggering a major debate on privacy, security,
+      and transatlantic cooperation.
+    question: How should we approach the agreement?
+    EuChoice: Approve the Agreement with Safeguards
+    EuChoiceDescription: 'After initially blocking the agreement in early 2010, the
+      European Parliament approved a revised version of the SWIFT deal in July 2010,
+      which included improved data protection, oversight, and the ability for EU
+      citizens to challenge misuse of their data.
+
+
+      The EU reinforced its transatlantic
+      partnership while asserting its privacy standards.
+
+
+      The Parliament established
+      itself as a powerful actor in foreign policy.
+
+
+      Citizens remained divided
+      but acknowledged a more balanced outcome.'
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Approve the Agreement with Safeguards
+      description: Sign the SWIFT deal with the U.S., but only after negotiating
+        strong data protection guarantees and judicial oversight.
+      consequences: 'The European Parliament demonstrates new power by demanding
+        and securing privacy protections.
+
+
+        The EU maintains close counter-terror
+        cooperation with the U.S. without appearing submissive.
+
+
+        Privacy
+        advocates remain skeptical, but public backlash is minimized.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0.01
+      moneyModifier: -8000000
+      eventIcon: {fileID: 0}
+    - title: Reject the Agreement Entirely
+      description: Block the deal and end data transfers to the U.S., citing privacy
+        and sovereignty concerns.
+      consequences: 'The European Parliament gains praise from privacy defenders
+        but faces criticism from security allies.
+
+
+        The U.S. government expresses
+        frustration, and some cooperation channels temporarily cool.
+
+
+        Terrorism
+        investigations are slowed in the short term.'
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0
+      moneyModifier: -4000000
+      eventIcon: {fileID: 0}
+    - title: Approve the Agreement Without Safeguards
+      description: Sign the deal quickly to satisfy the U.S. and show unity against
+        terrorism.
+      consequences: "The European Parliament faces public criticism for ignoring
+        its new oversight role.\n\nCivil liberties organizations launch campaigns
+        against the EU\u2019s disregard for privacy.\n\nTrust in EU institutions
+        weakens, especially in privacy-conscious member states."
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: 0.01
+      moneyModifier: -5000000
+      eventIcon: {fileID: 0}
+  - eventDate: 20/04/2010
+    title: Arab Spring
+    countryName: Sidi Bouzid
+    description: "Across North Africa and the Middle East, protests erupt against
+      authoritarian regimes. Sparked by the self-immolation of a Tunisian street
+      vendor, the Arab Spring rapidly spreads to Egypt, Libya, Syria, and beyond.
+      Citizens demand democracy, dignity, and jobs\u2014but as some regimes fall,
+      others respond with violent repression.\n\nThe EU watches closely as its southern
+      neighbourhood destabilizes, raising urgent questions: Should the EU support
+      uprisings, risking instability? How should it manage waves of migration, energy
+      uncertainty, and new foreign policy risks?"
+    question: What should we do about the Arab Spring?
+    EuChoice: "Support Democratic Movements \u2013 Take a Principled Stand"
+    EuChoiceDescription: "The EU suspends cooperation with violent regimes, launches
+      the European Neighbourhood Policy (ENP) review, and increases funding for democratic
+      transitions. It plays a key role in supporting Tunisia\u2019s transition, but
+      faces major challenges in Libya and Syria.\n\nThe EU earns global praise for
+      its support of democracy.\n\nThe fallout from failed revolutions leads to long-term
+      instability and migration flows.\n\nThe crisis sparks internal EU debates about
+      foreign policy coherence and migration burden-sharing."
+    eventIcon: {fileID: 0}
+    choices:
+    - title: "Support Democratic Movements \u2013 Take a Principled Stand"
+      description: Provide political and financial support to pro-democracy actors,
+        suspend ties with authoritarian regimes, and prepare for post-revolution
+        aid.
+      consequences: 'The EU is seen as upholding its values of democracy and human
+        rights.
+
+
+        Some transitions succeed (e.g. Tunisia), but others descend
+        into chaos (e.g. Libya, Syria).
+
+
+        Instability triggers increased
+        migration and regional conflict spillovers.'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: 0.02
+      moneyModifier: -10000000000
+      eventIcon: {fileID: 0}
+    - title: "Wait and See \u2013 Focus on Stability and Dialogue"
+      description: Prioritize regional stability and energy interests; support gradual
+        reforms while maintaining diplomatic ties.
+      consequences: 'The EU avoids sudden breakups with regimes, maintaining influence
+        and access.
+
+
+        Protesters and civil society accuse Brussels of hypocrisy
+        and moral cowardice.
+
+
+        Migration pressure builds as violence worsens
+        in some countries.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0
+      moneyModifier: -6000000000
+      eventIcon: {fileID: 0}
+    - title: "Close the Gates \u2013 Prioritize Internal Security"
+      description: Fortify borders, cut migration channels, and limit involvement
+        in foreign upheaval to protect EU cohesion and public order.
+      consequences: 'Eurosceptic and nationalist parties gain support domestically.
+
+
+        International
+        partners criticize the EU for abandoning its democratic ideals.
+
+
+        Instability
+        in the region worsens, with long-term blowback on EU borders and interests.'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: 0.01
+      moneyModifier: -5000000
+      eventIcon: {fileID: 0}
+  - eventDate: 31/03/2011
+    title: Syria Civil War
+    countryName: Daraa
+    description: "Civil unrest in Syria has escalated into a full-blown multi-sided
+      war. President Bashar al-Assad\u2019s crackdown on protesters sparks rebellion,
+      but regional and global powers quickly enter the fray. Russia, Iran, the U.S.,
+      Turkey, and extremist groups like ISIS turn Syria into a geopolitical battlefield. 
+      The humanitarian toll is staggering: hundreds of thousands dead, millions displaced,
+      and a massive refugee wave moving toward Europe. The EU faces mounting pressure
+      to act, but divisions over intervention, asylum, and diplomacy are sharp. Should
+      it take a lead in peace efforts, focus on humanitarian support, or insulate
+      itself?"
+    question: How should the EU navigate the Syrian Civil War?
+    EuChoice: "Push for Ratification \u2013 Modernize the EU"
+    EuChoiceDescription: "The EU boosts funding to Frontex, signs the EU-Turkey migration
+      deal, and increases support to Jordan and Lebanon to shelter refugees near
+      Syria. While criticized by rights groups, the approach stabilizes the bloc\u2019s
+      internal politics.  Asylum applications in Europe decrease sharply.  Tensions
+      rise with Turkey over human rights and political conditions.  The EU remains
+      a secondary player in ending the war but contains direct fallout."
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Lead a Humanitarian and Diplomatic Initiative
+      description: Launch a bold EU-led peace push through the UN, increase aid to
+        refugees and host countries, and fund reconstruction planning.
+      consequences: 'The EU is praised for moral leadership and soft power.
+
+
+        Influence
+        remains limited due to military inaction, but diplomatic credibility rises.
+
+
+        Refugee
+        numbers remain high, sparking internal tensions.'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: 0.02
+      moneyModifier: -10000000000
+      eventIcon: {fileID: 0}
+    - title: Focus on Border Control and Regional Containment
+      description: Support frontline states (Turkey, Lebanon, Jordan), increase Frontex
+        funding, and secure external borders to contain refugee inflow.
+      consequences: "Refugee arrivals drop, reducing short-term political pressure.\n\nHuman
+        rights groups criticize the EU for failing to address root causes.\n\nCooperation
+        with Turkey becomes key\u2014and controversial."
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: 0
+      moneyModifier: -6000000000
+      eventIcon: {fileID: 0}
+    - title: "Abandon the Treaty \u2013 Preserve the Status Quo"
+      description: Accept the 2005 constitutional failure and keep operating under
+        the Nice Treaty rules.
+      consequences: "The treaty avoids political battles, but leaves institutions
+        strained under enlargement.\n\nIt hampers EU\u2019s ability to act efficiently,
+        especially with 27+ members.\n\nIt is widely seen as a retreat from ambition."
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: 0
+      eventIcon: {fileID: 0}
