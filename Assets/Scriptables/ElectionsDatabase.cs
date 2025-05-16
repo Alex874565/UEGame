@@ -10,6 +10,7 @@ public class ElectionsDatabase : ScriptableObject
     [System.Serializable]
     public class Election
     {
+        public string title;
         public InstitutionType institution;
         public string electionDate;
         [TextArea] public string description;
