@@ -1736,3 +1736,273 @@ MonoBehaviour:
       foreignAffairsModifier: -0.02
       moneyModifier: 0
       eventIcon: {fileID: 0}
+  - eventDate: 14/11/2018
+    title: International Calls Price Cap
+    countryName: Brussels
+    description: "Following the successful end of roaming fees, the EU introduces
+      a price cap on international calls and SMS between EU member states. From May
+      15, 2019, phone calls are capped at \u20AC0.19 per minute and \u20AC0.06 per
+      SMS, ensuring fairness and reducing costs for citizens staying in touch across
+      borders.\n\nTelecom companies resist, warning of lost revenue and potential
+      cuts to investment in rural coverage. Meanwhile, citizens and SMEs hail the
+      move as another win for a borderless digital Europe.\n\n"
+    question: What should the EU decide regardng the data protection rules?
+    EuChoice: Implement a Strict Cap on Call and SMS Prices
+    EuChoiceDescription: 'The EU introduces binding price caps on intra-EU calls
+      and texts. Citizens enjoy more predictable bills, and small businesses benefit
+      from lower communication costs. Telecom giants grumble, but the political payoff
+      is clear: the EU is acting on everyday issues.
+
+
+      Citizens feel the EU
+      is protecting them from corporate excess.
+
+
+      Integration deepens as people
+      connect more affordably across borders.
+
+
+      Telecom sector trims regional
+      investment plans, but adapts.'
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Implement a Strict Cap on Call and SMS Prices
+      description: Standardize pricing across the Union to reflect the single market
+        philosophy.
+      consequences: 'Citizens and small businesses applaud reduced costs and increased
+        transparency.
+
+
+        Telecom companies warn of squeezed profit margins,
+        especially smaller providers.
+
+
+        Reinforces the EU''s role in protecting
+        consumers and integrating markets.'
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.01
+      moneyModifier: -150000000
+      eventIcon: {fileID: 0}
+    - title: Introduce Soft Guidelines Instead of Legal Caps
+      description: "Encourage voluntary industry compliance with fair pricing, but
+        don\u2019t legislate it."
+      consequences: "Some providers comply, others don\u2019t. Citizens see mixed
+        results.\n\nThe EU is viewed as passive on affordability.\n\nTelecoms retain
+        flexibility, but consumer groups criticize the lack of enforcement."
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0
+      moneyModifier: -50000000
+      eventIcon: {fileID: 0}
+    - title: Water Down or Postpone GDPR
+      description: "Respond to lobbying pressure and delay the law\u2019s application
+        to protect innovation and SMEs."
+      consequences: 'Citizens and privacy advocates react with outrage.
+
+
+        The
+        EU is accused of caving to corporate interests.
+
+
+        Trust in EU data
+        policies declines, and global leadership is lost.'
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: 0
+      eventIcon: {fileID: 0}
+  - eventDate: 12/12/2018
+    title: Japan Trade Agreement
+    countryName: Strasbourg
+    description: "The European Union finalizes its largest bilateral trade deal ever
+      with Japan, known as the EU\u2013Japan Economic Partnership Agreement. Covering
+      nearly one-third of global GDP, the deal eliminates 99% of tariffs between
+      the two economies, opens public procurement markets, and sets standards on
+      sustainable development, data, and labor rights.\n\nSeen as a powerful signal
+      of rules-based, multilateral cooperation, the deal also strategically counters
+      rising protectionism from other global powers. Critics raise concerns over
+      transparency, labor safeguards, and environmental enforcement."
+    question: How cooperative should the EU be?
+    EuChoice: Sign the Agreement and Begin Implementation
+    EuChoiceDescription: "The EU moves forward with the Japan deal, aiming to promote
+      free trade and international cooperation, while reinforcing its role as a global
+      standard-setter. The agreement is welcomed by many businesses and citizens,
+      though some unions and environmentalists call for tighter oversight.\n\nEuropean
+      exporters gain new access to Japan\u2019s large market.\n\nPolitical momentum
+      grows for more EU trade deals (e.g., Mercosur, Australia).\n\nCivil society
+      demands stronger enforcement of sustainability clauses."
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Sign and Promote the Agreement Widely
+      description: Frame the deal as a historic win for EU citizens, global trade,
+        and democratic values.
+      consequences: "Public and media attention boosts trust in the EU\u2019s economic
+        diplomacy.\n\nStrengthens EU\u2019s soft power in Asia amid global uncertainty.\n\nActivists
+        press for better environmental safeguards and oversight tools."
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.02
+      moneyModifier: 300000000
+      eventIcon: {fileID: 0}
+    - title: Sign Quietly and Focus on Monitoring
+      description: Avoid political fanfare and emphasize mechanisms to enforce social
+        and environmental standards.
+      consequences: 'Trade flows benefit, but the political boost is modest.
+
+
+        Environmental
+        groups and labor unions feel somewhat heard.
+
+
+        Deal seen as practical
+        but not transformative.'
+      euroscepticismModifier: -0.005
+      foreignAffairsModifier: 0.005
+      moneyModifier: 200000000
+      eventIcon: {fileID: 0}
+    - title: Delay or Reopen Negotiations over Labor and Climate
+      description: Yield to public pressure and demand stronger binding protections
+        before approval.
+      consequences: 'Japan reacts negatively, risking diplomatic strain.
+
+
+        EU
+        businesses express frustration over lost export opportunities.
+
+
+        Public
+        debate intensifies over trade policy transparency.'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: 0
+      moneyModifier: -100000000
+      eventIcon: {fileID: 0}
+  - eventDate: 31/03/2019
+    title: Copyright Reform
+    countryName: Strasbourg
+    description: "After years of debate, the EU adopts a sweeping Copyright Directive
+      to modernize digital copyright laws for the internet age. The most contested
+      provisions \u2014 Article 15 (press publishers\u2019 rights) and Article 17
+      (platform liability) \u2014 aim to force platforms like YouTube, Facebook,
+      and Google News to fairly compensate creators and media outlets.\n\nSupporters
+      hail it as a long-overdue defense of artists and journalists in the digital
+      economy. Critics argue it could lead to upload filters, censorship, and a barrier
+      to online freedom, especially for memes and small content creators."
+    question: How should the EU handle the controversy?
+    EuChoice: Pass the Copyright Directive with Articles 15 and 17
+    EuChoiceDescription: 'Artists and publishers gain stronger negotiating power
+      with tech giants.
+
+
+      Public discourse around digital freedom and regulation
+      intensifies.
+
+
+      Member states face pressure to interpret the directive
+      carefully during implementation.'
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Pass the Directive to Support Creators and Media
+      description: Prioritize fair compensation in the digital economy and empower
+        European culture.
+      consequences: 'Traditional media and creators applaud the directive.
+
+
+        Tech
+        platforms warn of content filtering and compliance costs.
+
+
+        Internet
+        communities stage digital protests across Europe.'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: 0
+      moneyModifier: 100000000
+      eventIcon: {fileID: 0}
+    - title: Amend the Directive to Weaken Articles 15 and 17
+      description: Address public concern while keeping the overall reform.
+      consequences: 'Some public criticism is reduced, especially among younger voters.
+
+
+        Creators
+        and publishers accuse the EU of watering down protections.
+
+
+        The
+        directive is passed, but its legal strength is weaker.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0.005
+      moneyModifier: 50000000
+      eventIcon: {fileID: 0}
+    - title: Reject or Postpone the Directive
+      description: Avoid backlash by scrapping or delaying the law altogether.
+      consequences: 'Digital rights activists celebrate, but creators and publishers
+        are outraged.
+
+
+        The EU is seen as indecisive and swayed by online
+        pressure.
+
+
+        Opportunity for reform is missed for the foreseeable
+        future.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: -0.01
+      moneyModifier: -50000000
+      eventIcon: {fileID: 0}
+  - eventDate: 05/06/2019
+    title: Single-Use Plastic Products Ban
+    countryName: Strasbourg
+    description: "The European Union passes a landmark directive aiming to reduce
+      plastic pollution by banning the ten most common single-use plastic items found
+      on Europe\u2019s beaches\u2014such as cutlery, plates, straws, and cotton buds.
+      The directive also sets ambitious targets for reducing plastic waste and encourages
+      alternative products.\n\nEnvironmental groups praise the move as a bold step
+      for ocean health, while some manufacturers and retailers warn about costs and
+      consumer adaptation challenges. The law reflects growing public demand for
+      sustainability and EU leadership on climate action."
+    question: How should the EU proceed with the ban?
+    EuChoice: Enforce the Single-Use Plastics Ban with Clear Deadlines
+    EuChoiceDescription: "The EU commits to strict implementation, pushing member
+      states to ban targeted products and promote reusable alternatives. The directive
+      becomes a symbol of the EU\u2019s green ambitions, inspiring other regions
+      globally."
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Implement the Ban Fully and On Schedule
+      description: Lead global environmental efforts and encourage green industry
+        growth.
+      consequences: 'Environmental benefits become visible within a few years.
+
+
+        Some
+        sectors experience economic strain, but new markets emerge.
+
+
+        Citizens
+        largely support the initiative, increasing trust in the EU.'
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.02
+      moneyModifier: -180000000
+      eventIcon: {fileID: 0}
+    - title: Allow Flexibility for Member States on Deadlines
+      description: Balance environmental goals with economic concerns, permitting
+        phased bans.
+      consequences: 'Environmental progress slows but is steady.
+
+
+        Some member
+        states lag behind, causing criticism from activists.
+
+
+        Businesses
+        appreciate the breathing room for transition.'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: 0.01
+      moneyModifier: -100000000
+      eventIcon: {fileID: 0}
+    - title: Delay or Water Down the Directive
+      description: Respond to industry pressure and public skepticism about costs
+        and convenience.
+      consequences: "Plastic pollution remains a serious issue, frustrating environmentalists.\n\nEU\u2019s
+        green credibility weakens in the eyes of global partners.\n\nShort-term business
+        relief, but long-term environmental costs rise."
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: 0
+      eventIcon: {fileID: 0}
