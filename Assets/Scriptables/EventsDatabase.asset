@@ -1271,3 +1271,468 @@ MonoBehaviour:
       foreignAffairsModifier: -0.02
       moneyModifier: -5000000000
       eventIcon: {fileID: 0}
+  - eventDate: 13/11/2015
+    title: Terrorist Attacks in Paris
+    countryName: Paris
+    description: "Tonight, Paris is in shock. Coordinated terrorist attacks across
+      the city\u2014targeting a concert hall, restaurants, and the Stade de France\u2014have
+      left 130 people dead and hundreds injured. The perpetrators are linked to ISIS,
+      with several attackers having moved through Europe undetected. France declares
+      a state of emergency, and the EU is once again confronted with the question:
+      how do we protect an open society from terrorism?\n\nThis tragedy deepens the
+      urgency for joint security, intelligence-sharing, and a balanced response that
+      respects freedoms while ensuring safety. Emotions are high, and leaders are
+      under immense pressure to act."
+    question: What should the EU do regarding the terrorist attacks?
+    EuChoice: "Deepen Security Cooperation \u2013 Create an EU Intelligence Framework"
+    EuChoiceDescription: "The EU agrees to boost internal security coordination,
+      creating initiatives like the Passenger Name Records directive, enhancing Europol\u2019s
+      mandate, and strengthening external border controls through Frontex. Though
+      national sovereignty remains strong, Paris marks a turning point in EU-level
+      counter-terror planning.\n\nCitizens across Europe see Brussels stepping up
+      in times of danger.\n\nPrivacy concerns emerge, but the focus remains on unity
+      and prevention.\n\nThe groundwork is laid for future cooperation, though not
+      without resistance."
+    eventIcon: {fileID: 0}
+    choices:
+    - title: "Deepen Security Cooperation \u2013 Create an EU Intelligence Framework"
+      description: Push for stronger intelligence sharing, coordinated counter-terror
+        strategies, and interoperable databases between member states.
+      consequences: 'EU institutions begin laying the groundwork for shared threat
+        assessments and faster information flow.
+
+
+        Concerns arise over surveillance
+        and data protection from civil liberties groups.
+
+
+        Public feels reassured
+        by concrete action at the EU level.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0.01
+      moneyModifier: -4000000000
+      eventIcon: {fileID: 0}
+    - title: "Support National Measures \u2013 Let States Lead Security"
+      description: Allow each country to strengthen its own security while offering
+        EU funding and coordination when requested.
+      consequences: 'National control satisfies many voters, especially in France
+        and Eastern Europe.
+
+
+        Security patchwork persists, with uneven data
+        and law enforcement gaps.
+
+
+        EU role is perceived as too passive by
+        integration advocates.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0
+      moneyModifier: -2000000000
+      eventIcon: {fileID: 0}
+    - title: "Prioritize Civil Liberties \u2013 No New Measures Yet"
+      description: Temporarily suspend the Schengen Area to allow member states to
+        reintroduce national border checks.
+      consequences: 'Public confidence in national security rises, especially in
+        countries hit by large inflows.
+
+
+        Freedom of movement, a pillar of
+        the EU, is deeply weakened.
+
+
+        Economic disruptions emerge across
+        transport and trade sectors.'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: -0.02
+      moneyModifier: -5000000000
+      eventIcon: {fileID: 0}
+  - eventDate: 12/12/2015
+    title: Paris Agreement
+    countryName: Paris
+    description: "Nearly 200 countries met in Paris for the UN Climate Change Conference
+      (COP21) to sign a landmark deal: the Paris Agreement. The goal is to limit
+      global warming to well below 2\xB0C, with efforts to aim for 1.5\xB0C, and
+      to achieve net-zero emissions by the second half of the century.\n\nThe EU
+      is a major architect and driving force behind the deal, pushing for ambitious
+      targets and legal frameworks. At home, however, it now has to translate global
+      pledges into binding policies\u2014at a time of economic fragility and rising
+      political tensions."
+    question: What should be the EU's approach regarding the climate agreement?
+    EuChoice: "Lead by Example \u2013 Enforce Binding Climate Targets"
+    EuChoiceDescription: 'The EU adopted binding climate goals, committing to at
+      least 40% emissions reductions by 2030 (later raised), investing heavily in
+      renewables and green technologies. Though internal disputes followed, the EU
+      positioned itself as a global climate champion.
+
+
+      The EU earned international
+      praise and led by example in future climate talks.
+
+
+      Resistance from
+      some member states persisted, requiring long negotiations on burden-sharing.
+
+
+      The
+      policy helped establish the European Green Deal under the next Commission.'
+    eventIcon: {fileID: 0}
+    choices:
+    - title: "Lead by Example \u2013 Enforce Binding Climate Targets"
+      description: Commit to aggressive emissions reductions, renewable investment,
+        and binding legislation across all member states.
+      consequences: 'The EU becomes the global leader in climate diplomacy and green
+        innovation.
+
+
+        Eastern and coal-dependent countries protest the economic
+        strain.
+
+
+        Long-term economic gains emerge in the clean energy sector,
+        but short-term costs are high.'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: 0.04
+      moneyModifier: -40000000000
+      eventIcon: {fileID: 0}
+    - title: "Flexible Framework \u2013 Let Member States Set Their Own Pace"
+      description: Set EU-wide goals, but allow each country to choose how to reach
+        them.
+      consequences: 'Member states feel more autonomy, reducing internal friction.
+
+
+        Climate
+        progress is uneven and delayed in less committed countries.
+
+
+        Critics
+        argue the EU is failing to live up to its climate promises.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0
+      moneyModifier: -20000000000
+      eventIcon: {fileID: 0}
+    - title: "Focus on Economy First \u2013 Delay Implementation"
+      description: Delay strict implementation to prioritize growth and energy affordability,
+        especially after the debt and migration crises.
+      consequences: 'Energy prices remain stable and industry avoids disruption.
+
+
+        Climate
+        activists and youth movements criticize the EU for hypocrisy.
+
+
+        The
+        EU loses credibility in international climate negotiations.'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: -0.02
+      moneyModifier: -10000000000
+      eventIcon: {fileID: 0}
+  - eventDate: 22/03/2016
+    title: Terrorist Strikes in Brussels
+    countryName: Brussels
+    description: "This morning, the European capital is rocked by tragedy. Two bombs
+      detonate at Brussels Airport, followed by an explosion in the Maelbeek metro
+      station, just a few hundred meters from key EU institutions. Over 30 people
+      are killed, and hundreds injured. Panic spreads, security tightens, and the
+      sense of vulnerability is profound: the EU is attacked on its own doorstep.\n\nThe
+      attackers are linked to the same cell behind the Paris attacks. Belgium\u2019s
+      fragmented security services and limited cross-border coordination come under
+      scrutiny. EU leaders face renewed calls to transform solidarity into real operational
+      cooperation\u2014or risk further chaos."
+    question: How should the EU handle this crisis?
+    EuChoice: Push Member States for Interoperable Systems
+    EuChoiceDescription: "Following the Brussels attacks, the EU focuses on improving
+      information exchange, enforcing interoperability between national databases
+      (Schengen Information System, Eurodac, etc.), and enhancing Europol\u2019s
+      support role. However, direct EU-level policing remains limited.\n\nSecurity
+      tracking improves, but bureaucratic hurdles and mistrust remain.\n\nThe attacks
+      become a rallying cry for deeper\u2014but still cautious\u2014cooperation.\n\nThe
+      groundwork for future integrated systems is laid, slowly."
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Launch an EU Counter-Terror Task Force
+      description: Create a centralized EU unit within Europol to coordinate investigations,
+        standardize data, and support national police with rapid deployment experts.
+      consequences: 'The EU begins taking direct action, with faster, cross-border
+        responses to terrorist threats.
+
+
+        Some member states resist deeper
+        integration of their security services.
+
+
+        The public feels the EU
+        is stepping up with meaningful leadership.'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: 0.04
+      moneyModifier: -40000000000
+      eventIcon: {fileID: 0}
+    - title: Push Member States for Interoperable Systems
+      description: Require national authorities to modernize and link up security
+        databases, but keep operational control at the national level.
+      consequences: 'Technical progress improves tracking of suspects and prevents
+        overlaps.
+
+
+        True integration remains limited; gaps persist in intelligence
+        cooperation.
+
+
+        Less political resistance, but slower impact on the
+        ground.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0.1
+      moneyModifier: -3000000000
+      eventIcon: {fileID: 0}
+    - title: Prioritize Civil Resilience and Community Engagement
+      description: Focus EU funding on community programs to counter radicalization,
+        improve education, and support at-risk neighborhoods.
+      consequences: 'Long-term trust-building efforts improve integration and reduce
+        extremist recruitment.
+
+
+        Immediate public anger rises over the perceived
+        lack of security action.
+
+
+        EU looks more focused on causes than immediate
+        responses.'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: 0
+      moneyModifier: -4000000000
+      eventIcon: {fileID: 0}
+  - eventDate: 06/05/2017
+    title: House of European History
+    countryName: Brussels
+    description: "The EU inaugurates the House of European History in Brussels, a
+      museum designed to showcase Europe's shared past, conflicts, and integration
+      journey. Intended as a space for reflection and unity, the initiative aims
+      to strengthen European identity\u2014though some critics label it elitist or
+      symbolic."
+    question: 
+    EuChoice: Celebrate Shared Memory
+    EuChoiceDescription: 'The EU launches the museum with a high-profile ceremony,
+      promoting it as a cultural cornerstone and educational tool for future generations.
+
+
+      The
+      project draws praise for promoting unity, especially among educators and students,
+      but also sparks skepticism in more eurosceptic circles about its cost and messaging.'
+    eventIcon: {fileID: 0}
+    choices:
+    - title: 
+      description: 
+      consequences: 
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: 0.005
+      moneyModifier: -100000000
+      eventIcon: {fileID: 0}
+  - eventDate: 15/06/2017
+    title: End of Roaming Fees
+    countryName: Brussels
+    description: 'After years of negotiations and policy reforms, the EU officially
+      abolishes mobile phone roaming charges within its territory. Citizens traveling
+      between EU countries can now call, text, and use data at no extra cost, just
+      like at home.
+
+
+      The move is widely seen as a tangible benefit of EU integration,
+      directly affecting millions of people, especially youth, tourists, and cross-border
+      workers. However, some telecom companies raise concerns about profitability,
+      while others warn of long-term market pressure.'
+    question: What should the EU do about the roaming fees?
+    EuChoice: Fully Abolish Roaming Fees as Planned
+    EuChoiceDescription: "The EU follows through with its commitment, scrapping roaming
+      charges across all member states. The decision becomes one of the most popular
+      EU policies, often cited as a clear benefit of integration.\n\nMillions of
+      citizens experience the EU\u2019s value in daily life.\n\nThe initiative strengthens
+      the perception of the EU as a \u201Cunion that delivers.\u201D\n\nTelecom sectors
+      consolidate, but long-term adjustments stabilize the market."
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Fully Abolish Roaming Fees as Planned
+      description: "Prioritize citizens\u2019 freedom of movement and digital rights
+        by enforcing the regulation in full across the EU."
+      consequences: 'Major public approval, especially among younger generations.
+
+
+        EU
+        visibly delivers a concrete benefit of membership.
+
+
+        Telecom industry
+        adjusts, but some companies reduce cross-border services to cope.'
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.005
+      moneyModifier: -200000000
+      eventIcon: {fileID: 0}
+    - title: Introduce a Fair-Use Limit on Free Roaming
+      description: Allow roaming without fees, but only up to a data and usage threshold
+        to protect telecom providers.
+      consequences: 'Citizens welcome the move, though some complain about limits.
+
+
+        Telecom
+        providers remain mostly stable.
+
+
+        Media praises balance between fairness
+        and practicality.'
+      euroscepticismModifier: -0.005
+      foreignAffairsModifier: 0.005
+      moneyModifier: -100000000
+      eventIcon: {fileID: 0}
+    - title: Postpone or Dilute the Reform
+      description: Delay full abolition or allow member states to choose implementation
+        to reduce industry pushback.
+      consequences: 'Citizens and media criticize the EU for failing to deliver on
+        promises.
+
+
+        Roaming fees remain a symbol of EU bureaucracy and inaction.
+
+
+        Telecom
+        companies are pleased, but public trust erodes.'
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: 0
+      eventIcon: {fileID: 0}
+  - eventDate: 06/02/2018
+    title: End of Geoblocking
+    countryName: Brussels
+    description: "The European Union enforces a regulation banning unjustified geoblocking
+      for consumers shopping online across member states. Companies can no longer
+      block or redirect users based on location, meaning EU citizens can now access
+      the same prices and services regardless of where they live \u2014 at least
+      for most goods and some digital services.\n\nWhile widely seen as a win for
+      consumer rights and the Digital Single Market, the law excludes audiovisual
+      content (like streaming services), due to ongoing licensing and copyright complexities.
+      Some citizens cheer the breakthrough, while others criticize the exceptions."
+    question: How should the EU handle geoblocking?
+    EuChoice: Implement Ban with Current Exceptions (No Streaming)
+    EuChoiceDescription: "The EU bans unjustified geoblocking for cross-border purchases,
+      car rentals, hotel bookings, and other services, but excludes audiovisual content.
+      It\u2019s a step toward digital unity, but not a full leap.\n\nCitizens across
+      the Union enjoy a smoother, more unified online shopping experience.\n\nThe
+      exclusion of streaming content keeps industry stakeholders on board.\n\nThe
+      EU is praised for progress, though the debate over cultural access continues."
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Ban Geoblocking for All Services, Including Streaming
+      description: Take a bold step toward a fully unified digital market, applying
+        the regulation to media as well.
+      consequences: 'Public welcomes unrestricted access across borders, including
+        to entertainment.
+
+
+        Media producers and national broadcasters strongly
+        oppose the change, citing lost licensing revenue.
+
+
+        Sparks debate
+        on protecting local culture versus promoting open access.'
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.01
+      moneyModifier: -300000000
+      eventIcon: {fileID: 0}
+    - title: Implement Ban with Current Exceptions (No Streaming)
+      description: Apply the regulation to goods and services like hotel bookings
+        and e-commerce, but leave out media for now.
+      consequences: 'The majority of consumers benefit, though some express disappointment
+        about streaming exclusions.
+
+
+        Media companies continue operating
+        under current licensing models.
+
+
+        Regulation seen as a compromise
+        between market access and industry interests.'
+      euroscepticismModifier: -0.005
+      foreignAffairsModifier: 0
+      moneyModifier: -100000000
+      eventIcon: {fileID: 0}
+    - title: Delay or Water Down the Regulation
+      description: Allow geoblocking to continue for now, citing the need to protect
+        local industries and jobs.
+      consequences: 'Citizens and online rights groups express frustration and distrust.
+
+
+        Some
+        governments and industries welcome the cautious approach.
+
+
+        Seen
+        as a missed opportunity for digital integration.'
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: 0
+      eventIcon: {fileID: 0}
+  - eventDate: 25/05/2018
+    title: Data Protection Rules
+    countryName: Brussels
+    description: "On May 25, 2018, the EU enforces the General Data Protection Regulation
+      (GDPR) \u2014 the most comprehensive data privacy law in the world. It gives
+      citizens control over their personal data and imposes strict obligations on
+      companies, including hefty fines for misuse or breaches.\n\nThe regulation
+      sets a global standard, influencing how companies around the world handle data.
+      However, it also sparks controversy over the compliance burden for businesses
+      and the impact on digital innovation.\n"
+    question: What should the EU decide regardng the data protection rules?
+    EuChoice: Strictly Enforce GDPR with Full Penalties
+    EuChoiceDescription: "The EU implements GDPR in full force. Major companies are
+      fined for noncompliance, and public awareness of data rights surges. The EU
+      earns a reputation as a global privacy pioneer, shaping laws worldwide.\n\nCitizens
+      feel empowered and protected.\n\nThe EU becomes the world\u2019s benchmark
+      for ethical data use.\n\nSome businesses complain, but the long-term shift
+      toward responsible tech begins."
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Strictly Enforce GDPR with Full Penalties
+      description: Champion strong personal rights and accountability. Make GDPR
+        the gold standard for privacy.
+      consequences: 'Citizens across Europe gain real control over their personal
+        data.
+
+
+        Public trust in the EU increases significantly.
+
+
+        Businesses,
+        especially smaller ones, struggle with compliance costs and fear penalties.'
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.01
+      moneyModifier: -250000000
+      eventIcon: {fileID: 0}
+    - title: Phase in Enforcement with Industry Support
+      description: Maintain strong rules, but delay penalties and offer support to
+        help businesses adjust.
+      consequences: 'Citizens feel protected, but some criticize the soft start.
+
+
+        Businesses
+        appreciate the flexibility.
+
+
+        Regulation is respected but seen as
+        initially lenient.'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: 0.01
+      moneyModifier: -100000000
+      eventIcon: {fileID: 0}
+    - title: Water Down or Postpone GDPR
+      description: "Respond to lobbying pressure and delay the law\u2019s application
+        to protect innovation and SMEs."
+      consequences: 'Citizens and privacy advocates react with outrage.
+
+
+        The
+        EU is accused of caving to corporate interests.
+
+
+        Trust in EU data
+        policies declines, and global leadership is lost.'
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: 0
+      eventIcon: {fileID: 0}
