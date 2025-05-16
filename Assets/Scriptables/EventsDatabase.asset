@@ -2080,3 +2080,203 @@ MonoBehaviour:
       foreignAffairsModifier: -0.04
       moneyModifier: -80000000000
       eventIcon: {fileID: 0}
+  - eventDate: 10/11/2020
+    title: EU Budget and Recovery Plan
+    countryName: Brussels
+    description: 'A fast-spreading novel coronavirus, COVID-19, causes an unprecedented
+      global health emergency. As hospitals across Europe fill, borders close, and
+      economies slow to a crawl, the EU faces sharp criticism over coordination failures,
+      competition for medical supplies, and unclear responsibilities.
+
+
+      Public
+      demand grows for unity, protection, and a coordinated response. Debates erupt
+      over solidarity between member states, joint debt issuance, and massive recovery
+      plans to rebuild Europe''s economy once the health crisis stabilizes.'
+    question: How should the proceed with the plan?
+    EuChoice: "Adopt the \u20AC1.8 Trillion Budget and Recovery Fund with Rule-of-Law
+      Conditions"
+    EuChoiceDescription: "The EU agrees to a groundbreaking financial package combining
+      the regular EU budget (\u20AC1.07 trillion) and the \u20AC750 billion recovery
+      fund. For the first time, the EU issues collective debt. Access to funds is
+      tied to respecting the rule of law."
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Approve Full Budget with Grants and Rule-of-Law Conditions
+      description: Demonstrate EU leadership, invest in green and digital recovery,
+        and protect democratic values.
+      consequences: 'Southern and Eastern Europe gain critical economic support.
+
+
+        Rule-of-law
+        mechanism angers some governments, but is upheld.
+
+
+        EU strengthens
+        its capacity for future crisis responses.'
+      euroscepticismModifier: -0.05
+      foreignAffairsModifier: 0.05
+      moneyModifier: -1350000000000
+      eventIcon: {fileID: 0}
+    - title: 'Compromise: More Loans, Fewer Grants, Softer Conditions'
+      description: Reduce tension and protect the EU budget, but offer less solidarity.
+      consequences: 'Frugal states are satisfied, but recovery is slower.
+
+
+        Trust
+        in the EU weakens in the South.
+
+
+        Rule-of-law issues remain ambiguous.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0.01
+      moneyModifier: -1000000000000
+      eventIcon: {fileID: 0}
+    - title: Reject Joint Debt and Focus on National Recovery Plans
+      description: Avoid controversial integration steps, but sacrifice unity and
+        efficiency.
+      consequences: 'Countries hit hardest by COVID-19 spiral deeper into recession.
+
+
+        EU
+        credibility plummets during crisis.
+
+
+        No new shared financial tools
+        are created.'
+      euroscepticismModifier: 0.05
+      foreignAffairsModifier: -0.05
+      moneyModifier: -900000000000
+      eventIcon: {fileID: 0}
+  - eventDate: 16/12/2020
+    title: Rule of Law Legislation
+    countryName: Brussels
+    description: "As part of the negotiations over the EU\u2019s long-term budget
+      and the COVID-19 Recovery Fund, the European Parliament and several member
+      states push to introduce a mechanism that ties EU funding to respect for the
+      rule of law. The goal is to ensure that EU money isn\u2019t misused in countries
+      where judicial independence or media freedom are at risk.\n\nHowever, Hungary
+      and Poland strongly oppose the move, arguing it\u2019s politically motivated
+      and infringes on national sovereignty. The dispute escalates to the point of
+      threatening a veto of the entire \u20AC1.8 trillion budget package. The EU
+      must find a path forward that balances enforcement with unity."
+    question: How should the new law adoption go?
+    EuChoice: Adopt Rule-of-Law Conditionality with Legal Safeguards
+    EuChoiceDescription: "After intense negotiation, the EU introduces a rule-of-law
+      mechanism, allowing funds to be withheld from member states that breach key
+      democratic norms \u2014 but includes safeguards that delay implementation pending
+      legal review.\n\nThe EU upholds its values without collapsing the budget deal.\n\nTensions
+      simmer with Poland and Hungary, who challenge the mechanism in court.\n\nCivil
+      society across Europe welcomes the move as a win for accountability."
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Approve Rule-of-Law Mechanism with Strong Enforcement
+      description: Make democratic values non-negotiable, even at the risk of conflict.
+      consequences: 'EU sends a clear message about the importance of its core principles.
+
+
+        Poland
+        and Hungary threaten vetoes and launch legal action.
+
+
+        Other governments
+        and citizens rally behind the move.'
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.01
+      moneyModifier: 50000000000
+      eventIcon: {fileID: 0}
+    - title: Adopt a Weaker Mechanism with Legal Delays
+      description: Protect EU unity while keeping pressure on backsliding states.
+      consequences: "Budget deal is saved, but rule-of-law breaches continue unchecked
+        in some regions.\n\nThe mechanism\u2019s credibility is questioned.\n\nCivil
+        society feels the EU hesitated on values."
+      euroscepticismModifier: -0.005
+      foreignAffairsModifier: 0.005
+      moneyModifier: 0
+      eventIcon: {fileID: 0}
+    - title: Drop the Rule-of-Law Clause to Secure the Budget
+      description: Prioritize unity and recovery over internal political battles.
+      consequences: 'Budget and recovery fund pass without delay.
+
+
+        Autocratic
+        tendencies in some member states deepen.
+
+
+        Public confidence in EU
+        values declines.'
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: 0.02
+      moneyModifier: -100000000000
+      eventIcon: {fileID: 0}
+  - eventDate: 28/04/2021
+    title: EU and UK Trade and Cooperation Agreement
+    countryName: Brussels
+    description: 'Budget and recovery fund pass without delay.
+
+
+      Autocratic
+      tendencies in some member states deepen.
+
+
+      Public confidence in EU values
+      declines.'
+    question: How should the agreement be approached by the EU?
+    EuChoice: Sign Comprehensive Trade and Cooperation Agreement
+    EuChoiceDescription: "Just days before the deadline, the EU and UK agree to a
+      zero-tariff, zero-quota trade deal. The agreement covers trade in goods, limited
+      cooperation on services, transport, energy, and security \u2014 but with new
+      customs checks and barriers. The EU defends core standards and gains tools
+      to enforce fair competition.\n\nA no-deal Brexit is avoided, limiting immediate
+      economic damage.\n\nTrade becomes more bureaucratic, but chaos is averted.\n\nThe
+      UK operates outside the single market and customs union, leading to gradual
+      divergence."
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Sign Trade Deal with Enforcement Rules and Shared Standards
+      description: Preserve EU values and limit UK access unless fair competition
+        is guaranteed.
+      consequences: 'Prevents a disruptive no-deal scenario.
+
+
+        Sets global
+        precedent for trade with non-members.
+
+
+        UK must abide by rules to
+        retain access, but friction grows.'
+      euroscepticismModifier: -0.005
+      foreignAffairsModifier: 0.01
+      moneyModifier: 160000000000
+      eventIcon: {fileID: 0}
+    - title: Offer More UK Flexibility to Expedite Deal
+      description: Prioritize stability and speed over strict regulation enforcement.
+      consequences: 'Quicker agreement helps businesses, but weakens leverage.
+
+
+        Future
+        disputes become harder to enforce.
+
+
+        Some member states criticize
+        perceived UK favoritism.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0.005
+      moneyModifier: 130000000000
+      eventIcon: {fileID: 0}
+    - title: "Walk Away from Negotiations \u2013 Prepare for No Deal"
+      description: "Refuse to compromise on principles \u2014 even if it triggers
+        trade chaos."
+      consequences: 'Hard Brexit triggers tariffs, customs disruption, and border
+        delays.
+
+
+        EU farmers, carmakers, and exporters face sharp losses.
+
+
+        Nationalist
+        voices rise in the UK and EU alike.'
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: -150000000000
+      eventIcon: {fileID: 0}
