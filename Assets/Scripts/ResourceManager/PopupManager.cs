@@ -143,12 +143,16 @@ public class PopupManager : MonoBehaviour
             
             title.text = "";
             desc.text = currentEvent.description;
-            moneyModifier.text = currentEvent.choices[0].moneyModifier.ToString();
+            moneyModifier.text = currentEvent.choices[0].moneyModifier.ToString() + "€";
             moneyModifier.color = 
                 currentEvent.choices[0].moneyModifier > 0 ? positiveRevenueColor: negativeRevenueColor;
 
             var button = panel.GetComponentInChildren<Button>();
-            button.onClick.AddListener(() => AnswerSelected(0));
+            button.onClick.AddListener(() =>
+            {
+                VotingLoader.Instance.Show(currentEvent, 0);
+                AnswerSelected(0);
+            });
         }
         else
         {
@@ -176,13 +180,17 @@ public class PopupManager : MonoBehaviour
 
                     title.text = choice.title;
                     desc.text = choice.description;
-                    moneyModifier.text = currentEvent.choices[0].moneyModifier.ToString();
+                    moneyModifier.text = currentEvent.choices[i].moneyModifier.ToString() + "€";
                     moneyModifier.color =
-                        currentEvent.choices[0].moneyModifier > 0 ? positiveRevenueColor : negativeRevenueColor;
+                        currentEvent.choices[i].moneyModifier > 0 ? positiveRevenueColor : negativeRevenueColor;
 
                     int answerIndex = i;
                     button.onClick.RemoveAllListeners();
-                    button.onClick.AddListener(() => AnswerSelected(answerIndex));
+                    button.onClick.AddListener(() =>
+                    {
+                        VotingLoader.Instance.Show(currentEvent, i); 
+                        AnswerSelected(answerIndex);
+                    });
                 }
             }
 
@@ -212,7 +220,7 @@ public class PopupManager : MonoBehaviour
         var button = panel.GetComponentInChildren<Button>();
 
         title.text = "Budget Increased";
-        desc.text = $"You received + {budgetData.budget} currency. Allocate it wisely.";
+        desc.text = $"You received + {budgetData.budget} €. Allocate it wisely.";
         desc.color = positiveRevenueColor;
 
         button.onClick.RemoveAllListeners();
@@ -320,7 +328,7 @@ public class PopupManager : MonoBehaviour
     {
         quizPanel.SetActive(false);
 
-        if(index < 0) { OnQuestionAnswered?.Invoke(); return; }
+        if(index < 0) { return; }
 
         var selectedChoice = currentEvent.choices[index];
 
@@ -328,7 +336,5 @@ public class PopupManager : MonoBehaviour
         ResourceManager.Instance.UpdateEurosceptisism(selectedChoice.euroscepticismModifier);
         ResourceManager.Instance.UpdateBudget(selectedChoice.moneyModifier);
         ResourceManager.Instance.UpdateQuizTries(!selectedChoice.Equals(true));
-
-        OnQuestionAnswered?.Invoke();
     }
 }
