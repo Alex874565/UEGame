@@ -15,6 +15,7 @@ public class EventsDatabase : ScriptableObject
     {
         public string eventDate;
         public string title;
+        public string countryName;
         [TextArea] public string description;
         public GameObject location;
         public string question;

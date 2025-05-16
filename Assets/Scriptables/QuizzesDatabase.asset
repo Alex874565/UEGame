@@ -12,4 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54203e70fa67f9248a4f79170c96bf40, type: 3}
   m_Name: QuizzesDatabase
   m_EditorClassIdentifier: 
-  quizzes: []
+  quizzes:
+  - quizDate: 
+    quizName: 
+    question: 
+    countryName: 
+    answers:
+    - answerText: 
+      isCorrect: 0

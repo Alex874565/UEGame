@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88fd081e614a05943b8a6cf19b184ceb, type: 3}
   m_Name: ElectionsDatabase
   m_EditorClassIdentifier: 
-  electionDate: 
-  parties: []
+  elections: []

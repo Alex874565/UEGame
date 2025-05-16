@@ -14,19 +14,19 @@ public class VotingLoader : MonoBehaviour
             Instance = this;
     }
 
-    public void Show(Action onComplete)
+    public void Show()
     {
-        StartCoroutine(PlayLoader(onComplete));
+        StartCoroutine(PlayLoader());
     }
 
-    private System.Collections.IEnumerator PlayLoader(Action onComplete)
+    private System.Collections.IEnumerator PlayLoader()
     {
         loaderAnimationPanel.SetActive(true);
         yield return new WaitForSeconds(animationDuration);
         loaderAnimationPanel.SetActive(false);
 
-        // Restart time manager ticking
-
-        onComplete?.Invoke();
+        // HARDCODED
+        TimeManager.Instance.SetTimeScale(5f);
+        TimeManager.Instance.EnableTimeButtons();
     }
 }

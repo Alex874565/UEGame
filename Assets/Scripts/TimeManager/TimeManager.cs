@@ -5,36 +5,43 @@ using TMPro;
 
 public class TimeManager : MonoBehaviour
 {
-    public EventsManager eventsManager;
-    public GameEndManager gameEndManager;
+    public static TimeManager Instance;
+
+    [SerializeField] private EventsManager eventsManager;
+    [SerializeField] private GameEndManager gameEndManager;
 
     [Header("Time Settings")]
-    public int day = 1;
-    public int month = 1;
-    public int year = 1000;
-    public int hour = 6;
-    public int minute = 0;
+    [SerializeField] private int day = 1;
+    [SerializeField] private int month = 1;
+    [SerializeField] private int year = 1000;
+    [SerializeField] private int hour = 6;
+    [SerializeField] private int minute = 0;
 
-    public float defaultTimeScale;
-    public float fastForwardTimeScale;
+    [SerializeField] private float defaultTimeScale;
+    [SerializeField] private float fastForwardTimeScale;
 
     [Header("UI Elements")]
-    public TMP_Text HUDDate;
-    public Button pauseButton;
-    public Button playButton;
-    public Button fastForwardButton;
+    [SerializeField] private TMP_Text HUDDate;
+    [SerializeField] private Button pauseButton;
+    [SerializeField] private Button playButton;
+    [SerializeField] private Button fastForwardButton;
 
     [Header("Button Sprites")]
-    public Sprite pauseSprite;
-    public Sprite playSprite;
-    public Sprite fastForwardSprite;
-    public Sprite fastForwardActiveSprite;
-    public Sprite playActiveSprite;
-    public Sprite pauseActiveSprite;
+    [SerializeField] private Sprite pauseSprite;
+    [SerializeField] private Sprite playSprite;
+    [SerializeField] private Sprite fastForwardSprite;
+    [SerializeField] private Sprite fastForwardActiveSprite;
+    [SerializeField] private Sprite playActiveSprite;
+    [SerializeField] private Sprite pauseActiveSprite;
 
     private float timeScale;
     private float timer;
 
+    private void Awake()
+    {
+        if (Instance == null)
+            Instance = this;
+    }
     void Start()
     {
         timeScale = defaultTimeScale;
@@ -137,5 +144,19 @@ public class TimeManager : MonoBehaviour
     public void SetTimeScale(float newTimeScale)
     {
         timeScale = newTimeScale;
+    }
+
+    public void DisableTimeButtons()
+    {
+        pauseButton.interactable = false;
+        fastForwardButton.interactable = false;
+        playButton.interactable = false;
+    }
+
+    public void EnableTimeButtons()
+    {
+        pauseButton.interactable = true;
+        fastForwardButton.interactable = true;
+        playButton.interactable = true;
     }
 }

@@ -5,12 +5,18 @@ public class QuizManager : MonoBehaviour
 {
     public static QuizManager Instance;
 
+    [Header("Databases")]
     [SerializeField] private EventsDatabase eventsDatabase;
+    [SerializeField] private QuizzesDatabase quizzesDatabase;
+    [SerializeField] private ElectionsDatabase electionsDatabase;
+    [SerializeField] private BudgetDatabase budgetDatabase;
 
-    private int currentRegularEventIndex = 0;
+    [Header("External Handlers")]
+    [SerializeField] private ResourceManager resourceManager; // For budget rewards
+    [SerializeField] private EUStats partyManager;       // For elections (you will provide this)
+
     private EventsDatabase.Event currentMainEvent;
 
-    private int currentMainEventIndex = 0;
     private bool isMainEvent = false;
 
     private void Awake()
@@ -23,42 +29,27 @@ public class QuizManager : MonoBehaviour
         PopupManager.Instance.OnQuestionAnswered = OnQuestionAnswered;
     }
 
-    public void StartNextRegularEvent()
+    public void TriggerBudgetEvent(int eventIndex)
     {
-        isMainEvent = false;
-
-        if (currentRegularEventIndex >= eventsDatabase.events.Count)
-        {
-            Debug.Log("All events completed.");
-            return;
-        }
-
-        var ev = eventsDatabase.events[currentRegularEventIndex];
-        currentRegularEventIndex++;
-
-        PopupManager.Instance.ShowEvent(ev);
+        PopupManager.Instance.ShowBudgetEvent(budgetDatabase.budgets[eventIndex]);
     }
 
-    public void StartMainEvent()
+    public void TriggerElection(int eventIndex)
     {
-        isMainEvent = true;
-        currentMainEvent = eventsDatabase.events[currentMainEventIndex];
-
-        PopupManager.Instance.ShowEvent(currentMainEvent);
+        PopupManager.Instance.ShowElectionEvent(electionsDatabase.elections[eventIndex]);
     }
 
     private void OnQuestionAnswered()
     {
         if (isMainEvent)
         {
-            VotingLoader.Instance.Show(() =>
-            {
-                Debug.Log("wow, such an animation");
-            });
+            VotingLoader.Instance.Show();
         }
         else
         {
-            StartNextRegularEvent();
+            // HARDCODED
+            TimeManager.Instance.SetTimeScale(5f);
+            TimeManager.Instance.EnableTimeButtons();
         }
     }
 }

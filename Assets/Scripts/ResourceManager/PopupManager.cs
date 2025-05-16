@@ -56,12 +56,73 @@ public class PopupManager : MonoBehaviour
 
     #endregion
 
+    public void ShowQuizEvent(QuizzesDatabase.Quiz quizData)
+    {
+        quizPanel.SetActive(true);
+        quizPopupAnimator.Play("QuizPopup");
+
+        currentPanelIndex = 0;
+
+        eventTitleText.text = quizData.quizName;
+        eventDateText.text = quizData.quizDate;
+        eventQuestionText.text = quizData.question;
+
+        for (int i = 0; i < answerPanels.Length; i++)
+        {
+            GameObject panel = answerPanels[i];
+            bool isActive = i == currentPanelIndex && i < quizData.answers.Count;
+            panel.SetActive(isActive);
+
+            if (i < quizData.answers.Count)
+            {
+                var answer = quizData.answers[i];
+
+                var title = panel.transform.Find("Event Choice Title").GetComponent<TextMeshProUGUI>();
+                var desc = panel.transform.Find("Event Description").GetComponent<TextMeshProUGUI>();
+                var button = panel.GetComponentInChildren<Button>();
+
+                title.text = $"Answer {i + 1}";
+                desc.text = answer.answerText;
+
+                int index = i;
+                button.onClick.RemoveAllListeners();
+                button.onClick.AddListener(() =>
+                {
+                    quizPanel.SetActive(false);
+
+                    if (answer.isCorrect)
+                    {
+                        Debug.Log("Correct answer selected!");
+                        // Optional: Reward player or trigger effects here
+                    }
+                    else
+                    {
+                        Debug.Log("Incorrect answer selected.");
+                        ResourceManager.Instance.UpdateQuizTries(true);
+                    }
+
+                    OnQuestionAnswered?.Invoke();
+                });
+            }
+        }
+
+        if (quizData.answers.Count <= 1)
+        {
+            DisableArrows();
+        }
+        else
+        {
+            UpdateArrowVisibility();
+        }
+    }
+
     public void ShowEvent(EventsDatabase.Event eventData)
     {
         currentEvent = eventData;
         // Cannot event with nothing to do
         if (eventData.choices.Count == 1)
         {
+            print("hm1");
             DisableArrows();
 
             quizPanel.SetActive(true);
@@ -85,6 +146,7 @@ public class PopupManager : MonoBehaviour
         }
         else
         {
+            print("hm");
             quizPanel.SetActive(true);
             quizPopupAnimator.Play("QuizPopup");
 
@@ -118,6 +180,66 @@ public class PopupManager : MonoBehaviour
             UpdateArrowVisibility();
         }
     }
+
+    public void ShowBudgetEvent(BudgetDatabase.Budget budgetData)
+    {
+        quizPanel.SetActive(true);
+        quizPopupAnimator.Play("QuizPopup");
+
+        DisableArrows();
+
+        ResourceManager.Instance.UpdateBudget(budgetData.budget);
+
+        eventTitleText.text = "Budget Allocation";
+        eventDateText.text = System.DateTime.Now.ToShortDateString();
+        eventQuestionText.text = "";
+
+        GameObject panel = answerPanels[0];
+        panel.SetActive(true);
+
+        var title = panel.transform.Find("Event Choice Title").GetComponent<TextMeshProUGUI>();
+        var desc = panel.transform.Find("Event Description").GetComponent<TextMeshProUGUI>();
+        var button = panel.GetComponentInChildren<Button>();
+
+        title.text = "Budget Increased";
+        desc.text = $"You received + {budgetData.budget} currency. Allocate it wisely.";
+
+        button.onClick.RemoveAllListeners();
+        button.onClick.AddListener(() =>
+        {
+            button.onClick.AddListener(() => AnswerSelected(-1));
+        });
+    }
+
+    public void ShowElectionEvent(ElectionsDatabase.Election electionData)
+    {
+        quizPanel.SetActive(true);
+        quizPopupAnimator.Play("QuizPopup");
+
+        DisableArrows();
+
+        eventTitleText.text = "Election Results";
+        eventDateText.text = System.DateTime.Now.ToShortDateString();
+        eventQuestionText.text = "";
+
+        GameObject panel = answerPanels[0];
+        panel.SetActive(true);
+
+        var title = panel.transform.Find("Event Choice Title").GetComponent<TextMeshProUGUI>();
+        var desc = panel.transform.Find("Event Description").GetComponent<TextMeshProUGUI>();
+        var button = panel.GetComponentInChildren<Button>();
+
+        title.text = "New Government Formed";
+        desc.text = $"The new ruling party is {electionData.parties}. Policy shifts are expected.";
+        EUStats.Instance.ChangeParty(electionData.parties);
+
+        button.onClick.RemoveAllListeners();
+        button.onClick.AddListener(() =>
+        {
+            button.onClick.AddListener(() => AnswerSelected(-1));
+        });
+    }
+
 
     private void ShowNextPanel()
     {
@@ -157,11 +279,14 @@ public class PopupManager : MonoBehaviour
     {
         quizPanel.SetActive(false);
 
+        if(index < 0) { OnQuestionAnswered?.Invoke(); return; }
+
         var selectedChoice = currentEvent.choices[index];
 
         ResourceManager.Instance.UpdateForeignAffairs(selectedChoice.foreignAffairsModifier);
         ResourceManager.Instance.UpdateEurosceptisism(selectedChoice.euroscepticismModifier);
         ResourceManager.Instance.UpdateBudget(selectedChoice.moneyModifier);
+        ResourceManager.Instance.UpdateQuizTries(!selectedChoice.Equals(true));
 
         OnQuestionAnswered?.Invoke();
     }

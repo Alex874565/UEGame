@@ -13,6 +13,7 @@ public class QuizzesDatabase : ScriptableObject
         public string quizDate;
         public string quizName;
         public string question;
+        public string countryName;
         [SerializeField] public List<Answer> answers;
 
         [System.Serializable]

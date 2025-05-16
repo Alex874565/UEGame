@@ -9,6 +9,7 @@ public class BudgetDatabase : ScriptableObject
     [System.Serializable]
     public class Budget
     {
+        public string countryName;
         public string budgetAllocationDate;
         public long budget;
     }
