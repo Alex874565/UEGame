@@ -2006,3 +2006,77 @@ MonoBehaviour:
       foreignAffairsModifier: -0.02
       moneyModifier: 0
       eventIcon: {fileID: 0}
+  - eventDate: 11/03/2020
+    title: COVID-19
+    countryName: Brussels
+    description: 'A fast-spreading novel coronavirus, COVID-19, causes an unprecedented
+      global health emergency. As hospitals across Europe fill, borders close, and
+      economies slow to a crawl, the EU faces sharp criticism over coordination failures,
+      competition for medical supplies, and unclear responsibilities.
+
+
+      Public
+      demand grows for unity, protection, and a coordinated response. Debates erupt
+      over solidarity between member states, joint debt issuance, and massive recovery
+      plans to rebuild Europe''s economy once the health crisis stabilizes.'
+    question: How should the EU handle the pandemic?
+    EuChoice: Launch Joint Vaccine Strategy and Recovery Fund
+    EuChoiceDescription: 'Trust in EU solidarity and institutions is gradually restored.
+
+
+      Eastern
+      and Southern countries rely heavily on EU support.
+
+
+      The scale of spending
+      triggers long-term fiscal debate, but economic rebound begins.'
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Coordinate a Unified Vaccine Rollout and Recovery Plan
+      description: "Prioritize health, trust, and European solidarity \u2014 even
+        at high financial cost."
+      consequences: 'All member states receive vaccines on equal terms.
+
+
+        Public
+        support surges for EU-level action.
+
+
+        Conservative fiscal voices
+        raise concerns about shared debt and future inflation.'
+      euroscepticismModifier: -0.03
+      foreignAffairsModifier: 0.03
+      moneyModifier: -500000000000
+      eventIcon: {fileID: 0}
+    - title: Focus on National-Level Health Measures, Offer Flexible EU Support
+      description: Let each country manage its own health response, with EU providing
+        financial tools only.
+      consequences: 'Uneven access to vaccines and resources sparks criticism.
+
+
+        Some
+        member states feel abandoned, weakening EU cohesion.
+
+
+        Lower financial
+        burden on EU, but recovery slows in less wealthy nations.'
+      euroscepticismModifier: 0.005
+      foreignAffairsModifier: 0
+      moneyModifier: -200000000000
+      eventIcon: {fileID: 0}
+    - title: Limit EU Involvement to Emergency Loans Only
+      description: Avoid long-term commitments and focus solely on emergency crisis
+        funding.
+      consequences: 'EU is seen as ineffective in a historic crisis.
+
+
+        Nationalism
+        and internal borders rise again.
+
+
+        Recovery is deeply unequal and
+        slow, especially in Southern Europe.'
+      euroscepticismModifier: 0.04
+      foreignAffairsModifier: -0.04
+      moneyModifier: -80000000000
+      eventIcon: {fileID: 0}
