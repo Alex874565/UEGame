@@ -679,3 +679,451 @@ MonoBehaviour:
       foreignAffairsModifier: -0.02
       moneyModifier: 0
       eventIcon: {fileID: 0}
+  - eventDate: 14/10/2011
+    title: European Parliament Visitor Center
+    countryName: Brussels
+    description: "The European Parliament opens the Parlamentarium in Brussels\u2014an
+      interactive visitors\u2019 centre designed to educate the public about the
+      EU\u2019s work, institutions, and history. With immersive exhibits and multilingual
+      accessibility, it aims to make the EU more relatable, especially to young people
+      and tourists."
+    question: 
+    EuChoice: Invest in Public Understanding
+    EuChoiceDescription: 'The EU moves forward with the Parlamentarium, framing it
+      as part of a broader push to strengthen transparency and civic engagement.
+
+
+      Public
+      reception is generally positive, particularly among schools and EU supporters.
+      However, critics question the cost and symbolic nature during times of economic
+      uncertainty.'
+    eventIcon: {fileID: 0}
+    choices:
+    - title: 
+      description: 
+      consequences: 
+      euroscepticismModifier: -0.005
+      foreignAffairsModifier: 0.005
+      moneyModifier: -30000000
+      eventIcon: {fileID: 0}
+  - eventDate: 24/01/2012
+    title: Bill Gates Long-Term Commitment
+    countryName: Davos
+    description: "Bill Gates, through the Bill & Melinda Gates Foundation, announces
+      a major, multi-billion-dollar commitment to global development, health, and
+      education programs. This long-term aid pledge focuses on poverty reduction,
+      disease eradication (including malaria and polio), and strengthening health
+      systems\u2014especially in Africa and Asia.\n\nThe EU views this private initiative
+      as a powerful complement to its own foreign aid and development efforts. Cooperation
+      opportunities open, but questions arise about coordination, priorities, and
+      ensuring that aid reaches those in greatest need."
+    question: How should EU respond to Bill Gates' announcement?
+    EuChoice: Invest in Public Understanding
+    EuChoiceDescription: 'The EU moves forward with the Parlamentarium, framing it
+      as part of a broader push to strengthen transparency and civic engagement.
+
+
+      Public
+      reception is generally positive, particularly among schools and EU supporters.
+      However, critics question the cost and symbolic nature during times of economic
+      uncertainty.'
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Partner with the Gates Foundation for Coordinated Aid
+      description: Align EU development programs with Gates Foundation goals to maximize
+        impact and share expertise.
+      consequences: "The EU\u2019s aid effectiveness improves, showing strong results
+        in health and education.\n\nSome critics worry about private influence over
+        public policies.\n\nThe partnership boosts EU\u2019s reputation as a global
+        development leader."
+      euroscepticismModifier: -0.005
+      foreignAffairsModifier: 0.01
+      moneyModifier: -2000000000
+      eventIcon: {fileID: 0}
+    - title: Maintain Separate Aid Strategies
+      description: Continue EU aid independently, preserving control but missing
+        synergy opportunities.
+      consequences: 'EU maintains policy autonomy but faces duplication and inefficiencies.
+
+
+        Critics
+        argue the EU misses a chance for more impact.
+
+
+        Public perception
+        of aid effectiveness remains mixed.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0
+      moneyModifier: -2000000000
+      eventIcon: {fileID: 0}
+    - title: Reduce Aid Spending to Focus on Internal Priorities
+      description: Scale back international aid commitments amid budget constraints
+        and rising domestic pressures.
+      consequences: 'The EU faces criticism from international partners and NGOs.
+
+
+        Development
+        gains slow or reverse in key regions.
+
+
+        Eurosceptic groups praise
+        focus on domestic issues.'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: -0.02
+      moneyModifier: 3000000000
+      eventIcon: {fileID: 0}
+  - eventDate: 01/04/2012
+    title: European Citizens' Initiative
+    countryName: Brussels
+    description: "The EU introduces the European Citizens\u2019 Initiative, a groundbreaking
+      tool that allows one million citizens from at least seven member states to
+      directly propose new EU legislation. This innovation aims to boost democratic
+      participation, bring the EU closer to its citizens, and increase transparency.\n\nWhile
+      hailed as a step forward for participatory democracy, some question whether
+      the ECI can truly influence the EU\u2019s complex decision-making and if citizens
+      will engage enough to make it effective."
+    question: How invested should we be in this initiative?
+    EuChoice: Promote and Support the ECI Actively
+    EuChoiceDescription: 'The EU moves forward with the Parlamentarium, framing Citizen
+      engagement rises, strengthening democratic legitimacy.
+
+
+      Some bureaucratic
+      challenges but overall positive reception.
+
+
+      Euroscepticism falls as
+      the public feels more heard.
+
+      Public reception is generally positive,
+      particularly among schools and EU supporters. However, critics question the
+      cost and symbolic nature during times of economic uncertainty.'
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Promote and Support the ECI Actively
+      description: Launch EU-wide campaigns to raise awareness, simplify procedures,
+        and ensure accessibility to empower citizens.
+      consequences: 'Increased citizen engagement and trust in EU institutions.
+
+
+        More
+        diverse proposals enrich the policy debate.
+
+
+        Some administrative
+        challenges arise due to volume of initiatives.'
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.01
+      moneyModifier: -70000000
+      eventIcon: {fileID: 0}
+    - title: Implement ECI with Minimal Proportion
+      description: Introduce the ECI but keep awareness campaigns limited to reduce
+        costs.
+      consequences: 'Moderate citizen participation, mostly activists and NGOs engage.
+
+
+        Limited
+        impact on public perception of the EU.
+
+
+        Avoids large administrative
+        overheads.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0
+      moneyModifier: -30000000
+      eventIcon: {fileID: 0}
+    - title: "Delay or Limit the ECI\u2019s Scope"
+      description: Restrict procedural rights or delay full implementation citing
+        complexity and risks of populism.
+      consequences: 'Public criticism for limiting democratic tools.
+
+
+        Eurosceptic
+        voices grow louder, claiming EU is distant and unresponsive.
+
+
+        Institutional
+        credibility suffers.'
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: -1000000
+      eventIcon: {fileID: 0}
+  - eventDate: 04/07/2012
+    title: ACTA
+    countryName: Strasbourg
+    description: "The EU signs the Anti-Counterfeiting Trade Agreement (ACTA)\u2014an
+      international treaty aimed at strengthening intellectual property enforcement,
+      particularly in combating counterfeit goods and online piracy. Though backed
+      by several governments and rights holders, the agreement faces immense public
+      opposition across Europe.\n\nCitizens fear ACTA could lead to internet censorship,
+      limit digital freedoms, and empower corporations at the cost of transparency.
+      Protests erupt in over 100 cities, digital rights groups sound alarms, and
+      trust in EU institutions wavers. The European Parliament now must decide: ratify
+      or reject?"
+    question: How should we respont to the protests regarding ACTA?
+    EuChoice: Reject ACTA in Parliament
+    EuChoiceDescription: 'Facing massive public protests and civil society pressure,
+      the European Parliament overwhelmingly votes against ACTA. It marks the first
+      time a major international treaty is blocked due to digital rights concerns.
+
+
+      The
+      decision is hailed as a landmark moment for citizen-driven democracy in the
+      EU.
+
+
+      The Parliament gains legitimacy, especially among young people
+      and online communities.
+
+
+      Future digital legislation becomes more transparent
+      and closely scrutinized.'
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Reject ACTA in Parliament
+      description: Heed the public outcry and block the treaty to protect digital
+        rights and transparency.
+      consequences: 'Massive public support for the Parliament''s stance on civil
+        liberties.
+
+
+        EU gains credibility as a defender of digital freedoms.
+
+
+        Criticism
+        from some businesses and international partners for weakening IP enforcement.'
+      euroscepticismModifier: -0.03
+      foreignAffairsModifier: 0.01
+      moneyModifier: 0
+      eventIcon: {fileID: 0}
+    - title: Renegotiate ACTA with Stronger Safeguards
+      description: Delay ratification and demand revisions to protect civil liberties
+        and increase transparency.
+      consequences: 'Seen as a constructive compromise, but protests continue during
+        negotiations.
+
+
+        Internet and creative communities remain skeptical.
+
+
+        Agreement
+        likely stalls or collapses under pressure.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0
+      moneyModifier: -20000000
+      eventIcon: {fileID: 0}
+    - title: Ratify ACTA Despite Protests
+      description: Proceed with the treaty to show global alignment on IP rights
+        and protect European creators and industries.
+      consequences: 'Public outrage intensifies; protests escalate.
+
+
+        EU
+        institutions lose trust among younger and digital-savvy citizens.
+
+
+        Some
+        international partners welcome the decision.'
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.01
+      moneyModifier: 200000000
+      eventIcon: {fileID: 0}
+  - eventDate: 10/12/2012
+    title: Nobel Peace Prize
+    countryName: Oslo
+    description: "The European Union receives the Nobel Peace Prize for its contributions
+      to over six decades of peace, reconciliation, democracy, and human rights in
+      Europe. The award sparks both pride and debate\u2014supporters celebrate the
+      EU\u2019s historic achievement, while critics question the timing amid the
+      eurozone crisis."
+    question: 
+    EuChoice: Accept the Prize with Humility and Unity
+    EuChoiceDescription: 'The EU embraces the honor, using it as a symbol of shared
+      values and a reminder of its peacebuilding legacy.
+
+
+      Citizens feel a
+      renewed sense of unity and legitimacy.
+
+
+      Critics still raise concerns
+      about present challenges, but symbolic value resonates widely.'
+    eventIcon: {fileID: 0}
+    choices:
+    - title: 
+      description: 
+      consequences: 
+      euroscepticismModifier: -0.005
+      foreignAffairsModifier: 0.01
+      moneyModifier: 0
+      eventIcon: {fileID: 0}
+  - eventDate: 17/21/2013
+    title: 25 Years of Sakharov Prize
+    countryName: Strasbourg
+    description: "The European Parliament celebrates 25 years of the Sakharov Prize
+      for Freedom of Thought, awarded annually to individuals or groups defending
+      human rights and democracy worldwide. The anniversary highlighted the EU\u2019s
+      long-standing commitment to global human rights."
+    question: 
+    EuChoice: Honor Human Rights Defenders
+    EuChoiceDescription: "The EU marked the anniversary with a high-profile event,
+      inviting past laureates and reinforcing its human rights values on the international
+      stage.\n\nThe European Parliament strengthened its image as a moral voice in
+      global affairs.\n\nHuman rights defenders received renewed visibility and support.\n\nCitizens
+      were reminded of the EU\u2019s ethical role, though impact on daily life was
+      minimal."
+    eventIcon: {fileID: 0}
+    choices:
+    - title: 
+      description: 
+      consequences: 
+      euroscepticismModifier: -0.005
+      foreignAffairsModifier: 0.01
+      moneyModifier: -2000000
+      eventIcon: {fileID: 0}
+  - eventDate: 16/09/2014
+    title: Agreement with Ukraine
+    countryName: Brussels
+    description: "The EU negotiated an Association Agreement with Ukraine to deepen
+      political and economic ties. It includes a Deep and Comprehensive Free Trade
+      Area (DCFTA), closer alignment with EU laws, and stronger democratic standards.
+      However, when Ukraine\u2019s pro-Russian president, Viktor Yanukovych, suspended
+      the signing under pressure from Moscow in late 2013, mass protests erupted
+      (Euromaidan), leading to his ousting.\n\nThe EU has to decide how boldly to
+      support Ukraine amid internal turmoil and rising Russian aggression."
+    question: How boldly should the EU support Ukraine?
+    EuChoice: Sign the Agreement and Support Ukraine
+    EuChoiceDescription: 'The EU signed the political parts of the Association Agreement
+      with Ukraine in March 2014, shortly after Yanukovych fled and Crimea was annexed
+      by Russia. The economic sections were signed in June. The EU also began a broad
+      support program, including aid, advisory missions, and sanctions on Russia.
+
+
+      The
+      EU emerged as a key actor in Eastern Europe and a target of Russian geopolitical
+      opposition.
+
+
+      Ukraine deepened reforms, though at great internal and
+      external cost.
+
+
+      Member states were divided over the long-term commitment,
+      but unity held.'
+    eventIcon: {fileID: 0}
+    choices:
+    - title: 'Sign the Agreement and Support Ukraine '
+      description: "Proceed with the Association Agreement and provide political
+        and financial support to Ukraine\u2019s interim government."
+      consequences: 'The EU demonstrated strong support for democracy and sovereignty
+        in its neighborhood.
+
+
+        Russia responded with hostility, annexing
+        Crimea and destabilizing eastern Ukraine.
+
+
+        Member states debated
+        the risks of deeper entanglement with post-Soviet conflicts.'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: 0.01
+      moneyModifier: -3000000
+      eventIcon: {fileID: 0}
+    - title: Delay the Agreement - Prioritize Stability
+      description: Postpone the agreement until Ukraine stabilizes internally and
+        relations with Russia cool down.
+      consequences: 'The EU avoids immediate escalation but appears indecisive.
+
+
+        Ukrainian
+        citizens feel abandoned, weakening pro-European sentiment.
+
+
+        Russia
+        is emboldened by perceived Western hesitation.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: -0.02
+      moneyModifier: -200000000
+      eventIcon: {fileID: 0}
+    - title: "Abandon the Agreement \u2013 Stay Neutral"
+      description: Fully withdraw from the process to avoid damaging relations with
+        Russia.
+      consequences: "The EU loses credibility as a regional power and betrays its
+        democratic rhetoric.\n\nRussia increases influence in Ukraine unchallenged.\n\nUkraine\u2019s
+        civil society is demoralized, and ties with the West deteriorate."
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: -1000000
+      eventIcon: {fileID: 0}
+  - eventDate: 25/11/2015
+    title: Pope Francis calls for Europe of Human Values
+    countryName: Strasbourg
+    description: "Pope Francis addressed the European Parliament in Strasbourg \u2014
+      the first papal visit since Pope John Paul II in 1988. Speaking to MEPs, Francis
+      delivered a powerful message: Europe must return to its roots in human dignity,
+      solidarity, and responsibility, warning against turning into a \u201Cgrandmother
+      Europe,\u201D aged and weary, more focused on bureaucracy than people.\n\nHis
+      speech was widely interpreted as a moral wake-up call during a time of rising
+      populism, economic disillusionment, and waning faith in European ideals. EU
+      institutions have to decide how to respond to this high-profile appeal for
+      a more values-driven Union."
+    question: How should the EU receive the Pope Francis' speech?
+    EuChoice: "Acknowledge Symbolically \u2013 No Major Shift"
+    EuChoiceDescription: "The EU welcomed Pope Francis\u2019s visit with respect
+      but did not follow it with substantial policy change. His message echoed in
+      public debates, but institutional response remained largely rhetorical.\n\nThe
+      EU maintained its secular, pragmatic stance while appearing diplomatically
+      respectful.\n\nFaith-based groups appreciated the invitation but hoped for
+      more.\n\nThe speech contributed to ongoing reflection on the EU\u2019s moral
+      and social responsibilities."
+    eventIcon: {fileID: 0}
+    choices:
+    - title: "Embrace the Message \u2013 Prioritize Human-Centered Policie"
+      description: "Publicly affirm the Pope\u2019s speech and initiate new efforts
+        to place dignity, social justice, and solidarity at the center of EU action."
+      consequences: 'The European Parliament launches initiatives focused on poverty,
+        social inclusion, and ethical leadership.
+
+
+        Citizens feel their concerns
+        are taken more seriously, bolstering trust in EU values.
+
+
+        Critics
+        argue the EU is drifting too far from pragmatic policy-making.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0.01
+      moneyModifier: -1000000000
+      eventIcon: {fileID: 0}
+    - title: "Acknowledge Symbolically \u2013 No Major Shift"
+      description: Thank the Pope for his visit and affirm shared values, but avoid
+        significant policy change.
+      consequences: 'The EU is seen as respectful, but some view it as indifferent
+        to deeper societal concerns.
+
+
+        Internal discussions on values remain
+        mostly rhetorical.
+
+
+        Media and civil society react with mixed reviews.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0
+      moneyModifier: -20000000
+      eventIcon: {fileID: 0}
+    - title: "Keep a Distance \u2013 Maintain Secular Focus"
+      description: Downplay the speech to maintain clear separation between Church
+        and political institutions.
+      consequences: 'Secularists and some member states support the stance.
+
+
+        Faith
+        communities and social advocates criticize the EU for lacking empathy.
+
+
+        Missed
+        opportunity to connect with broader audiences on shared ethical concerns.'
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: 0
+      eventIcon: {fileID: 0}
