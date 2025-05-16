@@ -19,9 +19,10 @@ public class EventsDatabase : ScriptableObject
         [TextArea] public string description;
         public GameObject location;
         public string question;
-        public Sprite eventIcon;
         public string EuChoice;
         [TextArea] public string EuChoiceDescription;
+
+        public Sprite eventIcon;
 
         [SerializeField] public List<Choice> choices;
 
@@ -33,7 +34,7 @@ public class EventsDatabase : ScriptableObject
             [TextArea] public string consequences;
             public float euroscepticismModifier;
             public float foreignAffairsModifier;
-            public int moneyModifier;
+            public long moneyModifier;
             public Sprite eventIcon;
             public Dictionary<string, string> partyApprovalChances;
         }

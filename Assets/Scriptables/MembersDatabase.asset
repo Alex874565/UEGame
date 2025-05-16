@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc219f2088822274180499e4c1bf9ff9, type: 3}
+  m_Name: MembersDatabase
+  m_EditorClassIdentifier: 
+  memberEvents:
+  - date: 01/05/2004
+    title: 'Historic Eastern Enlargement: Reunifying Europe'
+    description: This unprecedented expansion marked the symbolic and practical reunification
+      of Eastern and Western Europe after decades of Cold War division. It integrated
+      post-socialist economies and cemented EU influence across Central and Eastern
+      Europe.
+    newMap: {fileID: 0}
+  - date: 01/01/2007
+    title: Continuing Enlargement into Southeastern Europe
+    description: "Following strict reform benchmarks, two Southeast European countries
+      acceded, reflecting the EU\u2019s long-term strategy to foster stability and
+      development in the Western Balkans and Black Sea region, despite lingering
+      governance and corruption challenges."
+    newMap: {fileID: 0}
+  - date: 01/07/2013
+    title: Post-Yugoslav Integration Continues
+    description: The EU admitted another Western Balkan country, once part of Yugoslavia,
+      as part of its continued commitment to stabilizing the region through European
+      integration. Accession followed substantial reforms in judiciary, governance,
+      and minority rights.
+    newMap: {fileID: 0}
+  - date: 31/01/2020
+    title: 'Brexit: The First-Ever Departure'
+    description: A major geopolitical rupture occurred as a founding post-1973 member
+      left the EU, following a divisive 2016 referendum. The departure raised questions
+      about the future of European unity, border arrangements (particularly in Ireland),
+      and long-standing legal and trade frameworks.
+    newMap: {fileID: 0}
