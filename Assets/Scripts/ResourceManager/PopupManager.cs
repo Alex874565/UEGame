@@ -240,6 +240,36 @@ public class PopupManager : MonoBehaviour
         });
     }
 
+    public void ShowMemberEvent(MembersDatabase.MemberEvent memberData)
+    {
+        quizPanel.SetActive(true);
+        quizPopupAnimator.Play("QuizPopup");
+
+        currentPanelIndex = 0;
+
+        eventTitleText.text = memberData.title;
+        eventDateText.text = memberData.date;
+        eventQuestionText.text = "";
+
+        GameObject panel = answerPanels[0];
+        panel.SetActive(true);
+
+        var title = panel.transform.Find("Event Choice Title").GetComponent<TextMeshProUGUI>();
+        var desc = panel.transform.Find("Event Description").GetComponent<TextMeshProUGUI>();
+        var button = panel.GetComponentInChildren<Button>();
+
+        title.text = "";
+        desc.text = memberData.description;
+
+        button.onClick.RemoveAllListeners();
+        button.onClick.AddListener(() => 
+        { 
+            EUStats.Instance.ChangeMap(memberData.newMap);
+            AnswerSelected(-1); 
+        });
+        
+        DisableArrows();
+    }
 
     private void ShowNextPanel()
     {

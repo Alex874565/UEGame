@@ -19,25 +19,29 @@ MonoBehaviour:
       of Eastern and Western Europe after decades of Cold War division. It integrated
       post-socialist economies and cemented EU influence across Central and Eastern
       Europe.
-    newMap: {fileID: 0}
+    countryName: Brussels
+    newMap: {fileID: 2730251173873922541, guid: 278449bc70c838842897c6f50316a6c3, type: 3}
   - date: 01/01/2007
     title: Continuing Enlargement into Southeastern Europe
     description: "Following strict reform benchmarks, two Southeast European countries
       acceded, reflecting the EU\u2019s long-term strategy to foster stability and
       development in the Western Balkans and Black Sea region, despite lingering
       governance and corruption challenges."
-    newMap: {fileID: 0}
+    countryName: Brussels
+    newMap: {fileID: 1654538964510301183, guid: 0023f3906ba1baf48a150556cdb6da9b, type: 3}
   - date: 01/07/2013
     title: Post-Yugoslav Integration Continues
     description: The EU admitted another Western Balkan country, once part of Yugoslavia,
       as part of its continued commitment to stabilizing the region through European
       integration. Accession followed substantial reforms in judiciary, governance,
       and minority rights.
-    newMap: {fileID: 0}
+    countryName: Brussels
+    newMap: {fileID: 7632593582041627277, guid: 415554a963dbc034eba9b0ff5eb46457, type: 3}
   - date: 31/01/2020
     title: 'Brexit: The First-Ever Departure'
     description: A major geopolitical rupture occurred as a founding post-1973 member
       left the EU, following a divisive 2016 referendum. The departure raised questions
       about the future of European unity, border arrangements (particularly in Ireland),
       and long-standing legal and trade frameworks.
-    newMap: {fileID: 0}
+    countryName: Brussels
+    newMap: {fileID: -673227140527353943, guid: 8dce9fc685afd3c4e9fbd3f4e78bb55c, type: 3}

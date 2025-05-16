@@ -13,12 +13,14 @@ public class EventsManager : MonoBehaviour
     [SerializeField] private GameObject quizPopup;
     [SerializeField] private GameObject budgetPopup;
     [SerializeField] private GameObject electionPopup;
+    [SerializeField] private GameObject membersPopup;
 
     [Header("Databases")]
     public EventsDatabase eventsDatabase;
     public BudgetDatabase budgetDatabase;
     public QuizzesDatabase quizzesDatabase;
     public ElectionsDatabase electionsDatabase;
+    public MembersDatabase membersDatabase;
 
     [Header("Managers")]
     public TimeManager timeManager;
@@ -28,6 +30,7 @@ public class EventsManager : MonoBehaviour
     private int budgetIndex;
     private int quizIndex;
     private int electionIndex;
+    private int membersIndex;
 
     #region Getters
 
@@ -49,6 +52,7 @@ public class EventsManager : MonoBehaviour
         budgetIndex = 0;
         quizIndex = 0;
         electionIndex = 0;
+        membersIndex = 0;
     }
 
     public void CheckForEvent(string date)
@@ -84,6 +88,14 @@ public class EventsManager : MonoBehaviour
             timeManager.SetTimeScale(0);
             //StartElectionEvent(electionsDatabase.elections[electionIndex].countryName);
         }
+
+        if (membersDatabase.memberEvents.Count > membersIndex && date == membersDatabase.memberEvents[membersIndex].date)
+        {
+            Debug.Log("Election Triggered: " + membersDatabase.memberEvents[membersIndex].date);
+            timeManager.DisableTimeButtons();
+            timeManager.SetTimeScale(0);
+            StartMemberEvent(membersDatabase.memberEvents[membersIndex].countryName);
+        }
     }
 
 
@@ -109,6 +121,12 @@ public class EventsManager : MonoBehaviour
     {
         SpawnElection(country);
         electionIndex++;
+    }
+
+    public void StartMemberEvent(string country)
+    {
+        SpawnMemberEvent(country);
+        eventIndex++;
     }
 
     private void SpawnEvent(string countryName)
@@ -180,6 +198,25 @@ public class EventsManager : MonoBehaviour
             mainEvent.Initialize(electionsDatabase.elections[eventIndex]);
 
             Debug.Log($"Election event spawned at {countryName}");
+        }
+        else
+        {
+            Debug.LogWarning($"No city location found for {countryName}!");
+        }
+    }
+
+    private void SpawnMemberEvent(string countryName)
+    {
+        Transform targetLocation = GetCityLocation(countryName);
+
+        if (targetLocation != null)
+        {
+            GameObject GO =
+                Instantiate(membersPopup, targetLocation.position, Quaternion.identity, mapHolder);
+            MemberEventTrigger mainEvent = GO.GetComponent<MemberEventTrigger>();
+            mainEvent.Initialize(membersDatabase.memberEvents[membersIndex]);
+
+            Debug.Log($"Member event spawned at {countryName}");
         }
         else
         {

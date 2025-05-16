@@ -11,6 +11,7 @@ public class MembersDatabase : ScriptableObject
         public string date;
         public string title;
         public string description;
+        public string countryName;
 
         public Sprite newMap;
     }

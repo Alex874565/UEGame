@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2150138454824820904}
   - component: {fileID: 5530724350246045838}
   - component: {fileID: 8963600826707823793}
-  - component: {fileID: -7345128832713359112}
+  - component: {fileID: 6065205430025322893}
   m_Layer: 5
-  m_Name: Quiz Event Popup
+  m_Name: Budget Event Popup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &-7345128832713359112
+--- !u!114 &6065205430025322893
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,6 +85,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 6924751754743845731}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6041ebb10a5e6ac4683a5ddebd1adbe7, type: 3}
+  m_Script: {fileID: 11500000, guid: 3cac4e2a45de5a141a2e7d1cdf8695dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
