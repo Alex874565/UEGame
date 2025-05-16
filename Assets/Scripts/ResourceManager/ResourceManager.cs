@@ -9,11 +9,20 @@ public class ResourceManager : MonoBehaviour
 
     public Action<string, string> LoseAction;
 
-    [Header("Resource Sliders")]
+    [Header("Foreign Affairs")]
+    [SerializeField] private Animator foreignAnimator;
     [SerializeField] private Slider foreignAffairs;
+
+    [Header("Eurosceptisism")]
+    [SerializeField] private Animator euroAnimator;
     [SerializeField] private Slider eurosceptisism;
 
+    [Header("Budget")]
+    [SerializeField] private Animator budgetAnimator;
     [SerializeField] private TextMeshProUGUI budget;
+
+    [Header("Quiz")]
+    [SerializeField] private Animator quizAnimator;
     [SerializeField] private TextMeshProUGUI quizzes;
 
     [Space(5)]
@@ -72,6 +81,8 @@ public class ResourceManager : MonoBehaviour
     {
         currentEurosceptisism += sceptisism;
 
+        euroAnimator.Play(sceptisism > 0 ? "GreenFlashBar" : "RedFlashBar");
+
         UpdateUI();
         if (currentEurosceptisism < maxEurosceptisism)
         {
@@ -82,6 +93,8 @@ public class ResourceManager : MonoBehaviour
     public void UpdateForeignAffairs(float affairs)
     {
         currentForeignAffairs += affairs;
+
+        foreignAnimator.Play(affairs > 0 ? "GreenFlashBar" : "RedFlashBar");
 
         UpdateUI();
         if (currentForeignAffairs < minForeign)
@@ -94,6 +107,8 @@ public class ResourceManager : MonoBehaviour
     {
         currentBudget += budget;
 
+        budgetAnimator.Play(budget > 0 ? "GreenFlash" : "RedFlash");
+        
         UpdateUI();
         if (currentBudget < minBudget)
         {
@@ -104,6 +119,8 @@ public class ResourceManager : MonoBehaviour
     public void UpdateQuizTries(bool failed)
     {
         if (failed) currentQuizFails++;
+
+        quizAnimator.Play(failed == false ? "GreenFlash" : "RedFlash");
 
         UpdateUI();
         if (currentQuizFails > maxQuizTries)

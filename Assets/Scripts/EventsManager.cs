@@ -224,9 +224,25 @@ public class EventsManager : MonoBehaviour
         }
     }
 
-    private Transform GetCityLocation(string countryName)
+    public Transform GetCityLocation(string countryName)
     {
         return cityLocations.Find(loc => loc.name == countryName);
     }
 
+    public GameObject SpawnPopup(GameObject popup, string countryName)
+    {
+        Transform targetLocation = GetCityLocation(countryName);
+
+        if (targetLocation != null)
+        {
+            GameObject GO =
+                Instantiate(popup, targetLocation.position, Quaternion.identity, mapHolder);
+            return GO;
+        }
+        else
+        {
+            Debug.LogWarning($"No city location found for {countryName}!");
+            return null;
+        }
+    }
 }
