@@ -2280,3 +2280,614 @@ MonoBehaviour:
       foreignAffairsModifier: -0.02
       moneyModifier: -150000000000
       eventIcon: {fileID: 0}
+  - eventDate: 09/05/2021
+    title: Future of Europe Conference
+    countryName: Brussels
+    description: "As the EU recovers from the COVID-19 crisis and confronts rising
+      global competition, democratic backsliding, and climate urgency, leaders launch
+      the Conference on the Future of Europe \u2014 a year-long participatory process
+      inviting citizens from all member states to shape the EU\u2019s direction.\n\nThe
+      Conference brings together randomly selected citizens, MEPs, national parliamentarians,
+      civil society, and EU institutions to debate key topics: climate, health, migration,
+      digital transformation, democracy, and foreign policy. It is a major experiment
+      in pan-European deliberative democracy.\n\n"
+    question: How supportive should the EU be of the outcomes?
+    EuChoice: "Endorse Citizens\u2019 Proposals and Begin Institutional Follow-Up"
+    EuChoiceDescription: 'The EU institutions officially welcome the results of the
+      Conference, promising to act on citizens'' proposals, including potential treaty
+      changes, and launch formal follow-up processes.
+
+
+      Citizens feel more
+      empowered, though expectations for action rise.
+
+
+      Some governments resist
+      deeper integration proposals.
+
+
+      The EU shows willingness to evolve based
+      on public input.'
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Fully Support the Conference and Pursue Treaty Reforms
+      description: Embrace citizens' ideas with institutional courage, including
+        calls for a more federal, democratic EU.
+      consequences: 'Trust in EU democracy grows, especially among youth.
+
+
+        Some
+        member states push back against treaty change.
+
+
+        Ambitious reforms
+        (e.g. QMV in foreign policy, transnational lists) are proposed.'
+      euroscepticismModifier: -0.02
+      foreignAffairsModifier: 0.02
+      moneyModifier: -300000000
+      eventIcon: {fileID: 0}
+    - title: Support the Conference Symbolically, Avoid Legal Commitments
+      description: Celebrate participation, but stop short of changing the treaties
+        or structures.
+      consequences: 'Public enthusiasm fades over time.
+
+
+        The process is
+        seen as informative but toothless.
+
+
+        Populists criticize the lack
+        of real action.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0.005
+      moneyModifier: -80000000
+      eventIcon: {fileID: 0}
+    - title: Dismiss the Conference Outcomes as Non-Binding
+      description: Avoid political risk and maintain full national control over EU
+        direction.
+      consequences: 'Trust in EU institutions falls.
+
+
+        Conference participants
+        feel betrayed.
+
+
+        Populist forces gain momentum.'
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: -50000000
+      eventIcon: {fileID: 0}
+  - eventDate: 24/06/2021
+    title: European Climate Law
+    countryName: Brussels
+    description: "A new law is being considered that would make climate neutrality
+      by 2050 a legally binding objective for the European Union. It would also set
+      a mandatory target to reduce emissions by at least 55% by 2030, compared to
+      1990 levels.\n\nThe proposed law would force all member states to align national
+      policies with these targets and undergo regular monitoring. Environmental groups,
+      youth movements, and green industries are demanding bold steps, while fossil-reliant
+      regions and some governments warn about the economic and social costs. You
+      must now decide whether to push forward this law \u2014 and in what form."
+    question: How should the EU bring this law forth?
+    EuChoice: Adopt Legally Binding Climate Targets
+    EuChoiceDescription: "The EU chooses to legally commit to a 55% emissions cut
+      by 2030 and full climate neutrality by 2050. This marks a decisive moment for
+      EU climate policy and sets the tone for the Green Deal.\n\nThe EU becomes the
+      world\u2019s first major bloc to turn net-zero goals into law.\n\nSignificant
+      policy reforms begin across energy, transport, and industry.\n\nSome regions
+      and industries resist, citing costs and competitiveness."
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Adopt Binding Targets for 2030 and 2050
+      description: "Turn ambition into obligation \u2014 lead by law, not words."
+      consequences: 'Creates legal certainty and drives deep reform
+
+
+        Sparks
+        pushback from carbon-intensive sectors
+
+
+        Builds global climate credibility'
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.02
+      moneyModifier: 0
+      eventIcon: {fileID: 0}
+    - title: Set Non-Binding Climate Goals
+      description: 'Encourage change, but leave room for flexibility.
+
+
+        Avoids
+        immediate political clashes
+
+
+        Weakens enforcement and future planning
+
+
+        Disappoints
+        youth and green activists'
+      consequences: 'Public enthusiasm fades over time.
+
+
+        The process is
+        seen as informative but toothless.
+
+
+        Populists criticize the lack
+        of real action.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: -0.01
+      moneyModifier: 0
+      eventIcon: {fileID: 0}
+    - title: Postpone Decision Until After Economic Recovery
+      description: Delay legal commitments to avoid political and economic risk.
+      consequences: 'Stalls Green Deal progress
+
+
+        Mobilizes public protests,
+        especially among youth
+
+
+        Investor confidence in EU climate leadership
+        declines'
+      euroscepticismModifier: 0.03
+      foreignAffairsModifier: -0.02
+      moneyModifier: 0
+      eventIcon: {fileID: 0}
+  - eventDate: 24/02/2022
+    title: Russian Invasion
+    countryName: Kherson
+    description: "Russia launches a full-scale military invasion of Ukraine, shaking
+      the foundations of European security. The attack sparks the largest war in
+      Europe since World War II, causing massive civilian casualties and displacing
+      millions. Ukraine turns to the European Union and NATO for political, humanitarian,
+      economic, and military support.\n\nThe EU faces a historic moment: how to respond
+      to an unprovoked invasion of a sovereign neighbor, with enormous implications
+      for energy, defense, unity, and values. Immediate decisions must be made \u2014
+      from sanctions and weapons deliveries to refugee aid and long-term alignment
+      with Ukraine. Public opinion is broadly supportive of Ukraine, but fears of
+      escalation and economic backlash loom large.\n\n"
+    question: How should the EU bring this law forth?
+    EuChoice: Respond Decisively with Sanctions, Military Aid, and Refugee Protection
+    EuChoiceDescription: 'The EU swiftly imposes heavy sanctions on Russia, cutting
+      off banks, freezing assets, and restricting trade. It coordinates unprecedented
+      military support for Ukraine and opens borders to millions of Ukrainian refugees.
+      Solidarity becomes a central narrative, but energy and inflation shocks test
+      unity.
+
+
+      The EU stands united and globally respected for its strong response.
+
+
+      Russia
+      retaliates with gas cuts, driving up energy prices across Europe.
+
+
+      Political
+      unity is tested by inflation and diverging national interests.'
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Impose Full Sanctions, Arm Ukraine, Accept Refugees
+      description: Make a firm stand for democracy and sovereignty, regardless of
+        the cost.
+      consequences: 'Gains trust among Eastern European countries and Ukraine
+
+
+        Energy
+        shortages hit hard during winter; inflation rises
+
+
+        Strengthens EU
+        foreign policy unity long-term'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: 0.02
+      moneyModifier: -150000000000
+      eventIcon: {fileID: 0}
+    - title: Apply Moderate Sanctions, Focus on Diplomacy
+      description: Balance values with economic stability and avoid escalation.
+      consequences: "Slower erosion of Russia\u2019s war economy\n\nViewed as morally
+        ambiguous by Ukraine and allies\n\nLess economic disruption, but long-term
+        trust damaged"
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: -0.01
+      moneyModifier: -60000000000
+      eventIcon: {fileID: 0}
+    - title: Avoid Major Involvement, Focus on Internal Stability
+      description: Prioritize internal cohesion and economic survival.
+      consequences: 'Condemned internationally as passive and selfish
+
+
+        Refugee
+        inflows slow, border states feel abandoned
+
+
+        Russian aggression emboldened
+        by lack of firm opposition'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: -0.04
+      moneyModifier: -20000000000
+      eventIcon: {fileID: 0}
+  - eventDate: 09/05/2022
+    title: End of Future of Europe Conference
+    countryName: Brussels
+    description: 'The EU commits to exploring treaty changes and policy reforms based
+      on citizen recommendations. While implementation will take time, the message
+      is clear: participation matters.
+
+
+      Citizens feel heard, boosting democratic
+      engagement.
+
+
+      Governments wary of treaty change voice caution.
+
+
+      Institutional
+      follow-up processes begin.'
+    question: 
+    EuChoice: Pledge Action on Key Citizen Proposals
+    EuChoiceDescription: 'The EU swiftly imposes heavy sanctions on Russia, cutting
+      off banks, freezing assets, and restricting trade. It coordinates unprecedented
+      military support for Ukraine and opens borders to millions of Ukrainian refugees.
+      Solidarity becomes a central narrative, but energy and inflation shocks test
+      unity.
+
+
+      The EU stands united and globally respected for its strong response.
+
+
+      Russia
+      retaliates with gas cuts, driving up energy prices across Europe.
+
+
+      Political
+      unity is tested by inflation and diverging national interests.'
+    eventIcon: {fileID: 0}
+    choices:
+    - title: 
+      description: 
+      consequences: 
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.01
+      moneyModifier: -15000000000
+      eventIcon: {fileID: 0}
+  - eventDate: 06/07/2022
+    title: Digital Services and Markets Act
+    countryName: Brussels
+    description: "The EU finalizes two landmark laws to rein in Big Tech and create
+      a safer, fairer digital space:\n\nThe Digital Services Act (DSA) aims to make
+      platforms more accountable for illegal content, disinformation, and algorithmic
+      transparency.\n\nThe Digital Markets Act (DMA) targets dominant online \"gatekeepers\"
+      to prevent anti-competitive practices and open up digital markets.\n\nThis
+      is one of the EU\u2019s most ambitious digital reforms in history. While citizens
+      and smaller businesses cheer, large tech firms warn of compliance costs and
+      legal challenges. Enforcement will require new oversight structures and coordination
+      across member states."
+    question: How should the acts be passed?
+    EuChoice: Pass and Begin Enforcing the DSA & DMA
+    EuChoiceDescription: "The EU adopts the DSA and DMA, setting new global standards
+      for regulating online platforms. It signals the Union\u2019s readiness to shape
+      the rules of the digital economy \u2014 not just follow them.\n\nUsers gain
+      more control over their data and online safety\n\nTech giants begin adapting
+      or lobbying against restrictions\n\nInternational partners start considering
+      similar laws"
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Pass the Acts and Enforce Strictly
+      description: Make Europe the global leader in responsible tech governance.
+      consequences: 'Strengthens user protections and platform transparency
+
+
+        Sparks
+        tech lobbying and possible transatlantic tensions
+
+
+        Boosts digital
+        sovereignty and trust in institutions'
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.02
+      moneyModifier: -20000000000
+      eventIcon: {fileID: 0}
+    - title: Pass Acts But Delay Enforcement
+      description: Secure the laws but take time to ease into application.
+      consequences: 'Reduces short-term tension with tech giants
+
+
+        Citizens
+        and NGOs criticize the delay
+
+
+        Creates uncertainty for smaller platforms
+        waiting for clarity'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0
+      moneyModifier: -10000000000
+      eventIcon: {fileID: 0}
+    - title: Scale Back Key Provisions to Please Industry
+      description: Avoid heavy-handed regulation and keep tech giants close.
+      consequences: "Major platforms stay cooperative, but smaller competitors lose
+        out\n\nAccusations of selling out to Silicon Valley interests\n\nWeakens
+        Europe\u2019s stance on digital sovereignty"
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: 0
+      eventIcon: {fileID: 0}
+  - eventDate: 25/04/2023
+    title: Carbon Border Asjustment Mechanism
+    countryName: Brussels
+    description: "As part of the EU\u2019s ambitious climate strategy under the European
+      Green Deal, the Carbon Border Adjustment Mechanism (CBAM) is introduced. It
+      places a carbon price on imports of certain goods \u2014 such as steel, cement,
+      aluminum, and fertilizers \u2014 to prevent \u201Ccarbon leakage,\u201D where
+      companies relocate production to countries with weaker environmental standards.\n\nCBAM
+      is designed to protect EU industries from unfair competition and encourage
+      greener global production. However, it sparks controversy abroad, with trading
+      partners accusing the EU of climate protectionism. Inside the EU, some fear
+      it may drive up prices or spark trade retaliation."
+    question: How should the acts be passed?
+    EuChoice: Implement CBAM as Part of Green Deal Package
+    EuChoiceDescription: 'The EU moves forward with CBAM, aligning trade policy with
+      climate goals. A transition phase begins, with full implementation planned
+      for 2026.
+
+
+      The EU gains leverage to push for global climate commitments
+
+
+      Trade
+      tensions rise, especially with developing economies
+
+
+      European industries
+      face smoother transition into green standards'
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Adopt Full CBAM with Strong Enforcement
+      description: "Use the EU\u2019s market power to drive global climate responsibility."
+      consequences: 'Encourages international producers to adopt green practices
+
+
+        Sparks
+        WTO disputes and backlash from key partners
+
+
+        CBAM revenues help
+        fund EU climate transition and innovation'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: 0.01
+      moneyModifier: 2000000000
+      eventIcon: {fileID: 0}
+    - title: Phase In CBAM Slowly with Broad Exemptions
+      description: Soften the impact and buy time to negotiate globally.
+      consequences: 'Limits initial trade disruption, but weakens the environmental
+        push
+
+
+        Industry welcomes leniency, green groups criticize lack of
+        teeth
+
+
+        Signals flexibility but risks being seen as indecisive'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0.01
+      moneyModifier: 0
+      eventIcon: {fileID: 0}
+    - title: Delay or Cancel CBAM to Avoid Trade Fallout
+      description: Prioritize global trade stability and avoid accusations of green
+        protectionism.
+      consequences: 'Weakens EU credibility on climate policy
+
+
+        Domestic
+        industries feel exposed to dirty imports
+
+
+        Missed opportunity to
+        fund green investment'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: -0.01
+      moneyModifier: 0
+      eventIcon: {fileID: 0}
+  - eventDate: 21/04/2024
+    title: Artificial Intelligence Act
+    countryName: Strasbourg
+    description: "The European Union is in the midst of adopting the Artificial Intelligence
+      Act (AI Act), one of the world\u2019s first comprehensive legal frameworks
+      to regulate AI technologies. The law aims to ensure AI systems are safe, transparent,
+      and respect fundamental rights. However, it also raises concerns about innovation
+      stifling, compliance costs, and global competitiveness. Member states, tech
+      companies, civil society, and international partners are closely watching how
+      the EU balances regulation with technological progress."
+    question: How should the ban be implemented?
+    EuChoice: Adopt the Forced Labour Ban with Strong Enforcement
+    EuChoiceDescription: "The EU agrees on a risk-based regulatory framework that
+      imposes strict rules on high-risk AI systems but allows more freedom for low-risk
+      applications, aiming to protect citizens without halting innovation.\n\nProtects
+      citizens\u2019 rights and safety from harmful AI applications.\n\nKeeps the
+      EU competitive in global AI development.\n\nRequires significant investment
+      in compliance and monitoring."
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Enforce Strict AI Controls Across All Sectors
+      description: Implement comprehensive regulations that apply equally to all
+        AI systems to maximize safety and ethics.
+      consequences: 'Strong protection against AI misuse and bias.
+
+
+        High
+        compliance costs may slow down innovation and discourage startups.
+
+
+        EU
+        may lag behind less regulated competitors.'
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.02
+      moneyModifier: -30000000000
+      eventIcon: {fileID: 0}
+    - title: Adopt Risk-Based Approach with Flexibility
+      description: Focus strict regulations only on high-risk AI systems, leaving
+        more freedom for others to innovate.
+      consequences: 'Balances safety and innovation effectively.
+
+
+        Industry
+        welcomes flexible rules, accelerating development.
+
+
+        Some critics
+        worry about loopholes.'
+      euroscepticismModifier: -0.005
+      foreignAffairsModifier: 0
+      moneyModifier: -20000000000
+      eventIcon: {fileID: 0}
+    - title: Minimize Regulation to Boost AI Industry
+      description: Keep regulations minimal to promote rapid AI innovation and attract
+        investment.
+      consequences: 'Boosts AI development and economic growth.
+
+
+        Raises
+        risks of misuse, discrimination, and privacy breaches.
+
+
+        Criticism
+        from civil society and EU institutions about ethical standards.'
+      euroscepticismModifier: 0.04
+      foreignAffairsModifier: -0.02
+      moneyModifier: -100000000
+      eventIcon: {fileID: 0}
+  - eventDate: 17/06/2024
+    title: Nature Restoration Law
+    countryName: Luxembourg
+    description: "The Council of the European Union formally adopted the Nature Restoration
+      Law. This landmark legislation aims to restore at least 20% of the EU\u2019s
+      land and sea areas by 2030, with the broader goal of rehabilitating all ecosystems
+      in need of restoration by 2050. \nCarbon Brief\n+5\nlabterra.pt\n+5\nLatham
+      & Watkins\n+5\n\nThe law sets legally binding targets for member states, encompassing
+      a wide range of ecosystems, including terrestrial, marine, freshwater, forest,
+      agricultural, and urban areas. Specific measures include protecting pollinators,
+      enhancing urban green spaces, and planting at least three billion additional
+      trees by 2030. \nThe Guardian\n+5\nConsilium\n+5\nIFAW\n+5\n\nThe adoption
+      followed months of intense negotiations and overcame significant opposition
+      from several member states. A decisive moment came when Austria's Environment
+      Minister, Leonore Gewessler, cast a crucial vote in favor, breaking a prolonged
+      deadlock and securing the necessary qualified majority."
+    question: How should the law be implemented?
+    EuChoice: Adopt the Nature Restoration Law with Flexibility
+    EuChoiceDescription: 'The EU agrees on implementing the law but includes support
+      mechanisms and flexibility for member states to adapt to local economic and
+      social conditions.
+
+
+      Balances ecological goals with economic realities.
+
+
+      Mitigates
+      potential backlash from agriculture and industry sectors.
+
+
+      Sends a strong
+      but pragmatic message on environmental leadership.'
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Fully Implement the Law with Robust Measures
+      description: Lead the EU in ambitious ecosystem restoration, prioritizing environmental
+        goals over economic concerns.
+      consequences: 'Accelerates EU Green Deal progress.
+
+
+        May cause pushback
+        from farmers and industry.
+
+
+        Strengthens EU global climate leadership.'
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.02
+      moneyModifier: -30000000000
+      eventIcon: {fileID: 0}
+    - title: Implement with Flexibility and Support Mechanisms
+      description: Balance restoration efforts with economic considerations, allowing
+        adaptations by member states.
+      consequences: 'Gains broader acceptance within the EU.
+
+
+        Risks weakening
+        overall impact.
+
+
+        Reduces social and economic tensions.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0.01
+      moneyModifier: -20000000000
+      eventIcon: {fileID: 0}
+    - title: Delay Implementation Due to Economic Concerns
+      description: "Postpone the law\u2019s enforcement to avoid economic disruption."
+      consequences: "Undermines EU\u2019s environmental credibility.\n\nIncreases
+        risk of ecosystem degradation.\n\nMay trigger criticism from environmental
+        groups."
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: 0
+      eventIcon: {fileID: 0}
+  - eventDate: 19/11/2024
+    title: Forced Labour Ban
+    countryName: Luxembourg
+    description: EU leaders finalize a landmark regulation banning all products made
+      with forced labour from the EU market. This ambitious move targets supply chains
+      worldwide, aiming to make the EU a global leader in ethical trade. The law
+      requires companies to prove their goods are free from forced labour, with strict
+      penalties for violations. The decision sparks debate between human rights advocates,
+      businesses worried about costs, and member states balancing enforcement capabilities.
+    question: How should the ban be implemented?
+    EuChoice: Adopt the Forced Labour Ban with Strong Enforcement
+    EuChoiceDescription: "The EU commits to strict enforcement and clear deadlines,
+      supporting businesses with guidance but prioritizing human rights over short-term
+      economic concerns.\n\nStrengthens the EU\u2019s global reputation as a defender
+      of human rights.\n\nIncreases compliance costs for businesses, especially those
+      with complex supply chains.\n\nCauses tension with trading partners who may
+      view the ban as protectionist."
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Implement Full Ban Immediately
+      description: Enforce the ban with no delays, sending a strong message against
+        forced labour.
+      consequences: 'Accelerates elimination of forced labour products.
+
+
+        Causes
+        disruptions for companies needing to overhaul supply chains rapidly.
+
+
+        Risk
+        of trade disputes with certain countries.'
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.02
+      moneyModifier: -25000000000
+      eventIcon: {fileID: 0}
+    - title: Phase in the Ban with Business Support
+      description: Introduce the ban gradually, offering training and subsidies to
+        ease transition.
+      consequences: '
+
+        Reduces economic shocks and trade frictions.
+
+
+        Slows
+        progress on eliminating forced labour.
+
+
+        Maintains moderate reputation
+        on human rights.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0.01
+      moneyModifier: -15000000000
+      eventIcon: {fileID: 0}
+    - title: Water Down Enforcement and Delay Deadlines
+      description: Allow looser compliance rules and extend deadlines to protect
+        industries.
+      consequences: "Weakens EU\u2019s stance against forced labour.\n\nBusinesses
+        avoid costly changes but risk long-term reputational damage.\n\nHuman rights
+        organizations criticize the EU."
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: -8000000000
+      eventIcon: {fileID: 0}
