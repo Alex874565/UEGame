@@ -17,7 +17,6 @@ public class EventsDatabase : ScriptableObject
         public string title;
         public string countryName;
         [TextArea] public string description;
-        public GameObject location;
         public string question;
         public string EuChoice;
         [TextArea] public string EuChoiceDescription;

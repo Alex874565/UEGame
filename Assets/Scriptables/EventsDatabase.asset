@@ -15,13 +15,12 @@ MonoBehaviour:
   events:
   - eventDate: 01/02/2003
     title: Treaty of Nice
-    countryName: 
+    countryName: Nice
     description: The Treaty of Nice was signed in 2001 and entered into force in
       2003 to reform EU institutions in preparation for the enlargement to include
       countries from Eastern Europe. It focused on institutional balance, voting
       systems, and the composition of the European Commission. However, many viewed
       it as a temporary solution, with larger reforms anticipated later.
-    location: {fileID: 0}
     question: 
     EuChoice: Ratify and Proceed with Enlargement
     EuChoiceDescription: 'The EU chose to ratify the Treaty of Nice, accepting its
@@ -46,12 +45,12 @@ MonoBehaviour:
       description: 
       consequences: 
       euroscepticismModifier: 0
-      foreignAffairsModifier: 0.05
-      moneyModifier: 15000000
+      foreignAffairsModifier: 0.01
+      moneyModifier: -15000000
       eventIcon: {fileID: 0}
   - eventDate: 11/03/2004
     title: Madrid Train Bombings
-    countryName: 
+    countryName: Madrid
     description: 'In Madrid, Spain, there was a high-casualty bombing of the commuter
       rail system made by Islamist extremists, three days before the elections, leading
       to public anger and suspicion. This lead to the Spanish troops withdrawing
@@ -61,7 +60,6 @@ MonoBehaviour:
       terrorist acts, by improving its counterterrorism and intelligence services,
       surveilance, intelligence sharing, and border controls, all while strengthening
       anti-terror laws.'
-    location: {fileID: 0}
     question: What response should the EU have to these terrorist acts?
     EuChoice: Unity and Action
     EuChoiceDescription: "Following the 2004 Madrid train bombings, the EU responded
@@ -109,9 +107,9 @@ MonoBehaviour:
         Internal EU Unity: The EU is
         seen as more united and coordinated, but the potential conflict between national
         sovereignty and EU centralization could create division in future decision-making'
-      euroscepticismModifier: -10
-      foreignAffairsModifier: 10
-      moneyModifier: -100000
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.01
+      moneyModifier: -1000000000
       eventIcon: {fileID: 0}
     - title: Balance of Power and Privacy
       description: "Issue a neutral, factual public statement\n\nPromote regional
@@ -140,7 +138,7 @@ MonoBehaviour:
         force"
       euroscepticismModifier: 0
       foreignAffairsModifier: 0
-      moneyModifier: -100000
+      moneyModifier: -500000000
       eventIcon: {fileID: 0}
     - title: Cautious Sovereignism
       description: "Refrain from public comment until investigations are complete.\n\nLeave
@@ -162,7 +160,88 @@ MonoBehaviour:
 
         Long-term democratic
         legitimacy of the Commission is questioned.'
-      euroscepticismModifier: 10
-      foreignAffairsModifier: -10
-      moneyModifier: 0
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: -100000000
+      eventIcon: {fileID: 0}
+  - eventDate: 01/06/2005
+    title: EU Constitution Rejection
+    countryName: Brussels
+    description: "Your ambitious project to establish a European Constitution faced
+      a major setback. Designed to streamline EU decision-making and symbolically
+      unite member states under a single foundational treaty, the Constitution was
+      rejected by public referendums in France and the Netherlands. \nThis unexpected
+      outcome triggered a political crisis and forced the EU to reconsider its approach
+      to integration and institutional reform."
+    question: What response should the EU have to these terrorist acts?
+    EuChoice: Reflect and Rework
+    EuChoiceDescription: "The EU chose to pause the ratification process, enter a
+      \"period of reflection,\" and eventually rework the Constitution into a more
+      modest treaty \u2014 the Treaty of Lisbon, signed in 2007.\n"
+    eventIcon: {fileID: 0}
+    choices:
+    - title: 
+      description: 
+      consequences: 
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: -200000000
+      eventIcon: {fileID: 0}
+  - eventDate: 07/07/2005
+    title: London Terrorist Attacks
+    countryName: London
+    description: "London suffered a series of coordinated bombings on its public
+      transport system, having major casualties. This was the deadliest terrorist
+      attack in the UK since the 1980s and occurred just one day after London won
+      the bid to host the 2012 Olympics. \nThe attack shocked Europe and reignited
+      urgent debates over security, integration, and EU-wide counterterrorism cooperation."
+    question: What response should the EU have to these terrorist acts?
+    EuChoice: Reflect and Rework
+    EuChoiceDescription: "The EU chose to pause the ratification process, enter a
+      \"period of reflection,\" and eventually rework the Constitution into a more
+      modest treaty \u2014 the Treaty of Lisbon, signed in 2007.\n"
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Push for EU-Wide Security Directives
+      description: Advocate for rapid implementation of unified security standards,
+        including surveillance rules, transport security, and intelligence sharing.
+      consequences: 'The long-term coordination accelerates, especially on transport
+        and communications security.
+
+
+        Debate sparks over privacy rights
+        and national autonomy.
+
+
+        Some member states resist harmonization,
+        fearing loss of sovereignty.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0.01
+      moneyModifier: -1000000000
+      eventIcon: {fileID: 0}
+    - title: Support the UK Nationally, But Stay Decentralized
+      description: Offer aid and intelligence cooperation to the UK, but avoid deeper
+        integration or EU-led initiatives.
+      consequences: 'UK appreciates the solidarity, but minimal EU structural changes.
+
+
+        There
+        is no progress on long-term EU-level prevention systems.
+
+
+        Citizens
+        feel safe in the short term, but doubts about preparedness persist.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0.005
+      moneyModifier: -300000000
+      eventIcon: {fileID: 0}
+    - title: Declare It a UK-Only Issue
+      description: Avoid official EU response, framing it as a national matter with
+        no need for EU-level involvement.
+      consequences: "UK handles the crisis alone, but EU faces criticism for silence.\n\nThe
+        EU missed the opportunity to show European unity against terrorism.\n\nThe
+        public begins questioning the EU\u2019s relevance in real-world crises."
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: -50000000
       eventIcon: {fileID: 0}
