@@ -12,7 +12,7 @@ public class MainEventTrigger : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        PopupManager.Instance.ShowEvent(currentMainEvent);
+        PopupManager.Instance.ShowMainEvent(currentMainEvent);
         Destroy(gameObject);
     }
 }
