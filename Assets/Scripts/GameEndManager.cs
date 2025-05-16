@@ -41,7 +41,7 @@ public class GameEndManager : MonoBehaviour
         int foreignStarsLevel = 0;
         int euroscepticismStarsLevel = 0;
         
-        int money = resourceManager.GetCurrentBudget();
+        long money = resourceManager.GetCurrentBudget();
         int quizFails = resourceManager.GetCurrentQuizFails();
         int foreignAffairs = (int)(resourceManager.GetCurrentForeignAffairs() * 100);
         int euroscepticism = (int)(resourceManager.GetCurrentEurosceptisism() * 100);

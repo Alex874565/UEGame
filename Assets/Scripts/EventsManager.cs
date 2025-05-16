@@ -82,7 +82,7 @@ public class EventsManager : MonoBehaviour
             Debug.Log("Election Triggered: " + electionsDatabase.elections[electionIndex].electionDate);
             timeManager.DisableTimeButtons();
             timeManager.SetTimeScale(0);
-            StartElectionEvent(electionsDatabase.elections[electionIndex].countryName);
+            //StartElectionEvent(electionsDatabase.elections[electionIndex].countryName);
         }
     }
 

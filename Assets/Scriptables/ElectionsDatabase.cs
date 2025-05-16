@@ -10,8 +10,10 @@ public class ElectionsDatabase : ScriptableObject
     [System.Serializable]
     public class Election
     {
+        public InstitutionType institution;
         public string electionDate;
         [TextArea] public string description;
+        public string president;
         [SerializeField] public List<Party> parties;
 
         [System.Serializable]
@@ -19,6 +21,14 @@ public class ElectionsDatabase : ScriptableObject
         {
             public string partyName;
             public int seats;
+        }
+
+        public enum InstitutionType
+        {
+            Parliament = 1,
+            Comission = 2,
+            EuropeanCouncil = 3,
+            CouncilOfEU = 4
         }
     }
 }

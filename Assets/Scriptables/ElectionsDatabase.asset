@@ -12,4 +12,106 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88fd081e614a05943b8a6cf19b184ceb, type: 3}
   m_Name: ElectionsDatabase
   m_EditorClassIdentifier: 
-  elections: []
+  elections:
+  - institution: 1
+    electionDate: 13/06/2004
+    description: 'This election was the first after the EU''s largest enlargement,
+      incorporating 10 new member states. It marked a significant moment in EU history,
+      expanding the Union''s diversity and political landscape.
+
+      It had a turnout
+      of 43.66% and a total number of seats of 732.'
+    president: 
+    parties:
+    - partyName: EPP-ED
+      seats: 268
+    - partyName: PES
+      seats: 200
+    - partyName: ALDE
+      seats: 88
+    - partyName: G/EFA
+      seats: 42
+    - partyName: EUL/NGL
+      seats: 41
+    - partyName: IND/DEM
+      seats: 37
+    - partyName: NI
+      seats: 29
+    - partyName: UEN
+      seats: 27
+  - institution: 1
+    electionDate: 07/06/2009
+    description: 'This election was the first after the EU''s largest enlargement,
+      incorporating 10 new member states. It marked a significant moment in EU history,
+      expanding the Union''s diversity and political landscape.
+
+      It had a turnout
+      of 43% and a total number of seats of 736.'
+    president: 
+    parties:
+    - partyName: EPP-ED
+      seats: 264
+    - partyName: S&D
+      seats: 184
+    - partyName: ALDE
+      seats: 88
+    - partyName: G/EFA
+      seats: 55
+    - partyName: GUE/NGL
+      seats: 35
+    - partyName: EFD
+      seats: 32
+    - partyName: NI
+      seats: 27
+  - institution: 1
+    electionDate: 25/05/2014
+    description: 'This election was notable for the rise of anti-EU and nationalist
+      parties across several member states, reflecting growing skepticism towards
+      the EU project.
+
+      It had a turnout of 42.54% and a total number of seats
+      of 751.'
+    president: 
+    parties:
+    - partyName: EPP
+      seats: 221
+    - partyName: S&D
+      seats: 191
+    - partyName: ECR
+      seats: 70
+    - partyName: ALDE
+      seats: 67
+    - partyName: GUE/NGL
+      seats: 52
+    - partyName: NI
+      seats: 52
+    - partyName: G/EFA
+      seats: 50
+    - partyName: EFDD
+      seats: 48
+  - institution: 1
+    electionDate: 07/06/2004
+    description: 'This election saw the highest turnout in 20 years, with significant
+      gains for green and liberal parties, indicating a shift towards environmental
+      and progressive issues among the electorate.
+
+      It had a turnout of 50.66%
+      and a total number of seats of 751.'
+    president: 
+    parties:
+    - partyName: EPP
+      seats: 182
+    - partyName: S&D
+      seats: 154
+    - partyName: Renew Europe (ALDE)
+      seats: 108
+    - partyName: G/EFA
+      seats: 74
+    - partyName: ID
+      seats: 73
+    - partyName: ECR
+      seats: 62
+    - partyName: NI
+      seats: 57
+    - partyName: GUE/NGL
+      seats: 41

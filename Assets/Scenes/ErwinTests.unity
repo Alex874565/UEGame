@@ -777,6 +777,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2fa81ad0c5e8b8419f5f49680aaf0c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mapHolder: {fileID: 0}
+  cityLocations: []
+  mainEventPopup: {fileID: 0}
+  quizPopup: {fileID: 0}
+  budgetPopup: {fileID: 0}
+  electionPopup: {fileID: 0}
   eventsDatabase: {fileID: 11400000, guid: 472e4734c348c204a86a850133cee2c8, type: 2}
   budgetDatabase: {fileID: 11400000, guid: 4b37ffe19bf38af418d7503d2e2512d2, type: 2}
   quizzesDatabase: {fileID: 11400000, guid: 51ed50341e2344b4dab3e73eecba06ac, type: 2}
@@ -7859,6 +7865,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventsDatabase: {fileID: 11400000, guid: 472e4734c348c204a86a850133cee2c8, type: 2}
+  quizzesDatabase: {fileID: 0}
+  electionsDatabase: {fileID: 0}
+  budgetDatabase: {fileID: 0}
+  resourceManager: {fileID: 0}
+  partyManager: {fileID: 0}
 --- !u!1 &1822122479
 GameObject:
   m_ObjectHideFlags: 0

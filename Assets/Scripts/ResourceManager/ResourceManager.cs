@@ -27,7 +27,7 @@ public class ResourceManager : MonoBehaviour
     private float currentForeignAffairs = 0.8f;
     private float currentEurosceptisism = 0.65f;
 
-    private int currentBudget = 1000;
+    private long currentBudget = 1000;
     private int currentQuizFails = 0;
 
     private void Awake()
@@ -90,7 +90,7 @@ public class ResourceManager : MonoBehaviour
         }
     }
 
-    public void UpdateBudget(int budget)
+    public void UpdateBudget(long budget)
     {
         currentBudget += budget;
 
@@ -112,7 +112,7 @@ public class ResourceManager : MonoBehaviour
         }
     }
 
-    public int GetCurrentBudget()
+    public long GetCurrentBudget()
     {
         return currentBudget;
     }
