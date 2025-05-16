@@ -245,3 +245,177 @@ MonoBehaviour:
       foreignAffairsModifier: -0.02
       moneyModifier: -50000000
       eventIcon: {fileID: 0}
+  - eventDate: 03/04/2006
+    title: Live Broadcast of Plenary
+    countryName: Strassbourg
+    description: In an effort to increase transparency and public engagement, the
+      European Parliament began live-streaming its plenary sessions online in 2006.
+      Citizens across the EU could now watch debates and votes as they happened,
+      bringing EU politics closer to home.
+    question: 
+    EuChoice: Broadcast Democracy
+    EuChoiceDescription: 'There was increased transparency and visibility of EU decision-making.
+
+
+      The
+      civic interest in EU affairs, especially among younger audiences, was increased.
+
+
+      Some
+      critics saw it as symbolic, with limited impact on actual public trust.'
+    eventIcon: {fileID: 0}
+    choices:
+    - title: 
+      description: 
+      consequences: 
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.01
+      moneyModifier: 30000000
+      eventIcon: {fileID: 0}
+  - eventDate: 15/11/2006
+    title: Services Directive
+    countryName: Brussels
+    description: "The EU Services Directive aimed to boost economic growth by allowing
+      service providers to operate more freely across member states, breaking down
+      national barriers in the internal market. While it promised greater efficiency
+      and competition, it also triggered fears of social dumping, loss of worker
+      protections, and a \"race to the bottom\" in wages and standards\u2014especially
+      due to the controversial \"country of origin\" principle."
+    question: How should we address the directive?
+    EuChoice: Compromise Directive - Growth with Guardrails
+    EuChoiceDescription: 'The final Services Directive passed in 2006 with major
+      amendments. The controversial "country of origin" principle was removed, and
+      worker protections were safeguarded after large-scale protests in countries
+      like France and Belgium.
+
+
+      The directive opened up many service sectors,
+      particularly for small and medium businesses.
+
+
+      It avoided major political
+      fallout, though dissatisfaction remained on both extremes.
+
+
+      It became
+      a model of cautious integration: economic progress tempered by social concern.'
+    eventIcon: {fileID: 0}
+    choices:
+    - title: "Full Liberalisation \u2013 Embrace the Market"
+      description: Pass a strong directive allowing service companies to operate
+        under the rules of their home country across the EU.
+      consequences: "The directive boosts competitiveness and reduces costs for businesses.\n\nIt
+        sparks major protests, especially in Western Europe, over labor protections.\n\nIt
+        also deepens East\u2013West tensions as wealthier states fear undercutting."
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: 0
+      moneyModifier: 50000000000
+      eventIcon: {fileID: 0}
+    - title: "Compromise Directive \u2013 Growth with Guardrails"
+      description: Pass a watered-down version of the directive, removing the "country
+        of origin" principle and protecting labor standards.
+      consequences: 'The EU aintains support for the internal market while appeasing
+        trade unions and social groups.
+
+
+        There is slower liberalisation,
+        but less political fallout.
+
+
+        The directive is still criticized by
+        both pro-market and pro-labor groups for not going far enough.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0.05
+      moneyModifier: 20000000000
+      eventIcon: {fileID: 0}
+    - title: "Abandon the Directive \u2013 National Rules First"
+      description: Withdraw the proposal in response to public pressure and protect
+        national service sectors.
+      consequences: 'The directive is applauded by labor unions and nationalists,
+        but seen as a failure of EU integration.
+
+
+        It frustrates smaller
+        and Eastern member states seeking access to richer markets.
+
+
+        It
+        also signals weakness in the face of protest.'
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: -20000000000
+      eventIcon: {fileID: 0}
+  - eventDate: 15/11/2006
+    title: Committees Broadcast Online
+    countryName: Brussels
+    description: "Following the success of plenary streaming, the EU began broadcasting
+      European Parliament committee meetings online in 2008. \nThese behind-the-scenes
+      sessions shape most EU laws, and the move aimed to boost transparency and public
+      trust."
+    question: 
+    EuChoice: Full Transparency - Stream It All
+    EuChoiceDescription: "The EU chose to publicly broadcast all committee meetings,
+      complete with multilingual support and archives, giving citizens and media
+      unprecedented access to legislative deliberations.\n\nThe visibility of EU\u2019s
+      real legislative work increased.\n\nSome MEPs adjusted behavior for public
+      view, occasionally slowing negotiations.\n\nThere was a boost in democratic
+      legitimacy and civic engagement."
+    eventIcon: {fileID: 0}
+    choices:
+    - title: 
+      description: 
+      consequences: 
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.01
+      moneyModifier: -15000000
+      eventIcon: {fileID: 0}
+  - eventDate: 05/03/2009
+    title: Hillary Clinton Visit
+    countryName: Brussels
+    description: "Newly appointed U.S. Secretary of State Hillary Clinton visited
+      Brussels to reaffirm U.S.\u2013EU ties under the Obama administration. The
+      visit emphasized transatlantic cooperation on global security, climate change,
+      and the financial crisis recovery."
+    question: 
+    EuChoice: Renew the Transatlantic Bond
+    EuChoiceDescription: "The EU welcomed the U.S. outreach and emphasized shared
+      leadership in global affairs, launching stronger dialogue on defense, energy,
+      and economic recovery.\n\nThe U.S.\u2013EU diplomatic and strategic ties were
+      strenghtened.\n\nEU\u2019s global image as a key partner was boosted."
+    eventIcon: {fileID: 0}
+    choices:
+    - title: 
+      description: 
+      consequences: 
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0.01
+      moneyModifier: -10000000
+      eventIcon: {fileID: 0}
+  - eventDate: 09/04/2009
+    title: Parliament on Facebook
+    countryName: Brussels
+    description: The European Parliament launched an official presence on Facebook,
+      aiming to connect with younger citizens ahead of the European elections. It
+      marked a shift toward digital engagement and direct communication with the
+      public.
+    question: 
+    EuChoice: Go Social
+    EuChoiceDescription: 'The EU chose to embrace social media as a new communication
+      channel, using Facebook to share news, debate highlights, and election information.
+
+
+      The
+      outreach to younger and digital-native audiences was improved.
+
+
+      The
+      visibility of the EU in everyday online spaces was improved.'
+    eventIcon: {fileID: 0}
+    choices:
+    - title: 
+      description: 
+      consequences: 
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.01
+      moneyModifier: -2000000
+      eventIcon: {fileID: 0}
