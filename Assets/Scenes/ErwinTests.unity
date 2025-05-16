@@ -6468,8 +6468,8 @@ MonoBehaviour:
   moneyStars:
   - {fileID: 2098037573}
   - {fileID: 549874975}
-  - {fileID: 1490549297}
-  quizStars:
+  - {fileID: 996664755}
+  quizzesStars:
   - {fileID: 1885494796}
   - {fileID: 1488776315}
   - {fileID: 1020174800}
@@ -6482,8 +6482,8 @@ MonoBehaviour:
   - {fileID: 463679328}
   - {fileID: 1490549297}
   moneyValue: {fileID: 1201849597}
-  quizValue: {fileID: 1214924589}
-  foreignValue: {fileID: 1797549022}
+  quizzesValue: {fileID: 1214924589}
+  foreignImageValue: {fileID: 1797549022}
   euroscepticismValue: {fileID: 758272796}
 --- !u!1 &1488776313
 GameObject:

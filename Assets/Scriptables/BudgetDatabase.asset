@@ -13,5 +13,11 @@ MonoBehaviour:
   m_Name: BudgetDatabase
   m_EditorClassIdentifier: 
   budgets:
-  - budgetAllocationDate: 10/01/2003
-    budget: 100
+  - budgetAllocationDate: 01/01/2000
+    budget: 640000000000
+  - budgetAllocationDate: 01/01/2007
+    budget: 975800000000
+  - budgetAllocationDate: 01/01/2014
+    budget: 1087000000000
+  - budgetAllocationDate: 2021
+    budget: 1824300000000
