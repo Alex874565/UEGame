@@ -1055,7 +1055,7 @@ MonoBehaviour:
       foreignAffairsModifier: -0.02
       moneyModifier: -1000000
       eventIcon: {fileID: 0}
-  - eventDate: 25/11/2015
+  - eventDate: 25/11/2014
     title: Pope Francis calls for Europe of Human Values
     countryName: Strasbourg
     description: "Pope Francis addressed the European Parliament in Strasbourg \u2014
@@ -1126,4 +1126,148 @@ MonoBehaviour:
       euroscepticismModifier: 0.02
       foreignAffairsModifier: -0.02
       moneyModifier: 0
+      eventIcon: {fileID: 0}
+  - eventDate: 08/07/2015
+    title: Greek Debt Crisis
+    countryName: Athens
+    description: "Pope Francis addressed the European Parliament in Strasbourg \u2014
+      the first papal visit since Pope John Paul II in 1988. Speaking to MEPs, Francis
+      delivered a powerful message: Europe must return to its roots in human dignity,
+      solidarity, and responsibility, warning against turning into a \u201Cgrandmother
+      Europe,\u201D aged and weary, more focused on bureaucracy than people.\n\nHis
+      speech was widely interpreted as a moral wake-up call during a time of rising
+      populism, economic disillusionment, and waning faith in European ideals. EU
+      institutions have to decide how to respond to this high-profile appeal for
+      a more values-driven Union."
+    question: How should the EU deal with the Greek Debt Crisis?
+    EuChoice: "Save the Euro \u2013 Offer a Third Bailout with Conditions"
+    EuChoiceDescription: "Despite the Greek referendum rejecting austerity, the EU
+      and Greece agreed in July 2015 to a third bailout worth \u20AC86 billion. It
+      came with strict oversight, tax hikes, and pension reforms. Tsipras accepted
+      the terms after internal and external pressure, avoiding Grexit but sparking
+      political backlash.\n\nGreece remained in the eurozone, but public trust in
+      both the EU and Tsipras eroded.\n\nThe crisis exposed deep divisions in EU
+      economic governance and solidarity.\n\nThe EU retained its monetary integrity
+      but at high social and political cost."
+    eventIcon: {fileID: 0}
+    choices:
+    - title: "Save the Euro \u2013 Offer a Third Bailout with Conditions"
+      description: Provide another bailout package, but with firm structural reform
+        requirements and oversight.
+      consequences: 'Greece remains in the eurozone and avoids collapse, but must
+        implement painful reforms.
+
+
+        Tensions rise between creditor and debtor
+        countries, especially Germany vs. southern Europe.
+
+
+        The EU demonstrates
+        resolve, but fractures in solidarity deepen.'
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: 0
+      moneyModifier: -10000000000
+      eventIcon: {fileID: 0}
+    - title: "Grexit \u2013 Allow Greece to Exit the Euro"
+      description: End bailouts and let Greece default and leave the eurozone.
+      consequences: 'Greece faces economic chaos in the short term, but may gain
+        flexibility in the long run.
+
+
+        The eurozone loses a member, undermining
+        its credibility and triggering market panic.
+
+
+        Nationalist parties
+        across Europe are emboldened by the break.'
+      euroscepticismModifier: 0.04
+      foreignAffairsModifier: -0.03
+      moneyModifier: -100000000000
+      eventIcon: {fileID: 0}
+    - title: "Restructure the Debt \u2013 Show Leniency Without Austerity"
+      description: Offer major debt relief and ease conditions to prioritize social
+        recovery.
+      consequences: 'Greece regains breathing space and public support improves.
+
+
+        Creditor
+        countries rebel, warning of moral hazard and potential contagion.
+
+
+        EU
+        fiscal rules appear flexible, but trust in discipline weakens.'
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: 0.01
+      moneyModifier: -80000000000
+      eventIcon: {fileID: 0}
+  - eventDate: 30/09/2015
+    title: Migration Crisis
+    countryName: Brussels
+    description: "Over one million refugees and migrants\u2014primarily fleeing war
+      in Syria, as well as instability in Afghanistan, Iraq, and parts of Africa\u2014arrived
+      in the EU, mostly through Greece and Italy. The images of overcrowded boats,
+      drowned children, and desperate journeys sparked both solidarity and fear across
+      the Union.\n\nThe EU faces immense pressure to act. But member states are deeply
+      divided\u2014some calling for compassion and resettlement, others erecting
+      fences and closing borders. The crisis tests the EU\u2019s commitment to human
+      rights, free movement, and shared responsibility."
+    question: How should the EU handle the migration crisis?
+    EuChoice: Adopt a Quota-Based Relocation System
+    EuChoiceDescription: The EU introduced a mandatory relocation scheme in 2015
+      to distribute asylum seekers across member states. However, many countries
+      refused to comply, and implementation was patchy. The EU also expanded Frontex,
+      made agreements with Turkey to reduce flows, and struggled to balance values
+      with political realities.
+    eventIcon: {fileID: 0}
+    choices:
+    - title: Adopt a Quota-Based Relocation System
+      description: Propose a mandatory scheme to relocate asylum seekers across all
+        member states based on size and capacity.
+      consequences: 'The European Commission shows leadership by proposing solidarity
+        in action.
+
+
+        Several eastern member states strongly resist, sparking
+        political conflict and legal disputes.
+
+
+        Refugees benefit from more
+        orderly resettlement, but implementation is inconsistent.'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: 0.01
+      moneyModifier: -10000000000
+      eventIcon: {fileID: 0}
+    - title: Strengthen Borders and Fund Frontline States
+      description: Focus on reinforcing Frontex (now the European Border and Coast
+        Guard) and funding Greece, Italy, and others to manage borders and process
+        asylum seekers.
+      consequences: 'Border control improves, but burden-sharing remains minimal.
+
+
+        Refugees
+        and migrants often face dire conditions in frontline states.
+
+
+        Public
+        support increases in some countries for showing control.'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: 0
+      moneyModifier: -6000000000
+      eventIcon: {fileID: 0}
+    - title: "Close Internal Borders \u2013 Suspend Schengen"
+      description: Temporarily suspend the Schengen Area to allow member states to
+        reintroduce national border checks.
+      consequences: 'Public confidence in national security rises, especially in
+        countries hit by large inflows.
+
+
+        Freedom of movement, a pillar of
+        the EU, is deeply weakened.
+
+
+        Economic disruptions emerge across
+        transport and trade sectors.'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: -0.02
+      moneyModifier: -5000000000
       eventIcon: {fileID: 0}
