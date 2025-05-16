@@ -7,6 +7,9 @@ public class PopupManager : MonoBehaviour
 {
     public static PopupManager Instance;
 
+    [SerializeField] private Color positiveRevenueColor = Color.green;
+    [SerializeField] private Color negativeRevenueColor = Color.red;
+
     [Header("Lose Popup")]
     [SerializeField] private Animator losePopupAnimator;
     [SerializeField] private TextMeshProUGUI losePopupTextHeader;
@@ -116,13 +119,12 @@ public class PopupManager : MonoBehaviour
         }
     }
 
-    public void ShowEvent(EventsDatabase.Event eventData)
+    public void ShowMainEvent(EventsDatabase.Event eventData)
     {
         currentEvent = eventData;
         // Cannot event with nothing to do
         if (eventData.choices.Count == 1)
         {
-            print("hm1");
             DisableArrows();
 
             quizPanel.SetActive(true);
@@ -137,16 +139,19 @@ public class PopupManager : MonoBehaviour
 
             var title = panel.transform.Find("Event Choice Title").GetComponent<TextMeshProUGUI>();
             var desc = panel.transform.Find("Event Description").GetComponent<TextMeshProUGUI>();
-
+            var moneyModifier = panel.transform.Find("Event Money Modifier").GetComponent<TextMeshProUGUI>();
+            
             title.text = "";
             desc.text = currentEvent.description;
+            moneyModifier.text = currentEvent.choices[0].moneyModifier.ToString();
+            moneyModifier.color = 
+                currentEvent.choices[0].moneyModifier > 0 ? positiveRevenueColor: negativeRevenueColor;
 
             var button = panel.GetComponentInChildren<Button>();
             button.onClick.AddListener(() => AnswerSelected(0));
         }
         else
         {
-            print("hm");
             quizPanel.SetActive(true);
             quizPopupAnimator.Play("QuizPopup");
 
@@ -166,10 +171,14 @@ public class PopupManager : MonoBehaviour
                     var choice = currentEvent.choices[i];
                     var title = panel.transform.Find("Event Choice Title").GetComponent<TextMeshProUGUI>();
                     var desc = panel.transform.Find("Event Description").GetComponent<TextMeshProUGUI>();
+                    var moneyModifier = panel.transform.Find("Event Money Modifier").GetComponent<TextMeshProUGUI>();
                     var button = panel.GetComponentInChildren<Button>();
 
                     title.text = choice.title;
                     desc.text = choice.description;
+                    moneyModifier.text = currentEvent.choices[0].moneyModifier.ToString();
+                    moneyModifier.color =
+                        currentEvent.choices[0].moneyModifier > 0 ? positiveRevenueColor : negativeRevenueColor;
 
                     int answerIndex = i;
                     button.onClick.RemoveAllListeners();
@@ -199,10 +208,12 @@ public class PopupManager : MonoBehaviour
 
         var title = panel.transform.Find("Event Choice Title").GetComponent<TextMeshProUGUI>();
         var desc = panel.transform.Find("Event Description").GetComponent<TextMeshProUGUI>();
+        var moneyModifier = panel.transform.Find("Event Money Modifier").GetComponent<TextMeshProUGUI>();
         var button = panel.GetComponentInChildren<Button>();
 
         title.text = "Budget Increased";
         desc.text = $"You received + {budgetData.budget} currency. Allocate it wisely.";
+        desc.color = positiveRevenueColor;
 
         button.onClick.RemoveAllListeners();
         button.onClick.AddListener(() =>
