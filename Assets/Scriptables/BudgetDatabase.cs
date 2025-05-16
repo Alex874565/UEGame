@@ -10,6 +10,6 @@ public class BudgetDatabase : ScriptableObject
     public class Budget
     {
         public string budgetAllocationDate;
-        public int budget;
+        public long budget;
     }
 }

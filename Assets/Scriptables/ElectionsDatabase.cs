@@ -11,6 +11,7 @@ public class ElectionsDatabase : ScriptableObject
     public class Election
     {
         public string electionDate;
+        [TextArea] public string description;
         [SerializeField] public List<Party> parties;
 
         [System.Serializable]
