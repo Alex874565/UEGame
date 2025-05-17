@@ -16,11 +16,11 @@ public class EventsManager : MonoBehaviour
     [SerializeField] private GameObject membersPopup;
 
     [Header("Databases")]
-    public EventsDatabase eventsDatabase;
-    public BudgetDatabase budgetDatabase;
-    public QuizzesDatabase quizzesDatabase;
-    public ElectionsDatabase electionsDatabase;
-    public MembersDatabase membersDatabase;
+    [SerializeField] private EventsDatabase eventsDatabase;
+    [SerializeField] private BudgetDatabase budgetDatabase;
+    [SerializeField] private QuizzesDatabase quizzesDatabase;
+    [SerializeField] private ElectionsDatabase electionsDatabase;
+    [SerializeField] private MembersDatabase membersDatabase;
 
     [Header("Managers")]
     public TimeManager timeManager;
@@ -38,6 +38,9 @@ public class EventsManager : MonoBehaviour
     public int BudgetIndex { get { return budgetIndex; } set { budgetIndex = value; } }
     public int QuizIndex { get { return quizIndex; } set { quizIndex = value; } }
     public int ElectionIndex { get { return electionIndex; } set { electionIndex = value; } }
+    public int MembersIndex { get { return membersIndex; } set { electionIndex = value; } }
+    
+    public ElectionsDatabase ElectionsDatabase { get { return electionsDatabase; } }
 
     #endregion
 
@@ -53,6 +56,22 @@ public class EventsManager : MonoBehaviour
         quizIndex = 0;
         electionIndex = 0;
         membersIndex = 0;
+    }
+
+    public void Load(SaveData saveData)
+    {
+        SaveData data = SaveManager.Instance.currentData;
+
+        this.eventIndex = data.eventIndex;
+        this.budgetIndex = data.budgetIndex;
+        this.quizIndex = data.quizIndex;
+        this.electionIndex = data.electionIndex;
+        this.membersIndex = data.membersIndex;
+
+        // We know which map we have by the members index.
+        EUStats.Instance.UpdateMap(membersDatabase.memberEvents[membersIndex].newMap);
+
+        Debug.Log("ResourceManager: Data loaded from SaveManager.");
     }
 
     public void CheckForEvent(string date)
@@ -86,7 +105,7 @@ public class EventsManager : MonoBehaviour
             Debug.Log("Election Triggered: " + electionsDatabase.elections[electionIndex].electionDate);
             timeManager.DisableTimeButtons();
             timeManager.SetTimeScale(0);
-            //StartElectionEvent(electionsDatabase.elections[electionIndex].countryName);
+            StartElectionEvent(electionsDatabase.elections[electionIndex].countryName);
         }
 
         if (membersDatabase.memberEvents.Count > membersIndex && date == membersDatabase.memberEvents[membersIndex].date)
@@ -98,6 +117,7 @@ public class EventsManager : MonoBehaviour
         }
     }
 
+    #region Start Event Functions
 
     public void StartMainEvent(string country)
     {
@@ -129,6 +149,10 @@ public class EventsManager : MonoBehaviour
         eventIndex++;
     }
 
+    #endregion
+
+    #region Spawn Event Region
+
     private void SpawnEvent(string countryName)
     {
         Transform targetLocation = GetCityLocation(countryName);
@@ -137,7 +161,7 @@ public class EventsManager : MonoBehaviour
         {
             GameObject GO = 
                 Instantiate(mainEventPopup, targetLocation.position, Quaternion.identity, mapHolder);
-            MainEventTrigger mainEvent = GO.GetComponent<MainEventTrigger>();
+            MainEventTrigger mainEvent = GO.GetComponentInChildren<MainEventTrigger>();
             mainEvent.Initialize(eventsDatabase.events[eventIndex]);
 
             Debug.Log($"Main Event spawned at {countryName}");
@@ -156,7 +180,7 @@ public class EventsManager : MonoBehaviour
         {
             GameObject GO =
                 Instantiate(quizPopup, targetLocation.position, Quaternion.identity, mapHolder);
-            QuizEventTrigger mainEvent = GO.GetComponent<QuizEventTrigger>();
+            QuizEventTrigger mainEvent = GO.GetComponentInChildren<QuizEventTrigger>();
             mainEvent.Initialize(quizzesDatabase.quizzes[eventIndex]);
 
             Debug.Log($"Quiz spawned at {countryName}");
@@ -175,7 +199,7 @@ public class EventsManager : MonoBehaviour
         {
             GameObject GO =
                 Instantiate(budgetPopup, targetLocation.position, Quaternion.identity, mapHolder);
-            BudgetEventTrigger mainEvent = GO.GetComponent<BudgetEventTrigger>();
+            BudgetEventTrigger mainEvent = GO.GetComponentInChildren<BudgetEventTrigger>();
             mainEvent.Initialize(budgetDatabase.budgets[eventIndex]);
 
             Debug.Log($"Budget event spawned at {countryName}");
@@ -194,7 +218,7 @@ public class EventsManager : MonoBehaviour
         {
             GameObject GO =
                 Instantiate(electionPopup, targetLocation.position, Quaternion.identity, mapHolder);
-            ElectionEventTrigger mainEvent = GO.GetComponent<ElectionEventTrigger>();
+            ElectionEventTrigger mainEvent = GO.GetComponentInChildren<ElectionEventTrigger>();
             mainEvent.Initialize(electionsDatabase.elections[eventIndex]);
 
             Debug.Log($"Election event spawned at {countryName}");
@@ -213,7 +237,7 @@ public class EventsManager : MonoBehaviour
         {
             GameObject GO =
                 Instantiate(membersPopup, targetLocation.position, Quaternion.identity, mapHolder);
-            MemberEventTrigger mainEvent = GO.GetComponent<MemberEventTrigger>();
+            MemberEventTrigger mainEvent = GO.GetComponentInChildren<MemberEventTrigger>();
             mainEvent.Initialize(membersDatabase.memberEvents[membersIndex]);
 
             Debug.Log($"Member event spawned at {countryName}");
@@ -223,6 +247,8 @@ public class EventsManager : MonoBehaviour
             Debug.LogWarning($"No city location found for {countryName}!");
         }
     }
+
+    #endregion
 
     public Transform GetCityLocation(string countryName)
     {

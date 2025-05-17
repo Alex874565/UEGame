@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: BudgetDatabase
   m_EditorClassIdentifier: 
   budgets:
-  - countryName: 
-    budgetAllocationDate: 01/01/2000
+  - countryName: Brussels
+    budgetAllocationDate: 07/01/2003
     budget: 640000000000
-  - countryName: 
+  - countryName: Brussels
     budgetAllocationDate: 01/01/2007
     budget: 975800000000
-  - countryName: 
+  - countryName: Brussels
     budgetAllocationDate: 01/01/2014
     budget: 1087000000000
-  - countryName: 
-    budgetAllocationDate: 2021
+  - countryName: Brussels
+    budgetAllocationDate: 01/01/2014
     budget: 1074300000000

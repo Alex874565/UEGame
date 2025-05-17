@@ -32,8 +32,6 @@ public class PopupManager : MonoBehaviour
     private EventsDatabase.Event currentEvent;
     private int currentPanelIndex = 0;
 
-    public System.Action OnQuestionAnswered;
-
     private void Awake()
     {
         if (Instance == null)
@@ -103,8 +101,6 @@ public class PopupManager : MonoBehaviour
                         Debug.Log("Incorrect answer selected.");
                         ResourceManager.Instance.UpdateQuizTries(true);
                     }
-
-                    OnQuestionAnswered?.Invoke();
                 });
             }
         }
@@ -201,8 +197,8 @@ public class PopupManager : MonoBehaviour
         ResourceManager.Instance.UpdateBudget(budgetData.budget);
 
         eventTitleText.text = "Budget Allocation";
-        eventDateText.text = System.DateTime.Now.ToShortDateString();
-        eventQuestionText.text = "";
+        eventDateText.text = budgetData.budgetAllocationDate;
+        eventQuestionText.text = "Budget Increased";
 
         GameObject panel = answerPanels[0];
         panel.SetActive(true);
@@ -212,14 +208,15 @@ public class PopupManager : MonoBehaviour
         var moneyModifier = panel.transform.Find("Event Money Modifier").GetComponent<TextMeshProUGUI>();
         var button = panel.GetComponentInChildren<Button>();
 
-        title.text = "Budget Increased";
+        title.text = "";
+        moneyModifier.text = "";
         desc.text = $"You received + {budgetData.budget} €. Allocate it wisely.";
         desc.color = positiveRevenueColor;
 
         button.onClick.RemoveAllListeners();
         button.onClick.AddListener(() =>
         {
-            button.onClick.AddListener(() => AnswerSelected(-1));
+            AnswerSelected(-1);
         });
     }
 
@@ -239,8 +236,10 @@ public class PopupManager : MonoBehaviour
 
         var title = panel.transform.Find("Event Choice Title").GetComponent<TextMeshProUGUI>();
         var desc = panel.transform.Find("Event Description").GetComponent<TextMeshProUGUI>();
+        var moneyModifier = panel.transform.Find("Event Money Modifier").GetComponent<TextMeshProUGUI>();
         var button = panel.GetComponentInChildren<Button>();
 
+        moneyModifier.text = "";
         title.text = "New Government Formed";
         desc.text = $"The new ruling party is {electionData.parties}. Policy shifts are expected.";
         EUStats.Instance.ChangeParty(electionData.parties);
@@ -248,7 +247,7 @@ public class PopupManager : MonoBehaviour
         button.onClick.RemoveAllListeners();
         button.onClick.AddListener(() =>
         {
-            button.onClick.AddListener(() => AnswerSelected(-1));
+            AnswerSelected(-1);
         });
     }
 
@@ -276,7 +275,7 @@ public class PopupManager : MonoBehaviour
         button.onClick.RemoveAllListeners();
         button.onClick.AddListener(() => 
         { 
-            EUStats.Instance.ChangeMap(memberData.newMap);
+            EUStats.Instance.UpdateMap(memberData.newMap);
             AnswerSelected(-1); 
         });
         
@@ -326,8 +325,10 @@ public class PopupManager : MonoBehaviour
     private void AnswerSelected(int index)
     {
         quizPanel.SetActive(false);
+        TimeManager.Instance.SetTimeScale(TimeManager.Instance.OldTimeScale);
+        TimeManager.Instance.ResetButtonStates();
 
-        if(index < 0) { return; }
+        if (index < 0) { return; }
 
         var selectedChoice = currentEvent.choices[index];
 

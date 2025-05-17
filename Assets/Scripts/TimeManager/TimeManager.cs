@@ -34,6 +34,7 @@ public class TimeManager : MonoBehaviour
     [SerializeField] private Sprite playActiveSprite;
     [SerializeField] private Sprite pauseActiveSprite;
 
+
     private int lastActivatedButtonIndex;
 
     private float timeScale;
@@ -42,6 +43,13 @@ public class TimeManager : MonoBehaviour
 
     #region Getters
 
+    public int GetDay() => day;
+    public int GetMonth() => month;
+    public int GetYear() => year;
+    public int GetHour() => hour;
+    public int GetMinute() => minute;
+
+    public float Timer { get { return timer; } }
     public float TimeScale { get { return timeScale; } }
 
     public float OldTimeScale { get { return oldTimeScale; } }
@@ -71,7 +79,6 @@ public class TimeManager : MonoBehaviour
             timer -= 60f;
             AddMinute();
         }
-
     }
 
     void AddMinute()
@@ -182,4 +189,15 @@ public class TimeManager : MonoBehaviour
         fastForwardButton.interactable = lastActivatedButtonIndex != 1;
         pauseButton.interactable = lastActivatedButtonIndex != 2;
     }
+
+    public void Load(SaveData currentData)
+    {
+        day = currentData.day;
+        month = currentData.month;
+        year = currentData.year;
+        hour = currentData.hour;
+        minute = currentData.minute;
+        UpdateHUDDate();
+    }
+
 }

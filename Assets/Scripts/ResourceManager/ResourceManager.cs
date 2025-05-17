@@ -43,17 +43,21 @@ public class ResourceManager : MonoBehaviour
     {
         if(Instance == null)
             Instance = this;
-    }
-    
-    void Start()
-    {
-        Load();
+
         UpdateUI();
     }
 
-    private void Load()
+    public void Load(SaveData saveData)
     {
-        print("Need to load stats from save manager here");
+        SaveData data = SaveManager.Instance.currentData;
+
+        currentForeignAffairs = data.foreignAffair;
+        currentEurosceptisism = data.euroscepticism;
+        currentBudget = data.budget;
+        currentQuizFails = data.quizzesFailed;
+
+        Debug.Log("ResourceManager: Data loaded from SaveManager.");
+        UpdateUI();
     }
 
     #region Private Functions
@@ -133,14 +137,17 @@ public class ResourceManager : MonoBehaviour
     {
         return currentBudget;
     }
+
     public int GetCurrentQuizFails()
     {
         return currentQuizFails;
     }
+
     public float GetCurrentForeignAffairs()
     {
         return currentForeignAffairs;
     }
+
     public float GetCurrentEurosceptisism()
     {
         return currentEurosceptisism;

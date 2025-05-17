@@ -11,6 +11,7 @@ public class ElectionsDatabase : ScriptableObject
     public class Election
     {
         public string title;
+        public string countryName = "Brussels";
         public InstitutionType institution;
         public string electionDate;
         [TextArea] public string description;
