@@ -109,14 +109,7 @@ public class PopupManager : MonoBehaviour
             }
         }
 
-        if (quizData.answers.Count <= 1)
-        {
-            DisableArrows();
-        }
-        else
-        {
-            UpdateArrowVisibility();
-        }
+        UpdateArrowVisibility(quizData);
     }
 
     public void ShowMainEvent(EventsDatabase.Event eventData)
@@ -316,6 +309,12 @@ public class PopupManager : MonoBehaviour
     {
         leftArrow.gameObject.SetActive(currentPanelIndex > 0);
         rightArrow.gameObject.SetActive(currentPanelIndex < currentEvent.choices.Count - 1);
+    }
+
+    private void UpdateArrowVisibility(QuizzesDatabase.Quiz quizData)
+    {
+        leftArrow.gameObject.SetActive(currentPanelIndex > 0);
+        rightArrow.gameObject.SetActive(currentPanelIndex < quizData.answers.Count - 1);
     }
 
     private void DisableArrows()

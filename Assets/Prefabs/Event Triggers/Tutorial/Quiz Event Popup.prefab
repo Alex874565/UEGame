@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 2150138454824820904}
   - component: {fileID: 5530724350246045838}
   - component: {fileID: 8963600826707823793}
-  - component: {fileID: 3431512835069946799}
-  - component: {fileID: 1132524098834648032}
+  - component: {fileID: -7345128832713359112}
+  - component: {fileID: 8299308345422633467}
   m_Layer: 5
-  m_Name: Member Event Popup
+  m_Name: Quiz Event Popup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3431512835069946799
+--- !u!114 &-7345128832713359112
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -86,11 +86,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6924751754743845731}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d42ee7be1228b25419337fd8bbd30c57, type: 3}
+  m_Script: {fileID: 11500000, guid: 6041ebb10a5e6ac4683a5ddebd1adbe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggerSFX: {fileID: 7938384439400024403, guid: b6e54acc881a03c4a9719b161a25a3e3, type: 3}
---- !u!95 &1132524098834648032
+--- !u!95 &8299308345422633467
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0

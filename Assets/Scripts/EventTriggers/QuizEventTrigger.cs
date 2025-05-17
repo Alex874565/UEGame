@@ -1,10 +1,14 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class QuizEventTrigger : MonoBehaviour, IPointerClickHandler
+public class QuizEventTrigger : GeneralTrigger, IPointerClickHandler
 {
     QuizzesDatabase.Quiz currentQuizEvent;
 
+    public new void Start()
+    {
+        base.Start();
+    }
     public void Initialize(QuizzesDatabase.Quiz currentQuizEvent)
     {
         this.currentQuizEvent = currentQuizEvent;

@@ -47,7 +47,7 @@ MonoBehaviour:
       euroscepticismModifier: 0
       foreignAffairsModifier: 0.01
       moneyModifier: -15000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 6d3c203e0ea98b04395c05f688c3c2c5, type: 3}
   - eventDate: 11/03/2004
     title: Madrid Train Bombings
     countryName: Madrid
