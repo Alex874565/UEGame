@@ -22,6 +22,11 @@ public class SmoothZoomAndPan : MonoBehaviour
     private Camera cam;
     private Vector3 dragOrigin;
 
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(baseWorldMin, baseWorldMax);
+    }
     void Start()
     {
         cam = GetComponent<Camera>();

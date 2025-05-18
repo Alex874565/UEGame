@@ -111,8 +111,9 @@ public class PopupManager : MonoBehaviour
     public void ShowMainEvent(EventsDatabase.Event eventData)
     {
         currentEvent = eventData;
+        currentPanelIndex = 0;
         // Cannot event with nothing to do
-        if (eventData.choices.Count == 1)
+        if (currentEvent.choices.Count == 1)
         {
             DisableArrows();
 
@@ -137,6 +138,8 @@ public class PopupManager : MonoBehaviour
                 currentEvent.choices[0].moneyModifier > 0 ? positiveRevenueColor: negativeRevenueColor;
 
             var button = panel.GetComponentInChildren<Button>();
+
+            button.onClick.RemoveAllListeners();
             button.onClick.AddListener(() =>
             {
                 VotingLoader.Instance.Show(currentEvent, 0);
@@ -147,8 +150,6 @@ public class PopupManager : MonoBehaviour
         {
             quizPanel.SetActive(true);
             quizPopupAnimator.Play("QuizPopup");
-
-            currentPanelIndex = 0;
 
             eventTitleText.text = currentEvent.title;
             eventDateText.text = currentEvent.eventDate;
@@ -173,11 +174,11 @@ public class PopupManager : MonoBehaviour
                     moneyModifier.color =
                         currentEvent.choices[i].moneyModifier > 0 ? positiveRevenueColor : negativeRevenueColor;
 
-                    int answerIndex = i;
                     button.onClick.RemoveAllListeners();
+                    int answerIndex = i;
                     button.onClick.AddListener(() =>
                     {
-                        VotingLoader.Instance.Show(currentEvent, i); 
+                        VotingLoader.Instance.Show(currentEvent, answerIndex); 
                         AnswerSelected(answerIndex);
                     });
                 }
