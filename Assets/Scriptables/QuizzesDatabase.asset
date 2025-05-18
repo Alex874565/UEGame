@@ -13,10 +13,289 @@ MonoBehaviour:
   m_Name: QuizzesDatabase
   m_EditorClassIdentifier: 
   quizzes:
-  - quizDate: 01/01/2003
-    quizName: 
-    question: 
-    countryName: 
+  - quizDate: 01/01/2004
+    quizName: Quizz 1
+    question: What is disinformation?
+    countryName: Brussels
     answers:
-    - answerText: 
+    - answerText: False or misleading information intentionally created to deceive.
+      isCorrect: 1
+    - answerText: A form of legitimate protest.
+      isCorrect: 0
+    - answerText: A communication error.
+      isCorrect: 0
+    - answerText: A harmless rumor.
+      isCorrect: 0
+  - quizDate: 01/01/2005
+    quizName: Quizz 2
+    question: What is misinformation?
+    countryName: Brussels
+    answers:
+    - answerText: Secret government data.
+      isCorrect: 0
+    - answerText: Verified scientific information.
+      isCorrect: 0
+    - answerText: ' False information shared without intent to deceive.'
+      isCorrect: 1
+    - answerText: Propaganda produced by the state.
+      isCorrect: 0
+  - quizDate: 01/01/2006
+    quizName: Quizz 3
+    question: What is malinformation?
+    countryName: Brussels
+    answers:
+    - answerText: Personal opinions about politics.
+      isCorrect: 0
+    - answerText: A weather forecast error.
+      isCorrect: 0
+    - answerText: Incorrect data from sensors.
+      isCorrect: 0
+    - answerText: True information used with the intent to cause harm.
+      isCorrect: 1
+  - quizDate: 01/01/2007
+    quizName: Quizz 4
+    question: What is a potential effect of disinformation?
+    countryName: Brussels
+    answers:
+    - answerText: Promoting critical thinking by default.
+      isCorrect: 0
+    - answerText: Improving public discourse.
+      isCorrect: 0
+    - answerText: Encouraging civil behavior online.
+      isCorrect: 0
+    - answerText: Undermining trust in democratic institutions.
+      isCorrect: 1
+  - quizDate: 01/01/2008
+    quizName: Quizz 5
+    question: What is a social media bot?
+    countryName: Brussels
+    answers:
+    - answerText: A hacker using real credentials.
+      isCorrect: 0
+    - answerText: An automated account that posts content.
+      isCorrect: 1
+    - answerText: A moderator hired by the platform.
+      isCorrect: 0
+    - answerText: A journalist with multiple accounts.
+      isCorrect: 0
+  - quizDate: 01/01/2009
+    quizName: Quizz 6
+    question: What is an astroturf campaign?
+    countryName: Brussels
+    answers:
+    - answerText: "A company\u2019s internal newsletter."
+      isCorrect: 0
+    - answerText: A fake grassroots movement that hides its true sponsor.
+      isCorrect: 1
+    - answerText: A government weather alert.
+      isCorrect: 0
+    - answerText: A sports-related PR stunt.
+      isCorrect: 0
+  - quizDate: 01/01/2010
+    quizName: Quizz 7
+    question: What is deepfake technology used for?
+    countryName: Brussels
+    answers:
+    - answerText: Creating realistic fake videos or audio using AI.
+      isCorrect: 1
+    - answerText: Detecting plagiarism.
+      isCorrect: 0
+    - answerText: Scanning fingerprints.
+      isCorrect: 0
+    - answerText: Editing text messages.
+      isCorrect: 0
+  - quizDate: 01/01/2011
+    quizName: Quizz 8
+    question: What is micro-targeting?
+    countryName: Brussels
+    answers:
+    - answerText: Encrypting personal emails.
+      isCorrect: 0
+    - answerText: Creating viral memes.
+      isCorrect: 0
+    - answerText: Delivering personalized content based on data.
+      isCorrect: 1
+    - answerText: Promoting large-scale ads.
+      isCorrect: 0
+  - quizDate: 01/01/2012
+    quizName: Quizz 9
+    question: How can you protect yourself from disinformation?
+    countryName: Brussels
+    answers:
+    - answerText: Avoid reading news completely.
+      isCorrect: 0
+    - answerText: Use only social media for news.
+      isCorrect: 0
+    - answerText: Verify information across multiple credible sources.
+      isCorrect: 1
+    - answerText: Trust your intuition over facts.
+      isCorrect: 0
+  - quizDate: 01/01/2013
+    quizName: Quizz 10
+    question: "What\u2019s a red flag of a disinformation post?"
+    countryName: Brussels
+    answers:
+    - answerText: Links to government portals.
+      isCorrect: 0
+    - answerText: Emotional language and grammar errors.
+      isCorrect: 1
+    - answerText: Proper citations and neutral tone.
+      isCorrect: 0
+    - answerText: Quotes from peer-reviewed studies.
+      isCorrect: 0
+  - quizDate: 01/01/2014
+    quizName: Quizz 11
+    question: What is a fact-checker?
+    countryName: Brussels
+    answers:
+    - answerText: A marketing assistant.
+      isCorrect: 0
+    - answerText: An individual or organization that verifies the truth of claims.
+      isCorrect: 1
+    - answerText: A tech support role.
+      isCorrect: 0
+    - answerText: A social media user who comments often.
+      isCorrect: 0
+  - quizDate: 01/01/2015
+    quizName: Quizz 12
+    question: 'Before sharing an article, you should:'
+    countryName: Brussels
+    answers:
+    - answerText: Send it to friends for opinions.
+      isCorrect: 0
+    - answerText: Read it fully and check the source.
+      isCorrect: 1
+    - answerText: See how many shares it has.
+      isCorrect: 0
+    - answerText: Only check the headline.
+      isCorrect: 0
+  - quizDate: 01/01/2015
+    quizName: Quizz 12
+    question: 'Before sharing an article, you should:'
+    countryName: Brussels
+    answers:
+    - answerText: Read it fully and check the source.
+      isCorrect: 1
+    - answerText: Send it to friends for opinions.
+      isCorrect: 0
+    - answerText: See how many shares it has.
+      isCorrect: 0
+    - answerText: Only check the headline.
+      isCorrect: 0
+  - quizDate: 01/01/2016
+    quizName: Quizz 13
+    question: Why is disinformation in health topics dangerous?
+    countryName: Brussels
+    answers:
+    - answerText: It can lead to life-threatening decisions.
+      isCorrect: 1
+    - answerText: It improves immunity.
+      isCorrect: 0
+    - answerText: It increases doctor visits.
+      isCorrect: 0
+    - answerText: It lowers hospital prices.
+      isCorrect: 0
+  - quizDate: 01/01/2017
+    quizName: Quizz 14
+    question: What emotional reaction might signal disinformation?
+    countryName: Brussels
+    answers:
+    - answerText: Strong fear, anger, or outrage.
+      isCorrect: 1
+    - answerText: Boredom.
+      isCorrect: 0
+    - answerText: Calm interest.
+      isCorrect: 0
+    - answerText: Curiosity without stress.
+      isCorrect: 0
+  - quizDate: 01/01/2018
+    quizName: Quizz 15
+    question: What is a reliable source of information?
+    countryName: Brussels
+    answers:
+    - answerText: Ads from unknown sponsors.
+      isCorrect: 0
+    - answerText: Anonymous blog with sensational titles.
+      isCorrect: 0
+    - answerText: Reputable news outlet with expert contributors.
+      isCorrect: 1
+    - answerText: Meme pages with millions of likes.
+      isCorrect: 0
+  - quizDate: 01/01/2019
+    quizName: Quizz 16
+    question: What is a sign of a manipulated article?
+    countryName: Brussels
+    answers:
+    - answerText: It avoids biased words.
+      isCorrect: 0
+    - answerText: It lists research references.
+      isCorrect: 0
+    - answerText: It provides quotes from specialists.
+      isCorrect: 0
+    - answerText: It uses clickbait and lacks credible sources.
+      isCorrect: 1
+  - quizDate: 01/01/2020
+    quizName: Quizz 17
+    question: What question should you ask when reading news?
+    countryName: Brussels
+    answers:
+    - answerText: How many likes does it have?
+      isCorrect: 0
+    - answerText: Does the headline rhyme?
+      isCorrect: 0
+    - answerText: Is the photo funny?
+      isCorrect: 0
+    - answerText: Is this fact or opinion?
+      isCorrect: 1
+  - quizDate: 01/01/2021
+    quizName: Quizz 18
+    question: Why are grammar mistakes common in disinformation?
+    countryName: Brussels
+    answers:
+    - answerText: "Because it\u2019s meant for children."
+      isCorrect: 0
+    - answerText: They are often translated or generated quickly.
+      isCorrect: 1
+    - answerText: To improve search engine ranking.
+      isCorrect: 0
+    - answerText: To make people laugh.
+      isCorrect: 0
+  - quizDate: 01/01/2022
+    quizName: Quizz 19
+    question: Why do creators of disinformation want to go viral?
+    countryName: Brussels
+    answers:
+    - answerText: To help teachers.
+      isCorrect: 0
+    - answerText: To promote literacy.
+      isCorrect: 0
+    - answerText: To earn money or spread ideology.
+      isCorrect: 1
+    - answerText: To support local journalism.
+      isCorrect: 0
+  - quizDate: 01/01/2023
+    quizName: Quizz 20
+    question: "What\u2019s a key feature of malinformation?"
+    countryName: Brussels
+    answers:
+    - answerText: "It\u2019s always about celebrities."
+      isCorrect: 0
+    - answerText: "It\u2019s obviously fake."
+      isCorrect: 0
+    - answerText: "It\u2019s only posted in memes."
+      isCorrect: 0
+    - answerText: It's true information used to harm or mislead.
+      isCorrect: 1
+  - quizDate: 01/01/2024
+    quizName: Quizz 21
+    question: How can you help stop disinformation?
+    countryName: Brussels
+    answers:
+    - answerText: Share viral content without reading.
+      isCorrect: 0
+    - answerText: Block all websites.
+      isCorrect: 0
+    - answerText: Teach others to verify sources and think critically.
+      isCorrect: 1
+    - answerText: Create more anonymous accounts.
       isCorrect: 0
