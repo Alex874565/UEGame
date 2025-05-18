@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5530724350246045838}
   - component: {fileID: 8963600826707823793}
   - component: {fileID: 705712060802701292}
-  - component: {fileID: 2104567566825584265}
   m_Layer: 5
   m_Name: Choice Popup
   m_TagString: Untagged
@@ -99,15 +98,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2104567566825584265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6924751754743845731}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 825313f16b066cf4f9665075d26c4ca9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
