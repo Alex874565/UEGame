@@ -13,7 +13,21 @@ MonoBehaviour:
   m_Name: ElectionsDatabase
   m_EditorClassIdentifier: 
   elections:
+  - title: Your first elections event!
+    countryName: Brussels
+    institution: 1
+    electionDate: 15/01/2003
+    description: 'These events can come in 4 different institutions: Parliament,
+      Comission, European Council and the Council of EU. Down below are presented
+      the parties and the number of seats they have.'
+    president: Here will be displayed the president's name.
+    parties:
+    - partyName: Party 1
+      seats: 2
+    - partyName: Party 2
+      seats: 3
   - title: European Parliament Elections
+    countryName: Brussels
     institution: 1
     electionDate: 13/06/2004
     description: 'This election was the first after the EU''s largest enlargement,
@@ -41,6 +55,7 @@ MonoBehaviour:
     - partyName: Non-Attached Members
       seats: 29
   - title: European Parliament President
+    countryName: Brussels
     institution: 1
     electionDate: 20/07/2004
     description: A Spanish Socialist and federalist, Borrell took office following
@@ -49,6 +64,7 @@ MonoBehaviour:
     president: Josep Borrell
     parties: []
   - title: European Commission President
+    countryName: Brussels
     institution: 2
     electionDate: 22/11/2004
     description: "The former Portuguese Prime Minister succeeded Romano Prodi. His
@@ -58,6 +74,7 @@ MonoBehaviour:
     president: Jose Manuel Barroso
     parties: []
   - title: European Parliament President
+    countryName: Brussels
     institution: 1
     electionDate: 16/01/2007
     description: A senior German MEP from the EPP, he led the Parliament during the
@@ -65,6 +82,7 @@ MonoBehaviour:
     president: Hans-Gert Pottering
     parties: []
   - title: European Parliament Elections
+    countryName: Brussels
     institution: 1
     electionDate: 07/06/2009
     description: 'This election was the first after the EU''s largest enlargement,
@@ -90,6 +108,7 @@ MonoBehaviour:
     - partyName: Non-Attached Members
       seats: 27
   - title: European Parliament President
+    countryName: Brussels
     institution: 1
     electionDate: 14/07/2009
     description: First Eastern European (Polish) to lead the Parliament. Focused
@@ -97,6 +116,7 @@ MonoBehaviour:
     president: Jerzy Buzek
     parties: []
   - title: European Council President
+    countryName: Brussels
     institution: 3
     electionDate: 01/12/2009
     description: The European Council President position was created by the Lisbon
@@ -105,6 +125,7 @@ MonoBehaviour:
     president: Hans-Gert Pottering
     parties: []
   - title: European Commission President
+    countryName: Brussels
     institution: 2
     electionDate: 10/02/2010
     description: Although Barroso was reappointed in late 2009, his second Commission
@@ -114,6 +135,7 @@ MonoBehaviour:
     president: Jose Manuel Barroso
     parties: []
   - title: European Commission President
+    countryName: Brussels
     institution: 2
     electionDate: 17/01/2012
     description: Former Luxembourg PM and Eurogroup chair, Juncker prioritized jobs,
@@ -122,6 +144,7 @@ MonoBehaviour:
     president: Jean-Claude Juncker
     parties: []
   - title: European Parliament President
+    countryName: Brussels
     institution: 1
     electionDate: 17/01/2012
     description: "A prominent German Social Democrat, Schulz increased the Parliament\u2019s
@@ -129,6 +152,7 @@ MonoBehaviour:
     president: Martin Schulz
     parties: []
   - title: European Parliament Elections
+    countryName: Brussels
     institution: 1
     electionDate: 25/05/2014
     description: 'This election was notable for the rise of anti-EU and nationalist
@@ -156,6 +180,7 @@ MonoBehaviour:
     - partyName: Non-Attached Members
       seats: 52
   - title: European Council President
+    countryName: Brussels
     institution: 3
     electionDate: 01/12/2014
     description: Polish PM and former anti-communist activist. His term was marked
@@ -163,6 +188,7 @@ MonoBehaviour:
     president: Donald Tusk
     parties: []
   - title: European Parliament President
+    countryName: Brussels
     institution: 1
     electionDate: 17/01/2017
     description: Italian MEP and former Commissioner for Industry. His leadership
@@ -170,6 +196,7 @@ MonoBehaviour:
     president: Antonio Tajani
     parties: []
   - title: European Parliament President
+    countryName: Brussels
     institution: 1
     electionDate: 03/07/2019
     description: Italian Social Democrat and journalist. His presidency saw a more
@@ -178,6 +205,7 @@ MonoBehaviour:
     president: Davis Sassoli
     parties: []
   - title: European Commission President
+    countryName: Brussels
     institution: 2
     electionDate: 01/12/2019
     description: First woman to hold the post. Her agenda centered on the Green Deal,
@@ -186,6 +214,7 @@ MonoBehaviour:
     president: Ursula von der Leyen
     parties: []
   - title: European Council President
+    countryName: Brussels
     institution: 3
     electionDate: 01/12/2019
     description: "Former Belgian PM. Oversaw EU coordination on COVID-19, the \u20AC750
@@ -194,6 +223,7 @@ MonoBehaviour:
     president: Charles Michel
     parties: []
   - title: European Parliament President
+    countryName: Brussels
     institution: 1
     electionDate: 18/01/2022
     description: Youngest and first Maltese to lead the Parliament. Known for pro-European
@@ -202,6 +232,7 @@ MonoBehaviour:
     president: Roberta Metsola
     parties: []
   - title: European Parliament Elections
+    countryName: Brussels
     institution: 1
     electionDate: 09/06/2024
     description: 'Rise of far-right parties in France, Germany, and Italy. EPP remained
@@ -231,6 +262,7 @@ MonoBehaviour:
     - partyName: Non-Attached Members
       seats: 33
   - title: European Council President
+    countryName: Brussels
     institution: 3
     electionDate: 18/01/2024
     description: Former Portuguese PM (Socialist). Chosen to succeed Charles Michel.

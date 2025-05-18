@@ -1,9 +1,14 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class BudgetEventTrigger : MonoBehaviour, IPointerClickHandler
+public class BudgetEventTrigger : GeneralTrigger, IPointerClickHandler
 {
     BudgetDatabase.Budget currentBudgetEvent;
+
+    public new void Start()
+    {
+        base.Start();
+    }
 
     public void Initialize(BudgetDatabase.Budget currentBudgetEvent)
     {

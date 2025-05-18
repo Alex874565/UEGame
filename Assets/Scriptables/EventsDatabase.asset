@@ -14,6 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   events:
   - eventDate: 01/02/2003
+    title: Your first secondary event!
+    countryName: Nice
+    description: This is an event that might give or take resources from you, depending
+      on what happened during the UE's timeline.
+    question: 
+    EuChoice: This is the EU's choice.
+    EuChoiceDescription: 'And this is supposed to be their choice''s description
+
+      .'
+    eventIcon: {fileID: 0}
+    choices:
+    - title: 
+      description: 
+      consequences: 
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0.01
+      moneyModifier: -15000000
+      eventIcon: {fileID: 21300000, guid: 6d3c203e0ea98b04395c05f688c3c2c5, type: 3}
+  - eventDate: 01/02/2003
     title: Treaty of Nice
     countryName: Nice
     description: The Treaty of Nice was signed in 2001 and entered into force in
@@ -47,7 +66,7 @@ MonoBehaviour:
       euroscepticismModifier: 0
       foreignAffairsModifier: 0.01
       moneyModifier: -15000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 6d3c203e0ea98b04395c05f688c3c2c5, type: 3}
   - eventDate: 11/03/2004
     title: Madrid Train Bombings
     countryName: Madrid

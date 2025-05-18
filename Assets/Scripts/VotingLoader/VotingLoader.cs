@@ -1,10 +1,13 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class VotingLoader : MonoBehaviour
 {
     public static VotingLoader Instance;
+
+    [SerializeField] private GameObject iconPopup;
 
     [SerializeField] private GameObject loaderAnimationPanel;
     [SerializeField] private float animationDuration = 2f;
@@ -38,8 +41,11 @@ public class VotingLoader : MonoBehaviour
         yield return new WaitForSeconds(animationDuration);
         loaderAnimationPanel.SetActive(false);
 
-        // HARDCODED
-        TimeManager.Instance.SetTimeScale(5f);
-        TimeManager.Instance.EnableTimeButtons();
+        GameObject popup = 
+            EventsManager.Instance.SpawnPopup(iconPopup, eventData.countryName);
+        popup.GetComponent<Image>().sprite = eventData.choices[answerIndex].eventIcon;
+
+        TimeManager.Instance.SetTimeScale(TimeManager.Instance.OldTimeScale);
+        TimeManager.Instance.ResetButtonStates();
     }
 }

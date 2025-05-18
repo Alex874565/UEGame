@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5530724350246045838}
   - component: {fileID: 8963600826707823793}
   - component: {fileID: 3780723653709544089}
+  - component: {fileID: 9211421311920720037}
   m_Layer: 5
   m_Name: Main Event Popup
   m_TagString: Untagged
@@ -88,3 +89,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b14f25741bd67540a75d2963f20201e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  triggerSFX: {fileID: 4109064841345302812, guid: 2a409ab125c5216449bc5f005ec045f0, type: 3}
+--- !u!95 &9211421311920720037
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6924751754743845731}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 17e3c1936ba38724ca78159c314e172e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
