@@ -2239,14 +2239,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fb22900838d50c489e3f4cb721d1a32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minZoom: 300
-  maxZoom: 540
+  minZoom: 150
+  maxZoom: 450
   zoomSpeed: 100
   zoomSmoothSpeed: 10
-  panSpeed: 15
+  panSpeed: 1
   baseWorldMin: {x: -100, y: -100}
   baseWorldMax: {x: 100, y: 100}
-  panExpandMultiplier: 2
+  panExpandMultiplier: 4
 --- !u!1 &549874973
 GameObject:
   m_ObjectHideFlags: 0
@@ -9721,12 +9721,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1b52ac748dd98242a494d1b6830e78c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventsDatabase: {fileID: 11400000, guid: 472e4734c348c204a86a850133cee2c8, type: 2}
-  quizzesDatabase: {fileID: 11400000, guid: 51ed50341e2344b4dab3e73eecba06ac, type: 2}
-  electionsDatabase: {fileID: 11400000, guid: 1682233db3cf6fd49a3458c3f53c8d6e, type: 2}
-  budgetDatabase: {fileID: 11400000, guid: 4b37ffe19bf38af418d7503d2e2512d2, type: 2}
-  resourceManager: {fileID: 1044687285}
-  partyManager: {fileID: 1632607581}
 --- !u!1 &1830389044
 GameObject:
   m_ObjectHideFlags: 0

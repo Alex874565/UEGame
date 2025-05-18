@@ -1793,18 +1793,18 @@ MonoBehaviour:
       foreignAffairsModifier: 0
       moneyModifier: -50000000
       eventIcon: {fileID: 0}
-    - title: Water Down or Postpone GDPR
-      description: "Respond to lobbying pressure and delay the law\u2019s application
-        to protect innovation and SMEs."
-      consequences: 'Citizens and privacy advocates react with outrage.
+    - title: Leave Pricing to National Regulation and Market Competition
+      description: Avoid interference in the telecom market and focus on cross-border
+        digital innovation.
+      consequences: 'Cross-border communication remains expensive and inconsistent.
 
 
-        The
-        EU is accused of caving to corporate interests.
+        Citizens
+        complain about inequality and market fragmentation.
 
 
-        Trust in EU data
-        policies declines, and global leadership is lost.'
+        Telecom companies
+        retain autonomy, but the EU is seen as distant from daily concerns.'
       euroscepticismModifier: 0.02
       foreignAffairsModifier: -0.02
       moneyModifier: 0

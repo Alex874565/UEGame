@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: QuizzesDatabase
   m_EditorClassIdentifier: 
   quizzes:
-  - quizDate: 
+  - quizDate: 01/01/2003
     quizName: 
     question: 
     countryName: 
