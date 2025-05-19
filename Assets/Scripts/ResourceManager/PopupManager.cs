@@ -87,6 +87,7 @@ public class PopupManager : MonoBehaviour
 
     public void ShowQuizEvent(QuizzesDatabase.Quiz quizData)
     {
+        ClearCurrentEventData();
         seenEvent?.Invoke();
         ResetAllTexts();
 
@@ -117,21 +118,20 @@ public class PopupManager : MonoBehaviour
                 title.text = $"Answer {i + 1}";
                 desc.text = answer.answerText;
 
-                button.onClick.RemoveAllListeners();
                 button.onClick.AddListener(() =>
                 {
-                    quizPanel.SetActive(false);
-
                     ResourceManager.Instance.UpdateQuizTries(!answer.isCorrect);
+                    AnswerSelected(-1);
                 });
             }
         }
 
-        UpdateArrowVisibility(currentQuiz);
+        UpdateArrowVisibilityCurrentEvent();
     }
 
     public void ShowMainEvent(EventsDatabase.Event eventData)
     {
+        ClearCurrentEventData();
         seenEvent?.Invoke();
         ResetAllTexts();
         currentEvent = eventData;
@@ -165,7 +165,6 @@ public class PopupManager : MonoBehaviour
 
             playParticles = false;
 
-            button.onClick.RemoveAllListeners();
             button.onClick.AddListener(() =>
             {
                 VotingLoader.Instance.Show(currentEvent, 0);
@@ -200,22 +199,22 @@ public class PopupManager : MonoBehaviour
                     moneyModifier.color =
                         currentEvent.choices[i].moneyModifier > 0 ? positiveRevenueColor : negativeRevenueColor;
 
-                    button.onClick.RemoveAllListeners();
                     int answerIndex = i;
                     button.onClick.AddListener(() =>
                     {
-                        VotingLoader.Instance.Show(currentEvent, answerIndex); 
-                        AnswerSelected(answerIndex);
+                        VotingLoader.Instance.Show(currentEvent, answerIndex);
+                        UpdateResources(answerIndex);
                     });
                 }
             }
 
-            UpdateArrowVisibility();
+            UpdateArrowVisibilityCurrentEvent();
         }
     }
 
     public void ShowBudgetEvent(BudgetDatabase.Budget budgetData)
     {
+        ClearCurrentEventData();
         seenEvent?.Invoke();
         ResetAllTexts();
 
@@ -243,7 +242,6 @@ public class PopupManager : MonoBehaviour
         desc.text = $"You received + {budgetData.budget} €. Allocate it wisely.";
         desc.color = positiveRevenueColor;
 
-        button.onClick.RemoveAllListeners();
         button.onClick.AddListener(() =>
         {
             AnswerSelected(-1);
@@ -252,6 +250,7 @@ public class PopupManager : MonoBehaviour
 
     public void ShowElectionEvent(ElectionsDatabase.Election electionData)
     {
+        ClearCurrentEventData();
         seenEvent?.Invoke();
         ResetAllTexts();
 
@@ -261,7 +260,7 @@ public class PopupManager : MonoBehaviour
         DisableArrows();
 
         eventTitleText.text = "Election Results";
-        eventDateText.text = System.DateTime.Now.ToShortDateString();
+        eventDateText.text = DateTime.Now.ToShortDateString();
         eventQuestionText.text = "";
 
         GameObject panel = answerPanels[0];
@@ -282,17 +281,17 @@ public class PopupManager : MonoBehaviour
             desc.text += isLastParty ? electionData.parties[i].partyName : electionData.parties[i].partyName + ", ";
         }
         desc.text += ".\nPolicy shifts are expected.";
-        EUStats.Instance.ChangeParty(electionData);
 
-        button.onClick.RemoveAllListeners();
         button.onClick.AddListener(() =>
         {
+            EUStats.Instance.ChangeParty(electionData);
             AnswerSelected(-1);
         });
     }
 
     public void ShowMemberEvent(MembersDatabase.MemberEvent memberData)
     {
+        ClearCurrentEventData();
         seenEvent?.Invoke();
         ResetAllTexts();
 
@@ -315,7 +314,6 @@ public class PopupManager : MonoBehaviour
         title.text = "";
         desc.text = memberData.description;
 
-        button.onClick.RemoveAllListeners();
         button.onClick.AddListener(() => 
         { 
             EUStats.Instance.UpdateMap(memberData.newMap);
@@ -327,15 +325,22 @@ public class PopupManager : MonoBehaviour
 
     private void ShowNextPanel()
     {
-        if (currentPanelIndex < currentEvent.choices.Count - 1 
-         || currentPanelIndex < currentQuiz.answers.Count - 1)
+        if (currentQuiz != null && currentPanelIndex < currentQuiz.answers.Count - 1)
         {
             answerPanels[currentPanelIndex].SetActive(false);
             currentPanelIndex++;
             answerPanels[currentPanelIndex].SetActive(true);
-            UpdateArrowVisibility();
+            UpdateArrowVisibilityCurrentQuiz();
+        }
+        else if (currentEvent != null && currentPanelIndex < currentEvent.choices.Count - 1)
+        {
+            answerPanels[currentPanelIndex].SetActive(false);
+            currentPanelIndex++;
+            answerPanels[currentPanelIndex].SetActive(true);
+            UpdateArrowVisibilityCurrentEvent();
         }
     }
+
 
     private void ShowPreviousPanel()
     {
@@ -343,22 +348,29 @@ public class PopupManager : MonoBehaviour
         {
             answerPanels[currentPanelIndex].SetActive(false);
             currentPanelIndex--;
+
             answerPanels[currentPanelIndex].SetActive(true);
-            UpdateArrowVisibility();
+
+            if (currentQuiz != null)
+                UpdateArrowVisibilityCurrentQuiz();
+            else if (currentEvent != null)
+                UpdateArrowVisibilityCurrentEvent();
         }
     }
 
-    private void UpdateArrowVisibility()
-    {
-        leftArrow.gameObject.SetActive(currentPanelIndex > 0);
-        rightArrow.gameObject.SetActive(currentPanelIndex < currentEvent.choices.Count - 1 ||
-            currentPanelIndex < currentQuiz.answers.Count - 1);
-    }
-
-    private void UpdateArrowVisibility(QuizzesDatabase.Quiz quizData)
+    private void UpdateArrowVisibilityCurrentQuiz()
     {
         leftArrow.gameObject.SetActive(currentPanelIndex > 0);
         rightArrow.gameObject.SetActive(currentPanelIndex < currentQuiz.answers.Count - 1);
+    }
+
+
+    private void UpdateArrowVisibilityCurrentEvent()
+    {
+        if(currentEvent == null) { UpdateArrowVisibilityCurrentQuiz(); return; }
+
+        leftArrow.gameObject.SetActive(currentPanelIndex > 0);
+        rightArrow.gameObject.SetActive(currentPanelIndex < currentEvent.choices.Count - 1);
     }
 
     private void DisableArrows()
@@ -386,8 +398,14 @@ public class PopupManager : MonoBehaviour
         ResourceManager.Instance.UpdateForeignAffairs(selectedChoice.foreignAffairsModifier);
         ResourceManager.Instance.UpdateEurosceptisism(selectedChoice.euroscepticismModifier);
         ResourceManager.Instance.UpdateBudget(selectedChoice.moneyModifier);
-        ResourceManager.Instance.UpdateQuizTries(!selectedChoice.Equals(true));
     }
+
+    private void ClearCurrentEventData()
+    {
+        currentQuiz = null;
+        currentEvent = null;
+    }
+
 
     public void PlayParticles()
     {

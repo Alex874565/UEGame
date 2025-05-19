@@ -53,7 +53,7 @@ public class SaveManager : MonoBehaviour
     private static readonly byte[] Key = Encoding.UTF8.GetBytes("ThisIsASecretKey1234567890123456");
     private static readonly byte[] IV = Encoding.UTF8.GetBytes("ThisIsAnIV123456");
 
-    [SerializeField] private PlayableDirector tutorialTimeline;
+    [SerializeField] private GameObject tutorialGO;
     [SerializeField] private TimeManager timeManager;
 
     private void Awake()
@@ -150,7 +150,7 @@ public class SaveManager : MonoBehaviour
                 // and acitivate scritp sof interet
                 if (currentData.finishedTutorial)
                 {
-                    tutorialTimeline.enabled = false;
+                    tutorialGO.SetActive(false);
                 }
 
                 timeManager.gameObject.SetActive(true);
