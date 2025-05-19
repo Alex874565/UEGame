@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PopupManager : MonoBehaviour
 {
     public static PopupManager Instance;
+    public Action seenEvent;
 
     [SerializeField] private Color positiveRevenueColor = Color.green;
     [SerializeField] private Color negativeRevenueColor = Color.red;
@@ -26,6 +27,7 @@ public class PopupManager : MonoBehaviour
     [SerializeField] private Button rightArrow;
 
     private EventsDatabase.Event currentEvent;
+    private QuizzesDatabase.Quiz currentQuiz;
     private int currentPanelIndex = 0;
     private bool playParticles = true;
 
@@ -52,26 +54,61 @@ public class PopupManager : MonoBehaviour
 
     #endregion
 
+    private void ResetAllTexts()
+    {
+        eventTitleText.text = "";
+        eventDateText.text = "";
+        eventQuestionText.text = "";
+
+        eventTitleText.color = Color.white;
+        eventDateText.color = Color.white;
+        eventQuestionText.color = Color.white;
+
+        for (int i = 0; i < answerPanels.Length; i++)
+        {
+            GameObject panel = answerPanels[i];
+
+            var title = panel.transform.Find("Event Choice Title").GetComponent<TextMeshProUGUI>();
+            var desc = panel.transform.Find("Event Description").GetComponent<TextMeshProUGUI>();
+            var money = panel.transform.Find("Event Money Modifier").GetComponent<TextMeshProUGUI>();
+            var button = panel.GetComponentInChildren<Button>();
+
+            title.text = "";
+            desc.text = "";
+            money.text = "";
+
+            title.color = Color.white;
+            desc.color = Color.white;
+            money.color = Color.white;
+
+            button.onClick.RemoveAllListeners();
+        }
+    }
+
     public void ShowQuizEvent(QuizzesDatabase.Quiz quizData)
     {
+        seenEvent?.Invoke();
+        ResetAllTexts();
+
+        currentQuiz = quizData;
         quizPanel.SetActive(true);
         quizPopupAnimator.Play("QuizPopup");
 
         currentPanelIndex = 0;
 
-        eventTitleText.text = quizData.quizName;
-        eventDateText.text = quizData.quizDate;
-        eventQuestionText.text = quizData.question;
+        eventTitleText.text = currentQuiz.quizName;
+        eventDateText.text = currentQuiz.quizDate;
+        eventQuestionText.text = currentQuiz.question;
 
         for (int i = 0; i < answerPanels.Length; i++)
         {
             GameObject panel = answerPanels[i];
-            bool isActive = i == currentPanelIndex && i < quizData.answers.Count;
+            bool isActive = i == currentPanelIndex && i < currentQuiz.answers.Count;
             panel.SetActive(isActive);
 
-            if (i < quizData.answers.Count)
+            if (i < currentQuiz.answers.Count)
             {
-                var answer = quizData.answers[i];
+                var answer = currentQuiz.answers[i];
 
                 var title = panel.transform.Find("Event Choice Title").GetComponent<TextMeshProUGUI>();
                 var desc = panel.transform.Find("Event Description").GetComponent<TextMeshProUGUI>();
@@ -80,31 +117,23 @@ public class PopupManager : MonoBehaviour
                 title.text = $"Answer {i + 1}";
                 desc.text = answer.answerText;
 
-                int index = i;
                 button.onClick.RemoveAllListeners();
                 button.onClick.AddListener(() =>
                 {
                     quizPanel.SetActive(false);
 
-                    if (answer.isCorrect)
-                    {
-                        Debug.Log("Correct answer selected!");
-                        // Optional: Reward player or trigger effects here
-                    }
-                    else
-                    {
-                        Debug.Log("Incorrect answer selected.");
-                        ResourceManager.Instance.UpdateQuizTries(true);
-                    }
+                    ResourceManager.Instance.UpdateQuizTries(!answer.isCorrect);
                 });
             }
         }
 
-        UpdateArrowVisibility(quizData);
+        UpdateArrowVisibility(currentQuiz);
     }
 
     public void ShowMainEvent(EventsDatabase.Event eventData)
     {
+        seenEvent?.Invoke();
+        ResetAllTexts();
         currentEvent = eventData;
         currentPanelIndex = 0;
         // Cannot event with nothing to do
@@ -187,6 +216,9 @@ public class PopupManager : MonoBehaviour
 
     public void ShowBudgetEvent(BudgetDatabase.Budget budgetData)
     {
+        seenEvent?.Invoke();
+        ResetAllTexts();
+
         quizPanel.SetActive(true);
         quizPopupAnimator.Play("QuizPopup");
 
@@ -220,6 +252,9 @@ public class PopupManager : MonoBehaviour
 
     public void ShowElectionEvent(ElectionsDatabase.Election electionData)
     {
+        seenEvent?.Invoke();
+        ResetAllTexts();
+
         quizPanel.SetActive(true);
         quizPopupAnimator.Play("QuizPopup");
 
@@ -258,6 +293,9 @@ public class PopupManager : MonoBehaviour
 
     public void ShowMemberEvent(MembersDatabase.MemberEvent memberData)
     {
+        seenEvent?.Invoke();
+        ResetAllTexts();
+
         quizPanel.SetActive(true);
         quizPopupAnimator.Play("QuizPopup");
 
@@ -289,7 +327,8 @@ public class PopupManager : MonoBehaviour
 
     private void ShowNextPanel()
     {
-        if (currentPanelIndex < currentEvent.choices.Count - 1)
+        if (currentPanelIndex < currentEvent.choices.Count - 1 
+         || currentPanelIndex < currentQuiz.answers.Count - 1)
         {
             answerPanels[currentPanelIndex].SetActive(false);
             currentPanelIndex++;
@@ -312,13 +351,14 @@ public class PopupManager : MonoBehaviour
     private void UpdateArrowVisibility()
     {
         leftArrow.gameObject.SetActive(currentPanelIndex > 0);
-        rightArrow.gameObject.SetActive(currentPanelIndex < currentEvent.choices.Count - 1);
+        rightArrow.gameObject.SetActive(currentPanelIndex < currentEvent.choices.Count - 1 ||
+            currentPanelIndex < currentQuiz.answers.Count - 1);
     }
 
     private void UpdateArrowVisibility(QuizzesDatabase.Quiz quizData)
     {
         leftArrow.gameObject.SetActive(currentPanelIndex > 0);
-        rightArrow.gameObject.SetActive(currentPanelIndex < quizData.answers.Count - 1);
+        rightArrow.gameObject.SetActive(currentPanelIndex < currentQuiz.answers.Count - 1);
     }
 
     private void DisableArrows()

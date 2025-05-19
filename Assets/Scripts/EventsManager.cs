@@ -31,6 +31,7 @@ public class EventsManager : MonoBehaviour
     private int quizIndex;
     private int electionIndex;
     private int membersIndex;
+    private int nrOfSpawnedEvents;
 
     #region Getters
 
@@ -39,6 +40,7 @@ public class EventsManager : MonoBehaviour
     public int QuizIndex { get { return quizIndex; } set { quizIndex = value; } }
     public int ElectionIndex { get { return electionIndex; } set { electionIndex = value; } }
     public int MembersIndex { get { return membersIndex; } set { electionIndex = value; } }
+    public int NrOfSpawnedEvents { get { return nrOfSpawnedEvents; } }
     
     public ElectionsDatabase ElectionsDatabase { get { return electionsDatabase; } }
 
@@ -51,6 +53,7 @@ public class EventsManager : MonoBehaviour
     }
     public void Start()
     {
+        PopupManager.Instance.seenEvent = DestroyedEvent;
         eventIndex = 0;
         budgetIndex = 0;
         quizIndex = 0;
@@ -121,30 +124,35 @@ public class EventsManager : MonoBehaviour
 
     public void StartMainEvent(string country)
     {
+        nrOfSpawnedEvents++;
         SpawnEvent(country);
         eventIndex++;
     }
 
     public void StartQuizEvent(string country)
     {
+        nrOfSpawnedEvents++;
         SpawnQuiz(country);
         quizIndex++;
     }
 
     public void StartBudgetEvent(string country)
     {
+        nrOfSpawnedEvents++;
         SpawnBudget(country);
         budgetIndex++;
     }
 
     public void StartElectionEvent(string country)
     {
+        nrOfSpawnedEvents++;
         SpawnElection(country);
         electionIndex++;
     }
 
     public void StartMemberEvent(string country)
     {
+        nrOfSpawnedEvents++;
         SpawnMemberEvent(country);
         eventIndex++;
     }
@@ -273,5 +281,10 @@ public class EventsManager : MonoBehaviour
             Debug.LogWarning($"No city location found for {countryName}!");
             return null;
         }
+    }
+
+    public void DestroyedEvent()
+    {
+        nrOfSpawnedEvents--;
     }
 }

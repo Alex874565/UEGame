@@ -9,6 +9,7 @@ public class MemberEventTrigger : GeneralTrigger, IPointerClickHandler
     {
         base.Start();
     }
+
     public void Initialize(MembersDatabase.MemberEvent currentMemberEvent)
     {
         this.currentMemberEvent = currentMemberEvent;
