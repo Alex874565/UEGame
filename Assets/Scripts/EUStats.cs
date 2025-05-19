@@ -40,16 +40,16 @@ public class EUStats : MonoBehaviour
         UpdatePartyUI();
     }
 
-    public void ChangeParty(List<ElectionsDatabase.Election.Party> newParties)
+    public void ChangeParty(ElectionsDatabase.Election newParty)
     {
-        if (newParties == null || newParties.Count == 0)
+        currentElection = newParty;
+        if (newParty == null)
         {
             Debug.LogWarning("ChangeParty called with empty or null list.");
             return;
         }
 
-        currentElection.parties = new List<ElectionsDatabase.Election.Party>(newParties);
-
+        UpdateElectionUI();
         UpdatePartyUI();
     }
 

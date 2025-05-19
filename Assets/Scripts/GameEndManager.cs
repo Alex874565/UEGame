@@ -2,13 +2,22 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 
 public class GameEndManager : MonoBehaviour
 {
+    public static GameEndManager Instance;
+
     public ResourceManager resourceManager;
     public TimeManager timeManager;
     public Sprite fullStarSprite;
     [SerializeField] private Animator quizPopupAnimator;
+
+    [Header("Lose Popup")]
+    [SerializeField] private Animator losePopupAnimator;
+    [SerializeField] private TextMeshProUGUI losePopupTextHeader;
+    [SerializeField] private TextMeshProUGUI losePopupTextDescription;
+    private int popup1AnimHash = Animator.StringToHash("Popup");
 
     [Header("Game Over Screens")]
     public GameObject gameLostScreen;
@@ -26,10 +35,27 @@ public class GameEndManager : MonoBehaviour
     [SerializeField] private TMP_Text foreignImageValue;
     [SerializeField] private TMP_Text euroscepticismValue;
 
-    public void GameLost()
+    private void Awake()
     {
-        Time.timeScale = 0;
+        if(Instance == null)
+            Instance = this;
+    }
+
+    public void GameLost(string loseReason, string loseDescription)
+    {
+        TimeManager.Instance.SetTimeScale(0f);
+
+        losePopupTextHeader.text = loseReason;
+        losePopupTextDescription.text = loseDescription;
         gameLostScreen.SetActive(true);
+
+        losePopupAnimator.Play(popup1AnimHash);
+    }
+
+    public void RestartGame()
+    {
+        SaveManager.Instance.DeleteSave();
+        PauseMenu.Instance.MainMenu();
     }
 
     public void TriggerGameFinish()

@@ -1,7 +1,7 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections.Generic;
 
 public class PopupManager : MonoBehaviour
 {
@@ -9,12 +9,6 @@ public class PopupManager : MonoBehaviour
 
     [SerializeField] private Color positiveRevenueColor = Color.green;
     [SerializeField] private Color negativeRevenueColor = Color.red;
-
-    [Header("Lose Popup")]
-    [SerializeField] private Animator losePopupAnimator;
-    [SerializeField] private TextMeshProUGUI losePopupTextHeader;
-    [SerializeField] private TextMeshProUGUI losePopupTextDescription;
-    private int popup1AnimHash = Animator.StringToHash("Popup");
 
     [Header("Quiz UI")]
     [SerializeField] private Animator quizPopupAnimator;
@@ -50,9 +44,7 @@ public class PopupManager : MonoBehaviour
 
     public void LosePopup(string headerText, string description)
     {
-        losePopupTextHeader.text = headerText;
-        losePopupTextDescription.text = description;
-        losePopupAnimator.Play(popup1AnimHash);
+        GameEndManager.Instance.GameLost(headerText, description);
     }
 
     #endregion
@@ -111,8 +103,9 @@ public class PopupManager : MonoBehaviour
     public void ShowMainEvent(EventsDatabase.Event eventData)
     {
         currentEvent = eventData;
+        currentPanelIndex = 0;
         // Cannot event with nothing to do
-        if (eventData.choices.Count == 1)
+        if (currentEvent.choices.Count == 1)
         {
             DisableArrows();
 
@@ -137,18 +130,18 @@ public class PopupManager : MonoBehaviour
                 currentEvent.choices[0].moneyModifier > 0 ? positiveRevenueColor: negativeRevenueColor;
 
             var button = panel.GetComponentInChildren<Button>();
+
+            button.onClick.RemoveAllListeners();
             button.onClick.AddListener(() =>
             {
                 VotingLoader.Instance.Show(currentEvent, 0);
-                AnswerSelected(0);
+                UpdateResources(0);
             });
         }
         else
         {
             quizPanel.SetActive(true);
             quizPopupAnimator.Play("QuizPopup");
-
-            currentPanelIndex = 0;
 
             eventTitleText.text = currentEvent.title;
             eventDateText.text = currentEvent.eventDate;
@@ -173,11 +166,11 @@ public class PopupManager : MonoBehaviour
                     moneyModifier.color =
                         currentEvent.choices[i].moneyModifier > 0 ? positiveRevenueColor : negativeRevenueColor;
 
-                    int answerIndex = i;
                     button.onClick.RemoveAllListeners();
+                    int answerIndex = i;
                     button.onClick.AddListener(() =>
                     {
-                        VotingLoader.Instance.Show(currentEvent, i); 
+                        VotingLoader.Instance.Show(currentEvent, answerIndex); 
                         AnswerSelected(answerIndex);
                     });
                 }
@@ -241,8 +234,15 @@ public class PopupManager : MonoBehaviour
 
         moneyModifier.text = "";
         title.text = "New Government Formed";
-        desc.text = $"The new ruling party is {electionData.parties}. Policy shifts are expected.";
-        EUStats.Instance.ChangeParty(electionData.parties);
+        desc.text = $"The new ruling party are: ";
+        for(int i = 0; i < electionData.parties.Count; i++)
+        {
+            // If the last party don't add the ','.
+            bool isLastParty = i == electionData.parties.Count - 1;
+            desc.text += isLastParty ? electionData.parties[i].partyName : electionData.parties[i].partyName + ", ";
+        }
+        desc.text += ".\nPolicy shifts are expected.";
+        EUStats.Instance.ChangeParty(electionData);
 
         button.onClick.RemoveAllListeners();
         button.onClick.AddListener(() =>
@@ -325,11 +325,17 @@ public class PopupManager : MonoBehaviour
     private void AnswerSelected(int index)
     {
         quizPanel.SetActive(false);
-        TimeManager.Instance.SetTimeScale(TimeManager.Instance.OldTimeScale);
+        TimeManager.Instance.SetTimeScale(TimeManager.Instance.DefaultTimeScale);
         TimeManager.Instance.ResetButtonStates();
 
         if (index < 0) { return; }
 
+        UpdateResources(index);
+    }
+
+    private void UpdateResources(int index)
+    {
+        quizPanel.SetActive(false);
         var selectedChoice = currentEvent.choices[index];
 
         ResourceManager.Instance.UpdateForeignAffairs(selectedChoice.foreignAffairsModifier);

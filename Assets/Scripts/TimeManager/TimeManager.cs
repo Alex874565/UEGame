@@ -34,9 +34,6 @@ public class TimeManager : MonoBehaviour
     [SerializeField] private Sprite playActiveSprite;
     [SerializeField] private Sprite pauseActiveSprite;
 
-
-    private int lastActivatedButtonIndex;
-
     private float timeScale;
     private float oldTimeScale;
     private float timer;
@@ -48,6 +45,8 @@ public class TimeManager : MonoBehaviour
     public int GetYear() => year;
     public int GetHour() => hour;
     public int GetMinute() => minute;
+
+    public float DefaultTimeScale { get { return defaultTimeScale;  } }
 
     public float Timer { get { return timer; } }
     public float TimeScale { get { return timeScale; } }
@@ -63,6 +62,8 @@ public class TimeManager : MonoBehaviour
     }
     void Start()
     {
+        SaveManager.Instance.currentData.finishedTutorial = true;
+
         oldTimeScale = timeScale;
         timeScale = defaultTimeScale;
         timer = 0f;
@@ -134,7 +135,6 @@ public class TimeManager : MonoBehaviour
     public void PauseTime()
     {
         timeScale = 0f;
-        lastActivatedButtonIndex = 2;
         pauseButton.interactable = false;
         playButton.interactable = true;
         fastForwardButton.interactable = true;
@@ -146,7 +146,6 @@ public class TimeManager : MonoBehaviour
     public void PlayTime()
     {
         timeScale = defaultTimeScale;
-        lastActivatedButtonIndex = 0;
         pauseButton.interactable = true;
         playButton.interactable = false;
         fastForwardButton.interactable = true;
@@ -158,7 +157,6 @@ public class TimeManager : MonoBehaviour
     public void FastForwardTime()
     {
         timeScale = fastForwardTimeScale;
-        lastActivatedButtonIndex = 1;
         pauseButton.interactable = true;
         playButton.interactable = true;
         fastForwardButton.interactable = false;
@@ -180,18 +178,11 @@ public class TimeManager : MonoBehaviour
         playButton.interactable = false;
     }
 
-    public void EnableTimeButtons()
-    {
-        pauseButton.interactable = true;
-        fastForwardButton.interactable = true;
-        playButton.interactable = true;
-    }
-
     public void ResetButtonStates()
     {
-        playButton.interactable = lastActivatedButtonIndex != 0;
-        fastForwardButton.interactable = lastActivatedButtonIndex != 1;
-        pauseButton.interactable = lastActivatedButtonIndex != 2;
+        playButton.interactable = false;
+        fastForwardButton.interactable = true;
+        pauseButton.interactable = true;
     }
 
     public void Load(SaveData currentData)
