@@ -16,6 +16,7 @@ public class TimeManager : MonoBehaviour
     [SerializeField] private int year = 1000;
     [SerializeField] private int hour = 6;
     [SerializeField] private int minute = 0;
+    [SerializeField] private int endYear = 2025;
 
     [SerializeField] private float defaultTimeScale;
     [SerializeField] private float fastForwardTimeScale;
@@ -116,7 +117,7 @@ public class TimeManager : MonoBehaviour
             }
         }
 
-        if(year == 2025) {
+        if(year == endYear) {
             gameEndManager.TriggerGameFinish();
             return;
         }

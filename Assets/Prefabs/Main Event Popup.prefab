@@ -28,7 +28,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3734173228977008298}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b14f25741bd67540a75d2963f20201e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerSFX: {fileID: 245581523800709616, guid: 9442d241d2d8ecc47b49f256b55325c6, type: 3}
+  triggerSFX: {fileID: 6403252182692130976, guid: 17178ffeea9ab9041a1a61ed6448cc80, type: 3}
 --- !u!95 &422082733723435369
 Animator:
   serializedVersion: 7
