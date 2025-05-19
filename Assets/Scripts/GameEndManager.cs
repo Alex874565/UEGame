@@ -157,5 +157,4 @@ public class GameEndManager : MonoBehaviour
         // Show Game Finished Screen
         gameFinishedScreen.SetActive(true);
     }
-   
 }

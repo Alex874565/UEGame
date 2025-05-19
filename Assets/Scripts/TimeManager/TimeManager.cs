@@ -73,6 +73,8 @@ public class TimeManager : MonoBehaviour
 
     void Update()
     {
+        if(EventsManager.Instance.NrOfSpawnedEvents > 0) { return; }
+
         timer += Time.deltaTime * 3600 * 24 * timeScale;
 
         while (timer >= 60f)
