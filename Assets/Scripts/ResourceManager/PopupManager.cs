@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +9,8 @@ public class PopupManager : MonoBehaviour
 
     [SerializeField] private Color positiveRevenueColor = Color.green;
     [SerializeField] private Color negativeRevenueColor = Color.red;
+    
+    [SerializeField] private GameObject particleSystemGO;
 
     [Header("Quiz UI")]
     [SerializeField] private Animator quizPopupAnimator;
@@ -25,6 +27,7 @@ public class PopupManager : MonoBehaviour
 
     private EventsDatabase.Event currentEvent;
     private int currentPanelIndex = 0;
+    private bool playParticles = true;
 
     private void Awake()
     {
@@ -125,11 +128,13 @@ public class PopupManager : MonoBehaviour
             
             title.text = "";
             desc.text = currentEvent.description;
-            moneyModifier.text = currentEvent.choices[0].moneyModifier.ToString() + "€";
+            moneyModifier.text = currentEvent.choices[0].moneyModifier.ToString() + "â‚¬";
             moneyModifier.color = 
                 currentEvent.choices[0].moneyModifier > 0 ? positiveRevenueColor: negativeRevenueColor;
 
             var button = panel.GetComponentInChildren<Button>();
+
+            playParticles = false;
 
             button.onClick.RemoveAllListeners();
             button.onClick.AddListener(() =>
@@ -162,7 +167,7 @@ public class PopupManager : MonoBehaviour
 
                     title.text = choice.title;
                     desc.text = choice.description;
-                    moneyModifier.text = currentEvent.choices[i].moneyModifier.ToString() + "€";
+                    moneyModifier.text = currentEvent.choices[i].moneyModifier.ToString() + "â‚¬";
                     moneyModifier.color =
                         currentEvent.choices[i].moneyModifier > 0 ? positiveRevenueColor : negativeRevenueColor;
 
@@ -203,7 +208,7 @@ public class PopupManager : MonoBehaviour
 
         title.text = "";
         moneyModifier.text = "";
-        desc.text = $"You received + {budgetData.budget} €. Allocate it wisely.";
+        desc.text = $"You received + {budgetData.budget} â‚¬. Allocate it wisely.";
         desc.color = positiveRevenueColor;
 
         button.onClick.RemoveAllListeners();
@@ -342,5 +347,27 @@ public class PopupManager : MonoBehaviour
         ResourceManager.Instance.UpdateEurosceptisism(selectedChoice.euroscepticismModifier);
         ResourceManager.Instance.UpdateBudget(selectedChoice.moneyModifier);
         ResourceManager.Instance.UpdateQuizTries(!selectedChoice.Equals(true));
+    }
+
+    public void PlayParticles()
+    {
+        if (!playParticles)
+        {
+            playParticles = true;
+            return;
+        }
+
+        if (particleSystemGO == null) return;
+
+        Vector3 worldPos = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width / 2f, Screen.height / 2f, 0f));
+        worldPos.z = 0f; 
+
+        particleSystemGO.transform.position = worldPos;
+
+        var ps = particleSystemGO.GetComponent<ParticleSystem>();
+        if (ps != null)
+        {
+            ps.Play();
+        }
     }
 }

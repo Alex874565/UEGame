@@ -263,6 +263,9 @@ public class EventsManager : MonoBehaviour
         {
             GameObject GO =
                 Instantiate(popup, targetLocation.position, Quaternion.identity, mapHolder);
+            GO.GetComponent<Animator>().Update(0f);
+            GO.transform.position = targetLocation.position;
+
             return GO;
         }
         else
