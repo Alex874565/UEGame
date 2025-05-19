@@ -4,6 +4,7 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 using UnityEngine;
+using UnityEngine.Playables;
 
 [Serializable]
 public class SaveData
@@ -52,6 +53,7 @@ public class SaveManager : MonoBehaviour
     private static readonly byte[] Key = Encoding.UTF8.GetBytes("ThisIsASecretKey1234567890123456");
     private static readonly byte[] IV = Encoding.UTF8.GetBytes("ThisIsAnIV123456");
 
+    [SerializeField] private PlayableDirector tutorialTimeline;
     [SerializeField] private TimeManager timeManager;
 
     private void Awake()
@@ -62,10 +64,9 @@ public class SaveManager : MonoBehaviour
         SavePath = Path.Combine(Application.persistentDataPath, "save.dat");
     }
 
-    void Start()
+    private void Start()
     {
         LoadGame();
-        currentData.finishedTutorial = true;
     }
 
     private void Update()
@@ -147,6 +148,11 @@ public class SaveManager : MonoBehaviour
 
                 // If we have a load file, then we want to skip the tutorial
                 // and acitivate scritp sof interet
+                if (currentData.finishedTutorial)
+                {
+                    tutorialTimeline.enabled = false;
+                }
+
                 timeManager.gameObject.SetActive(true);
                 timeManager.Load(currentData);
 

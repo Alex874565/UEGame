@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
+    public static PauseMenu Instance;
+
     [SerializeField] private GameObject loadingScreen;
 
     [SerializeField] private GameObject pauseMenu;
@@ -12,6 +14,11 @@ public class PauseMenu : MonoBehaviour
 
     private bool isPaused = false;
 
+    private void Awake()
+    {
+        if (Instance == null)
+            Instance = this;
+    }
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))
@@ -41,12 +48,7 @@ public class PauseMenu : MonoBehaviour
     public void MainMenu()
     {
         loadingScreen.SetActive(true);
-
-        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(0);
-        while (!asyncOperation.isDone)
-        {
-            // Maybe display smth here
-        }
+        SceneManager.LoadScene(0);
     }
 
     private void Unpause()

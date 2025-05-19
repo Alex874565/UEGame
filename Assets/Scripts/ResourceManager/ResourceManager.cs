@@ -88,7 +88,7 @@ public class ResourceManager : MonoBehaviour
         euroAnimator.Play(sceptisism > 0 ? "GreenFlashBar" : "RedFlashBar");
 
         UpdateUI();
-        if (currentEurosceptisism < maxEurosceptisism)
+        if (currentEurosceptisism > maxEurosceptisism)
         {
             Lose("header1", "description1");
         }
