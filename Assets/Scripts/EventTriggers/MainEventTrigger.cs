@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class MainEventTrigger : GeneralTrigger, IPointerClickHandler
 {
@@ -11,6 +12,7 @@ public class MainEventTrigger : GeneralTrigger, IPointerClickHandler
     }
     public void Initialize(EventsDatabase.Event currentMainEvent)
     {
+        this.GetComponentInParent<Image>().sprite = currentMainEvent.eventIcon;
         this.currentMainEvent = currentMainEvent;
     }
 
