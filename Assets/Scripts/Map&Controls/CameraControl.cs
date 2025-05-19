@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SmoothZoomAndPan : MonoBehaviour
 {
@@ -10,6 +10,7 @@ public class SmoothZoomAndPan : MonoBehaviour
 
     [Header("Pan Settings")]
     public float panSpeed = 1f;
+    public float panSmoothSpeed = 10f;
 
     [Header("World Bounds (Base Limit)")]
     public Vector2 baseWorldMin = new Vector2(-1000f, -1000f);
@@ -18,9 +19,19 @@ public class SmoothZoomAndPan : MonoBehaviour
     [Header("Zoom-In Pan Expansion")]
     public float panExpandMultiplier = 2.0f;
 
+    [Header("Cursor")]
+    public Texture2D cursorNormal;
+    public Texture2D cursorHand;
+    public Texture2D cursorClick;
+    [Tooltip("Hotspot is where the actual click happens in the cursor image")]
+    public Vector2 cursorHotspot = Vector2.zero;
+
+
     private float targetZoom;
-    private Camera cam;
+    private Vector3 targetPosition;
     private Vector3 dragOrigin;
+    private Camera cam;
+    private bool isDragging = false;
 
     void Start()
     {
@@ -32,6 +43,7 @@ public class SmoothZoomAndPan : MonoBehaviour
         }
 
         targetZoom = cam.orthographicSize;
+        targetPosition = transform.position;
     }
 
     void Update()
@@ -39,7 +51,14 @@ public class SmoothZoomAndPan : MonoBehaviour
         HandleZoom();
         HandlePan();
         ClampCameraToZoomBounds();
+
+        // Smooth camera movement
+        transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * panSmoothSpeed);
+
+        UpdateCursor();
     }
+
+
 
     void HandleZoom()
     {
@@ -48,7 +67,6 @@ public class SmoothZoomAndPan : MonoBehaviour
         if (Mathf.Abs(scroll) > 0.01f)
         {
             targetZoom -= scroll * zoomSpeed;
-
             targetZoom = Mathf.Clamp(targetZoom, minZoom, maxZoom);
         }
 
@@ -59,21 +77,31 @@ public class SmoothZoomAndPan : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
-            dragOrigin = cam.ScreenToWorldPoint(Input.mousePosition);
+            isDragging = true;
+            dragOrigin = Input.mousePosition;
         }
 
         if (Input.GetMouseButton(1))
         {
-            Vector3 difference = dragOrigin - cam.ScreenToWorldPoint(Input.mousePosition);
-            transform.position += difference * panSpeed;
+            Vector3 delta = Input.mousePosition - dragOrigin;
+            if (delta.sqrMagnitude > 0.01f)
+            {
+                Vector3 worldDelta = cam.ScreenToWorldPoint(dragOrigin) - cam.ScreenToWorldPoint(dragOrigin + delta);
+                targetPosition += worldDelta * panSpeed;
+
+                dragOrigin = Input.mousePosition; // update to avoid compounding
+            }
+        }
+
+        if (Input.GetMouseButtonUp(1))
+        {
+            isDragging = false;
         }
     }
 
     void ClampCameraToZoomBounds()
     {
         float zoomPercent = Mathf.InverseLerp(maxZoom, minZoom, cam.orthographicSize);
-
-        // Expand pan bounds outward as you zoom in
         Vector2 expansion = (baseWorldMax - baseWorldMin) * ((panExpandMultiplier - 1f) * zoomPercent);
 
         Vector2 expandedMin = baseWorldMin - expansion / 2f;
@@ -90,9 +118,24 @@ public class SmoothZoomAndPan : MonoBehaviour
         float minY = centerY - yRange;
         float maxY = centerY + yRange;
 
-        Vector3 pos = transform.position;
-        pos.x = Mathf.Clamp(pos.x, minX, maxX);
-        pos.y = Mathf.Clamp(pos.y, minY, maxY);
-        transform.position = pos;
+        targetPosition.x = Mathf.Clamp(targetPosition.x, minX, maxX);
+        targetPosition.y = Mathf.Clamp(targetPosition.y, minY, maxY);
     }
+
+    void UpdateCursor()
+    {
+        if (Input.GetMouseButton(1)) // Right-click held (dragging)
+        {
+            Cursor.SetCursor(cursorHand, cursorHotspot, CursorMode.Auto);
+        }
+        else if (Input.GetMouseButton(0)) // Left-click held
+        {
+            Cursor.SetCursor(cursorClick, cursorHotspot, CursorMode.Auto);
+        }
+        else
+        {
+            Cursor.SetCursor(cursorNormal, cursorHotspot, CursorMode.Auto);
+        }
+    }
+
 }

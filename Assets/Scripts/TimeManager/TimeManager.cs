@@ -113,7 +113,11 @@ public class TimeManager : MonoBehaviour
             }
         }
 
-         eventsManager.CheckForEvent(GetDateString());
+        if(year == 2025) {
+            gameEndManager.TriggerGameFinish();
+            return;
+        }
+        eventsManager.CheckForEvent(GetDateString());
     }
 
     public string GetDateString()
