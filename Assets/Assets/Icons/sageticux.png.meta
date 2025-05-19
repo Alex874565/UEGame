@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sageticux_0: 4523662310924599388
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wi-fisignbanut_0: -6823852077297461796
+      wi-fisignbanut_1: 8036367274407187220
+      wi-fisignbanut_2: -5279396100560294122
+      wi-fisignbanut_3: 2372209425399827791
+      wi-fisignbanut_4: -7927076544271825121
+      wi-fisignbanut_5: -7737196734425677866
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

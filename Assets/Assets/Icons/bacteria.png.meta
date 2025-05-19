@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bacteria_0: -6897998946529238708
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

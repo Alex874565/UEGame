@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sageti_0: 6299902760095739136
+      sageti_1: -6792919943539999867
+      sageti_2: -7665806953140603611
+      sageti_3: 8791467193049173668
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

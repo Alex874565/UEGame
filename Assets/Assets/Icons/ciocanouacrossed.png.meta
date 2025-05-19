@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ciocanouacrossed_0: 4588777888911467596
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

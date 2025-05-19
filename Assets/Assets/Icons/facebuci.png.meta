@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      facebuci_0: -7383292902428590374
+      facebuci_1: -5361758538717465825
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
