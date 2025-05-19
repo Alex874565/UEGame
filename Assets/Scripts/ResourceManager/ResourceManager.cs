@@ -31,7 +31,7 @@ public class ResourceManager : MonoBehaviour
     [SerializeField] private float maxEurosceptisism = .85f;
 
     [SerializeField] private float minBudget = 1000f;
-    [SerializeField] private int maxQuizTries = 10;
+    [SerializeField] private int maxQuizTries = 21;
 
     private float currentForeignAffairs = 0.8f;
     private float currentEurosceptisism = 0.65f;
@@ -72,9 +72,23 @@ public class ResourceManager : MonoBehaviour
     {
         foreignAffairs.value = currentForeignAffairs / 1f;
         eurosceptisism.value = currentEurosceptisism / 1f;
-        budget.text = currentBudget.ToString();
+
+        budget.text = FormatLargeNumber(currentBudget);
         quizzes.text = currentQuizFails.ToString() + "/" + maxQuizTries;
     }
+
+    private string FormatLargeNumber(float number)
+    {
+        if (number >= 1_000_000_000)
+            return (number / 1_000_000_000f).ToString("0.#") + " Bil";
+        else if (number >= 1_000_000)
+            return (number / 1_000_000f).ToString("0.#") + " Mil";
+        else if (number >= 1_000)
+            return (number / 1_000f).ToString("0.#") + "K";
+        else
+            return number.ToString("0");
+    }
+
 
     #endregion
 
@@ -85,7 +99,7 @@ public class ResourceManager : MonoBehaviour
     {
         currentEurosceptisism += sceptisism;
 
-        euroAnimator.Play(sceptisism > 0 ? "GreenFlashBar" : "RedFlashBar");
+        euroAnimator.Play(sceptisism < 0 ? "GreenFlashBar" : "RedFlashBar");
 
         UpdateUI();
         if (currentEurosceptisism > maxEurosceptisism)
