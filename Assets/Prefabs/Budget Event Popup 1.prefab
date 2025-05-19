@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cac4e2a45de5a141a2e7d1cdf8695dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerSFX: {fileID: 7938384439400024403, guid: b6e54acc881a03c4a9719b161a25a3e3, type: 3}
+  triggerSFX: {fileID: 245581523800709616, guid: 9442d241d2d8ecc47b49f256b55325c6, type: 3}
 --- !u!95 &6096087006580320029
 Animator:
   serializedVersion: 7
