@@ -40,7 +40,6 @@ public class SaveData
     public float foreignAffair;
     public float euroscepticism;
     public long budget;
-    public List<int> majorEventChoices = new();
 }
 
 public class SaveManager : MonoBehaviour
@@ -68,18 +67,6 @@ public class SaveManager : MonoBehaviour
     private void Start()
     {
         LoadGame();
-    }
-
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.V))
-        {
-            SaveGame();
-        }
-        if(Input.GetKeyDown(KeyCode.B))
-        {
-            DeleteSave();
-        }
     }
 
     public void DeleteSave()
@@ -115,8 +102,6 @@ public class SaveManager : MonoBehaviour
         currentData.quizIndex = EventsManager.Instance.QuizIndex;
         currentData.electionIndex = EventsManager.Instance.ElectionIndex;
         currentData.membersIndex = EventsManager.Instance.MembersIndex;
-        // TODO
-        //currentData.majorEventChoices = EventsManager.Instance.GetMajorEventChoices();
 
         // EU Stats
         currentData.savedParties.Clear();
@@ -191,7 +176,6 @@ public class SaveManager : MonoBehaviour
             quizzesFailed = 0,
             foreignAffair = 0f,
             euroscepticism = 0f,
-            majorEventChoices = new List<int>()
         };
     }
     private string EncryptString(string plainText)
