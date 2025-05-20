@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: e9f9668675f71794d8a758421262c0d3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6279234564763482976
+    second: altaCladire_0
+  - first:
+      213: 6314955379561296156
+    second: altaCladire_1
+  - first:
+      213: 5202379136503197992
+    second: altaCladire_2
+  - first:
+      213: 3780535670566255348
+    second: altaCladire_3
+  - first:
+      213: -127786401294154476
+    second: altaCladire_4
+  - first:
+      213: -4865464170656718301
+    second: altaCladire_5
+  - first:
+      213: -4791679073013658460
+    second: altaCladire_6
+  - first:
+      213: 5070915399487851468
+    second: altaCladire_7
+  - first:
+      213: 7731611737425300835
+    second: altaCladire_8
+  - first:
+      213: -8134615518522858853
+    second: altaCladire_9
+  - first:
+      213: -3228559646413232385
+    second: altaCladire_10
+  - first:
+      213: 6037573146984734218
+    second: altaCladire_11
+  - first:
+      213: 257676931586083933
+    second: altaCladire_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: altaCladire_0
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 400
+        width: 329
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a40be1ae6dabd8a0800000000000000
+      internalID: -6279234564763482976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: altaCladire_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 160
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c11713ba57a33a750800000000000000
+      internalID: 6314955379561296156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: altaCladire_2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 330
+        width: 460
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8213d22e240923840800000000000000
+      internalID: 5202379136503197992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: altaCladire_3
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 50
+        width: 350
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa7bc88929277430800000000000000
+      internalID: 3780535670566255348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: altaCladire_4
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 77
+        width: 151
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4158cbfe1f20a3ef0800000000000000
+      internalID: -127786401294154476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: altaCladire_5
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 323
+        width: 86
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 322ad987d166a7cb0800000000000000
+      internalID: -4865464170656718301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: altaCladire_6
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 73
+        width: 107
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ac095f3549808db0800000000000000
+      internalID: -4791679073013658460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: altaCladire_7
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 67
+        width: 106
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccb088060b28f5640800000000000000
+      internalID: 5070915399487851468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: altaCladire_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 57
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36dc97e49e33c4b60800000000000000
+      internalID: 7731611737425300835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: altaCladire_9
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 50
+        width: 98
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b92a012f84a0c1f80800000000000000
+      internalID: -8134615518522858853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: altaCladire_10
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 44
+        width: 103
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff6e0637b1ad133d0800000000000000
+      internalID: -3228559646413232385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: altaCladire_11
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 22
+        width: 422
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0e567be9c4c9c350800000000000000
+      internalID: 6037573146984734218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: altaCladire_12
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 36
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5c4006ddc3739300800000000000000
+      internalID: 257676931586083933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      altaCladire_0: -6279234564763482976
+      altaCladire_1: 6314955379561296156
+      altaCladire_10: -3228559646413232385
+      altaCladire_11: 6037573146984734218
+      altaCladire_12: 257676931586083933
+      altaCladire_2: 5202379136503197992
+      altaCladire_3: 3780535670566255348
+      altaCladire_4: -127786401294154476
+      altaCladire_5: -4865464170656718301
+      altaCladire_6: -4791679073013658460
+      altaCladire_7: 5070915399487851468
+      altaCladire_8: 7731611737425300835
+      altaCladire_9: -8134615518522858853
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

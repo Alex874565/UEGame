@@ -197,7 +197,7 @@ MonoBehaviour:
     EuChoiceDescription: "The EU chose to pause the ratification process, enter a
       \"period of reflection,\" and eventually rework the Constitution into a more
       modest treaty \u2014 the Treaty of Lisbon, signed in 2007.\n"
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: e7a8c1b3b4efa2f4b84fdcd2f6f7f773, type: 3}
     choices:
     - title: 
       description: 
@@ -205,7 +205,7 @@ MonoBehaviour:
       euroscepticismModifier: 0.02
       foreignAffairsModifier: -0.02
       moneyModifier: -200000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: e7a8c1b3b4efa2f4b84fdcd2f6f7f773, type: 3}
   - eventDate: 07/07/2005
     title: London Terrorist Attacks
     countryName: London
@@ -401,7 +401,7 @@ MonoBehaviour:
       leadership in global affairs, launching stronger dialogue on defense, energy,
       and economic recovery.\n\nThe U.S.\u2013EU diplomatic and strategic ties were
       strenghtened.\n\nEU\u2019s global image as a key partner was boosted."
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 41e4aee386e81f9439ce7a472772f40f, type: 3}
     choices:
     - title: 
       description: 
@@ -409,7 +409,7 @@ MonoBehaviour:
       euroscepticismModifier: 0
       foreignAffairsModifier: 0.01
       moneyModifier: -10000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 41e4aee386e81f9439ce7a472772f40f, type: 3}
   - eventDate: 09/04/2009
     title: Parliament on Facebook
     countryName: Brussels
@@ -468,7 +468,7 @@ MonoBehaviour:
       euroscepticismModifier: 0.02
       foreignAffairsModifier: -0.02
       moneyModifier: 0
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: e7a8c1b3b4efa2f4b84fdcd2f6f7f773, type: 3}
     - title: "Push for Ratification \u2013 Modernize the EU"
       description: Proceed with ratifying the Lisbon Treaty across all member states,
         even if it means facing tough referenda or political backlash.
@@ -522,6 +522,17 @@ MonoBehaviour:
       but acknowledged a more balanced outcome.'
     eventIcon: {fileID: 0}
     choices:
+    - title: Approve the Agreement Without Safeguards
+      description: Sign the deal quickly to satisfy the U.S. and show unity against
+        terrorism.
+      consequences: "The European Parliament faces public criticism for ignoring
+        its new oversight role.\n\nCivil liberties organizations launch campaigns
+        against the EU\u2019s disregard for privacy.\n\nTrust in EU institutions
+        weakens, especially in privacy-conscious member states."
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: 0.01
+      moneyModifier: -5000000
+      eventIcon: {fileID: 21300000, guid: ffb6a159de1dedd4b9f7caf987f03651, type: 3}
     - title: Approve the Agreement with Safeguards
       description: Sign the SWIFT deal with the U.S., but only after negotiating
         strong data protection guarantees and judicial oversight.
@@ -538,7 +549,7 @@ MonoBehaviour:
       euroscepticismModifier: 0
       foreignAffairsModifier: 0.01
       moneyModifier: -8000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: f1950177477ad0347aeb5171b1ba2c2f, type: 3}
     - title: Reject the Agreement Entirely
       description: Block the deal and end data transfers to the U.S., citing privacy
         and sovereignty concerns.
@@ -555,19 +566,8 @@ MonoBehaviour:
       euroscepticismModifier: -0.01
       foreignAffairsModifier: 0
       moneyModifier: -4000000
-      eventIcon: {fileID: 0}
-    - title: Approve the Agreement Without Safeguards
-      description: Sign the deal quickly to satisfy the U.S. and show unity against
-        terrorism.
-      consequences: "The European Parliament faces public criticism for ignoring
-        its new oversight role.\n\nCivil liberties organizations launch campaigns
-        against the EU\u2019s disregard for privacy.\n\nTrust in EU institutions
-        weakens, especially in privacy-conscious member states."
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: 0.01
-      moneyModifier: -5000000
-      eventIcon: {fileID: 0}
-  - eventDate: 20/04/2010
+      eventIcon: {fileID: 21300000, guid: e7a8c1b3b4efa2f4b84fdcd2f6f7f773, type: 3}
+  - eventDate: 17/12/2010
     title: Arab Spring
     countryName: Sidi Bouzid
     description: "Across North Africa and the Middle East, protests erupt against
@@ -722,7 +722,7 @@ MonoBehaviour:
       reception is generally positive, particularly among schools and EU supporters.
       However, critics question the cost and symbolic nature during times of economic
       uncertainty.'
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: e9f9668675f71794d8a758421262c0d3, type: 3}
     choices:
     - title: 
       description: 
@@ -730,7 +730,7 @@ MonoBehaviour:
       euroscepticismModifier: -0.005
       foreignAffairsModifier: 0.005
       moneyModifier: -30000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: e9f9668675f71794d8a758421262c0d3, type: 3}
   - eventDate: 24/01/2012
     title: Bill Gates Long-Term Commitment
     countryName: Davos
@@ -752,7 +752,7 @@ MonoBehaviour:
       reception is generally positive, particularly among schools and EU supporters.
       However, critics question the cost and symbolic nature during times of economic
       uncertainty.'
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 5210a50698e1c0241b307b65d819fc8e, type: 3}
     choices:
     - title: Partner with the Gates Foundation for Coordinated Aid
       description: Align EU development programs with Gates Foundation goals to maximize
@@ -764,7 +764,7 @@ MonoBehaviour:
       euroscepticismModifier: -0.005
       foreignAffairsModifier: 0.01
       moneyModifier: -2000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 1ee312318f899414cb233bf0ef4d1ae9, type: 3}
     - title: Maintain Separate Aid Strategies
       description: Continue EU aid independently, preserving control but missing
         synergy opportunities.
@@ -780,7 +780,7 @@ MonoBehaviour:
       euroscepticismModifier: 0
       foreignAffairsModifier: 0
       moneyModifier: -2000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 276431e7a62be5a4a90f4c8788e19672, type: 3}
     - title: Reduce Aid Spending to Focus on Internal Priorities
       description: Scale back international aid commitments amid budget constraints
         and rising domestic pressures.
@@ -796,7 +796,7 @@ MonoBehaviour:
       euroscepticismModifier: 0.01
       foreignAffairsModifier: -0.02
       moneyModifier: 3000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 242396770f6d40049b9e2703b5d3cb1d, type: 3}
   - eventDate: 01/04/2012
     title: European Citizens' Initiative
     countryName: Brussels
@@ -920,7 +920,7 @@ MonoBehaviour:
       euroscepticismModifier: -0.03
       foreignAffairsModifier: 0.01
       moneyModifier: 0
-      eventIcon: {fileID: 21300000, guid: 85aa794c5a755cb4ba77bdc118c8d040, type: 3}
+      eventIcon: {fileID: 21300000, guid: e7a8c1b3b4efa2f4b84fdcd2f6f7f773, type: 3}
     - title: Renegotiate ACTA with Stronger Safeguards
       description: Delay ratification and demand revisions to protect civil liberties
         and increase transparency.
@@ -936,7 +936,7 @@ MonoBehaviour:
       euroscepticismModifier: 0
       foreignAffairsModifier: 0
       moneyModifier: -20000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
     - title: Ratify ACTA Despite Protests
       description: Proceed with the treaty to show global alignment on IP rights
         and protect European creators and industries.
@@ -952,7 +952,7 @@ MonoBehaviour:
       euroscepticismModifier: 0.02
       foreignAffairsModifier: -0.01
       moneyModifier: 200000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 1a860719d649094478ef42f7a4787853, type: 3}
   - eventDate: 10/12/2012
     title: Nobel Peace Prize
     countryName: Oslo
@@ -973,7 +973,7 @@ MonoBehaviour:
 
       Critics still raise concerns
       about present challenges, but symbolic value resonates widely.'
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 5e270a6adaf95c4469c995ed347d4149, type: 3}
     choices:
     - title: 
       description: 
@@ -981,7 +981,7 @@ MonoBehaviour:
       euroscepticismModifier: -0.005
       foreignAffairsModifier: 0.01
       moneyModifier: 0
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 5e270a6adaf95c4469c995ed347d4149, type: 3}
   - eventDate: 17/21/2013
     title: 25 Years of Sakharov Prize
     countryName: Strasbourg
@@ -997,7 +997,7 @@ MonoBehaviour:
       global affairs.\n\nHuman rights defenders received renewed visibility and support.\n\nCitizens
       were reminded of the EU\u2019s ethical role, though impact on daily life was
       minimal."
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 5e270a6adaf95c4469c995ed347d4149, type: 3}
     choices:
     - title: 
       description: 
@@ -1005,7 +1005,7 @@ MonoBehaviour:
       euroscepticismModifier: -0.005
       foreignAffairsModifier: 0.01
       moneyModifier: -2000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 5e270a6adaf95c4469c995ed347d4149, type: 3}
   - eventDate: 16/09/2014
     title: Agreement with Ukraine
     countryName: Brussels
@@ -1541,7 +1541,7 @@ MonoBehaviour:
       The
       project draws praise for promoting unity, especially among educators and students,
       but also sparks skepticism in more eurosceptic circles about its cost and messaging.'
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: e9f9668675f71794d8a758421262c0d3, type: 3}
     choices:
     - title: 
       description: 
@@ -1549,7 +1549,7 @@ MonoBehaviour:
       euroscepticismModifier: 0.01
       foreignAffairsModifier: 0.005
       moneyModifier: -100000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: e9f9668675f71794d8a758421262c0d3, type: 3}
   - eventDate: 15/06/2017
     title: End of Roaming Fees
     countryName: Brussels
