@@ -9,8 +9,10 @@ public class PopupManager : MonoBehaviour
     public static PopupManager Instance;
     public Action seenEvent;
 
-    [SerializeField] private Color positiveRevenueColor = Color.green;
-    [SerializeField] private Color negativeRevenueColor = Color.red;
+    [SerializeField] private Color positiveRevenueColor = new Color(0f, 0.25f, 0f); // Very Dark Green
+    [SerializeField] private Color negativeRevenueColor = new Color(0.25f, 0f, 0f); // Very Dark Red
+
+
     
     [SerializeField] private GameObject particleSystemGO;
 
