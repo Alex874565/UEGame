@@ -13,6 +13,6 @@ public class MainMenu : MonoBehaviour
     public void LoadGame()
     {
         loadingScreen.SetActive(true);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }
