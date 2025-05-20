@@ -35,7 +35,6 @@ public class SmoothZoomAndPan : MonoBehaviour
     private Vector3 targetPosition;
     private Vector3 dragOrigin;
     private Camera cam;
-    private bool isDragging = false;
 
     void Start()
     {
@@ -66,8 +65,6 @@ public class SmoothZoomAndPan : MonoBehaviour
         UpdateCursor();
     }
 
-
-
     void HandleZoom()
     {
         float scroll = Input.GetAxis("Mouse ScrollWheel");
@@ -85,7 +82,6 @@ public class SmoothZoomAndPan : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
-            isDragging = true;
             dragOrigin = Input.mousePosition;
         }
 
@@ -99,11 +95,6 @@ public class SmoothZoomAndPan : MonoBehaviour
 
                 dragOrigin = Input.mousePosition; // update to avoid compounding
             }
-        }
-
-        if (Input.GetMouseButtonUp(1))
-        {
-            isDragging = false;
         }
     }
 
