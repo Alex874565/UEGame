@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 1a860719d649094478ef42f7a4787853
+guid: b70699e31b1afa047a85175667cc4d6f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 281858558916022996
-    second: morepeopleX_0
-  - first:
-      213: 4106823706360153209
-    second: morepeopleX_1
+      213: -6129654400548185103
+    second: doubleclickan1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: morepeopleX_0
+      name: doubleclickan1_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 40
-        width: 526
-        height: 480
+        x: 155
+        y: 81
+        width: 271
+        height: 364
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4d2d711bddc59e300800000000000000
-      internalID: 281858558916022996
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: morepeopleX_1
-      rect:
-        serializedVersion: 2
-        x: 454
-        y: 29
-        width: 13
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 97400cce66e5ef830800000000000000
-      internalID: 4106823706360153209
+      spriteID: 1fb5a6b8cc71feaa0800000000000000
+      internalID: -6129654400548185103
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      morepeopleX_0: 281858558916022996
-      morepeopleX_1: 4106823706360153209
+      doubleclickan1_0: -6129654400548185103
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

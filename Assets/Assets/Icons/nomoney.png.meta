@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 1a860719d649094478ef42f7a4787853
+guid: 242396770f6d40049b9e2703b5d3cb1d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 281858558916022996
-    second: morepeopleX_0
+      213: -9142139700037517236
+    second: nomoney_0
   - first:
-      213: 4106823706360153209
-    second: morepeopleX_1
+      213: -26409149122006561
+    second: nomoney_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,7 +103,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: morepeopleX_0
+      name: nomoney_0
       rect:
         serializedVersion: 2
         x: 24
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4d2d711bddc59e300800000000000000
-      internalID: 281858558916022996
+      spriteID: c4084444168902180800000000000000
+      internalID: -9142139700037517236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: morepeopleX_1
+      name: nomoney_1
       rect:
         serializedVersion: 2
         x: 454
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 97400cce66e5ef830800000000000000
-      internalID: 4106823706360153209
+      spriteID: fd133cfc40d22aff0800000000000000
+      internalID: -26409149122006561
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      morepeopleX_0: 281858558916022996
-      morepeopleX_1: 4106823706360153209
+      nomoney_0: -9142139700037517236
+      nomoney_1: -26409149122006561
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

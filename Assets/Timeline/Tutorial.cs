@@ -6,6 +6,7 @@ public class Tutorial : MonoBehaviour
 {
     [Header("Tutorial Steps")]
     [SerializeField] private List<GameObject> tutorialSteps = new();
+    [SerializeField] private GameObject clickButton;
 
     [Header("End of Tutorial Event")]
     public UnityEvent onTutorialComplete;
@@ -31,15 +32,19 @@ public class Tutorial : MonoBehaviour
 
     void AdvanceTutorial()
     {
+        clickButton.SetActive(false);
+
         if (currentStep < tutorialSteps.Count)
         {
-            tutorialSteps[currentStep].SetActive(false);
+            tutorialSteps[currentStep].GetComponent<Animator>().Play("FadeOut");
+            //tutorialSteps[currentStep].SetActive(false);
             currentStep++;
         }
 
         if (currentStep < tutorialSteps.Count)
         {
             tutorialSteps[currentStep].SetActive(true);
+            tutorialSteps[currentStep].GetComponent<Animator>().Play("FadeIn");
         }
         else
         {

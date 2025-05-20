@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cac4e2a45de5a141a2e7d1cdf8695dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerSFX: {fileID: 6403252182692130976, guid: 17178ffeea9ab9041a1a61ed6448cc80, type: 3}
+  triggerSFX: {fileID: 4938095755617958529, guid: 2e79f16be10fbd14f8d5ef191f8db4aa, type: 3}
 --- !u!95 &6096087006580320029
 Animator:
   serializedVersion: 7
@@ -138,7 +138,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4550724796794375489}

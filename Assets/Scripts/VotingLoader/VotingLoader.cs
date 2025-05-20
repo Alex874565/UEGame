@@ -58,8 +58,7 @@ public class VotingLoader : MonoBehaviour
             EventsManager.Instance.SpawnPopup(iconPopup, eventData.countryName);
         popup.GetComponent<Image>().sprite = eventData.choices[answerIndex].eventIcon;
 
-        TimeManager.Instance.SetTimeScale(TimeManager.Instance.DefaultTimeScale);
-        TimeManager.Instance.ResetButtonStates();
+        TimeManager.Instance.PlayTime();
 
         consequencePanel.SetActive(false);
     }

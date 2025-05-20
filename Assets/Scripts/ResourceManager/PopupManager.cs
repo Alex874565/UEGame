@@ -382,8 +382,7 @@ public class PopupManager : MonoBehaviour
     private void AnswerSelected(int index)
     {
         quizPanel.SetActive(false);
-        TimeManager.Instance.SetTimeScale(TimeManager.Instance.DefaultTimeScale);
-        TimeManager.Instance.ResetButtonStates();
+        TimeManager.Instance.PlayTime();
 
         if (index < 0) { return; }
 

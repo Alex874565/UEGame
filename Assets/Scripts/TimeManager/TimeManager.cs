@@ -69,7 +69,7 @@ public class TimeManager : MonoBehaviour
         timeScale = defaultTimeScale;
         timer = 0f;
         UpdateHUDDate();
-        PlayTime();
+        PauseTime();
     }
 
     void Update()
@@ -179,13 +179,6 @@ public class TimeManager : MonoBehaviour
         pauseButton.interactable = false;
         fastForwardButton.interactable = false;
         playButton.interactable = false;
-    }
-
-    public void ResetButtonStates()
-    {
-        playButton.interactable = false;
-        fastForwardButton.interactable = true;
-        pauseButton.interactable = true;
     }
 
     public void Load(SaveData currentData)
