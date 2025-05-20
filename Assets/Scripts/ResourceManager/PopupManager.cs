@@ -385,7 +385,7 @@ public class PopupManager : MonoBehaviour
         quizPanel.SetActive(false);
         TimeManager.Instance.PlayTime();
 
-        if (index < 0) { return; }
+        if (index < 0) { SaveManager.Instance.SaveGame(); return; }
 
         UpdateResources(index);
     }
@@ -398,6 +398,7 @@ public class PopupManager : MonoBehaviour
         ResourceManager.Instance.UpdateForeignAffairs(selectedChoice.foreignAffairsModifier);
         ResourceManager.Instance.UpdateEurosceptisism(selectedChoice.euroscepticismModifier);
         ResourceManager.Instance.UpdateBudget(selectedChoice.moneyModifier);
+        SaveManager.Instance.SaveGame();
     }
 
     private void ClearCurrentEventData()

@@ -21,7 +21,23 @@ MonoBehaviour:
       Comission, European Council and the Council of EU. You can check the changes
       by clicking the button in the up right corner.'
     president: 
-    parties: []
+    parties:
+    - partyName: EPP-ED
+      seats: 233
+    - partyName: PES
+      seats: 175
+    - partyName: ELDR
+      seats: 52
+    - partyName: Greens/EFA
+      seats: 45
+    - partyName: GUE/NGL
+      seats: 42
+    - partyName: UEN
+      seats: 23
+    - partyName: EDD
+      seats: 18
+    - partyName: NI
+      seats: 38
   - title: European Parliament Elections
     countryName: Brussels
     institution: 1

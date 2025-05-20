@@ -22,7 +22,7 @@ public class EUStats : MonoBehaviour
     [SerializeField] private Transform partyListContainer;
     [SerializeField] private GameObject partyItemPrefab;
 
-    private ElectionsDatabase.Election electionData;
+    private ElectionsDatabase.Election electionData = new();
 
     private void Awake()
     {
@@ -30,6 +30,15 @@ public class EUStats : MonoBehaviour
             Instance = this;
         else
             Destroy(gameObject);
+    }
+
+    private void Start()
+    {
+        UpdateElectionUI();
+        if (electionData.parties.Count > 0)
+        {
+            UpdatePartyUI();
+        }
     }
 
     public void Load(SaveData saveData)
