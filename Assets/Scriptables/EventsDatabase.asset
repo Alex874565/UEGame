@@ -982,7 +982,7 @@ MonoBehaviour:
       foreignAffairsModifier: 0.01
       moneyModifier: 0
       eventIcon: {fileID: 21300000, guid: 5e270a6adaf95c4469c995ed347d4149, type: 3}
-  - eventDate: 17/21/2013
+  - eventDate: 17/12/2013
     title: 25 Years of Sakharov Prize
     countryName: Strasbourg
     description: "The European Parliament celebrates 25 years of the Sakharov Prize
