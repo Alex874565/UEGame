@@ -266,7 +266,7 @@ MonoBehaviour:
       eventIcon: {fileID: 21300000, guid: 272d5e991790fbc4e8746fd68afa2a82, type: 3}
   - eventDate: 03/04/2006
     title: Live Broadcast of Plenary
-    countryName: Strassbourg
+    countryName: Strasbourg
     description: In an effort to increase transparency and public engagement, the
       European Parliament began live-streaming its plenary sessions online in 2006.
       Citizens across the EU could now watch debates and votes as they happened,
