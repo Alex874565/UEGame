@@ -97,6 +97,6 @@ public class Intro : MonoBehaviour
         disclaimerText.SetActive(true);
         disclaimer.GetComponent<Animator>().Play("FadeIn");
         disclaimerText.GetComponent<Animator>().Play("FadeIn");
-        disclaimerWaitTime = 20f;
+        disclaimerWaitTime = 40f;
     }
 }
