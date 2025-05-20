@@ -49,6 +49,7 @@ public class PauseMenu : MonoBehaviour
     {
         Cursor.visible = true;
         loadingScreen.SetActive(true);
+        PlayerPrefs.SetInt("SkipIntro", 1);
         SceneManager.LoadScene(1);
     }
 
