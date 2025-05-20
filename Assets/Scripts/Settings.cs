@@ -1,5 +1,3 @@
-using System.Collections;
-using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
@@ -11,57 +9,16 @@ public class Settings : MonoBehaviour
     [SerializeField] private Slider SFXVolumeSlider;
     [SerializeField] private Slider musicVolumeSlider;
 
-    #region Audio
-
-    [Header("Audio")]
-    [Space(5)]
     [Header("Audio Settings")]
     [SerializeField] private AudioMixer mainMixer;
-    [SerializeField] private AudioMixerGroup SFXMixer;
-    [SerializeField] private AudioMixerGroup musicMixer;
 
+    [SerializeField] private float defaultMainVolume = .1f;
+    [SerializeField] private float defaultSFXVolume = .4f;
+    [SerializeField] private float defaultMusicVolume = .5f;
 
-    [SerializeField] private string mainMixerKey = "MainMixer";
-    [SerializeField] private string SFXMixerKey = "SFXMixer";
-    [SerializeField] private string musicMixerKey = "MusicMixer";
-
-    private const string mainMixerParameterName = "MainVolume";
-    private const string SFXMixerParameterName = "SFXVolume";
-    private const string musicMixerParameterName = "MusicVolume";
-
-
-    private float MainVolume
-    {
-        get
-        {
-            return PlayerPrefs.HasKey(mainMixerKey) ? PlayerPrefs.GetFloat(mainMixerKey) == 0.001f
-                ? -80f : PlayerPrefs.GetFloat(mainMixerKey) : 1f;
-        }
-        set { PlayerPrefs.SetFloat(mainMixerKey, value); }
-    }
-
-    private float SFXVolume
-    {
-        get
-        {
-            return PlayerPrefs.HasKey(SFXMixerKey) ? PlayerPrefs.GetFloat(SFXMixerKey) == 0.001f
-                ? -80f : PlayerPrefs.GetFloat(SFXMixerKey) : 1f;
-        }
-        set { PlayerPrefs.SetFloat(SFXMixerKey, value); }
-    }
-
-    private float MusicVolume
-    {
-        get
-        {
-            return PlayerPrefs.HasKey(musicMixerKey) ? PlayerPrefs.GetFloat(musicMixerKey) == 0.001f
-                ? -80f : PlayerPrefs.GetFloat(musicMixerKey) : 1f;
-        }
-        set { PlayerPrefs.SetFloat(musicMixerKey, value); }
-    }
-
-    #endregion
-
+    [SerializeField] private string mainMixerKey = "MainVolume";
+    [SerializeField] private string sfxMixerKey = "SFXVolume";
+    [SerializeField] private string musicMixerKey = "MusicVolume";
 
     private void Awake()
     {
@@ -70,34 +27,39 @@ public class Settings : MonoBehaviour
 
     private void ApplySettings()
     {
-        mainVolumeSlider.value = MainVolume;
-        SFXVolumeSlider.value = SFXVolume;
-        musicVolumeSlider.value = MusicVolume;
+        float mainVol = PlayerPrefs.GetFloat(mainMixerKey, defaultMainVolume);
+        float sfxVol = PlayerPrefs.GetFloat(sfxMixerKey, defaultSFXVolume);
+        float musicVol = PlayerPrefs.GetFloat(musicMixerKey, defaultMusicVolume);
 
-        mainMixer.SetFloat(mainMixerParameterName, Mathf.Log10(PlayerPrefs.GetFloat(mainMixerParameterName)) * 20);
-        mainMixer.SetFloat(SFXMixerParameterName, Mathf.Log10(PlayerPrefs.GetFloat(SFXMixerParameterName)) * 20);
-        mainMixer.SetFloat(musicMixerParameterName, Mathf.Log10(PlayerPrefs.GetFloat(musicMixerParameterName)) * 20);
+        mainVolumeSlider.value = mainVol;
+        SFXVolumeSlider.value = sfxVol;
+        musicVolumeSlider.value = musicVol;
+
+        mainMixer.SetFloat(mainMixerKey, ToDecibel(mainVol));
+        mainMixer.SetFloat(sfxMixerKey, ToDecibel(sfxVol));
+        mainMixer.SetFloat(musicMixerKey, ToDecibel(musicVol));
     }
 
-    #region Sliders
-
-    public void SetMainMixerVolume(float volumeValue)
+    public void SetMainMixerVolume(float value)
     {
-        MainVolume = volumeValue;
-        mainMixer.SetFloat(mainMixerParameterName, Mathf.Log10(volumeValue) * 20);
+        PlayerPrefs.SetFloat(mainMixerKey, value);
+        mainMixer.SetFloat(mainMixerKey, ToDecibel(value));
     }
 
-    public void SetSFXMixerVolume(float volumeValue)
+    public void SetSFXMixerVolume(float value)
     {
-        SFXVolume = volumeValue;
-        mainMixer.SetFloat(mainMixerParameterName, Mathf.Log10(volumeValue) * 20);
+        PlayerPrefs.SetFloat(sfxMixerKey, value);
+        mainMixer.SetFloat(sfxMixerKey, ToDecibel(value));
     }
 
-    public void SetMusicMixerVolume(float volumeValue)
+    public void SetMusicMixerVolume(float value)
     {
-        MusicVolume = volumeValue;
-        mainMixer.SetFloat(mainMixerParameterName, Mathf.Log10(volumeValue) * 20);
+        PlayerPrefs.SetFloat(musicMixerKey, value);
+        mainMixer.SetFloat(musicMixerKey, ToDecibel(value));
     }
 
-    # endregion
+    private float ToDecibel(float value)
+    {
+        return Mathf.Approximately(value, 0f) ? -80f : Mathf.Log10(value) * 20f;
+    }
 }

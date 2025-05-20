@@ -1904,7 +1904,7 @@ AudioSource:
   m_GameObject: {fileID: 513653378}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -55769057821599095, guid: 99a871abb92c1c64483b36cabf443806, type: 2}
   m_audioClip: {fileID: 8300000, guid: aeedcb7c9641cea438b87ec071684abd, type: 3}
   m_Resource: {fileID: 8300000, guid: aeedcb7c9641cea438b87ec071684abd, type: 3}
   m_PlayOnAwake: 0
@@ -4366,11 +4366,12 @@ MonoBehaviour:
   SFXVolumeSlider: {fileID: 1911631226}
   musicVolumeSlider: {fileID: 1607559411}
   mainMixer: {fileID: 24100000, guid: 99a871abb92c1c64483b36cabf443806, type: 2}
-  SFXMixer: {fileID: -55769057821599095, guid: 99a871abb92c1c64483b36cabf443806, type: 2}
-  musicMixer: {fileID: -55769057821599095, guid: 99a871abb92c1c64483b36cabf443806, type: 2}
-  mainMixerKey: MainMixer
-  SFXMixerKey: SFXMixer
-  musicMixerKey: MusicMixer
+  defaultMainVolume: 0.1
+  defaultSFXVolume: 0.4
+  defaultMusicVolume: 0.5
+  mainMixerKey: MainVolume
+  sfxMixerKey: SFXVolume
+  musicMixerKey: MusicVolume
 --- !u!1 &1009931469
 GameObject:
   m_ObjectHideFlags: 0
