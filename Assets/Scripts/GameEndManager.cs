@@ -60,6 +60,7 @@ public class GameEndManager : MonoBehaviour
 
     public void TriggerGameFinish()
     {
+        SaveManager.Instance.DeleteSave();
         timeManager.SetTimeScale(0);
 
         int moneyStarsLevel = 0;
