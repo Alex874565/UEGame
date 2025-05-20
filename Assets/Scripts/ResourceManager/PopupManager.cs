@@ -62,9 +62,9 @@ public class PopupManager : MonoBehaviour
         eventDateText.text = "";
         eventQuestionText.text = "";
 
-        eventTitleText.color = Color.white;
-        eventDateText.color = Color.white;
-        eventQuestionText.color = Color.white;
+        // eventTitleText.color = Color.white;
+        // eventDateText.color = Color.white;
+        // eventQuestionText.color = Color.white;
 
         for (int i = 0; i < answerPanels.Length; i++)
         {
@@ -80,9 +80,9 @@ public class PopupManager : MonoBehaviour
             desc.text = "";
             money.text = "";
 
-            title.color = Color.white;
-            desc.color = Color.white;
-            money.color = Color.white;
+            // title.color = Color.white;
+            // desc.color = Color.white;
+            // money.color = Color.white;
 
             Debug.Log("Removing listeners from " + button.name);
             button.onClick.RemoveAllListeners();

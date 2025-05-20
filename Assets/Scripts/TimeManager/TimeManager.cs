@@ -2,6 +2,7 @@ using UnityEngine;
 using System;
 using UnityEngine.UI;
 using TMPro;
+using System.Globalization;
 
 public class TimeManager : MonoBehaviour
 {
@@ -127,7 +128,7 @@ public class TimeManager : MonoBehaviour
     public string GetDateString()
     {
         DateTime date = new DateTime(year, month, day);
-        return $"{date.ToString("dd/MM/yyyy")}";
+        return $"{date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)}";
     }
 
     public void UpdateHUDDate()
