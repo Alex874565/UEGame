@@ -58,6 +58,7 @@ public class SaveManager : MonoBehaviour
 
     private void Awake()
     {
+        print(Instance == null);
         if (Instance == null)
             Instance = this;
 
