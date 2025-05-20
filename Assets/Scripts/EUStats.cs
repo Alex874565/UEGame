@@ -11,18 +11,15 @@ public class EUStats : MonoBehaviour
     [SerializeField] private Image mapImage;
 
     [Header("Election Info UI")]
-    [SerializeField] private TMP_Text titleText;
-    [SerializeField] private TMP_Text countryText;
-    [SerializeField] private TMP_Text institutionText;
-    [SerializeField] private TMP_Text dateText;
-    [SerializeField] private TMP_Text presidentText;
-    [SerializeField] private TMP_Text descriptionText;
+    [SerializeField] private TMP_Text comissionPresident;
+    [SerializeField] private TMP_Text parliamentPresident;
+    [SerializeField] private TMP_Text councilPresident;
 
     [Header("Party Stats UI")]
     [SerializeField] private Transform partyListContainer;
     [SerializeField] private GameObject partyItemPrefab;
 
-    private ElectionsDatabase.Election currentElection;
+    private ElectionsDatabase.Election electionData;
 
     private void Awake()
     {
@@ -34,15 +31,18 @@ public class EUStats : MonoBehaviour
 
     public void Load(SaveData saveData)
     {
-        currentElection = EventsManager.Instance.ElectionsDatabase.elections[saveData.selectedElectionIndex];
+        electionData = EventsManager.Instance.ElectionsDatabase.elections[saveData.selectedElectionIndex];
 
         UpdateElectionUI();
-        UpdatePartyUI();
+        if (electionData.parties.Count > 0)
+        {
+            UpdatePartyUI();
+        }
     }
 
     public void ChangeParty(ElectionsDatabase.Election newParty)
     {
-        currentElection = newParty;
+        electionData = newParty;
         if (newParty == null)
         {
             Debug.LogWarning("ChangeParty called with empty or null list.");
@@ -60,14 +60,23 @@ public class EUStats : MonoBehaviour
     
     private void UpdateElectionUI()
     {
-        if (currentElection == null) return;
+        if (electionData == null) return;
 
-        titleText.text = currentElection.title;
-        countryText.text = currentElection.countryName;
-        institutionText.text = currentElection.institution.ToString();
-        dateText.text = currentElection.electionDate;
-        presidentText.text = currentElection.president;
-        descriptionText.text = currentElection.description;
+        if (electionData.institution == ElectionsDatabase.Election.InstitutionType.Comission)
+        {
+            comissionPresident.text = electionData.president;
+        }
+        else if (electionData.institution == ElectionsDatabase.Election.InstitutionType.EuropeanCouncil)
+        {
+            councilPresident.text = electionData.president;
+        }
+        else if (electionData.institution == ElectionsDatabase.Election.InstitutionType.Parliament)
+        {
+            if (electionData.president != "")
+            {
+                parliamentPresident.text = electionData.president;
+            }
+        }
     }
 
     private void UpdatePartyUI()
@@ -77,7 +86,7 @@ public class EUStats : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        foreach (var party in currentElection.parties)
+        foreach (var party in electionData.parties)
         {
             GameObject obj = Instantiate(partyItemPrefab, partyListContainer);
             TextMeshProUGUI label = obj.GetComponentInChildren<TextMeshProUGUI>();
@@ -91,6 +100,6 @@ public class EUStats : MonoBehaviour
 
     public ElectionsDatabase.Election GetCurrentElection()
     {
-        return currentElection;
+        return electionData;
     }
 }

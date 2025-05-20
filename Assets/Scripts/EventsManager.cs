@@ -108,6 +108,7 @@ public class EventsManager : MonoBehaviour
             Debug.Log("Election Triggered: " + electionsDatabase.elections[electionIndex].electionDate);
             timeManager.DisableTimeButtons();
             timeManager.SetTimeScale(0);
+            Debug.Log("Election Triggered: " + electionsDatabase.elections[electionIndex].countryName);
             StartElectionEvent(electionsDatabase.elections[electionIndex].countryName);
         }
 
@@ -154,7 +155,7 @@ public class EventsManager : MonoBehaviour
     {
         nrOfSpawnedEvents++;
         SpawnMemberEvent(country);
-        eventIndex++;
+        membersIndex++;
     }
 
     #endregion
@@ -189,7 +190,7 @@ public class EventsManager : MonoBehaviour
             GameObject GO =
                 Instantiate(quizPopup, targetLocation.position, Quaternion.identity, mapHolder);
             QuizEventTrigger mainEvent = GO.GetComponentInChildren<QuizEventTrigger>();
-            mainEvent.Initialize(quizzesDatabase.quizzes[eventIndex]);
+            mainEvent.Initialize(quizzesDatabase.quizzes[quizIndex]);
 
             Debug.Log($"Quiz spawned at {countryName}");
         }
@@ -208,7 +209,7 @@ public class EventsManager : MonoBehaviour
             GameObject GO =
                 Instantiate(budgetPopup, targetLocation.position, Quaternion.identity, mapHolder);
             BudgetEventTrigger mainEvent = GO.GetComponentInChildren<BudgetEventTrigger>();
-            mainEvent.Initialize(budgetDatabase.budgets[eventIndex]);
+            mainEvent.Initialize(budgetDatabase.budgets[budgetIndex]);
 
             Debug.Log($"Budget event spawned at {countryName}");
         }
@@ -227,7 +228,7 @@ public class EventsManager : MonoBehaviour
             GameObject GO =
                 Instantiate(electionPopup, targetLocation.position, Quaternion.identity, mapHolder);
             ElectionEventTrigger mainEvent = GO.GetComponentInChildren<ElectionEventTrigger>();
-            mainEvent.Initialize(electionsDatabase.elections[eventIndex]);
+            mainEvent.Initialize(electionsDatabase.elections[electionIndex]);
 
             Debug.Log($"Election event spawned at {countryName}");
         }

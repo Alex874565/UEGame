@@ -18,7 +18,7 @@ MonoBehaviour:
     description: These events change map you see due to the countries that joined
       the UE!
     countryName: Brussels
-    newMap: {fileID: 2730251173873922541, guid: 278449bc70c838842897c6f50316a6c3, type: 3}
+    newMap: {fileID: -3472435481649918759, guid: 4463b8a60760a2444abb4384e2fca09d, type: 3}
   - date: 01/05/2004
     title: 'Historic Eastern Enlargement: Reunifying Europe'
     description: This unprecedented expansion marked the symbolic and practical reunification

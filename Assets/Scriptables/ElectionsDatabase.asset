@@ -18,18 +18,14 @@ MonoBehaviour:
     institution: 1
     electionDate: 15/01/2003
     description: 'These events can come in 4 different institutions: Parliament,
-      Comission, European Council and the Council of EU. Down below are presented
-      the parties and the number of seats they have.'
-    president: Here will be displayed the president's name.
-    parties:
-    - partyName: Party 1
-      seats: 2
-    - partyName: Party 2
-      seats: 3
+      Comission, European Council and the Council of EU. You can check the changes
+      by clicking the button in the up right corner.'
+    president: 
+    parties: []
   - title: European Parliament Elections
     countryName: Brussels
     institution: 1
-    electionDate: 13/06/2004
+    electionDate: 20/06/2004
     description: 'This election was the first after the EU''s largest enlargement,
       incorporating 10 new member states. It marked a significant moment in EU history,
       expanding the Union''s diversity and political landscape.

@@ -47,6 +47,7 @@ public class VotingLoader : MonoBehaviour
 
         consequencePanel.SetActive(true);
 
+        Debug.Log("Removing listeners from " + consequenceBtn.name);
         consequenceBtn.onClick.RemoveAllListeners();
         consequenceBtn.onClick.AddListener(
             () => SpawnPopup(eventData, answerIndex)); 

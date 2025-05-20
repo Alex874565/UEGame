@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EventsDatabase
   m_EditorClassIdentifier: 
   events:
-  - eventDate: 01/02/2003
+  - eventDate: 29/01/2003
     title: Your first secondary event!
     countryName: Brussels
     description: This is an event that might give or take resources from you, depending
