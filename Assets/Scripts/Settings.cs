@@ -1,3 +1,5 @@
+using System.IO;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
@@ -5,6 +7,9 @@ using UnityEngine.UI;
 public class Settings : MonoBehaviour
 {
     [Header("UI Elements")]
+    [SerializeField] private TextMeshProUGUI playText;
+    [SerializeField] private Button deleteSaveButton;
+
     [SerializeField] private Slider mainVolumeSlider;
     [SerializeField] private Slider SFXVolumeSlider;
     [SerializeField] private Slider musicVolumeSlider;
@@ -20,9 +25,30 @@ public class Settings : MonoBehaviour
     [SerializeField] private string sfxMixerKey = "SFXVolume";
     [SerializeField] private string musicMixerKey = "MusicVolume";
 
+    private string SavePath;
+
     private void Awake()
     {
         ApplySettings();
+        SavePath = Path.Combine(Application.persistentDataPath, "save.dat");
+
+        playText.text = File.Exists(SavePath) ? "Continue" : "New Game";
+        deleteSaveButton.gameObject.SetActive(File.Exists(SavePath));
+    }
+
+    public void DeleteSave()
+    {
+        if (File.Exists(SavePath))
+        {
+            File.Delete(SavePath);
+            Debug.Log("Save file deleted.");
+            playText.text = "New Game";
+            deleteSaveButton.gameObject.SetActive(false);
+        }
+        else
+        {
+            Debug.Log("No save file to delete.");
+        }
     }
 
     private void ApplySettings()
