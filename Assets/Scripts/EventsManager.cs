@@ -79,6 +79,7 @@ public class EventsManager : MonoBehaviour
 
     public void CheckForEvent(string date)
     {
+        Debug.Log(date);
         if (eventsDatabase.events.Count > eventIndex && date == eventsDatabase.events[eventIndex].eventDate)
         {
             Debug.Log("Event Triggered: " + eventsDatabase.events[eventIndex].title);
