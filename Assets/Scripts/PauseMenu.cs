@@ -47,6 +47,7 @@ public class PauseMenu : MonoBehaviour
 
     public void MainMenu()
     {
+        Cursor.visible = true;
         loadingScreen.SetActive(true);
         SceneManager.LoadScene(0);
     }

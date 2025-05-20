@@ -1,6 +1,7 @@
 ﻿using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class PopupManager : MonoBehaviour
@@ -25,6 +26,7 @@ public class PopupManager : MonoBehaviour
     [SerializeField] private GameObject[] answerPanels; // each panel contains title, desc, and button
     [SerializeField] private Button leftArrow;
     [SerializeField] private Button rightArrow;
+    
 
     private EventsDatabase.Event currentEvent;
     private QuizzesDatabase.Quiz currentQuiz;
@@ -67,6 +69,7 @@ public class PopupManager : MonoBehaviour
         for (int i = 0; i < answerPanels.Length; i++)
         {
             GameObject panel = answerPanels[i];
+            panel.SetActive(false); // <-- This is the missing key line
 
             var title = panel.transform.Find("Event Choice Title").GetComponent<TextMeshProUGUI>();
             var desc = panel.transform.Find("Event Description").GetComponent<TextMeshProUGUI>();
@@ -81,9 +84,11 @@ public class PopupManager : MonoBehaviour
             desc.color = Color.white;
             money.color = Color.white;
 
+            Debug.Log("Removing listeners from " + button.name);
             button.onClick.RemoveAllListeners();
         }
     }
+
 
     public void ShowQuizEvent(QuizzesDatabase.Quiz quizData)
     {
@@ -118,7 +123,7 @@ public class PopupManager : MonoBehaviour
                 title.text = $"Answer {i + 1}";
                 desc.text = answer.answerText;
 
-                button.onClick.AddListener(() =>
+                SetButtonListener(button, () =>
                 {
                     ResourceManager.Instance.UpdateQuizTries(!answer.isCorrect);
                     AnswerSelected(-1);
@@ -157,7 +162,8 @@ public class PopupManager : MonoBehaviour
             
             title.text = "";
             desc.text = currentEvent.description;
-            moneyModifier.text = currentEvent.choices[0].moneyModifier.ToString() + "€";
+            moneyModifier.text = "€" + FormatLargeNumber(currentEvent.choices[0].moneyModifier);
+
             moneyModifier.color = 
                 currentEvent.choices[0].moneyModifier > 0 ? positiveRevenueColor: negativeRevenueColor;
 
@@ -165,7 +171,7 @@ public class PopupManager : MonoBehaviour
 
             playParticles = false;
 
-            button.onClick.AddListener(() =>
+            SetButtonListener(button, () =>
             {
                 VotingLoader.Instance.Show(currentEvent, 0);
                 UpdateResources(0);
@@ -195,13 +201,15 @@ public class PopupManager : MonoBehaviour
 
                     title.text = choice.title;
                     desc.text = choice.description;
-                    moneyModifier.text = currentEvent.choices[i].moneyModifier.ToString() + "€";
+                    moneyModifier.text = "€" + FormatLargeNumber(currentEvent.choices[i].moneyModifier);
                     moneyModifier.color =
                         currentEvent.choices[i].moneyModifier > 0 ? positiveRevenueColor : negativeRevenueColor;
 
                     int answerIndex = i;
-                    button.onClick.AddListener(() =>
+                    Debug.Log($"[PopupManager] Setting listener for button: {button.name}, panel active: {panel.activeInHierarchy}");
+                    SetButtonListener(button, () =>
                     {
+                        Debug.Log($"[PopupManager] Button clicked — index: {answerIndex}");
                         VotingLoader.Instance.Show(currentEvent, answerIndex);
                         UpdateResources(answerIndex);
                     });
@@ -239,10 +247,10 @@ public class PopupManager : MonoBehaviour
 
         title.text = "";
         moneyModifier.text = "";
-        desc.text = $"You received + {budgetData.budget} €. Allocate it wisely.";
+        desc.text = $"You received €{FormatLargeNumber(budgetData.budget)}. Allocate it wisely.";
         desc.color = positiveRevenueColor;
 
-        button.onClick.AddListener(() =>
+        SetButtonListener(button, () =>
         {
             AnswerSelected(-1);
         });
@@ -272,17 +280,10 @@ public class PopupManager : MonoBehaviour
         var button = panel.GetComponentInChildren<Button>();
 
         moneyModifier.text = "";
-        title.text = "New Government Formed";
-        desc.text = $"The new ruling party are: ";
-        for(int i = 0; i < electionData.parties.Count; i++)
-        {
-            // If the last party don't add the ','.
-            bool isLastParty = i == electionData.parties.Count - 1;
-            desc.text += isLastParty ? electionData.parties[i].partyName : electionData.parties[i].partyName + ", ";
-        }
-        desc.text += ".\nPolicy shifts are expected.";
-
-        button.onClick.AddListener(() =>
+        title.text = electionData.title;
+        desc.text = electionData.description;
+        
+        SetButtonListener(button, () =>
         {
             EUStats.Instance.ChangeParty(electionData);
             AnswerSelected(-1);
@@ -314,10 +315,10 @@ public class PopupManager : MonoBehaviour
         title.text = "";
         desc.text = memberData.description;
 
-        button.onClick.AddListener(() => 
-        { 
+        SetButtonListener(button, () =>
+        {
             EUStats.Instance.UpdateMap(memberData.newMap);
-            AnswerSelected(-1); 
+            AnswerSelected(-1);
         });
         
         DisableArrows();
@@ -340,7 +341,6 @@ public class PopupManager : MonoBehaviour
             UpdateArrowVisibilityCurrentEvent();
         }
     }
-
 
     private void ShowPreviousPanel()
     {
@@ -381,6 +381,7 @@ public class PopupManager : MonoBehaviour
 
     private void AnswerSelected(int index)
     {
+        Debug.Log("anserSelected");
         quizPanel.SetActive(false);
         TimeManager.Instance.PlayTime();
 
@@ -426,5 +427,41 @@ public class PopupManager : MonoBehaviour
         {
             ps.Play();
         }
+    }
+    private string FormatLargeNumber(float number)
+    {
+        float absNumber = Math.Abs(number);
+        string sign = number < 0 ? "-" : "";
+
+        if (absNumber >= 1_000_000_000)
+            return sign + (absNumber / 1_000_000_000f).ToString("0.#") + " Bil";
+        else if (absNumber >= 1_000_000)
+            return sign + (absNumber / 1_000_000f).ToString("0.#") + " Mil";
+        else if (absNumber >= 1_000)
+            return sign + (absNumber / 1_000f).ToString("0.#") + "K";
+        else
+            return number.ToString("0");
+    }
+    private void SetButtonListener(Button button, Action action)
+    {
+        if (button == null)
+        {
+            Debug.LogError("Trying to assign listener to a null button.");
+            return;
+        }
+
+        button.onClick.RemoveAllListeners();
+        button.onClick.AddListener(() =>
+        {
+            Debug.Log($"[PopupManager] Button {button.name} clicked.");
+            try
+            {
+                action();
+            }
+            catch (Exception e)
+            {
+                Debug.LogError($"[PopupManager] Button action error: {e}");
+            }
+        });
     }
 }

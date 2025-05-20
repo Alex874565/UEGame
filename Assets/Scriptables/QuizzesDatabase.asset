@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quizzes:
   - quizDate: 01/01/2004
-    quizName: Quizz 1
+    quizName: Quiz 1
     question: What is disinformation?
     countryName: Brussels
     answers:
@@ -27,7 +27,7 @@ MonoBehaviour:
     - answerText: A harmless rumor.
       isCorrect: 0
   - quizDate: 01/01/2005
-    quizName: Quizz 2
+    quizName: Quiz 2
     question: What is misinformation?
     countryName: Brussels
     answers:
@@ -40,7 +40,7 @@ MonoBehaviour:
     - answerText: Propaganda produced by the state.
       isCorrect: 0
   - quizDate: 01/01/2006
-    quizName: Quizz 3
+    quizName: Quiz 3
     question: What is malinformation?
     countryName: Brussels
     answers:
@@ -53,7 +53,7 @@ MonoBehaviour:
     - answerText: True information used with the intent to cause harm.
       isCorrect: 1
   - quizDate: 01/01/2007
-    quizName: Quizz 4
+    quizName: Quiz 4
     question: What is a potential effect of disinformation?
     countryName: Brussels
     answers:
@@ -66,7 +66,7 @@ MonoBehaviour:
     - answerText: Undermining trust in democratic institutions.
       isCorrect: 1
   - quizDate: 01/01/2008
-    quizName: Quizz 5
+    quizName: Quiz 5
     question: What is a social media bot?
     countryName: Brussels
     answers:
@@ -79,7 +79,7 @@ MonoBehaviour:
     - answerText: A journalist with multiple accounts.
       isCorrect: 0
   - quizDate: 01/01/2009
-    quizName: Quizz 6
+    quizName: Quiz 6
     question: What is an astroturf campaign?
     countryName: Brussels
     answers:
@@ -92,7 +92,7 @@ MonoBehaviour:
     - answerText: A sports-related PR stunt.
       isCorrect: 0
   - quizDate: 01/01/2010
-    quizName: Quizz 7
+    quizName: Quiz 7
     question: What is deepfake technology used for?
     countryName: Brussels
     answers:
@@ -105,7 +105,7 @@ MonoBehaviour:
     - answerText: Editing text messages.
       isCorrect: 0
   - quizDate: 01/01/2011
-    quizName: Quizz 8
+    quizName: Quiz 8
     question: What is micro-targeting?
     countryName: Brussels
     answers:
@@ -118,7 +118,7 @@ MonoBehaviour:
     - answerText: Promoting large-scale ads.
       isCorrect: 0
   - quizDate: 01/01/2012
-    quizName: Quizz 9
+    quizName: Quiz 9
     question: How can you protect yourself from disinformation?
     countryName: Brussels
     answers:
@@ -131,7 +131,7 @@ MonoBehaviour:
     - answerText: Trust your intuition over facts.
       isCorrect: 0
   - quizDate: 01/01/2013
-    quizName: Quizz 10
+    quizName: Quiz 10
     question: "What\u2019s a red flag of a disinformation post?"
     countryName: Brussels
     answers:
@@ -144,7 +144,7 @@ MonoBehaviour:
     - answerText: Quotes from peer-reviewed studies.
       isCorrect: 0
   - quizDate: 01/01/2014
-    quizName: Quizz 11
+    quizName: Quiz 11
     question: What is a fact-checker?
     countryName: Brussels
     answers:
@@ -157,7 +157,7 @@ MonoBehaviour:
     - answerText: A social media user who comments often.
       isCorrect: 0
   - quizDate: 01/01/2015
-    quizName: Quizz 12
+    quizName: Quiz 12
     question: 'Before sharing an article, you should:'
     countryName: Brussels
     answers:
@@ -165,25 +165,12 @@ MonoBehaviour:
       isCorrect: 0
     - answerText: Read it fully and check the source.
       isCorrect: 1
-    - answerText: See how many shares it has.
-      isCorrect: 0
-    - answerText: Only check the headline.
-      isCorrect: 0
-  - quizDate: 01/01/2015
-    quizName: Quizz 12
-    question: 'Before sharing an article, you should:'
-    countryName: Brussels
-    answers:
-    - answerText: Read it fully and check the source.
-      isCorrect: 1
-    - answerText: Send it to friends for opinions.
-      isCorrect: 0
     - answerText: See how many shares it has.
       isCorrect: 0
     - answerText: Only check the headline.
       isCorrect: 0
   - quizDate: 01/01/2016
-    quizName: Quizz 13
+    quizName: Quiz 13
     question: Why is disinformation in health topics dangerous?
     countryName: Brussels
     answers:
@@ -196,7 +183,7 @@ MonoBehaviour:
     - answerText: It lowers hospital prices.
       isCorrect: 0
   - quizDate: 01/01/2017
-    quizName: Quizz 14
+    quizName: Quiz 14
     question: What emotional reaction might signal disinformation?
     countryName: Brussels
     answers:
@@ -209,7 +196,7 @@ MonoBehaviour:
     - answerText: Curiosity without stress.
       isCorrect: 0
   - quizDate: 01/01/2018
-    quizName: Quizz 15
+    quizName: Quiz 15
     question: What is a reliable source of information?
     countryName: Brussels
     answers:
@@ -222,7 +209,7 @@ MonoBehaviour:
     - answerText: Meme pages with millions of likes.
       isCorrect: 0
   - quizDate: 01/01/2019
-    quizName: Quizz 16
+    quizName: Quiz 16
     question: What is a sign of a manipulated article?
     countryName: Brussels
     answers:
@@ -235,7 +222,7 @@ MonoBehaviour:
     - answerText: It uses clickbait and lacks credible sources.
       isCorrect: 1
   - quizDate: 01/01/2020
-    quizName: Quizz 17
+    quizName: Quiz 17
     question: What question should you ask when reading news?
     countryName: Brussels
     answers:
@@ -248,7 +235,7 @@ MonoBehaviour:
     - answerText: Is this fact or opinion?
       isCorrect: 1
   - quizDate: 01/01/2021
-    quizName: Quizz 18
+    quizName: Quiz 18
     question: Why are grammar mistakes common in disinformation?
     countryName: Brussels
     answers:
@@ -261,7 +248,7 @@ MonoBehaviour:
     - answerText: To make people laugh.
       isCorrect: 0
   - quizDate: 01/01/2022
-    quizName: Quizz 19
+    quizName: Quiz 19
     question: Why do creators of disinformation want to go viral?
     countryName: Brussels
     answers:
@@ -274,7 +261,7 @@ MonoBehaviour:
     - answerText: To support local journalism.
       isCorrect: 0
   - quizDate: 01/01/2023
-    quizName: Quizz 20
+    quizName: Quiz 20
     question: "What\u2019s a key feature of malinformation?"
     countryName: Brussels
     answers:
@@ -287,7 +274,7 @@ MonoBehaviour:
     - answerText: It's true information used to harm or mislead.
       isCorrect: 1
   - quizDate: 01/01/2024
-    quizName: Quizz 21
+    quizName: Quiz 21
     question: How can you help stop disinformation?
     countryName: Brussels
     answers:
