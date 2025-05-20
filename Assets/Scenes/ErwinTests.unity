@@ -5105,7 +5105,7 @@ MonoBehaviour:
   baseWorldMax: {x: 100, y: 100}
   panExpandMultiplier: 2.25
   cursorNormal: {fileID: 2800000, guid: b70699e31b1afa047a85175667cc4d6f, type: 3}
-  cursorHand: {fileID: 2800000, guid: d6d8074a9ff9e6543af7e016fdcc7b36, type: 3}
+  cursorHand: {fileID: 2800000, guid: c6c0b3a1851a8e94fb1df8bf59e19c87, type: 3}
   cursorClick: {fileID: 2800000, guid: 55b2ff564fdd57b4d8f5082cab85c737, type: 3}
   cursorHotspot: {x: 0, y: 0}
 --- !u!1 &522684250
