@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.UI;
 
 public class SmoothZoomAndPan : MonoBehaviour
 {
@@ -23,9 +25,11 @@ public class SmoothZoomAndPan : MonoBehaviour
     public Texture2D cursorNormal;
     public Texture2D cursorHand;
     public Texture2D cursorClick;
+    public Canvas canvas; // Reference to the canvas for cursor positioning
+    public Image cursorImage;
     [Tooltip("Hotspot is where the actual click happens in the cursor image")]
     public Vector2 cursorHotspot = Vector2.zero;
-
+    public Texture2D cursorHotspotTexture; // Optional hotspot texture for the cursor
 
     private float targetZoom;
     private Vector3 targetPosition;
@@ -35,6 +39,10 @@ public class SmoothZoomAndPan : MonoBehaviour
 
     void Start()
     {
+        Cursor.visible = false;
+
+        cursorImage.raycastTarget = false;
+
         cam = GetComponent<Camera>();
         if (!cam.orthographic)
         {
@@ -124,18 +132,39 @@ public class SmoothZoomAndPan : MonoBehaviour
 
     void UpdateCursor()
     {
-        if (Input.GetMouseButton(1)) // Right-click held (dragging)
+        Vector2 pos;
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            canvas.transform as RectTransform,
+            Input.mousePosition,
+            null,
+            out pos
+        );
+        cursorImage.rectTransform.anchoredPosition = pos;
+
+        // Convert pixel hotspot to canvas units (UI scale)
+        Vector2 canvasScale = canvas.transform.lossyScale;
+        Vector2 adjustedHotspot = new Vector2(
+            cursorHotspot.x / canvasScale.x,
+            -cursorHotspot.y / canvasScale.y // Flip Y for UI space
+        );
+
+        cursorImage.rectTransform.anchoredPosition = pos - adjustedHotspot;
+
+        // Update sprite
+        Texture2D currentCursor = cursorNormal;
+        if (Input.GetMouseButton(1))
+            currentCursor = cursorHand;
+        else if (Input.GetMouseButton(0))
+            currentCursor = cursorClick;
+
+        if (cursorImage.sprite == null || cursorImage.sprite.texture != currentCursor)
         {
-            Cursor.SetCursor(cursorHand, cursorHotspot, CursorMode.Auto);
-        }
-        else if (Input.GetMouseButton(0)) // Left-click held
-        {
-            Cursor.SetCursor(cursorClick, cursorHotspot, CursorMode.Auto);
-        }
-        else
-        {
-            Cursor.SetCursor(cursorNormal, cursorHotspot, CursorMode.Auto);
+            cursorImage.sprite = Sprite.Create(
+                currentCursor,
+                new Rect(0, 0, currentCursor.width, currentCursor.height),
+                new Vector2(0.5f, 0.5f), // Pivot is ignored for rectTransform anchoring here
+                100f
+            );
         }
     }
-
 }
