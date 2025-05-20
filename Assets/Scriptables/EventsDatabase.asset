@@ -15,7 +15,7 @@ MonoBehaviour:
   events:
   - eventDate: 01/02/2003
     title: Your first secondary event!
-    countryName: Nice
+    countryName: Brussels
     description: This is an event that might give or take resources from you, depending
       on what happened during the UE's timeline.
     question: 
@@ -90,34 +90,29 @@ MonoBehaviour:
       about how to balance security with fundamental rights."
     eventIcon: {fileID: 21300000, guid: 4b396fc28560e344295c995aa98c23a5, type: 3}
     choices:
-    - title: Balance of Power and Privacy
-      description: "Issue a neutral, factual public statement\n\nPromote regional
-        cooperation between member states\n\nProvide optional frameworks for intelligence-sharing;
-        no mandates\n\nOffer grants to national anti-radicalization programs\n\nSupport
-        Spain\u2019s decision to hold timely elections as a sign of resilience"
-      consequences: "Moderate Security Gains: The EU encourages cooperation without
-        centralization. Some member states take proactive steps in improving counterterrorism
-        measures and intelligence-sharing, but without a unified framework, some
-        gaps remain in overall security effectiveness\n\nPreserved Civil Liberties:
-        The EU prioritizes the protection of civil liberties, avoiding mass surveillance
-        programs. This leads to higher public trust, particularly in countries with
-        a strong tradition of individual freedoms, though some critics argue the
-        EU isn\u2019t doing enough to secure its borders\n\nMixed Public Perception:
-        The EU\u2019s balanced approach is seen as pragmatic by some, but ineffective
-        by others. The lack of decisive action in addressing threats might leads
-        to dissatisfaction in member states facing growing security risks. Citizens
-        begin questioning whether the EU is strong enough to handle such crises\n\nInternal
-        Division on Security: Member states retain significant autonomy, and some
-        countries feel they are left to handle security on their own. This leads
-        to varying levels of commitment to EU-wide counterterrorism efforts, and
-        future cooperation may be less unified\n\nStay silent on Iraq to avoid dividing
-        EU foreign policy\n\nModerate Influence on Global Stage: The EU avoids significant
-        rifts with non-EU countries but also doesn\u2019t assert itself as a strong
-        global player in counterterrorism, leaving a gap in its role as a major diplomatic
-        force"
-      euroscepticismModifier: 0
-      foreignAffairsModifier: 0
-      moneyModifier: -500000000
+    - title: Cautious Sovereignism
+      description: "Refrain from public comment until investigations are complete.\n\nLeave
+        all counterterrorism efforts to national governments.\n\nAvoid any new surveillance
+        or intelligence-sharing initiatives.\n\nFocus solely on policing and justice,
+        not social programs.\n\nMake no comment on Spain\u2019s election timing to
+        respect sovereignty."
+      consequences: 'Parliament''s authority is challenged, leading to growing institutional
+        tension.
+
+
+        Public protests and media criticism increase, especially
+        from human rights groups.
+
+
+        Member states feel empowered, but critics
+        accuse the EU of tolerating outdated values.
+
+
+        Long-term democratic
+        legitimacy of the Commission is questioned.'
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: -100000000
       eventIcon: {fileID: 21300000, guid: 276431e7a62be5a4a90f4c8788e19672, type: 3}
     - title: Unity and Action
       description: 'Issue a strong solidarity statemenet with Spain
@@ -159,30 +154,35 @@ MonoBehaviour:
       foreignAffairsModifier: 0.01
       moneyModifier: -1000000000
       eventIcon: {fileID: 21300000, guid: 272d5e991790fbc4e8746fd68afa2a82, type: 3}
-    - title: Cautious Sovereignism
-      description: "Refrain from public comment until investigations are complete.\n\nLeave
-        all counterterrorism efforts to national governments.\n\nAvoid any new surveillance
-        or intelligence-sharing initiatives.\n\nFocus solely on policing and justice,
-        not social programs.\n\nMake no comment on Spain\u2019s election timing to
-        respect sovereignty."
-      consequences: 'Parliament''s authority is challenged, leading to growing institutional
-        tension.
-
-
-        Public protests and media criticism increase, especially
-        from human rights groups.
-
-
-        Member states feel empowered, but critics
-        accuse the EU of tolerating outdated values.
-
-
-        Long-term democratic
-        legitimacy of the Commission is questioned.'
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
-      moneyModifier: -100000000
-      eventIcon: {fileID: 21300000, guid: f1950177477ad0347aeb5171b1ba2c2f, type: 3}
+    - title: Balance of Power and Privacy
+      description: "Issue a neutral, factual public statement\n\nPromote regional
+        cooperation between member states\n\nProvide optional frameworks for intelligence-sharing;
+        no mandates\n\nOffer grants to national anti-radicalization programs\n\nSupport
+        Spain\u2019s decision to hold timely elections as a sign of resilience"
+      consequences: "Moderate Security Gains: The EU encourages cooperation without
+        centralization. Some member states take proactive steps in improving counterterrorism
+        measures and intelligence-sharing, but without a unified framework, some
+        gaps remain in overall security effectiveness\n\nPreserved Civil Liberties:
+        The EU prioritizes the protection of civil liberties, avoiding mass surveillance
+        programs. This leads to higher public trust, particularly in countries with
+        a strong tradition of individual freedoms, though some critics argue the
+        EU isn\u2019t doing enough to secure its borders\n\nMixed Public Perception:
+        The EU\u2019s balanced approach is seen as pragmatic by some, but ineffective
+        by others. The lack of decisive action in addressing threats might leads
+        to dissatisfaction in member states facing growing security risks. Citizens
+        begin questioning whether the EU is strong enough to handle such crises\n\nInternal
+        Division on Security: Member states retain significant autonomy, and some
+        countries feel they are left to handle security on their own. This leads
+        to varying levels of commitment to EU-wide counterterrorism efforts, and
+        future cooperation may be less unified\n\nStay silent on Iraq to avoid dividing
+        EU foreign policy\n\nModerate Influence on Global Stage: The EU avoids significant
+        rifts with non-EU countries but also doesn\u2019t assert itself as a strong
+        global player in counterterrorism, leaving a gap in its role as a major diplomatic
+        force"
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0
+      moneyModifier: -500000000
+      eventIcon: {fileID: 21300000, guid: 276431e7a62be5a4a90f4c8788e19672, type: 3}
   - eventDate: 01/06/2005
     title: EU Constitution Rejection
     countryName: Brussels
@@ -219,8 +219,34 @@ MonoBehaviour:
     EuChoiceDescription: "The EU chose to pause the ratification process, enter a
       \"period of reflection,\" and eventually rework the Constitution into a more
       modest treaty \u2014 the Treaty of Lisbon, signed in 2007.\n"
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 4b396fc28560e344295c995aa98c23a5, type: 3}
     choices:
+    - title: Support the UK Nationally, But Stay Decentralized
+      description: Offer aid and intelligence cooperation to the UK, but avoid deeper
+        integration or EU-led initiatives.
+      consequences: 'UK appreciates the solidarity, but minimal EU structural changes.
+
+
+        There
+        is no progress on long-term EU-level prevention systems.
+
+
+        Citizens
+        feel safe in the short term, but doubts about preparedness persist.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0.005
+      moneyModifier: -300000000
+      eventIcon: {fileID: 21300000, guid: f1950177477ad0347aeb5171b1ba2c2f, type: 3}
+    - title: Declare It a UK-Only Issue
+      description: Avoid official EU response, framing it as a national matter with
+        no need for EU-level involvement.
+      consequences: "UK handles the crisis alone, but EU faces criticism for silence.\n\nThe
+        EU missed the opportunity to show European unity against terrorism.\n\nThe
+        public begins questioning the EU\u2019s relevance in real-world crises."
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: -50000000
+      eventIcon: {fileID: 21300000, guid: 2631d5d853f48604e9c1d9d5feba51e1, type: 3}
     - title: Push for EU-Wide Security Directives
       description: Advocate for rapid implementation of unified security standards,
         including surveillance rules, transport security, and intelligence sharing.
@@ -237,33 +263,7 @@ MonoBehaviour:
       euroscepticismModifier: 0
       foreignAffairsModifier: 0.01
       moneyModifier: -1000000000
-      eventIcon: {fileID: 0}
-    - title: Support the UK Nationally, But Stay Decentralized
-      description: Offer aid and intelligence cooperation to the UK, but avoid deeper
-        integration or EU-led initiatives.
-      consequences: 'UK appreciates the solidarity, but minimal EU structural changes.
-
-
-        There
-        is no progress on long-term EU-level prevention systems.
-
-
-        Citizens
-        feel safe in the short term, but doubts about preparedness persist.'
-      euroscepticismModifier: 0
-      foreignAffairsModifier: 0.005
-      moneyModifier: -300000000
-      eventIcon: {fileID: 0}
-    - title: Declare It a UK-Only Issue
-      description: Avoid official EU response, framing it as a national matter with
-        no need for EU-level involvement.
-      consequences: "UK handles the crisis alone, but EU faces criticism for silence.\n\nThe
-        EU missed the opportunity to show European unity against terrorism.\n\nThe
-        public begins questioning the EU\u2019s relevance in real-world crises."
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
-      moneyModifier: -50000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 272d5e991790fbc4e8746fd68afa2a82, type: 3}
   - eventDate: 03/04/2006
     title: Live Broadcast of Plenary
     countryName: Strassbourg
@@ -282,7 +282,7 @@ MonoBehaviour:
 
       Some
       critics saw it as symbolic, with limited impact on actual public trust.'
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: cfe91cd900bc6ba4881cfb682e3110ef, type: 3}
     choices:
     - title: 
       description: 
@@ -290,7 +290,7 @@ MonoBehaviour:
       euroscepticismModifier: -0.01
       foreignAffairsModifier: 0.01
       moneyModifier: 30000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: cfe91cd900bc6ba4881cfb682e3110ef, type: 3}
   - eventDate: 15/11/2006
     title: Services Directive
     countryName: Brussels
@@ -318,18 +318,8 @@ MonoBehaviour:
 
       It became
       a model of cautious integration: economic progress tempered by social concern.'
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 3080445c5bb43e84fbd1bdcf756d4b23, type: 3}
     choices:
-    - title: "Full Liberalisation \u2013 Embrace the Market"
-      description: Pass a strong directive allowing service companies to operate
-        under the rules of their home country across the EU.
-      consequences: "The directive boosts competitiveness and reduces costs for businesses.\n\nIt
-        sparks major protests, especially in Western Europe, over labor protections.\n\nIt
-        also deepens East\u2013West tensions as wealthier states fear undercutting."
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: 0
-      moneyModifier: 50000000000
-      eventIcon: {fileID: 0}
     - title: "Compromise Directive \u2013 Growth with Guardrails"
       description: Pass a watered-down version of the directive, removing the "country
         of origin" principle and protecting labor standards.
@@ -346,7 +336,7 @@ MonoBehaviour:
       euroscepticismModifier: 0
       foreignAffairsModifier: 0.05
       moneyModifier: 20000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: b41708f4d88d85e46a322efb81229b4c, type: 3}
     - title: "Abandon the Directive \u2013 National Rules First"
       description: Withdraw the proposal in response to public pressure and protect
         national service sectors.
@@ -363,8 +353,18 @@ MonoBehaviour:
       euroscepticismModifier: 0.02
       foreignAffairsModifier: -0.02
       moneyModifier: -20000000000
-      eventIcon: {fileID: 0}
-  - eventDate: 15/11/2006
+      eventIcon: {fileID: 21300000, guid: 0dcd9993bbba4de4e99f30df4e133efd, type: 3}
+    - title: "Full Liberalisation \u2013 Embrace the Market"
+      description: Pass a strong directive allowing service companies to operate
+        under the rules of their home country across the EU.
+      consequences: "The directive boosts competitiveness and reduces costs for businesses.\n\nIt
+        sparks major protests, especially in Western Europe, over labor protections.\n\nIt
+        also deepens East\u2013West tensions as wealthier states fear undercutting."
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: 0
+      moneyModifier: 50000000000
+      eventIcon: {fileID: 21300000, guid: 3080445c5bb43e84fbd1bdcf756d4b23, type: 3}
+  - eventDate: 19/02/2008
     title: Committees Broadcast Online
     countryName: Brussels
     description: "Following the success of plenary streaming, the EU began broadcasting
@@ -379,7 +379,7 @@ MonoBehaviour:
       real legislative work increased.\n\nSome MEPs adjusted behavior for public
       view, occasionally slowing negotiations.\n\nThere was a boost in democratic
       legitimacy and civic engagement."
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: cfe91cd900bc6ba4881cfb682e3110ef, type: 3}
     choices:
     - title: 
       description: 
@@ -387,7 +387,7 @@ MonoBehaviour:
       euroscepticismModifier: -0.01
       foreignAffairsModifier: 0.01
       moneyModifier: -15000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: cfe91cd900bc6ba4881cfb682e3110ef, type: 3}
   - eventDate: 05/03/2009
     title: Hillary Clinton Visit
     countryName: Brussels
@@ -429,7 +429,7 @@ MonoBehaviour:
 
       The
       visibility of the EU in everyday online spaces was improved.'
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: c3aaf04bdf7ab504e81fa5794e9c585c, type: 3}
     choices:
     - title: 
       description: 
@@ -437,7 +437,7 @@ MonoBehaviour:
       euroscepticismModifier: -0.01
       foreignAffairsModifier: 0.01
       moneyModifier: -2000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: c3aaf04bdf7ab504e81fa5794e9c585c, type: 3}
   - eventDate: 01/12/2009
     title: Lisbon Treaty
     countryName: Lisbon
@@ -457,8 +457,18 @@ MonoBehaviour:
       institutional clarity helped the EU navigate future crises.\n\nConcerns were
       raised in some countries about democratic accountability, but it was still
       a major step in EU integration.\n\n"
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: ffb6a159de1dedd4b9f7caf987f03651, type: 3}
     choices:
+    - title: "Abandon the Treaty \u2013 Preserve the Status Quo"
+      description: Accept the 2005 constitutional failure and keep operating under
+        the Nice Treaty rules.
+      consequences: "The treaty avoids political battles, but leaves institutions
+        strained under enlargement.\n\nIt hampers EU\u2019s ability to act efficiently,
+        especially with 27+ members.\n\nIt is widely seen as a retreat from ambition."
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: 0
+      eventIcon: {fileID: 0}
     - title: "Push for Ratification \u2013 Modernize the EU"
       description: Proceed with ratifying the Lisbon Treaty across all member states,
         even if it means facing tough referenda or political backlash.
@@ -470,7 +480,7 @@ MonoBehaviour:
       euroscepticismModifier: 0.02
       foreignAffairsModifier: 0.01
       moneyModifier: -50000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: ffb6a159de1dedd4b9f7caf987f03651, type: 3}
     - title: "Scale It Back \u2013 Treaty Lite"
       description: Remove the most controversial elements and pursue a lighter intergovernmental
         agreement instead.
@@ -482,17 +492,7 @@ MonoBehaviour:
       euroscepticismModifier: 0
       foreignAffairsModifier: -0.01
       moneyModifier: -20000000
-      eventIcon: {fileID: 0}
-    - title: "Abandon the Treaty \u2013 Preserve the Status Quo"
-      description: Accept the 2005 constitutional failure and keep operating under
-        the Nice Treaty rules.
-      consequences: "The treaty avoids political battles, but leaves institutions
-        strained under enlargement.\n\nIt hampers EU\u2019s ability to act efficiently,
-        especially with 27+ members.\n\nIt is widely seen as a retreat from ambition."
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
-      moneyModifier: 0
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
   - eventDate: 11/02/2010
     title: SWIFT Agreement
     countryName: Strassbourg
@@ -587,7 +587,7 @@ MonoBehaviour:
       its support of democracy.\n\nThe fallout from failed revolutions leads to long-term
       instability and migration flows.\n\nThe crisis sparks internal EU debates about
       foreign policy coherence and migration burden-sharing."
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 886cca866880cf146b5216b4a0ebe1f4, type: 3}
     choices:
     - title: "Support Democratic Movements \u2013 Take a Principled Stand"
       description: Provide political and financial support to pro-democracy actors,
@@ -606,7 +606,23 @@ MonoBehaviour:
       euroscepticismModifier: 0.01
       foreignAffairsModifier: 0.02
       moneyModifier: -10000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 272d5e991790fbc4e8746fd68afa2a82, type: 3}
+    - title: "Close the Gates \u2013 Prioritize Internal Security"
+      description: Fortify borders, cut migration channels, and limit involvement
+        in foreign upheaval to protect EU cohesion and public order.
+      consequences: 'Eurosceptic and nationalist parties gain support domestically.
+
+
+        International
+        partners criticize the EU for abandoning its democratic ideals.
+
+
+        Instability
+        in the region worsens, with long-term blowback on EU borders and interests.'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: 0.01
+      moneyModifier: -5000000
+      eventIcon: {fileID: 21300000, guid: f1950177477ad0347aeb5171b1ba2c2f, type: 3}
     - title: "Wait and See \u2013 Focus on Stability and Dialogue"
       description: Prioritize regional stability and energy interests; support gradual
         reforms while maintaining diplomatic ties.
@@ -623,23 +639,7 @@ MonoBehaviour:
       euroscepticismModifier: 0
       foreignAffairsModifier: 0
       moneyModifier: -6000000000
-      eventIcon: {fileID: 0}
-    - title: "Close the Gates \u2013 Prioritize Internal Security"
-      description: Fortify borders, cut migration channels, and limit involvement
-        in foreign upheaval to protect EU cohesion and public order.
-      consequences: 'Eurosceptic and nationalist parties gain support domestically.
-
-
-        International
-        partners criticize the EU for abandoning its democratic ideals.
-
-
-        Instability
-        in the region worsens, with long-term blowback on EU borders and interests.'
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: 0.01
-      moneyModifier: -5000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
   - eventDate: 31/03/2011
     title: Syria Civil War
     countryName: Daraa
@@ -660,8 +660,34 @@ MonoBehaviour:
       internal politics.  Asylum applications in Europe decrease sharply.  Tensions
       rise with Turkey over human rights and political conditions.  The EU remains
       a secondary player in ending the war but contains direct fallout."
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 8e9872e38ecadbf4fadc1cf3b39403a0, type: 3}
     choices:
+    - title: Stay Neutral and Minimize Involvement
+      description: Avoid deep engagement, leave Syria to international powers, and
+        focus on internal EU unity and crisis resilience.
+      consequences: 'The EU maintains internal political stability and avoids overextension.
+
+
+        Its
+        absence from negotiations damages credibility in foreign policy.
+
+
+        Long-term
+        migration and security consequences persist.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: -0.02
+      moneyModifier: -2000000000
+      eventIcon: {fileID: 21300000, guid: 276431e7a62be5a4a90f4c8788e19672, type: 3}
+    - title: Focus on Border Control and Regional Containment
+      description: Support frontline states (Turkey, Lebanon, Jordan), increase Frontex
+        funding, and secure external borders to contain refugee inflow.
+      consequences: "Refugee arrivals drop, reducing short-term political pressure.\n\nHuman
+        rights groups criticize the EU for failing to address root causes.\n\nCooperation
+        with Turkey becomes key\u2014and controversial."
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: 0
+      moneyModifier: -6000000000
+      eventIcon: {fileID: 21300000, guid: f1950177477ad0347aeb5171b1ba2c2f, type: 3}
     - title: Lead a Humanitarian and Diplomatic Initiative
       description: Launch a bold EU-led peace push through the UN, increase aid to
         refugees and host countries, and fund reconstruction planning.
@@ -677,27 +703,7 @@ MonoBehaviour:
       euroscepticismModifier: 0.01
       foreignAffairsModifier: 0.02
       moneyModifier: -10000000000
-      eventIcon: {fileID: 0}
-    - title: Focus on Border Control and Regional Containment
-      description: Support frontline states (Turkey, Lebanon, Jordan), increase Frontex
-        funding, and secure external borders to contain refugee inflow.
-      consequences: "Refugee arrivals drop, reducing short-term political pressure.\n\nHuman
-        rights groups criticize the EU for failing to address root causes.\n\nCooperation
-        with Turkey becomes key\u2014and controversial."
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: 0
-      moneyModifier: -6000000000
-      eventIcon: {fileID: 0}
-    - title: "Abandon the Treaty \u2013 Preserve the Status Quo"
-      description: Accept the 2005 constitutional failure and keep operating under
-        the Nice Treaty rules.
-      consequences: "The treaty avoids political battles, but leaves institutions
-        strained under enlargement.\n\nIt hampers EU\u2019s ability to act efficiently,
-        especially with 27+ members.\n\nIt is widely seen as a retreat from ambition."
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
-      moneyModifier: 0
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 272d5e991790fbc4e8746fd68afa2a82, type: 3}
   - eventDate: 14/10/2011
     title: European Parliament Visitor Center
     countryName: Brussels
@@ -817,40 +823,8 @@ MonoBehaviour:
       Public reception is generally positive,
       particularly among schools and EU supporters. However, critics question the
       cost and symbolic nature during times of economic uncertainty.'
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: e5ba5d9a13c55b548b43be4752fb5be1, type: 3}
     choices:
-    - title: Promote and Support the ECI Actively
-      description: Launch EU-wide campaigns to raise awareness, simplify procedures,
-        and ensure accessibility to empower citizens.
-      consequences: 'Increased citizen engagement and trust in EU institutions.
-
-
-        More
-        diverse proposals enrich the policy debate.
-
-
-        Some administrative
-        challenges arise due to volume of initiatives.'
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.01
-      moneyModifier: -70000000
-      eventIcon: {fileID: 0}
-    - title: Implement ECI with Minimal Proportion
-      description: Introduce the ECI but keep awareness campaigns limited to reduce
-        costs.
-      consequences: 'Moderate citizen participation, mostly activists and NGOs engage.
-
-
-        Limited
-        impact on public perception of the EU.
-
-
-        Avoids large administrative
-        overheads.'
-      euroscepticismModifier: 0
-      foreignAffairsModifier: 0
-      moneyModifier: -30000000
-      eventIcon: {fileID: 0}
     - title: "Delay or Limit the ECI\u2019s Scope"
       description: Restrict procedural rights or delay full implementation citing
         complexity and risks of populism.
@@ -866,7 +840,39 @@ MonoBehaviour:
       euroscepticismModifier: 0.02
       foreignAffairsModifier: -0.02
       moneyModifier: -1000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 1a860719d649094478ef42f7a4787853, type: 3}
+    - title: Implement ECI with Minimal Proportion
+      description: Introduce the ECI but keep awareness campaigns limited to reduce
+        costs.
+      consequences: 'Moderate citizen participation, mostly activists and NGOs engage.
+
+
+        Limited
+        impact on public perception of the EU.
+
+
+        Avoids large administrative
+        overheads.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0
+      moneyModifier: -30000000
+      eventIcon: {fileID: 21300000, guid: e5ba5d9a13c55b548b43be4752fb5be1, type: 3}
+    - title: Promote and Support the ECI Actively
+      description: Launch EU-wide campaigns to raise awareness, simplify procedures,
+        and ensure accessibility to empower citizens.
+      consequences: 'Increased citizen engagement and trust in EU institutions.
+
+
+        More
+        diverse proposals enrich the policy debate.
+
+
+        Some administrative
+        challenges arise due to volume of initiatives.'
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.01
+      moneyModifier: -70000000
+      eventIcon: {fileID: 21300000, guid: e5ba5d9a13c55b548b43be4752fb5be1, type: 3}
   - eventDate: 04/07/2012
     title: ACTA
     countryName: Strasbourg
@@ -897,7 +903,7 @@ MonoBehaviour:
 
       Future digital legislation becomes more transparent
       and closely scrutinized.'
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 85aa794c5a755cb4ba77bdc118c8d040, type: 3}
     choices:
     - title: Reject ACTA in Parliament
       description: Heed the public outcry and block the treaty to protect digital
@@ -914,7 +920,7 @@ MonoBehaviour:
       euroscepticismModifier: -0.03
       foreignAffairsModifier: 0.01
       moneyModifier: 0
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 85aa794c5a755cb4ba77bdc118c8d040, type: 3}
     - title: Renegotiate ACTA with Stronger Safeguards
       description: Delay ratification and demand revisions to protect civil liberties
         and increase transparency.
@@ -1029,8 +1035,34 @@ MonoBehaviour:
 
       Member states were divided over the long-term commitment,
       but unity held.'
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 8e9872e38ecadbf4fadc1cf3b39403a0, type: 3}
     choices:
+    - title: "Abandon the Agreement \u2013 Stay Neutral"
+      description: Fully withdraw from the process to avoid damaging relations with
+        Russia.
+      consequences: "The EU loses credibility as a regional power and betrays its
+        democratic rhetoric.\n\nRussia increases influence in Ukraine unchallenged.\n\nUkraine\u2019s
+        civil society is demoralized, and ties with the West deteriorate."
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: -1000000
+      eventIcon: {fileID: 21300000, guid: 0dcd9993bbba4de4e99f30df4e133efd, type: 3}
+    - title: Delay the Agreement - Prioritize Stability
+      description: Postpone the agreement until Ukraine stabilizes internally and
+        relations with Russia cool down.
+      consequences: 'The EU avoids immediate escalation but appears indecisive.
+
+
+        Ukrainian
+        citizens feel abandoned, weakening pro-European sentiment.
+
+
+        Russia
+        is emboldened by perceived Western hesitation.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: -0.02
+      moneyModifier: -200000000
+      eventIcon: {fileID: 21300000, guid: 8739a41109808ce4fb03dd93abc8f830, type: 3}
     - title: 'Sign the Agreement and Support Ukraine '
       description: "Proceed with the Association Agreement and provide political
         and financial support to Ukraine\u2019s interim government."
@@ -1047,33 +1079,7 @@ MonoBehaviour:
       euroscepticismModifier: 0.01
       foreignAffairsModifier: 0.01
       moneyModifier: -3000000
-      eventIcon: {fileID: 0}
-    - title: Delay the Agreement - Prioritize Stability
-      description: Postpone the agreement until Ukraine stabilizes internally and
-        relations with Russia cool down.
-      consequences: 'The EU avoids immediate escalation but appears indecisive.
-
-
-        Ukrainian
-        citizens feel abandoned, weakening pro-European sentiment.
-
-
-        Russia
-        is emboldened by perceived Western hesitation.'
-      euroscepticismModifier: 0
-      foreignAffairsModifier: -0.02
-      moneyModifier: -200000000
-      eventIcon: {fileID: 0}
-    - title: "Abandon the Agreement \u2013 Stay Neutral"
-      description: Fully withdraw from the process to avoid damaging relations with
-        Russia.
-      consequences: "The EU loses credibility as a regional power and betrays its
-        democratic rhetoric.\n\nRussia increases influence in Ukraine unchallenged.\n\nUkraine\u2019s
-        civil society is demoralized, and ties with the West deteriorate."
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
-      moneyModifier: -1000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 272d5e991790fbc4e8746fd68afa2a82, type: 3}
   - eventDate: 25/11/2014
     title: Pope Francis calls for Europe of Human Values
     countryName: Strasbourg
@@ -1095,8 +1101,40 @@ MonoBehaviour:
       respectful.\n\nFaith-based groups appreciated the invitation but hoped for
       more.\n\nThe speech contributed to ongoing reflection on the EU\u2019s moral
       and social responsibilities."
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 2aa6812cde47f26488db8ece1e200181, type: 3}
     choices:
+    - title: "Keep a Distance \u2013 Maintain Secular Focus"
+      description: Downplay the speech to maintain clear separation between Church
+        and political institutions.
+      consequences: 'Secularists and some member states support the stance.
+
+
+        Faith
+        communities and social advocates criticize the EU for lacking empathy.
+
+
+        Missed
+        opportunity to connect with broader audiences on shared ethical concerns.'
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: 0
+      eventIcon: {fileID: 21300000, guid: 10605e559d0216e4692498bc772e037a, type: 3}
+    - title: "Acknowledge Symbolically \u2013 No Major Shift"
+      description: Thank the Pope for his visit and affirm shared values, but avoid
+        significant policy change.
+      consequences: 'The EU is seen as respectful, but some view it as indifferent
+        to deeper societal concerns.
+
+
+        Internal discussions on values remain
+        mostly rhetorical.
+
+
+        Media and civil society react with mixed reviews.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0
+      moneyModifier: -20000000
+      eventIcon: {fileID: 21300000, guid: 2aa6812cde47f26488db8ece1e200181, type: 3}
     - title: "Embrace the Message \u2013 Prioritize Human-Centered Policie"
       description: "Publicly affirm the Pope\u2019s speech and initiate new efforts
         to place dignity, social justice, and solidarity at the center of EU action."
@@ -1113,39 +1151,7 @@ MonoBehaviour:
       euroscepticismModifier: 0
       foreignAffairsModifier: 0.01
       moneyModifier: -1000000000
-      eventIcon: {fileID: 0}
-    - title: "Acknowledge Symbolically \u2013 No Major Shift"
-      description: Thank the Pope for his visit and affirm shared values, but avoid
-        significant policy change.
-      consequences: 'The EU is seen as respectful, but some view it as indifferent
-        to deeper societal concerns.
-
-
-        Internal discussions on values remain
-        mostly rhetorical.
-
-
-        Media and civil society react with mixed reviews.'
-      euroscepticismModifier: 0
-      foreignAffairsModifier: 0
-      moneyModifier: -20000000
-      eventIcon: {fileID: 0}
-    - title: "Keep a Distance \u2013 Maintain Secular Focus"
-      description: Downplay the speech to maintain clear separation between Church
-        and political institutions.
-      consequences: 'Secularists and some member states support the stance.
-
-
-        Faith
-        communities and social advocates criticize the EU for lacking empathy.
-
-
-        Missed
-        opportunity to connect with broader audiences on shared ethical concerns.'
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
-      moneyModifier: 0
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: e5ba5d9a13c55b548b43be4752fb5be1, type: 3}
   - eventDate: 08/07/2015
     title: Greek Debt Crisis
     countryName: Athens
@@ -1168,8 +1174,24 @@ MonoBehaviour:
       both the EU and Tsipras eroded.\n\nThe crisis exposed deep divisions in EU
       economic governance and solidarity.\n\nThe EU retained its monetary integrity
       but at high social and political cost."
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: b04e5481d6a1f5c4ab3aa3bd9bb8d454, type: 3}
     choices:
+    - title: "Grexit \u2013 Allow Greece to Exit the Euro"
+      description: End bailouts and let Greece default and leave the eurozone.
+      consequences: 'Greece faces economic chaos in the short term, but may gain
+        flexibility in the long run.
+
+
+        The eurozone loses a member, undermining
+        its credibility and triggering market panic.
+
+
+        Nationalist parties
+        across Europe are emboldened by the break.'
+      euroscepticismModifier: 0.04
+      foreignAffairsModifier: -0.03
+      moneyModifier: -100000000000
+      eventIcon: {fileID: 21300000, guid: 242396770f6d40049b9e2703b5d3cb1d, type: 3}
     - title: "Save the Euro \u2013 Offer a Third Bailout with Conditions"
       description: Provide another bailout package, but with firm structural reform
         requirements and oversight.
@@ -1186,23 +1208,7 @@ MonoBehaviour:
       euroscepticismModifier: 0.02
       foreignAffairsModifier: 0
       moneyModifier: -10000000000
-      eventIcon: {fileID: 0}
-    - title: "Grexit \u2013 Allow Greece to Exit the Euro"
-      description: End bailouts and let Greece default and leave the eurozone.
-      consequences: 'Greece faces economic chaos in the short term, but may gain
-        flexibility in the long run.
-
-
-        The eurozone loses a member, undermining
-        its credibility and triggering market panic.
-
-
-        Nationalist parties
-        across Europe are emboldened by the break.'
-      euroscepticismModifier: 0.04
-      foreignAffairsModifier: -0.03
-      moneyModifier: -100000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 1e3b074bfc5e36a4a8d5a1a0ea8809af, type: 3}
     - title: "Restructure the Debt \u2013 Show Leniency Without Austerity"
       description: Offer major debt relief and ease conditions to prioritize social
         recovery.
@@ -1218,7 +1224,7 @@ MonoBehaviour:
       euroscepticismModifier: 0.02
       foreignAffairsModifier: 0.01
       moneyModifier: -80000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 1e3b074bfc5e36a4a8d5a1a0ea8809af, type: 3}
   - eventDate: 30/09/2015
     title: Migration Crisis
     countryName: Brussels
@@ -1237,42 +1243,8 @@ MonoBehaviour:
       refused to comply, and implementation was patchy. The EU also expanded Frontex,
       made agreements with Turkey to reduce flows, and struggled to balance values
       with political realities.
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: e5ba5d9a13c55b548b43be4752fb5be1, type: 3}
     choices:
-    - title: Adopt a Quota-Based Relocation System
-      description: Propose a mandatory scheme to relocate asylum seekers across all
-        member states based on size and capacity.
-      consequences: 'The European Commission shows leadership by proposing solidarity
-        in action.
-
-
-        Several eastern member states strongly resist, sparking
-        political conflict and legal disputes.
-
-
-        Refugees benefit from more
-        orderly resettlement, but implementation is inconsistent.'
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: 0.01
-      moneyModifier: -10000000000
-      eventIcon: {fileID: 0}
-    - title: Strengthen Borders and Fund Frontline States
-      description: Focus on reinforcing Frontex (now the European Border and Coast
-        Guard) and funding Greece, Italy, and others to manage borders and process
-        asylum seekers.
-      consequences: 'Border control improves, but burden-sharing remains minimal.
-
-
-        Refugees
-        and migrants often face dire conditions in frontline states.
-
-
-        Public
-        support increases in some countries for showing control.'
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: 0
-      moneyModifier: -6000000000
-      eventIcon: {fileID: 0}
     - title: "Close Internal Borders \u2013 Suspend Schengen"
       description: Temporarily suspend the Schengen Area to allow member states to
         reintroduce national border checks.
@@ -1289,7 +1261,41 @@ MonoBehaviour:
       euroscepticismModifier: 0.01
       foreignAffairsModifier: -0.02
       moneyModifier: -5000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: f1950177477ad0347aeb5171b1ba2c2f, type: 3}
+    - title: Strengthen Borders and Fund Frontline States
+      description: Focus on reinforcing Frontex (now the European Border and Coast
+        Guard) and funding Greece, Italy, and others to manage borders and process
+        asylum seekers.
+      consequences: 'Border control improves, but burden-sharing remains minimal.
+
+
+        Refugees
+        and migrants often face dire conditions in frontline states.
+
+
+        Public
+        support increases in some countries for showing control.'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: 0
+      moneyModifier: -6000000000
+      eventIcon: {fileID: 21300000, guid: 1e3b074bfc5e36a4a8d5a1a0ea8809af, type: 3}
+    - title: Adopt a Quota-Based Relocation System
+      description: Propose a mandatory scheme to relocate asylum seekers across all
+        member states based on size and capacity.
+      consequences: 'The European Commission shows leadership by proposing solidarity
+        in action.
+
+
+        Several eastern member states strongly resist, sparking
+        political conflict and legal disputes.
+
+
+        Refugees benefit from more
+        orderly resettlement, but implementation is inconsistent.'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: 0.01
+      moneyModifier: -10000000000
+      eventIcon: {fileID: 21300000, guid: 722ed3951f03f204786c0edace341c7a, type: 3}
   - eventDate: 13/11/2015
     title: Terrorist Attacks in Paris
     countryName: Paris
@@ -1312,25 +1318,24 @@ MonoBehaviour:
       in times of danger.\n\nPrivacy concerns emerge, but the focus remains on unity
       and prevention.\n\nThe groundwork is laid for future cooperation, though not
       without resistance."
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 4b396fc28560e344295c995aa98c23a5, type: 3}
     choices:
-    - title: "Deepen Security Cooperation \u2013 Create an EU Intelligence Framework"
-      description: Push for stronger intelligence sharing, coordinated counter-terror
-        strategies, and interoperable databases between member states.
-      consequences: 'EU institutions begin laying the groundwork for shared threat
-        assessments and faster information flow.
+    - title: "Prioritize Civil Liberties \u2013 No New Measures Yet"
+      description: Emphasize resilience, protect freedoms, and delay security reform
+        to avoid overreaction.
+      consequences: 'The EU earns praise from civil rights defenders and some MEPs.
 
 
-        Concerns arise over surveillance
-        and data protection from civil liberties groups.
+        Populist
+        and nationalist leaders accuse Brussels of being weak on terrorism.
 
 
-        Public feels reassured
-        by concrete action at the EU level.'
-      euroscepticismModifier: 0
-      foreignAffairsModifier: 0.01
-      moneyModifier: -4000000000
-      eventIcon: {fileID: 0}
+        Public
+        support declines in member states demanding swift protection.'
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: -1000000000
+      eventIcon: {fileID: 21300000, guid: 0dcd9993bbba4de4e99f30df4e133efd, type: 3}
     - title: "Support National Measures \u2013 Let States Lead Security"
       description: Allow each country to strengthen its own security while offering
         EU funding and coordination when requested.
@@ -1347,24 +1352,24 @@ MonoBehaviour:
       euroscepticismModifier: 0
       foreignAffairsModifier: 0
       moneyModifier: -2000000000
-      eventIcon: {fileID: 0}
-    - title: "Prioritize Civil Liberties \u2013 No New Measures Yet"
-      description: Temporarily suspend the Schengen Area to allow member states to
-        reintroduce national border checks.
-      consequences: 'Public confidence in national security rises, especially in
-        countries hit by large inflows.
+      eventIcon: {fileID: 21300000, guid: f1950177477ad0347aeb5171b1ba2c2f, type: 3}
+    - title: "Deepen Security Cooperation \u2013 Create an EU Intelligence Framework"
+      description: Push for stronger intelligence sharing, coordinated counter-terror
+        strategies, and interoperable databases between member states.
+      consequences: 'EU institutions begin laying the groundwork for shared threat
+        assessments and faster information flow.
 
 
-        Freedom of movement, a pillar of
-        the EU, is deeply weakened.
+        Concerns arise over surveillance
+        and data protection from civil liberties groups.
 
 
-        Economic disruptions emerge across
-        transport and trade sectors.'
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: -0.02
-      moneyModifier: -5000000000
-      eventIcon: {fileID: 0}
+        Public feels reassured
+        by concrete action at the EU level.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0.01
+      moneyModifier: -4000000000
+      eventIcon: {fileID: 21300000, guid: 272d5e991790fbc4e8746fd68afa2a82, type: 3}
   - eventDate: 12/12/2015
     title: Paris Agreement
     countryName: Paris
@@ -1394,8 +1399,40 @@ MonoBehaviour:
 
       The
       policy helped establish the European Green Deal under the next Commission.'
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 44170b23ca079634b8095b55b39bb1c2, type: 3}
     choices:
+    - title: "Focus on Economy First \u2013 Delay Implementation"
+      description: Delay strict implementation to prioritize growth and energy affordability,
+        especially after the debt and migration crises.
+      consequences: 'Energy prices remain stable and industry avoids disruption.
+
+
+        Climate
+        activists and youth movements criticize the EU for hypocrisy.
+
+
+        The
+        EU loses credibility in international climate negotiations.'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: -0.02
+      moneyModifier: -10000000000
+      eventIcon: {fileID: 21300000, guid: b2eee430adf3310489b7e016c78bd652, type: 3}
+    - title: "Flexible Framework \u2013 Let Member States Set Their Own Pace"
+      description: Set EU-wide goals, but allow each country to choose how to reach
+        them.
+      consequences: 'Member states feel more autonomy, reducing internal friction.
+
+
+        Climate
+        progress is uneven and delayed in less committed countries.
+
+
+        Critics
+        argue the EU is failing to live up to its climate promises.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0
+      moneyModifier: -20000000000
+      eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
     - title: "Lead by Example \u2013 Enforce Binding Climate Targets"
       description: Commit to aggressive emissions reductions, renewable investment,
         and binding legislation across all member states.
@@ -1412,39 +1449,7 @@ MonoBehaviour:
       euroscepticismModifier: 0.01
       foreignAffairsModifier: 0.04
       moneyModifier: -40000000000
-      eventIcon: {fileID: 0}
-    - title: "Flexible Framework \u2013 Let Member States Set Their Own Pace"
-      description: Set EU-wide goals, but allow each country to choose how to reach
-        them.
-      consequences: 'Member states feel more autonomy, reducing internal friction.
-
-
-        Climate
-        progress is uneven and delayed in less committed countries.
-
-
-        Critics
-        argue the EU is failing to live up to its climate promises.'
-      euroscepticismModifier: 0
-      foreignAffairsModifier: 0
-      moneyModifier: -20000000000
-      eventIcon: {fileID: 0}
-    - title: "Focus on Economy First \u2013 Delay Implementation"
-      description: Delay strict implementation to prioritize growth and energy affordability,
-        especially after the debt and migration crises.
-      consequences: 'Energy prices remain stable and industry avoids disruption.
-
-
-        Climate
-        activists and youth movements criticize the EU for hypocrisy.
-
-
-        The
-        EU loses credibility in international climate negotiations.'
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: -0.02
-      moneyModifier: -10000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 44170b23ca079634b8095b55b39bb1c2, type: 3}
   - eventDate: 22/03/2016
     title: Terrorist Strikes in Brussels
     countryName: Brussels
@@ -1466,7 +1471,7 @@ MonoBehaviour:
       tracking improves, but bureaucratic hurdles and mistrust remain.\n\nThe attacks
       become a rallying cry for deeper\u2014but still cautious\u2014cooperation.\n\nThe
       groundwork for future integrated systems is laid, slowly."
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 4b396fc28560e344295c995aa98c23a5, type: 3}
     choices:
     - title: Launch an EU Counter-Terror Task Force
       description: Create a centralized EU unit within Europol to coordinate investigations,
@@ -1484,24 +1489,7 @@ MonoBehaviour:
       euroscepticismModifier: 0.01
       foreignAffairsModifier: 0.04
       moneyModifier: -40000000000
-      eventIcon: {fileID: 0}
-    - title: Push Member States for Interoperable Systems
-      description: Require national authorities to modernize and link up security
-        databases, but keep operational control at the national level.
-      consequences: 'Technical progress improves tracking of suspects and prevents
-        overlaps.
-
-
-        True integration remains limited; gaps persist in intelligence
-        cooperation.
-
-
-        Less political resistance, but slower impact on the
-        ground.'
-      euroscepticismModifier: 0
-      foreignAffairsModifier: 0.1
-      moneyModifier: -3000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 272d5e991790fbc4e8746fd68afa2a82, type: 3}
     - title: Prioritize Civil Resilience and Community Engagement
       description: Focus EU funding on community programs to counter radicalization,
         improve education, and support at-risk neighborhoods.
@@ -1518,7 +1506,24 @@ MonoBehaviour:
       euroscepticismModifier: 0.01
       foreignAffairsModifier: 0
       moneyModifier: -4000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 2ea20fa7d12949546a52219513b6357e, type: 3}
+    - title: Push Member States for Interoperable Systems
+      description: Require national authorities to modernize and link up security
+        databases, but keep operational control at the national level.
+      consequences: 'Technical progress improves tracking of suspects and prevents
+        overlaps.
+
+
+        True integration remains limited; gaps persist in intelligence
+        cooperation.
+
+
+        Less political resistance, but slower impact on the
+        ground.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0.1
+      moneyModifier: -3000000000
+      eventIcon: {fileID: 21300000, guid: f1950177477ad0347aeb5171b1ba2c2f, type: 3}
   - eventDate: 06/05/2017
     title: House of European History
     countryName: Brussels
@@ -1566,7 +1571,7 @@ MonoBehaviour:
       citizens experience the EU\u2019s value in daily life.\n\nThe initiative strengthens
       the perception of the EU as a \u201Cunion that delivers.\u201D\n\nTelecom sectors
       consolidate, but long-term adjustments stabilize the market."
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: b2e45f954d737ea488e1e67768c7affb, type: 3}
     choices:
     - title: Fully Abolish Roaming Fees as Planned
       description: "Prioritize citizens\u2019 freedom of movement and digital rights
@@ -1583,7 +1588,7 @@ MonoBehaviour:
       euroscepticismModifier: -0.01
       foreignAffairsModifier: 0.005
       moneyModifier: -200000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 253a6a68f0279fe4faa706c3de8061d0, type: 3}
     - title: Introduce a Fair-Use Limit on Free Roaming
       description: Allow roaming without fees, but only up to a data and usage threshold
         to protect telecom providers.
@@ -1599,7 +1604,7 @@ MonoBehaviour:
       euroscepticismModifier: -0.005
       foreignAffairsModifier: 0.005
       moneyModifier: -100000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
     - title: Postpone or Dilute the Reform
       description: Delay full abolition or allow member states to choose implementation
         to reduce industry pushback.
@@ -1615,7 +1620,7 @@ MonoBehaviour:
       euroscepticismModifier: 0.02
       foreignAffairsModifier: -0.02
       moneyModifier: 0
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: b2e45f954d737ea488e1e67768c7affb, type: 3}
   - eventDate: 06/02/2018
     title: End of Geoblocking
     countryName: Brussels
@@ -1635,7 +1640,7 @@ MonoBehaviour:
       the Union enjoy a smoother, more unified online shopping experience.\n\nThe
       exclusion of streaming content keeps industry stakeholders on board.\n\nThe
       EU is praised for progress, though the debate over cultural access continues."
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: df39b691ec2910544b8c75e3b10389ee, type: 3}
     choices:
     - title: Ban Geoblocking for All Services, Including Streaming
       description: Take a bold step toward a fully unified digital market, applying
@@ -1653,7 +1658,7 @@ MonoBehaviour:
       euroscepticismModifier: -0.01
       foreignAffairsModifier: 0.01
       moneyModifier: -300000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 253a6a68f0279fe4faa706c3de8061d0, type: 3}
     - title: Implement Ban with Current Exceptions (No Streaming)
       description: Apply the regulation to goods and services like hotel bookings
         and e-commerce, but leave out media for now.
@@ -1670,7 +1675,7 @@ MonoBehaviour:
       euroscepticismModifier: -0.005
       foreignAffairsModifier: 0
       moneyModifier: -100000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
     - title: Delay or Water Down the Regulation
       description: Allow geoblocking to continue for now, citing the need to protect
         local industries and jobs.
@@ -1686,7 +1691,7 @@ MonoBehaviour:
       euroscepticismModifier: 0.02
       foreignAffairsModifier: -0.02
       moneyModifier: 0
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 8739a41109808ce4fb03dd93abc8f830, type: 3}
   - eventDate: 25/05/2018
     title: Data Protection Rules
     countryName: Brussels
@@ -1705,40 +1710,8 @@ MonoBehaviour:
       feel empowered and protected.\n\nThe EU becomes the world\u2019s benchmark
       for ethical data use.\n\nSome businesses complain, but the long-term shift
       toward responsible tech begins."
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: d58e6ab26c0bb8044bd9b3ab2fb062fc, type: 3}
     choices:
-    - title: Strictly Enforce GDPR with Full Penalties
-      description: Champion strong personal rights and accountability. Make GDPR
-        the gold standard for privacy.
-      consequences: 'Citizens across Europe gain real control over their personal
-        data.
-
-
-        Public trust in the EU increases significantly.
-
-
-        Businesses,
-        especially smaller ones, struggle with compliance costs and fear penalties.'
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.01
-      moneyModifier: -250000000
-      eventIcon: {fileID: 0}
-    - title: Phase in Enforcement with Industry Support
-      description: Maintain strong rules, but delay penalties and offer support to
-        help businesses adjust.
-      consequences: 'Citizens feel protected, but some criticize the soft start.
-
-
-        Businesses
-        appreciate the flexibility.
-
-
-        Regulation is respected but seen as
-        initially lenient.'
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: 0.01
-      moneyModifier: -100000000
-      eventIcon: {fileID: 0}
     - title: Water Down or Postpone GDPR
       description: "Respond to lobbying pressure and delay the law\u2019s application
         to protect innovation and SMEs."
@@ -1754,7 +1727,39 @@ MonoBehaviour:
       euroscepticismModifier: 0.02
       foreignAffairsModifier: -0.02
       moneyModifier: 0
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 8739a41109808ce4fb03dd93abc8f830, type: 3}
+    - title: Strictly Enforce GDPR with Full Penalties
+      description: Champion strong personal rights and accountability. Make GDPR
+        the gold standard for privacy.
+      consequences: 'Citizens across Europe gain real control over their personal
+        data.
+
+
+        Public trust in the EU increases significantly.
+
+
+        Businesses,
+        especially smaller ones, struggle with compliance costs and fear penalties.'
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.01
+      moneyModifier: -250000000
+      eventIcon: {fileID: 21300000, guid: d58e6ab26c0bb8044bd9b3ab2fb062fc, type: 3}
+    - title: Phase in Enforcement with Industry Support
+      description: Maintain strong rules, but delay penalties and offer support to
+        help businesses adjust.
+      consequences: 'Citizens feel protected, but some criticize the soft start.
+
+
+        Businesses
+        appreciate the flexibility.
+
+
+        Regulation is respected but seen as
+        initially lenient.'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: 0.01
+      moneyModifier: -100000000
+      eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
   - eventDate: 14/11/2018
     title: International Calls Price Cap
     countryName: Brussels
@@ -1783,8 +1788,34 @@ MonoBehaviour:
 
       Telecom sector trims regional
       investment plans, but adapts.'
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: b2e45f954d737ea488e1e67768c7affb, type: 3}
     choices:
+    - title: Introduce Soft Guidelines Instead of Legal Caps
+      description: "Encourage voluntary industry compliance with fair pricing, but
+        don\u2019t legislate it."
+      consequences: "Some providers comply, others don\u2019t. Citizens see mixed
+        results.\n\nThe EU is viewed as passive on affordability.\n\nTelecoms retain
+        flexibility, but consumer groups criticize the lack of enforcement."
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0
+      moneyModifier: -50000000
+      eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
+    - title: Leave Pricing to National Regulation and Market Competition
+      description: Avoid interference in the telecom market and focus on cross-border
+        digital innovation.
+      consequences: 'Cross-border communication remains expensive and inconsistent.
+
+
+        Citizens
+        complain about inequality and market fragmentation.
+
+
+        Telecom companies
+        retain autonomy, but the EU is seen as distant from daily concerns.'
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: 0
+      eventIcon: {fileID: 21300000, guid: b2e45f954d737ea488e1e67768c7affb, type: 3}
     - title: Implement a Strict Cap on Call and SMS Prices
       description: Standardize pricing across the Union to reflect the single market
         philosophy.
@@ -1801,33 +1832,7 @@ MonoBehaviour:
       euroscepticismModifier: -0.01
       foreignAffairsModifier: 0.01
       moneyModifier: -150000000
-      eventIcon: {fileID: 0}
-    - title: Introduce Soft Guidelines Instead of Legal Caps
-      description: "Encourage voluntary industry compliance with fair pricing, but
-        don\u2019t legislate it."
-      consequences: "Some providers comply, others don\u2019t. Citizens see mixed
-        results.\n\nThe EU is viewed as passive on affordability.\n\nTelecoms retain
-        flexibility, but consumer groups criticize the lack of enforcement."
-      euroscepticismModifier: 0
-      foreignAffairsModifier: 0
-      moneyModifier: -50000000
-      eventIcon: {fileID: 0}
-    - title: Leave Pricing to National Regulation and Market Competition
-      description: Avoid interference in the telecom market and focus on cross-border
-        digital innovation.
-      consequences: 'Cross-border communication remains expensive and inconsistent.
-
-
-        Citizens
-        complain about inequality and market fragmentation.
-
-
-        Telecom companies
-        retain autonomy, but the EU is seen as distant from daily concerns.'
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
-      moneyModifier: 0
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 253a6a68f0279fe4faa706c3de8061d0, type: 3}
   - eventDate: 12/12/2018
     title: Japan Trade Agreement
     countryName: Strasbourg
@@ -1848,7 +1853,7 @@ MonoBehaviour:
       exporters gain new access to Japan\u2019s large market.\n\nPolitical momentum
       grows for more EU trade deals (e.g., Mercosur, Australia).\n\nCivil society
       demands stronger enforcement of sustainability clauses."
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 2d8b1f0ff855a8742b3e08483f948baf, type: 3}
     choices:
     - title: Sign and Promote the Agreement Widely
       description: Frame the deal as a historic win for EU citizens, global trade,
@@ -1859,7 +1864,7 @@ MonoBehaviour:
       euroscepticismModifier: -0.01
       foreignAffairsModifier: 0.02
       moneyModifier: 300000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 2d8b1f0ff855a8742b3e08483f948baf, type: 3}
     - title: Sign Quietly and Focus on Monitoring
       description: Avoid political fanfare and emphasize mechanisms to enforce social
         and environmental standards.
@@ -1875,7 +1880,7 @@ MonoBehaviour:
       euroscepticismModifier: -0.005
       foreignAffairsModifier: 0.005
       moneyModifier: 200000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: ffb6a159de1dedd4b9f7caf987f03651, type: 3}
     - title: Delay or Reopen Negotiations over Labor and Climate
       description: Yield to public pressure and demand stronger binding protections
         before approval.
@@ -1891,7 +1896,7 @@ MonoBehaviour:
       euroscepticismModifier: 0.01
       foreignAffairsModifier: 0
       moneyModifier: -100000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 680c7199b323c524da2a6ab0930f9ef6, type: 3}
   - eventDate: 31/03/2019
     title: Copyright Reform
     countryName: Strasbourg
@@ -1915,7 +1920,7 @@ MonoBehaviour:
 
       Member states face pressure to interpret the directive
       carefully during implementation.'
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 85aa794c5a755cb4ba77bdc118c8d040, type: 3}
     choices:
     - title: Pass the Directive to Support Creators and Media
       description: Prioritize fair compensation in the digital economy and empower
@@ -1932,22 +1937,7 @@ MonoBehaviour:
       euroscepticismModifier: 0.01
       foreignAffairsModifier: 0
       moneyModifier: 100000000
-      eventIcon: {fileID: 0}
-    - title: Amend the Directive to Weaken Articles 15 and 17
-      description: Address public concern while keeping the overall reform.
-      consequences: 'Some public criticism is reduced, especially among younger voters.
-
-
-        Creators
-        and publishers accuse the EU of watering down protections.
-
-
-        The
-        directive is passed, but its legal strength is weaker.'
-      euroscepticismModifier: 0
-      foreignAffairsModifier: 0.005
-      moneyModifier: 50000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 85aa794c5a755cb4ba77bdc118c8d040, type: 3}
     - title: Reject or Postpone the Directive
       description: Avoid backlash by scrapping or delaying the law altogether.
       consequences: 'Digital rights activists celebrate, but creators and publishers
@@ -1963,7 +1953,22 @@ MonoBehaviour:
       euroscepticismModifier: 0
       foreignAffairsModifier: -0.01
       moneyModifier: -50000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 8739a41109808ce4fb03dd93abc8f830, type: 3}
+    - title: Amend the Directive to Weaken Articles 15 and 17
+      description: Address public concern while keeping the overall reform.
+      consequences: 'Some public criticism is reduced, especially among younger voters.
+
+
+        Creators
+        and publishers accuse the EU of watering down protections.
+
+
+        The
+        directive is passed, but its legal strength is weaker.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0.005
+      moneyModifier: 50000000
+      eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
   - eventDate: 05/06/2019
     title: Single-Use Plastic Products Ban
     countryName: Strasbourg
@@ -1981,24 +1986,8 @@ MonoBehaviour:
       states to ban targeted products and promote reusable alternatives. The directive
       becomes a symbol of the EU\u2019s green ambitions, inspiring other regions
       globally."
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 486148901ccdda84a8057f480fec9540, type: 3}
     choices:
-    - title: Implement the Ban Fully and On Schedule
-      description: Lead global environmental efforts and encourage green industry
-        growth.
-      consequences: 'Environmental benefits become visible within a few years.
-
-
-        Some
-        sectors experience economic strain, but new markets emerge.
-
-
-        Citizens
-        largely support the initiative, increasing trust in the EU.'
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.02
-      moneyModifier: -180000000
-      eventIcon: {fileID: 0}
     - title: Allow Flexibility for Member States on Deadlines
       description: Balance environmental goals with economic concerns, permitting
         phased bans.
@@ -2014,7 +2003,23 @@ MonoBehaviour:
       euroscepticismModifier: 0.01
       foreignAffairsModifier: 0.01
       moneyModifier: -100000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
+    - title: Implement the Ban Fully and On Schedule
+      description: Lead global environmental efforts and encourage green industry
+        growth.
+      consequences: 'Environmental benefits become visible within a few years.
+
+
+        Some
+        sectors experience economic strain, but new markets emerge.
+
+
+        Citizens
+        largely support the initiative, increasing trust in the EU.'
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.02
+      moneyModifier: -180000000
+      eventIcon: {fileID: 21300000, guid: 024dd683f49c80c4db3c31ddcf2f9145, type: 3}
     - title: Delay or Water Down the Directive
       description: Respond to industry pressure and public skepticism about costs
         and convenience.
@@ -2024,7 +2029,7 @@ MonoBehaviour:
       euroscepticismModifier: 0.02
       foreignAffairsModifier: -0.02
       moneyModifier: 0
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 8739a41109808ce4fb03dd93abc8f830, type: 3}
   - eventDate: 11/03/2020
     title: COVID-19
     countryName: Brussels
@@ -2049,40 +2054,8 @@ MonoBehaviour:
 
       The scale of spending
       triggers long-term fiscal debate, but economic rebound begins.'
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: ccde0f8815280c844a28cb1b48296480, type: 3}
     choices:
-    - title: Coordinate a Unified Vaccine Rollout and Recovery Plan
-      description: "Prioritize health, trust, and European solidarity \u2014 even
-        at high financial cost."
-      consequences: 'All member states receive vaccines on equal terms.
-
-
-        Public
-        support surges for EU-level action.
-
-
-        Conservative fiscal voices
-        raise concerns about shared debt and future inflation.'
-      euroscepticismModifier: -0.03
-      foreignAffairsModifier: 0.03
-      moneyModifier: -500000000000
-      eventIcon: {fileID: 0}
-    - title: Focus on National-Level Health Measures, Offer Flexible EU Support
-      description: Let each country manage its own health response, with EU providing
-        financial tools only.
-      consequences: 'Uneven access to vaccines and resources sparks criticism.
-
-
-        Some
-        member states feel abandoned, weakening EU cohesion.
-
-
-        Lower financial
-        burden on EU, but recovery slows in less wealthy nations.'
-      euroscepticismModifier: 0.005
-      foreignAffairsModifier: 0
-      moneyModifier: -200000000000
-      eventIcon: {fileID: 0}
     - title: Limit EU Involvement to Emergency Loans Only
       description: Avoid long-term commitments and focus solely on emergency crisis
         funding.
@@ -2098,7 +2071,39 @@ MonoBehaviour:
       euroscepticismModifier: 0.04
       foreignAffairsModifier: -0.04
       moneyModifier: -80000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 276431e7a62be5a4a90f4c8788e19672, type: 3}
+    - title: Focus on National-Level Health Measures, Offer Flexible EU Support
+      description: Let each country manage its own health response, with EU providing
+        financial tools only.
+      consequences: 'Uneven access to vaccines and resources sparks criticism.
+
+
+        Some
+        member states feel abandoned, weakening EU cohesion.
+
+
+        Lower financial
+        burden on EU, but recovery slows in less wealthy nations.'
+      euroscepticismModifier: 0.005
+      foreignAffairsModifier: 0
+      moneyModifier: -200000000000
+      eventIcon: {fileID: 21300000, guid: 1e3b074bfc5e36a4a8d5a1a0ea8809af, type: 3}
+    - title: Coordinate a Unified Vaccine Rollout and Recovery Plan
+      description: "Prioritize health, trust, and European solidarity \u2014 even
+        at high financial cost."
+      consequences: 'All member states receive vaccines on equal terms.
+
+
+        Public
+        support surges for EU-level action.
+
+
+        Conservative fiscal voices
+        raise concerns about shared debt and future inflation.'
+      euroscepticismModifier: -0.03
+      foreignAffairsModifier: 0.03
+      moneyModifier: -500000000000
+      eventIcon: {fileID: 21300000, guid: 83615320475fa4a47926decddf1ed9d3, type: 3}
   - eventDate: 10/11/2020
     title: EU Budget and Recovery Plan
     countryName: Brussels
@@ -2119,7 +2124,7 @@ MonoBehaviour:
       the regular EU budget (\u20AC1.07 trillion) and the \u20AC750 billion recovery
       fund. For the first time, the EU issues collective debt. Access to funds is
       tied to respecting the rule of law."
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 1e3b074bfc5e36a4a8d5a1a0ea8809af, type: 3}
     choices:
     - title: Approve Full Budget with Grants and Rule-of-Law Conditions
       description: Demonstrate EU leadership, invest in green and digital recovery,
@@ -2136,7 +2141,7 @@ MonoBehaviour:
       euroscepticismModifier: -0.05
       foreignAffairsModifier: 0.05
       moneyModifier: -1350000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 1e3b074bfc5e36a4a8d5a1a0ea8809af, type: 3}
     - title: 'Compromise: More Loans, Fewer Grants, Softer Conditions'
       description: Reduce tension and protect the EU budget, but offer less solidarity.
       consequences: 'Frugal states are satisfied, but recovery is slower.
@@ -2150,7 +2155,7 @@ MonoBehaviour:
       euroscepticismModifier: 0
       foreignAffairsModifier: 0.01
       moneyModifier: -1000000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
     - title: Reject Joint Debt and Focus on National Recovery Plans
       description: Avoid controversial integration steps, but sacrifice unity and
         efficiency.
@@ -2166,7 +2171,7 @@ MonoBehaviour:
       euroscepticismModifier: 0.05
       foreignAffairsModifier: -0.05
       moneyModifier: -900000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 242396770f6d40049b9e2703b5d3cb1d, type: 3}
   - eventDate: 16/12/2020
     title: Rule of Law Legislation
     countryName: Brussels
@@ -2187,7 +2192,7 @@ MonoBehaviour:
       legal review.\n\nThe EU upholds its values without collapsing the budget deal.\n\nTensions
       simmer with Poland and Hungary, who challenge the mechanism in court.\n\nCivil
       society across Europe welcomes the move as a win for accountability."
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 7c59abb0970d89d4dada16b5e04eb286, type: 3}
     choices:
     - title: Approve Rule-of-Law Mechanism with Strong Enforcement
       description: Make democratic values non-negotiable, even at the risk of conflict.
@@ -2203,16 +2208,7 @@ MonoBehaviour:
       euroscepticismModifier: -0.01
       foreignAffairsModifier: 0.01
       moneyModifier: 50000000000
-      eventIcon: {fileID: 0}
-    - title: Adopt a Weaker Mechanism with Legal Delays
-      description: Protect EU unity while keeping pressure on backsliding states.
-      consequences: "Budget deal is saved, but rule-of-law breaches continue unchecked
-        in some regions.\n\nThe mechanism\u2019s credibility is questioned.\n\nCivil
-        society feels the EU hesitated on values."
-      euroscepticismModifier: -0.005
-      foreignAffairsModifier: 0.005
-      moneyModifier: 0
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 7c59abb0970d89d4dada16b5e04eb286, type: 3}
     - title: Drop the Rule-of-Law Clause to Secure the Budget
       description: Prioritize unity and recovery over internal political battles.
       consequences: 'Budget and recovery fund pass without delay.
@@ -2227,7 +2223,16 @@ MonoBehaviour:
       euroscepticismModifier: 0.02
       foreignAffairsModifier: 0.02
       moneyModifier: -100000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: e4588d7f3481f4646bbef4202dcdc23d, type: 3}
+    - title: Adopt a Weaker Mechanism with Legal Delays
+      description: Protect EU unity while keeping pressure on backsliding states.
+      consequences: "Budget deal is saved, but rule-of-law breaches continue unchecked
+        in some regions.\n\nThe mechanism\u2019s credibility is questioned.\n\nCivil
+        society feels the EU hesitated on values."
+      euroscepticismModifier: -0.005
+      foreignAffairsModifier: 0.005
+      moneyModifier: 0
+      eventIcon: {fileID: 21300000, guid: 8739a41109808ce4fb03dd93abc8f830, type: 3}
   - eventDate: 28/04/2021
     title: EU and UK Trade and Cooperation Agreement
     countryName: Brussels
@@ -2250,39 +2255,8 @@ MonoBehaviour:
       economic damage.\n\nTrade becomes more bureaucratic, but chaos is averted.\n\nThe
       UK operates outside the single market and customs union, leading to gradual
       divergence."
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 2d8b1f0ff855a8742b3e08483f948baf, type: 3}
     choices:
-    - title: Sign Trade Deal with Enforcement Rules and Shared Standards
-      description: Preserve EU values and limit UK access unless fair competition
-        is guaranteed.
-      consequences: 'Prevents a disruptive no-deal scenario.
-
-
-        Sets global
-        precedent for trade with non-members.
-
-
-        UK must abide by rules to
-        retain access, but friction grows.'
-      euroscepticismModifier: -0.005
-      foreignAffairsModifier: 0.01
-      moneyModifier: 160000000000
-      eventIcon: {fileID: 0}
-    - title: Offer More UK Flexibility to Expedite Deal
-      description: Prioritize stability and speed over strict regulation enforcement.
-      consequences: 'Quicker agreement helps businesses, but weakens leverage.
-
-
-        Future
-        disputes become harder to enforce.
-
-
-        Some member states criticize
-        perceived UK favoritism.'
-      euroscepticismModifier: 0
-      foreignAffairsModifier: 0.005
-      moneyModifier: 130000000000
-      eventIcon: {fileID: 0}
     - title: "Walk Away from Negotiations \u2013 Prepare for No Deal"
       description: "Refuse to compromise on principles \u2014 even if it triggers
         trade chaos."
@@ -2298,7 +2272,38 @@ MonoBehaviour:
       euroscepticismModifier: 0.02
       foreignAffairsModifier: -0.02
       moneyModifier: -150000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 680c7199b323c524da2a6ab0930f9ef6, type: 3}
+    - title: Sign Trade Deal with Enforcement Rules and Shared Standards
+      description: Preserve EU values and limit UK access unless fair competition
+        is guaranteed.
+      consequences: 'Prevents a disruptive no-deal scenario.
+
+
+        Sets global
+        precedent for trade with non-members.
+
+
+        UK must abide by rules to
+        retain access, but friction grows.'
+      euroscepticismModifier: -0.005
+      foreignAffairsModifier: 0.01
+      moneyModifier: 160000000000
+      eventIcon: {fileID: 21300000, guid: 2d8b1f0ff855a8742b3e08483f948baf, type: 3}
+    - title: Offer More UK Flexibility to Expedite Deal
+      description: Prioritize stability and speed over strict regulation enforcement.
+      consequences: 'Quicker agreement helps businesses, but weakens leverage.
+
+
+        Future
+        disputes become harder to enforce.
+
+
+        Some member states criticize
+        perceived UK favoritism.'
+      euroscepticismModifier: 0
+      foreignAffairsModifier: 0.005
+      moneyModifier: 130000000000
+      eventIcon: {fileID: 21300000, guid: ffb6a159de1dedd4b9f7caf987f03651, type: 3}
   - eventDate: 09/05/2021
     title: Future of Europe Conference
     countryName: Brussels
@@ -2327,24 +2332,8 @@ MonoBehaviour:
 
       The EU shows willingness to evolve based
       on public input.'
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: e5ba5d9a13c55b548b43be4752fb5be1, type: 3}
     choices:
-    - title: Fully Support the Conference and Pursue Treaty Reforms
-      description: Embrace citizens' ideas with institutional courage, including
-        calls for a more federal, democratic EU.
-      consequences: 'Trust in EU democracy grows, especially among youth.
-
-
-        Some
-        member states push back against treaty change.
-
-
-        Ambitious reforms
-        (e.g. QMV in foreign policy, transnational lists) are proposed.'
-      euroscepticismModifier: -0.02
-      foreignAffairsModifier: 0.02
-      moneyModifier: -300000000
-      eventIcon: {fileID: 0}
     - title: Support the Conference Symbolically, Avoid Legal Commitments
       description: Celebrate participation, but stop short of changing the treaties
         or structures.
@@ -2360,7 +2349,23 @@ MonoBehaviour:
       euroscepticismModifier: 0
       foreignAffairsModifier: 0.005
       moneyModifier: -80000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 2631d5d853f48604e9c1d9d5feba51e1, type: 3}
+    - title: Fully Support the Conference and Pursue Treaty Reforms
+      description: Embrace citizens' ideas with institutional courage, including
+        calls for a more federal, democratic EU.
+      consequences: 'Trust in EU democracy grows, especially among youth.
+
+
+        Some
+        member states push back against treaty change.
+
+
+        Ambitious reforms
+        (e.g. QMV in foreign policy, transnational lists) are proposed.'
+      euroscepticismModifier: -0.02
+      foreignAffairsModifier: 0.02
+      moneyModifier: -300000000
+      eventIcon: {fileID: 21300000, guid: e5ba5d9a13c55b548b43be4752fb5be1, type: 3}
     - title: Dismiss the Conference Outcomes as Non-Binding
       description: Avoid political risk and maintain full national control over EU
         direction.
@@ -2375,7 +2380,7 @@ MonoBehaviour:
       euroscepticismModifier: 0.02
       foreignAffairsModifier: -0.02
       moneyModifier: -50000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 1a860719d649094478ef42f7a4787853, type: 3}
   - eventDate: 24/06/2021
     title: European Climate Law
     countryName: Brussels
@@ -2395,22 +2400,8 @@ MonoBehaviour:
       world\u2019s first major bloc to turn net-zero goals into law.\n\nSignificant
       policy reforms begin across energy, transport, and industry.\n\nSome regions
       and industries resist, citing costs and competitiveness."
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 44170b23ca079634b8095b55b39bb1c2, type: 3}
     choices:
-    - title: Adopt Binding Targets for 2030 and 2050
-      description: "Turn ambition into obligation \u2014 lead by law, not words."
-      consequences: 'Creates legal certainty and drives deep reform
-
-
-        Sparks
-        pushback from carbon-intensive sectors
-
-
-        Builds global climate credibility'
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.02
-      moneyModifier: 0
-      eventIcon: {fileID: 0}
     - title: Set Non-Binding Climate Goals
       description: 'Encourage change, but leave room for flexibility.
 
@@ -2436,7 +2427,7 @@ MonoBehaviour:
       euroscepticismModifier: 0
       foreignAffairsModifier: -0.01
       moneyModifier: 0
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
     - title: Postpone Decision Until After Economic Recovery
       description: Delay legal commitments to avoid political and economic risk.
       consequences: 'Stalls Green Deal progress
@@ -2451,7 +2442,21 @@ MonoBehaviour:
       euroscepticismModifier: 0.03
       foreignAffairsModifier: -0.02
       moneyModifier: 0
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: b2eee430adf3310489b7e016c78bd652, type: 3}
+    - title: Adopt Binding Targets for 2030 and 2050
+      description: "Turn ambition into obligation \u2014 lead by law, not words."
+      consequences: 'Creates legal certainty and drives deep reform
+
+
+        Sparks
+        pushback from carbon-intensive sectors
+
+
+        Builds global climate credibility'
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.02
+      moneyModifier: 0
+      eventIcon: {fileID: 21300000, guid: 44170b23ca079634b8095b55b39bb1c2, type: 3}
   - eventDate: 24/02/2022
     title: Russian Invasion
     countryName: Kherson
@@ -2483,7 +2488,7 @@ MonoBehaviour:
 
       Political
       unity is tested by inflation and diverging national interests.'
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 8e9872e38ecadbf4fadc1cf3b39403a0, type: 3}
     choices:
     - title: Impose Full Sanctions, Arm Ukraine, Accept Refugees
       description: Make a firm stand for democracy and sovereignty, regardless of
@@ -2500,16 +2505,7 @@ MonoBehaviour:
       euroscepticismModifier: 0.01
       foreignAffairsModifier: 0.02
       moneyModifier: -150000000000
-      eventIcon: {fileID: 0}
-    - title: Apply Moderate Sanctions, Focus on Diplomacy
-      description: Balance values with economic stability and avoid escalation.
-      consequences: "Slower erosion of Russia\u2019s war economy\n\nViewed as morally
-        ambiguous by Ukraine and allies\n\nLess economic disruption, but long-term
-        trust damaged"
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: -0.01
-      moneyModifier: -60000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 272d5e991790fbc4e8746fd68afa2a82, type: 3}
     - title: Avoid Major Involvement, Focus on Internal Stability
       description: Prioritize internal cohesion and economic survival.
       consequences: 'Condemned internationally as passive and selfish
@@ -2524,17 +2520,33 @@ MonoBehaviour:
       euroscepticismModifier: 0.01
       foreignAffairsModifier: -0.04
       moneyModifier: -20000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 0dcd9993bbba4de4e99f30df4e133efd, type: 3}
+    - title: Apply Moderate Sanctions, Focus on Diplomacy
+      description: Balance values with economic stability and avoid escalation.
+      consequences: "Slower erosion of Russia\u2019s war economy\n\nViewed as morally
+        ambiguous by Ukraine and allies\n\nLess economic disruption, but long-term
+        trust damaged"
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: -0.01
+      moneyModifier: -60000000000
+      eventIcon: {fileID: 21300000, guid: f1950177477ad0347aeb5171b1ba2c2f, type: 3}
   - eventDate: 09/05/2022
     title: End of Future of Europe Conference
     countryName: Brussels
-    description: 'The EU commits to exploring treaty changes and policy reforms based
-      on citizen recommendations. While implementation will take time, the message
-      is clear: participation matters.
+    description: "After a year of citizen panels, debates, and digital engagement,
+      the Conference on the Future of Europe concludes. Citizens call for deeper
+      EU integration, stronger democracy, and more action on climate, health, and
+      foreign policy. The EU must now decide how to respond to the proposals \u2014
+      with reforms, institutional changes, or symbolic gestures."
+    question: 
+    EuChoice: Pledge Action on Key Citizen Proposals
+    EuChoiceDescription: 'The EU commits to exploring treaty changes and policy reforms
+      based on citizen recommendations. While implementation will take time, the
+      message is clear: participation matters.
 
 
-      Citizens feel heard, boosting democratic
-      engagement.
+      Citizens feel heard, boosting
+      democratic engagement.
 
 
       Governments wary of treaty change voice caution.
@@ -2542,25 +2554,7 @@ MonoBehaviour:
 
       Institutional
       follow-up processes begin.'
-    question: 
-    EuChoice: Pledge Action on Key Citizen Proposals
-    EuChoiceDescription: 'The EU swiftly imposes heavy sanctions on Russia, cutting
-      off banks, freezing assets, and restricting trade. It coordinates unprecedented
-      military support for Ukraine and opens borders to millions of Ukrainian refugees.
-      Solidarity becomes a central narrative, but energy and inflation shocks test
-      unity.
-
-
-      The EU stands united and globally respected for its strong response.
-
-
-      Russia
-      retaliates with gas cuts, driving up energy prices across Europe.
-
-
-      Political
-      unity is tested by inflation and diverging national interests.'
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: e5ba5d9a13c55b548b43be4752fb5be1, type: 3}
     choices:
     - title: 
       description: 
@@ -2568,7 +2562,7 @@ MonoBehaviour:
       euroscepticismModifier: -0.01
       foreignAffairsModifier: 0.01
       moneyModifier: -15000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: e5ba5d9a13c55b548b43be4752fb5be1, type: 3}
   - eventDate: 06/07/2022
     title: Digital Services and Markets Act
     countryName: Brussels
@@ -2589,23 +2583,8 @@ MonoBehaviour:
       more control over their data and online safety\n\nTech giants begin adapting
       or lobbying against restrictions\n\nInternational partners start considering
       similar laws"
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 253a6a68f0279fe4faa706c3de8061d0, type: 3}
     choices:
-    - title: Pass the Acts and Enforce Strictly
-      description: Make Europe the global leader in responsible tech governance.
-      consequences: 'Strengthens user protections and platform transparency
-
-
-        Sparks
-        tech lobbying and possible transatlantic tensions
-
-
-        Boosts digital
-        sovereignty and trust in institutions'
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.02
-      moneyModifier: -20000000000
-      eventIcon: {fileID: 0}
     - title: Pass Acts But Delay Enforcement
       description: Secure the laws but take time to ease into application.
       consequences: 'Reduces short-term tension with tech giants
@@ -2620,7 +2599,7 @@ MonoBehaviour:
       euroscepticismModifier: 0
       foreignAffairsModifier: 0
       moneyModifier: -10000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 8739a41109808ce4fb03dd93abc8f830, type: 3}
     - title: Scale Back Key Provisions to Please Industry
       description: Avoid heavy-handed regulation and keep tech giants close.
       consequences: "Major platforms stay cooperative, but smaller competitors lose
@@ -2629,7 +2608,22 @@ MonoBehaviour:
       euroscepticismModifier: 0.02
       foreignAffairsModifier: -0.02
       moneyModifier: 0
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 3080445c5bb43e84fbd1bdcf756d4b23, type: 3}
+    - title: Pass the Acts and Enforce Strictly
+      description: Make Europe the global leader in responsible tech governance.
+      consequences: 'Strengthens user protections and platform transparency
+
+
+        Sparks
+        tech lobbying and possible transatlantic tensions
+
+
+        Boosts digital
+        sovereignty and trust in institutions'
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.02
+      moneyModifier: -20000000000
+      eventIcon: {fileID: 21300000, guid: 272d5e991790fbc4e8746fd68afa2a82, type: 3}
   - eventDate: 25/04/2023
     title: Carbon Border Asjustment Mechanism
     countryName: Brussels
@@ -2658,23 +2652,8 @@ MonoBehaviour:
 
       European industries
       face smoother transition into green standards'
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 44170b23ca079634b8095b55b39bb1c2, type: 3}
     choices:
-    - title: Adopt Full CBAM with Strong Enforcement
-      description: "Use the EU\u2019s market power to drive global climate responsibility."
-      consequences: 'Encourages international producers to adopt green practices
-
-
-        Sparks
-        WTO disputes and backlash from key partners
-
-
-        CBAM revenues help
-        fund EU climate transition and innovation'
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: 0.01
-      moneyModifier: 2000000000
-      eventIcon: {fileID: 0}
     - title: Phase In CBAM Slowly with Broad Exemptions
       description: Soften the impact and buy time to negotiate globally.
       consequences: 'Limits initial trade disruption, but weakens the environmental
@@ -2689,7 +2668,22 @@ MonoBehaviour:
       euroscepticismModifier: 0
       foreignAffairsModifier: 0.01
       moneyModifier: 0
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 8739a41109808ce4fb03dd93abc8f830, type: 3}
+    - title: Adopt Full CBAM with Strong Enforcement
+      description: "Use the EU\u2019s market power to drive global climate responsibility."
+      consequences: 'Encourages international producers to adopt green practices
+
+
+        Sparks
+        WTO disputes and backlash from key partners
+
+
+        CBAM revenues help
+        fund EU climate transition and innovation'
+      euroscepticismModifier: 0.01
+      foreignAffairsModifier: 0.01
+      moneyModifier: 2000000000
+      eventIcon: {fileID: 21300000, guid: 44170b23ca079634b8095b55b39bb1c2, type: 3}
     - title: Delay or Cancel CBAM to Avoid Trade Fallout
       description: Prioritize global trade stability and avoid accusations of green
         protectionism.
@@ -2705,7 +2699,7 @@ MonoBehaviour:
       euroscepticismModifier: 0.01
       foreignAffairsModifier: -0.01
       moneyModifier: 0
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: b2eee430adf3310489b7e016c78bd652, type: 3}
   - eventDate: 21/04/2024
     title: Artificial Intelligence Act
     countryName: Strasbourg
@@ -2724,40 +2718,8 @@ MonoBehaviour:
       citizens\u2019 rights and safety from harmful AI applications.\n\nKeeps the
       EU competitive in global AI development.\n\nRequires significant investment
       in compliance and monitoring."
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: dbe0b1c71fa30524d837ea5e5332207c, type: 3}
     choices:
-    - title: Enforce Strict AI Controls Across All Sectors
-      description: Implement comprehensive regulations that apply equally to all
-        AI systems to maximize safety and ethics.
-      consequences: 'Strong protection against AI misuse and bias.
-
-
-        High
-        compliance costs may slow down innovation and discourage startups.
-
-
-        EU
-        may lag behind less regulated competitors.'
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.02
-      moneyModifier: -30000000000
-      eventIcon: {fileID: 0}
-    - title: Adopt Risk-Based Approach with Flexibility
-      description: Focus strict regulations only on high-risk AI systems, leaving
-        more freedom for others to innovate.
-      consequences: 'Balances safety and innovation effectively.
-
-
-        Industry
-        welcomes flexible rules, accelerating development.
-
-
-        Some critics
-        worry about loopholes.'
-      euroscepticismModifier: -0.005
-      foreignAffairsModifier: 0
-      moneyModifier: -20000000000
-      eventIcon: {fileID: 0}
     - title: Minimize Regulation to Boost AI Industry
       description: Keep regulations minimal to promote rapid AI innovation and attract
         investment.
@@ -2773,7 +2735,39 @@ MonoBehaviour:
       euroscepticismModifier: 0.04
       foreignAffairsModifier: -0.02
       moneyModifier: -100000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 3080445c5bb43e84fbd1bdcf756d4b23, type: 3}
+    - title: Enforce Strict AI Controls Across All Sectors
+      description: Implement comprehensive regulations that apply equally to all
+        AI systems to maximize safety and ethics.
+      consequences: 'Strong protection against AI misuse and bias.
+
+
+        High
+        compliance costs may slow down innovation and discourage startups.
+
+
+        EU
+        may lag behind less regulated competitors.'
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.02
+      moneyModifier: -30000000000
+      eventIcon: {fileID: 21300000, guid: dbe0b1c71fa30524d837ea5e5332207c, type: 3}
+    - title: Adopt Risk-Based Approach with Flexibility
+      description: Focus strict regulations only on high-risk AI systems, leaving
+        more freedom for others to innovate.
+      consequences: 'Balances safety and innovation effectively.
+
+
+        Industry
+        welcomes flexible rules, accelerating development.
+
+
+        Some critics
+        worry about loopholes.'
+      euroscepticismModifier: -0.005
+      foreignAffairsModifier: 0
+      moneyModifier: -20000000000
+      eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
   - eventDate: 17/06/2024
     title: Nature Restoration Law
     countryName: Luxembourg
@@ -2806,23 +2800,17 @@ MonoBehaviour:
 
       Sends a strong
       but pragmatic message on environmental leadership.'
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: 44170b23ca079634b8095b55b39bb1c2, type: 3}
     choices:
-    - title: Fully Implement the Law with Robust Measures
-      description: Lead the EU in ambitious ecosystem restoration, prioritizing environmental
-        goals over economic concerns.
-      consequences: 'Accelerates EU Green Deal progress.
-
-
-        May cause pushback
-        from farmers and industry.
-
-
-        Strengthens EU global climate leadership.'
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.02
-      moneyModifier: -30000000000
-      eventIcon: {fileID: 0}
+    - title: Delay Implementation Due to Economic Concerns
+      description: "Postpone the law\u2019s enforcement to avoid economic disruption."
+      consequences: "Undermines EU\u2019s environmental credibility.\n\nIncreases
+        risk of ecosystem degradation.\n\nMay trigger criticism from environmental
+        groups."
+      euroscepticismModifier: 0.02
+      foreignAffairsModifier: -0.02
+      moneyModifier: 0
+      eventIcon: {fileID: 21300000, guid: b2eee430adf3310489b7e016c78bd652, type: 3}
     - title: Implement with Flexibility and Support Mechanisms
       description: Balance restoration efforts with economic considerations, allowing
         adaptations by member states.
@@ -2837,16 +2825,22 @@ MonoBehaviour:
       euroscepticismModifier: 0
       foreignAffairsModifier: 0.01
       moneyModifier: -20000000000
-      eventIcon: {fileID: 0}
-    - title: Delay Implementation Due to Economic Concerns
-      description: "Postpone the law\u2019s enforcement to avoid economic disruption."
-      consequences: "Undermines EU\u2019s environmental credibility.\n\nIncreases
-        risk of ecosystem degradation.\n\nMay trigger criticism from environmental
-        groups."
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
-      moneyModifier: 0
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
+    - title: Fully Implement the Law with Robust Measures
+      description: Lead the EU in ambitious ecosystem restoration, prioritizing environmental
+        goals over economic concerns.
+      consequences: 'Accelerates EU Green Deal progress.
+
+
+        May cause pushback
+        from farmers and industry.
+
+
+        Strengthens EU global climate leadership.'
+      euroscepticismModifier: -0.01
+      foreignAffairsModifier: 0.02
+      moneyModifier: -30000000000
+      eventIcon: {fileID: 21300000, guid: 44170b23ca079634b8095b55b39bb1c2, type: 3}
   - eventDate: 19/11/2024
     title: Forced Labour Ban
     countryName: Luxembourg
@@ -2864,7 +2858,7 @@ MonoBehaviour:
       of human rights.\n\nIncreases compliance costs for businesses, especially those
       with complex supply chains.\n\nCauses tension with trading partners who may
       view the ban as protectionist."
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: b41708f4d88d85e46a322efb81229b4c, type: 3}
     choices:
     - title: Implement Full Ban Immediately
       description: Enforce the ban with no delays, sending a strong message against
@@ -2881,7 +2875,7 @@ MonoBehaviour:
       euroscepticismModifier: -0.01
       foreignAffairsModifier: 0.02
       moneyModifier: -25000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: b41708f4d88d85e46a322efb81229b4c, type: 3}
     - title: Phase in the Ban with Business Support
       description: Introduce the ban gradually, offering training and subsidies to
         ease transition.
@@ -2899,7 +2893,7 @@ MonoBehaviour:
       euroscepticismModifier: 0
       foreignAffairsModifier: 0.01
       moneyModifier: -15000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
     - title: Water Down Enforcement and Delay Deadlines
       description: Allow looser compliance rules and extend deadlines to protect
         industries.
@@ -2909,4 +2903,4 @@ MonoBehaviour:
       euroscepticismModifier: 0.02
       foreignAffairsModifier: -0.02
       moneyModifier: -8000000000
-      eventIcon: {fileID: 0}
+      eventIcon: {fileID: 21300000, guid: 3080445c5bb43e84fbd1bdcf756d4b23, type: 3}
