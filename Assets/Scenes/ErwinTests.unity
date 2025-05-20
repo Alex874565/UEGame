@@ -16262,6 +16262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 937f75126924ff344a4ef9e1d4e8e3c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  statsPanel: {fileID: 1171894143}
   mapImage: {fileID: 886626889}
   comissionPresident: {fileID: 1058026677}
   parliamentPresident: {fileID: 1747561742}
@@ -19137,10 +19138,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1171894143}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1632607581}
+        m_TargetAssemblyTypeName: EUStats, Assembly-CSharp
+        m_MethodName: OpenStatsPanel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

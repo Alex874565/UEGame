@@ -7,6 +7,9 @@ public class EUStats : MonoBehaviour
 {
     public static EUStats Instance;
 
+    [Header("Stats UI")]
+    [SerializeField] private GameObject statsPanel;
+
     [Header("Map UI")]
     [SerializeField] private Image mapImage;
 
@@ -101,5 +104,11 @@ public class EUStats : MonoBehaviour
     public ElectionsDatabase.Election GetCurrentElection()
     {
         return electionData;
+    }
+
+    public void OpenStatsPanel()
+    {
+        TimeManager.Instance.PauseTime();
+        statsPanel.SetActive(true);
     }
 }
