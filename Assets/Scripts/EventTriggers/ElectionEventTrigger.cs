@@ -16,6 +16,7 @@ public class ElectionEventTrigger : GeneralTrigger, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        AudioManager.Instance.PlaySound();
         PopupManager.Instance.ShowElectionEvent(currentElectionEvent);
         Destroy(gameObject);
     }
