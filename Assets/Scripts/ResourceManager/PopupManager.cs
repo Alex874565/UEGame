@@ -403,7 +403,6 @@ public class PopupManager : MonoBehaviour
 
     private void AnswerSelected(int index)
     {
-        Debug.Log("anserSelected");
         quizPanel.SetActive(false);
         TimeManager.Instance.PlayTime();
 
@@ -469,14 +468,12 @@ public class PopupManager : MonoBehaviour
     {
         if (button == null)
         {
-            Debug.LogError("Trying to assign listener to a null button.");
             return;
         }
 
         button.onClick.RemoveAllListeners();
         button.onClick.AddListener(() =>
         {
-            Debug.Log($"[PopupManager] Button {button.name} clicked.");
             try
             {
                 action();

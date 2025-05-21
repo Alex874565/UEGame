@@ -42,9 +42,14 @@ public class GameEndManager : MonoBehaviour
 
     public void GameLost(string loseReason, string loseDescription)
     {
-        Debug.Log("Game Lost: " + loseReason);
-        SaveManager.Instance.DeleteSave();
+        SaveManager.Instance.LostGame();
+
         TimeManager.Instance.SetTimeScale(0f);
+        TimeManager.Instance.enabled = false;
+        EventsManager.Instance.enabled = false;
+
+        SaveManager.Instance.DeleteSave();
+        SaveManager.Instance.enabled = false;
 
         losePopupTextDescription.text = loseDescription;
         gameLostScreen.SetActive(true);

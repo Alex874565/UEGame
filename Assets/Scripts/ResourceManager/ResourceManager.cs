@@ -56,7 +56,6 @@ public class ResourceManager : MonoBehaviour
         currentBudget = data.budget;
         currentQuizFails = data.quizzesFailed;
 
-        Debug.Log("ResourceManager: Data loaded from SaveManager.");
         UpdateUI();
     }
 
