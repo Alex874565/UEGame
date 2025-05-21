@@ -36,7 +36,7 @@ public class EUStats : MonoBehaviour
     private void Start()
     {
         UpdateElectionUI();
-        UpdatePartyUI(new List<ElectionsDatabase.Party>());
+        UpdatePartyUI(electionData.parties);
     }
 
     public void Load(SaveData saveData)
