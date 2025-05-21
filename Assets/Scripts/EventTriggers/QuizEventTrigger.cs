@@ -16,7 +16,7 @@ public class QuizEventTrigger : GeneralTrigger, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        AudioManager.Instance.PlaySound();
+        AudioManager.Instance.PlaySoundPopupClick();
         PopupManager.Instance.ShowQuizEvent(currentQuizEvent);
         Destroy(gameObject);
     }

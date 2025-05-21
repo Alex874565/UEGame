@@ -17,7 +17,7 @@ public class BudgetEventTrigger : GeneralTrigger, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        AudioManager.Instance.PlaySound();
+        AudioManager.Instance.PlaySoundPopupClick();
         PopupManager.Instance.ShowBudgetEvent(currentBudgetEvent);
         Destroy(gameObject);
     }

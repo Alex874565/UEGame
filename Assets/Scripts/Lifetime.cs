@@ -22,6 +22,7 @@ public class Lifetime : MonoBehaviour
             if (ps != null)
             {
                 ps.Play();
+                AudioManager.Instance.PlaySoundPoof();
                 Destroy(go, ps.main.duration + ps.main.startLifetime.constantMax); // Auto-destroy VFX
             }
         }

@@ -117,6 +117,7 @@ public class EventsManager : MonoBehaviour
 
     public void StartMainEvent(string country)
     {
+        AudioManager.Instance.PlaySoundPopupAppear();
         nrOfSpawnedEvents++;
         SpawnEvent(country);
         eventIndex++;
@@ -124,6 +125,7 @@ public class EventsManager : MonoBehaviour
 
     public void StartQuizEvent(string country)
     {
+        AudioManager.Instance.PlaySoundPopupAppear();
         nrOfSpawnedEvents++;
         SpawnQuiz(country);
         quizIndex++;
@@ -131,6 +133,7 @@ public class EventsManager : MonoBehaviour
 
     public void StartBudgetEvent(string country)
     {
+        AudioManager.Instance.PlaySoundPopupAppear();
         nrOfSpawnedEvents++;
         SpawnBudget(country);
         budgetIndex++;
@@ -138,6 +141,7 @@ public class EventsManager : MonoBehaviour
 
     public void StartElectionEvent(string country)
     {
+        AudioManager.Instance.PlaySoundPopupAppear();
         nrOfSpawnedEvents++;
         SpawnElection(country);
         electionIndex++;
@@ -145,6 +149,7 @@ public class EventsManager : MonoBehaviour
 
     public void StartMemberEvent(string country)
     {
+        AudioManager.Instance.PlaySoundPopupAppear();
         nrOfSpawnedEvents++;
         SpawnMemberEvent(country);
         membersIndex++;

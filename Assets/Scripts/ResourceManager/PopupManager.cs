@@ -449,6 +449,7 @@ public class PopupManager : MonoBehaviour
         {
             ps.Play();
         }
+        AudioManager.Instance.PlaySoundPoof();
     }
     private string FormatLargeNumber(float number)
     {
