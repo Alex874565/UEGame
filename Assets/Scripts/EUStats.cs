@@ -46,7 +46,7 @@ public class EUStats : MonoBehaviour
         electionData = EventsManager.Instance.ElectionsDatabase.elections[saveData.selectedElectionIndex];
 
         UpdateElectionUI();
-        if (electionData.parties.Count > 0)
+        if (saveData.savedParties.Count > 0)
         {
             UpdatePartyUI();
         }
@@ -97,6 +97,8 @@ public class EUStats : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
+
+        Debug.Log("Updating party UI with " + electionData.parties.Count + " parties.");
 
         foreach (var party in electionData.parties)
         {

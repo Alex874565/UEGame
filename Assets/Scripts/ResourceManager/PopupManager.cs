@@ -68,9 +68,10 @@ public class PopupManager : MonoBehaviour
         eventQuestionText.text = "";
         eventDescriptionText.text = "";
 
-        // eventTitleText.color = Color.white;
-        // eventDateText.color = Color.white;
-        // eventQuestionText.color = Color.white;
+         eventTitleText.color = new Color(0.1176471f, 0.145098f, 0.3686275f);
+         eventDateText.color = new Color(0.1176471f, 0.145098f, 0.3686275f);
+         eventQuestionText.color = new Color(0.1176471f, 0.145098f, 0.3686275f);
+         eventDescriptionText.color = new Color(0.1176471f, 0.145098f, 0.3686275f);
         var eventButton = eventPanel.transform.Find("Event Button").GetComponent<Button>();
         eventButton.onClick.RemoveAllListeners();
 
@@ -88,9 +89,9 @@ public class PopupManager : MonoBehaviour
             desc.text = "";
             money.text = "";
 
-            // title.color = Color.white;
-            // desc.color = Color.white;
-            // money.color = Color.white;
+            title.color = new Color(0.1176471f, 0.145098f, 0.3686275f);
+            desc.color = new Color(0.1176471f, 0.145098f, 0.3686275f);
+            money.color = new Color(0.1176471f, 0.145098f, 0.3686275f);
 
             Debug.Log("Removing listeners from " + button.name);
             button.onClick.RemoveAllListeners();
