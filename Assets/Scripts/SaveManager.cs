@@ -48,9 +48,10 @@ public class SaveManager : MonoBehaviour
     [SerializeField] private GameObject tutorialGO;
     [SerializeField] private TimeManager timeManager;
 
+    private bool lostGame = false;
+
     private void Awake()
     {
-        print(Instance == null);
         if (Instance == null)
             Instance = this;
 
@@ -74,8 +75,11 @@ public class SaveManager : MonoBehaviour
             Debug.Log("No save file to delete.");
         }
     }
+    
     public void SaveGame()
     {
+        if (lostGame) return;
+
         // Time
         currentData.day = TimeManager.Instance.GetDay();
         currentData.month = TimeManager.Instance.GetMonth();
@@ -164,6 +168,11 @@ public class SaveManager : MonoBehaviour
         EventsManager.Instance.Load(currentData);
     }
 
+    public void LostGame()
+    {
+        lostGame = true;
+    }
+
     private SaveData CreateNewData()
     {
         return new SaveData
@@ -180,6 +189,7 @@ public class SaveManager : MonoBehaviour
             euroscepticism = 0f,
         };
     }
+
     private string EncryptString(string plainText)
     {
         using Aes aes = Aes.Create();

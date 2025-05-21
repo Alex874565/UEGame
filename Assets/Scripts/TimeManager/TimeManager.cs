@@ -63,6 +63,7 @@ public class TimeManager : MonoBehaviour
         if (Instance == null)
             Instance = this;
     }
+
     void Start()
     {
         SaveManager.Instance.currentData.finishedTutorial = true;
