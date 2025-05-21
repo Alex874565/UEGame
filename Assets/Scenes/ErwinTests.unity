@@ -13924,7 +13924,7 @@ MonoBehaviour:
   hour: 0
   minute: 0
   endYear: 2025
-  monthlyNegativeAllowance: -10000000000
+  monthlyNegativeAllowance: -5000000000
   defaultTimeScale: 5
   fastForwardTimeScale: 30
   HUDDate: {fileID: 1280413485}
