@@ -29,7 +29,8 @@ public class PauseMenu : MonoBehaviour
 
     public void HandlePause()
     {
-        if(isPaused)
+        AudioManager.Instance.PlaySoundPopupClick();
+        if (isPaused)
         {
             Unpause();
         }

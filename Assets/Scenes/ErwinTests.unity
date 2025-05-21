@@ -3381,7 +3381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.87169814, g: 0.43913847, b: 0.43913847, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10607,7 +10607,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2027897965}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlaySound
+        m_MethodName: PlaySoundPopupClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11801,7 +11801,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2027897965}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlaySound
+        m_MethodName: PlaySoundPopupClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14622,7 +14622,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2027897965}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlaySound
+        m_MethodName: PlaySoundPopupClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16209,7 +16209,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2027897965}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlaySound
+        m_MethodName: PlaySoundPopupClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16965,12 +16965,12 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 3618469750877645200, guid: 99a871abb92c1c64483b36cabf443806, type: 2}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b37605132f80717428db91f2b8b70fa6, type: 3}
+  m_Resource: {fileID: 8300000, guid: b37605132f80717428db91f2b8b70fa6, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -17348,7 +17348,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2027897965}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlaySound
+        m_MethodName: PlaySoundPopupClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22381,7 +22381,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2027897965}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlaySound
+        m_MethodName: PlaySoundPopupClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23944,7 +23944,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: aeedcb7c9641cea438b87ec071684abd, type: 3}
   m_Resource: {fileID: 8300000, guid: aeedcb7c9641cea438b87ec071684abd, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -24038,10 +24038,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -55769057821599095, guid: 99a871abb92c1c64483b36cabf443806, type: 2}
-  m_audioClip: {fileID: 8300000, guid: dbc600830931094459c23cc253224bf5, type: 3}
-  m_Resource: {fileID: 8300000, guid: dbc600830931094459c23cc253224bf5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: adedf2cac099abc4b8ce2054cf63f96f, type: 3}
+  m_Resource: {fileID: 8300000, guid: adedf2cac099abc4b8ce2054cf63f96f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -24138,7 +24138,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: ec2645b3b96fc7c4981be245b0c28a3b, type: 3}
   m_Resource: {fileID: 8300000, guid: ec2645b3b96fc7c4981be245b0c28a3b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -24235,7 +24235,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 9eb86f47dda1183479099dcb5258337a, type: 3}
   m_Resource: {fileID: 8300000, guid: 9eb86f47dda1183479099dcb5258337a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -25366,7 +25366,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2027897965}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlaySound
+        m_MethodName: PlaySoundPopupClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
