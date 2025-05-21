@@ -16,7 +16,8 @@ public class MemberEventTrigger : GeneralTrigger, IPointerClickHandler
     }
 
     public void OnPointerClick(PointerEventData eventData)
-    {
+    {   
+        AudioManager.Instance.PlaySound();
         PopupManager.Instance.ShowMemberEvent(currentMemberEvent);
         Destroy(gameObject);
     }
