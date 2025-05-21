@@ -27,8 +27,8 @@ MonoBehaviour:
       description: 
       consequences: 
       euroscepticismModifier: 0
-      foreignAffairsModifier: 0.01
-      moneyModifier: -15000000
+      foreignAffairsModifier: 0.05
+      moneyModifier: -30000000
       eventIcon: {fileID: 21300000, guid: 272d5e991790fbc4e8746fd68afa2a82, type: 3}
   - eventDate: 01/02/2003
     title: Treaty of Nice
@@ -62,8 +62,8 @@ MonoBehaviour:
       description: 
       consequences: 
       euroscepticismModifier: 0
-      foreignAffairsModifier: 0.01
-      moneyModifier: -15000000
+      foreignAffairsModifier: 0.05
+      moneyModifier: -30000000
       eventIcon: {fileID: 21300000, guid: ffb6a159de1dedd4b9f7caf987f03651, type: 3}
   - eventDate: 11/03/2004
     title: Madrid Train Bombings
@@ -108,9 +108,9 @@ MonoBehaviour:
 
         Long-term democratic
         legitimacy of the Commission is questioned.'
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
-      moneyModifier: -100000000
+      euroscepticismModifier: 0.8
+      foreignAffairsModifier: -0.8
+      moneyModifier: -200000000
       eventIcon: {fileID: 21300000, guid: 276431e7a62be5a4a90f4c8788e19672, type: 3}
     - title: Unity and Action
       description: 'Issue a strong solidarity statemenet with Spain
@@ -148,9 +148,9 @@ MonoBehaviour:
         Internal EU Unity: The EU is
         seen as more united and coordinated, but the potential conflict between national
         sovereignty and EU centralization could create division in future decision-making'
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.01
-      moneyModifier: -1000000000
+      euroscepticismModifier: -0.05
+      foreignAffairsModifier: 0.05
+      moneyModifier: -2000000000
       eventIcon: {fileID: 21300000, guid: 272d5e991790fbc4e8746fd68afa2a82, type: 3}
     - title: Balance of Power and Privacy
       description: "Issue a neutral, factual public statement\n\nPromote regional
@@ -179,7 +179,7 @@ MonoBehaviour:
         force"
       euroscepticismModifier: 0
       foreignAffairsModifier: 0
-      moneyModifier: -500000000
+      moneyModifier: -1000000000
       eventIcon: {fileID: 21300000, guid: 276431e7a62be5a4a90f4c8788e19672, type: 3}
   - eventDate: 01/06/2005
     title: EU Constitution Rejection
@@ -200,9 +200,9 @@ MonoBehaviour:
     - title: 
       description: 
       consequences: 
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
-      moneyModifier: -200000000
+      euroscepticismModifier: 0.8
+      foreignAffairsModifier: -0.8
+      moneyModifier: -400000000
       eventIcon: {fileID: 21300000, guid: e7a8c1b3b4efa2f4b84fdcd2f6f7f773, type: 3}
   - eventDate: 07/07/2005
     title: London Terrorist Attacks
@@ -232,8 +232,8 @@ MonoBehaviour:
         Citizens
         feel safe in the short term, but doubts about preparedness persist.'
       euroscepticismModifier: 0
-      foreignAffairsModifier: 0.005
-      moneyModifier: -300000000
+      foreignAffairsModifier: 0.01
+      moneyModifier: -600000000
       eventIcon: {fileID: 21300000, guid: f1950177477ad0347aeb5171b1ba2c2f, type: 3}
     - title: Declare It a UK-Only Issue
       description: Avoid official EU response, framing it as a national matter with
@@ -285,9 +285,9 @@ MonoBehaviour:
     - title: 
       description: 
       consequences: 
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.01
-      moneyModifier: 30000000
+      euroscepticismModifier: -0.02
+      foreignAffairsModifier: 0.02
+      moneyModifier: 60000000
       eventIcon: {fileID: 21300000, guid: cfe91cd900bc6ba4881cfb682e3110ef, type: 3}
   - eventDate: 15/11/2006
     title: Services Directive
@@ -332,7 +332,7 @@ MonoBehaviour:
         The directive is still criticized by
         both pro-market and pro-labor groups for not going far enough.'
       euroscepticismModifier: 0
-      foreignAffairsModifier: 0.05
+      foreignAffairsModifier: 0.1
       moneyModifier: 20000000000
       eventIcon: {fileID: 21300000, guid: b41708f4d88d85e46a322efb81229b4c, type: 3}
     - title: "Abandon the Directive \u2013 National Rules First"
@@ -348,8 +348,8 @@ MonoBehaviour:
 
         It
         also signals weakness in the face of protest.'
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
+      euroscepticismModifier: 0.08
+      foreignAffairsModifier: -0.08
       moneyModifier: -20000000000
       eventIcon: {fileID: 21300000, guid: 0dcd9993bbba4de4e99f30df4e133efd, type: 3}
     - title: "Full Liberalisation \u2013 Embrace the Market"
@@ -358,7 +358,7 @@ MonoBehaviour:
       consequences: "The directive boosts competitiveness and reduces costs for businesses.\n\nIt
         sparks major protests, especially in Western Europe, over labor protections.\n\nIt
         also deepens East\u2013West tensions as wealthier states fear undercutting."
-      euroscepticismModifier: 0.02
+      euroscepticismModifier: 0.08
       foreignAffairsModifier: 0
       moneyModifier: 50000000000
       eventIcon: {fileID: 21300000, guid: 3080445c5bb43e84fbd1bdcf756d4b23, type: 3}
@@ -382,9 +382,9 @@ MonoBehaviour:
     - title: 
       description: 
       consequences: 
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.01
-      moneyModifier: -15000000
+      euroscepticismModifier: -0.05
+      foreignAffairsModifier: 0.05
+      moneyModifier: -30000000
       eventIcon: {fileID: 21300000, guid: cfe91cd900bc6ba4881cfb682e3110ef, type: 3}
   - eventDate: 05/03/2009
     title: Hillary Clinton Visit
@@ -405,8 +405,8 @@ MonoBehaviour:
       description: 
       consequences: 
       euroscepticismModifier: 0
-      foreignAffairsModifier: 0.01
-      moneyModifier: -10000000
+      foreignAffairsModifier: 0.05
+      moneyModifier: -20000000
       eventIcon: {fileID: 21300000, guid: 41e4aee386e81f9439ce7a472772f40f, type: 3}
   - eventDate: 09/04/2009
     title: Parliament on Facebook
@@ -432,9 +432,9 @@ MonoBehaviour:
     - title: 
       description: 
       consequences: 
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.01
-      moneyModifier: -2000000
+      euroscepticismModifier: -0.05
+      foreignAffairsModifier: 0.05
+      moneyModifier: -4000000
       eventIcon: {fileID: 21300000, guid: c3aaf04bdf7ab504e81fa5794e9c585c, type: 3}
   - eventDate: 01/12/2009
     title: Lisbon Treaty
@@ -463,8 +463,8 @@ MonoBehaviour:
       consequences: "The treaty avoids political battles, but leaves institutions
         strained under enlargement.\n\nIt hampers EU\u2019s ability to act efficiently,
         especially with 27+ members.\n\nIt is widely seen as a retreat from ambition."
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
+      euroscepticismModifier: 0.08
+      foreignAffairsModifier: -0.08
       moneyModifier: 0
       eventIcon: {fileID: 21300000, guid: e7a8c1b3b4efa2f4b84fdcd2f6f7f773, type: 3}
     - title: "Push for Ratification \u2013 Modernize the EU"
@@ -527,9 +527,9 @@ MonoBehaviour:
         its new oversight role.\n\nCivil liberties organizations launch campaigns
         against the EU\u2019s disregard for privacy.\n\nTrust in EU institutions
         weakens, especially in privacy-conscious member states."
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: 0.01
-      moneyModifier: -5000000
+      euroscepticismModifier: 0.08
+      foreignAffairsModifier: 0.05
+      moneyModifier: -10000000
       eventIcon: {fileID: 21300000, guid: ffb6a159de1dedd4b9f7caf987f03651, type: 3}
     - title: Approve the Agreement with Safeguards
       description: Sign the SWIFT deal with the U.S., but only after negotiating
@@ -545,8 +545,8 @@ MonoBehaviour:
         Privacy
         advocates remain skeptical, but public backlash is minimized.'
       euroscepticismModifier: 0
-      foreignAffairsModifier: 0.01
-      moneyModifier: -8000000
+      foreignAffairsModifier: 0.05
+      moneyModifier: -16000000
       eventIcon: {fileID: 21300000, guid: f1950177477ad0347aeb5171b1ba2c2f, type: 3}
     - title: Reject the Agreement Entirely
       description: Block the deal and end data transfers to the U.S., citing privacy
@@ -561,9 +561,9 @@ MonoBehaviour:
 
         Terrorism
         investigations are slowed in the short term.'
-      euroscepticismModifier: -0.01
+      euroscepticismModifier: -0.05
       foreignAffairsModifier: 0
-      moneyModifier: -4000000
+      moneyModifier: -8000000
       eventIcon: {fileID: 21300000, guid: e7a8c1b3b4efa2f4b84fdcd2f6f7f773, type: 3}
   - eventDate: 17/12/2010
     title: Arab Spring
@@ -601,9 +601,9 @@ MonoBehaviour:
 
         Instability triggers increased
         migration and regional conflict spillovers.'
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: 0.02
-      moneyModifier: -10000000000
+      euroscepticismModifier: 0.05
+      foreignAffairsModifier: 0.1
+      moneyModifier: -20000000000
       eventIcon: {fileID: 21300000, guid: 272d5e991790fbc4e8746fd68afa2a82, type: 3}
     - title: "Close the Gates \u2013 Prioritize Internal Security"
       description: Fortify borders, cut migration channels, and limit involvement
@@ -617,9 +617,9 @@ MonoBehaviour:
 
         Instability
         in the region worsens, with long-term blowback on EU borders and interests.'
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: 0.01
-      moneyModifier: -5000000
+      euroscepticismModifier: 0.05
+      foreignAffairsModifier: 0.05
+      moneyModifier: -10000000
       eventIcon: {fileID: 21300000, guid: f1950177477ad0347aeb5171b1ba2c2f, type: 3}
     - title: "Wait and See \u2013 Focus on Stability and Dialogue"
       description: Prioritize regional stability and energy interests; support gradual
@@ -636,7 +636,7 @@ MonoBehaviour:
         in some countries.'
       euroscepticismModifier: 0
       foreignAffairsModifier: 0
-      moneyModifier: -6000000000
+      moneyModifier: -12000000000
       eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
   - eventDate: 31/03/2011
     title: Syria Civil War
@@ -673,8 +673,8 @@ MonoBehaviour:
         Long-term
         migration and security consequences persist.'
       euroscepticismModifier: 0
-      foreignAffairsModifier: -0.02
-      moneyModifier: -2000000000
+      foreignAffairsModifier: -0.08
+      moneyModifier: -8000000000
       eventIcon: {fileID: 21300000, guid: 276431e7a62be5a4a90f4c8788e19672, type: 3}
     - title: Focus on Border Control and Regional Containment
       description: Support frontline states (Turkey, Lebanon, Jordan), increase Frontex
@@ -682,7 +682,7 @@ MonoBehaviour:
       consequences: "Refugee arrivals drop, reducing short-term political pressure.\n\nHuman
         rights groups criticize the EU for failing to address root causes.\n\nCooperation
         with Turkey becomes key\u2014and controversial."
-      euroscepticismModifier: 0.01
+      euroscepticismModifier: 0.05
       foreignAffairsModifier: 0
       moneyModifier: -6000000000
       eventIcon: {fileID: 21300000, guid: f1950177477ad0347aeb5171b1ba2c2f, type: 3}
@@ -698,9 +698,9 @@ MonoBehaviour:
 
         Refugee
         numbers remain high, sparking internal tensions.'
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: 0.02
-      moneyModifier: -10000000000
+      euroscepticismModifier: 0.08
+      foreignAffairsModifier: 0.1
+      moneyModifier: -20000000000
       eventIcon: {fileID: 21300000, guid: 272d5e991790fbc4e8746fd68afa2a82, type: 3}
   - eventDate: 14/10/2011
     title: European Parliament Visitor Center
@@ -725,9 +725,9 @@ MonoBehaviour:
     - title: 
       description: 
       consequences: 
-      euroscepticismModifier: -0.005
-      foreignAffairsModifier: 0.005
-      moneyModifier: -30000000
+      euroscepticismModifier: -0.025
+      foreignAffairsModifier: 0.025
+      moneyModifier: -60000000
       eventIcon: {fileID: 21300000, guid: e9f9668675f71794d8a758421262c0d3, type: 3}
   - eventDate: 24/01/2012
     title: Bill Gates Long-Term Commitment
@@ -759,8 +759,8 @@ MonoBehaviour:
         in health and education.\n\nSome critics worry about private influence over
         public policies.\n\nThe partnership boosts EU\u2019s reputation as a global
         development leader."
-      euroscepticismModifier: -0.005
-      foreignAffairsModifier: 0.01
+      euroscepticismModifier: -0.025
+      foreignAffairsModifier: 0.05
       moneyModifier: -2000000000
       eventIcon: {fileID: 21300000, guid: 1ee312318f899414cb233bf0ef4d1ae9, type: 3}
     - title: Maintain Separate Aid Strategies
@@ -777,7 +777,7 @@ MonoBehaviour:
         of aid effectiveness remains mixed.'
       euroscepticismModifier: 0
       foreignAffairsModifier: 0
-      moneyModifier: -2000000000
+      moneyModifier: -4000000000
       eventIcon: {fileID: 21300000, guid: 276431e7a62be5a4a90f4c8788e19672, type: 3}
     - title: Reduce Aid Spending to Focus on Internal Priorities
       description: Scale back international aid commitments amid budget constraints
@@ -791,9 +791,9 @@ MonoBehaviour:
 
         Eurosceptic groups praise
         focus on domestic issues.'
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: -0.02
-      moneyModifier: 3000000000
+      euroscepticismModifier: 0.05
+      foreignAffairsModifier: -0.08
+      moneyModifier: 6000000000
       eventIcon: {fileID: 21300000, guid: 242396770f6d40049b9e2703b5d3cb1d, type: 3}
   - eventDate: 01/04/2012
     title: European Citizens' Initiative
@@ -835,9 +835,9 @@ MonoBehaviour:
 
         Institutional
         credibility suffers.'
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
-      moneyModifier: -1000000
+      euroscepticismModifier: 0.08
+      foreignAffairsModifier: -0.08
+      moneyModifier: -2000000
       eventIcon: {fileID: 21300000, guid: 1a860719d649094478ef42f7a4787853, type: 3}
     - title: Implement ECI with Minimal Proportion
       description: Introduce the ECI but keep awareness campaigns limited to reduce
@@ -915,8 +915,8 @@ MonoBehaviour:
 
         Criticism
         from some businesses and international partners for weakening IP enforcement.'
-      euroscepticismModifier: -0.03
-      foreignAffairsModifier: 0.01
+      euroscepticismModifier: -0.1
+      foreignAffairsModifier: 0.05
       moneyModifier: 0
       eventIcon: {fileID: 21300000, guid: e7a8c1b3b4efa2f4b84fdcd2f6f7f773, type: 3}
     - title: Renegotiate ACTA with Stronger Safeguards
@@ -933,7 +933,7 @@ MonoBehaviour:
         likely stalls or collapses under pressure.'
       euroscepticismModifier: 0
       foreignAffairsModifier: 0
-      moneyModifier: -20000000
+      moneyModifier: -40000000
       eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
     - title: Ratify ACTA Despite Protests
       description: Proceed with the treaty to show global alignment on IP rights
@@ -947,9 +947,9 @@ MonoBehaviour:
 
         Some
         international partners welcome the decision.'
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.01
-      moneyModifier: 200000000
+      euroscepticismModifier: 0.08
+      foreignAffairsModifier: -0.05
+      moneyModifier: 400000000
       eventIcon: {fileID: 21300000, guid: 1a860719d649094478ef42f7a4787853, type: 3}
   - eventDate: 10/12/2012
     title: Nobel Peace Prize
@@ -976,8 +976,8 @@ MonoBehaviour:
     - title: 
       description: 
       consequences: 
-      euroscepticismModifier: -0.005
-      foreignAffairsModifier: 0.01
+      euroscepticismModifier: -0.025
+      foreignAffairsModifier: 0.05
       moneyModifier: 0
       eventIcon: {fileID: 21300000, guid: 5e270a6adaf95c4469c995ed347d4149, type: 3}
   - eventDate: 17/12/2013
@@ -1000,9 +1000,9 @@ MonoBehaviour:
     - title: 
       description: 
       consequences: 
-      euroscepticismModifier: -0.005
-      foreignAffairsModifier: 0.01
-      moneyModifier: -2000000
+      euroscepticismModifier: -0.025
+      foreignAffairsModifier: 0.05
+      moneyModifier: -4000000
       eventIcon: {fileID: 21300000, guid: 5e270a6adaf95c4469c995ed347d4149, type: 3}
   - eventDate: 16/09/2014
     title: Agreement with Ukraine
@@ -1041,9 +1041,9 @@ MonoBehaviour:
       consequences: "The EU loses credibility as a regional power and betrays its
         democratic rhetoric.\n\nRussia increases influence in Ukraine unchallenged.\n\nUkraine\u2019s
         civil society is demoralized, and ties with the West deteriorate."
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
-      moneyModifier: -1000000
+      euroscepticismModifier: 0.08
+      foreignAffairsModifier: -0.08
+      moneyModifier: -2000000
       eventIcon: {fileID: 21300000, guid: 0dcd9993bbba4de4e99f30df4e133efd, type: 3}
     - title: Delay the Agreement - Prioritize Stability
       description: Postpone the agreement until Ukraine stabilizes internally and
@@ -1058,8 +1058,8 @@ MonoBehaviour:
         Russia
         is emboldened by perceived Western hesitation.'
       euroscepticismModifier: 0
-      foreignAffairsModifier: -0.02
-      moneyModifier: -200000000
+      foreignAffairsModifier: -0.08
+      moneyModifier: -400000000
       eventIcon: {fileID: 21300000, guid: 8739a41109808ce4fb03dd93abc8f830, type: 3}
     - title: 'Sign the Agreement and Support Ukraine '
       description: "Proceed with the Association Agreement and provide political
@@ -1074,9 +1074,9 @@ MonoBehaviour:
 
         Member states debated
         the risks of deeper entanglement with post-Soviet conflicts.'
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: 0.01
-      moneyModifier: -3000000
+      euroscepticismModifier: 0.05
+      foreignAffairsModifier: 0.05
+      moneyModifier: -6000000
       eventIcon: {fileID: 21300000, guid: 272d5e991790fbc4e8746fd68afa2a82, type: 3}
   - eventDate: 25/11/2014
     title: Pope Francis calls for Europe of Human Values
@@ -1113,8 +1113,8 @@ MonoBehaviour:
 
         Missed
         opportunity to connect with broader audiences on shared ethical concerns.'
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
+      euroscepticismModifier: 0.08
+      foreignAffairsModifier: -0.08
       moneyModifier: 0
       eventIcon: {fileID: 21300000, guid: 10605e559d0216e4692498bc772e037a, type: 3}
     - title: "Acknowledge Symbolically \u2013 No Major Shift"
@@ -1131,7 +1131,7 @@ MonoBehaviour:
         Media and civil society react with mixed reviews.'
       euroscepticismModifier: 0
       foreignAffairsModifier: 0
-      moneyModifier: -20000000
+      moneyModifier: -40000000
       eventIcon: {fileID: 21300000, guid: 2aa6812cde47f26488db8ece1e200181, type: 3}
     - title: "Embrace the Message \u2013 Prioritize Human-Centered Policies"
       description: "Publicly affirm the Pope\u2019s speech and initiate new efforts
@@ -1147,8 +1147,8 @@ MonoBehaviour:
         Critics
         argue the EU is drifting too far from pragmatic policy-making.'
       euroscepticismModifier: 0
-      foreignAffairsModifier: 0.01
-      moneyModifier: -1000000000
+      foreignAffairsModifier: 0.05
+      moneyModifier: -2000000000
       eventIcon: {fileID: 21300000, guid: e5ba5d9a13c55b548b43be4752fb5be1, type: 3}
   - eventDate: 08/07/2015
     title: Greek Debt Crisis
@@ -1186,9 +1186,9 @@ MonoBehaviour:
 
         Nationalist parties
         across Europe are emboldened by the break.'
-      euroscepticismModifier: 0.04
-      foreignAffairsModifier: -0.03
-      moneyModifier: -100000000000
+      euroscepticismModifier: 0.16
+      foreignAffairsModifier: -0.12
+      moneyModifier: -200000000000
       eventIcon: {fileID: 21300000, guid: 242396770f6d40049b9e2703b5d3cb1d, type: 3}
     - title: "Save the Euro \u2013 Offer a Third Bailout with Conditions"
       description: Provide another bailout package, but with firm structural reform
@@ -1203,9 +1203,9 @@ MonoBehaviour:
 
         The EU demonstrates
         resolve, but fractures in solidarity deepen.'
-      euroscepticismModifier: 0.02
+      euroscepticismModifier: 0.08
       foreignAffairsModifier: 0
-      moneyModifier: -10000000000
+      moneyModifier: -20000000000
       eventIcon: {fileID: 21300000, guid: 1e3b074bfc5e36a4a8d5a1a0ea8809af, type: 3}
     - title: "Restructure the Debt \u2013 Show Leniency Without Austerity"
       description: Offer major debt relief and ease conditions to prioritize social
@@ -1219,9 +1219,9 @@ MonoBehaviour:
 
         EU
         fiscal rules appear flexible, but trust in discipline weakens.'
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: 0.01
-      moneyModifier: -80000000000
+      euroscepticismModifier: 0.08
+      foreignAffairsModifier: 0.05
+      moneyModifier: -160000000000
       eventIcon: {fileID: 21300000, guid: 1e3b074bfc5e36a4a8d5a1a0ea8809af, type: 3}
   - eventDate: 30/09/2015
     title: Migration Crisis
@@ -1256,9 +1256,9 @@ MonoBehaviour:
 
         Economic disruptions emerge across
         transport and trade sectors.'
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: -0.02
-      moneyModifier: -5000000000
+      euroscepticismModifier: 0.05
+      foreignAffairsModifier: -0.08
+      moneyModifier: -10000000000
       eventIcon: {fileID: 21300000, guid: f1950177477ad0347aeb5171b1ba2c2f, type: 3}
     - title: Strengthen Borders and Fund Frontline States
       description: Focus on reinforcing Frontex (now the European Border and Coast
@@ -1273,9 +1273,9 @@ MonoBehaviour:
 
         Public
         support increases in some countries for showing control.'
-      euroscepticismModifier: 0.01
+      euroscepticismModifier: 0.05
       foreignAffairsModifier: 0
-      moneyModifier: -6000000000
+      moneyModifier: -12000000000
       eventIcon: {fileID: 21300000, guid: 1e3b074bfc5e36a4a8d5a1a0ea8809af, type: 3}
     - title: Adopt a Quota-Based Relocation System
       description: Propose a mandatory scheme to relocate asylum seekers across all
@@ -1290,9 +1290,9 @@ MonoBehaviour:
 
         Refugees benefit from more
         orderly resettlement, but implementation is inconsistent.'
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: 0.01
-      moneyModifier: -10000000000
+      euroscepticismModifier: 0.05
+      foreignAffairsModifier: 0.05
+      moneyModifier: -20000000000
       eventIcon: {fileID: 21300000, guid: 722ed3951f03f204786c0edace341c7a, type: 3}
   - eventDate: 13/11/2015
     title: Terrorist Attacks in Paris
@@ -1330,9 +1330,9 @@ MonoBehaviour:
 
         Public
         support declines in member states demanding swift protection.'
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
-      moneyModifier: -1000000000
+      euroscepticismModifier: 0.08
+      foreignAffairsModifier: -0.08
+      moneyModifier: -2000000000
       eventIcon: {fileID: 21300000, guid: 0dcd9993bbba4de4e99f30df4e133efd, type: 3}
     - title: "Support National Measures \u2013 Let States Lead Security"
       description: Allow each country to strengthen its own security while offering
@@ -1349,7 +1349,7 @@ MonoBehaviour:
         integration advocates.'
       euroscepticismModifier: 0
       foreignAffairsModifier: 0
-      moneyModifier: -2000000000
+      moneyModifier: -4000000000
       eventIcon: {fileID: 21300000, guid: f1950177477ad0347aeb5171b1ba2c2f, type: 3}
     - title: "Deepen Security Cooperation \u2013 Create an EU Intelligence Framework"
       description: Push for stronger intelligence sharing, coordinated counter-terror
@@ -1365,8 +1365,8 @@ MonoBehaviour:
         Public feels reassured
         by concrete action at the EU level.'
       euroscepticismModifier: 0
-      foreignAffairsModifier: 0.01
-      moneyModifier: -4000000000
+      foreignAffairsModifier: 0.05
+      moneyModifier: -8000000000
       eventIcon: {fileID: 21300000, guid: 272d5e991790fbc4e8746fd68afa2a82, type: 3}
   - eventDate: 12/12/2015
     title: Paris Agreement
@@ -1411,9 +1411,9 @@ MonoBehaviour:
 
         The
         EU loses credibility in international climate negotiations.'
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: -0.02
-      moneyModifier: -10000000000
+      euroscepticismModifier: 0.05
+      foreignAffairsModifier: -0.08
+      moneyModifier: -20000000000
       eventIcon: {fileID: 21300000, guid: b2eee430adf3310489b7e016c78bd652, type: 3}
     - title: "Flexible Framework \u2013 Let Member States Set Their Own Pace"
       description: Set EU-wide goals, but allow each country to choose how to reach
@@ -1429,7 +1429,7 @@ MonoBehaviour:
         argue the EU is failing to live up to its climate promises.'
       euroscepticismModifier: 0
       foreignAffairsModifier: 0
-      moneyModifier: -20000000000
+      moneyModifier: -40000000000
       eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
     - title: "Lead by Example \u2013 Enforce Binding Climate Targets"
       description: Commit to aggressive emissions reductions, renewable investment,
@@ -1444,9 +1444,9 @@ MonoBehaviour:
 
         Long-term economic gains emerge in the clean energy sector,
         but short-term costs are high.'
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: 0.04
-      moneyModifier: -40000000000
+      euroscepticismModifier: 0.05
+      foreignAffairsModifier: 0.2
+      moneyModifier: -80000000000
       eventIcon: {fileID: 21300000, guid: 44170b23ca079634b8095b55b39bb1c2, type: 3}
   - eventDate: 22/03/2016
     title: Terrorist Strikes in Brussels
@@ -1484,9 +1484,9 @@ MonoBehaviour:
 
         The public feels the EU
         is stepping up with meaningful leadership.'
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: 0.04
-      moneyModifier: -40000000000
+      euroscepticismModifier: 0.05
+      foreignAffairsModifier: 0.2
+      moneyModifier: -80000000000
       eventIcon: {fileID: 21300000, guid: 272d5e991790fbc4e8746fd68afa2a82, type: 3}
     - title: Prioritize Civil Resilience and Community Engagement
       description: Focus EU funding on community programs to counter radicalization,
@@ -1501,9 +1501,9 @@ MonoBehaviour:
 
         EU looks more focused on causes than immediate
         responses.'
-      euroscepticismModifier: 0.01
+      euroscepticismModifier: 0.05
       foreignAffairsModifier: 0
-      moneyModifier: -4000000000
+      moneyModifier: -8000000000
       eventIcon: {fileID: 21300000, guid: 2ea20fa7d12949546a52219513b6357e, type: 3}
     - title: Push Member States for Interoperable Systems
       description: Require national authorities to modernize and link up security
@@ -1519,8 +1519,8 @@ MonoBehaviour:
         Less political resistance, but slower impact on the
         ground.'
       euroscepticismModifier: 0
-      foreignAffairsModifier: 0.1
-      moneyModifier: -3000000000
+      foreignAffairsModifier: 0.5
+      moneyModifier: -6000000000
       eventIcon: {fileID: 21300000, guid: f1950177477ad0347aeb5171b1ba2c2f, type: 3}
   - eventDate: 06/05/2017
     title: House of European History
@@ -1544,8 +1544,8 @@ MonoBehaviour:
     - title: 
       description: 
       consequences: 
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: 0.005
+      euroscepticismModifier: 0.05
+      foreignAffairsModifier: 0.025
       moneyModifier: -100000000
       eventIcon: {fileID: 21300000, guid: e9f9668675f71794d8a758421262c0d3, type: 3}
   - eventDate: 15/06/2017
@@ -1583,8 +1583,8 @@ MonoBehaviour:
 
         Telecom industry
         adjusts, but some companies reduce cross-border services to cope.'
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.005
+      euroscepticismModifier: -0.05
+      foreignAffairsModifier: 0.025
       moneyModifier: -200000000
       eventIcon: {fileID: 21300000, guid: 253a6a68f0279fe4faa706c3de8061d0, type: 3}
     - title: Introduce a Fair-Use Limit on Free Roaming
@@ -1599,8 +1599,8 @@ MonoBehaviour:
 
         Media praises balance between fairness
         and practicality.'
-      euroscepticismModifier: -0.005
-      foreignAffairsModifier: 0.005
+      euroscepticismModifier: -0.025
+      foreignAffairsModifier: 0.025
       moneyModifier: -100000000
       eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
     - title: Postpone or Dilute the Reform
@@ -1615,8 +1615,8 @@ MonoBehaviour:
 
         Telecom
         companies are pleased, but public trust erodes.'
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
+      euroscepticismModifier: 0.08
+      foreignAffairsModifier: -0.08
       moneyModifier: 0
       eventIcon: {fileID: 21300000, guid: b2e45f954d737ea488e1e67768c7affb, type: 3}
   - eventDate: 06/02/2018
@@ -1653,9 +1653,9 @@ MonoBehaviour:
 
         Sparks debate
         on protecting local culture versus promoting open access.'
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.01
-      moneyModifier: -300000000
+      euroscepticismModifier: -0.05
+      foreignAffairsModifier: 0.05
+      moneyModifier: -600000000
       eventIcon: {fileID: 21300000, guid: 253a6a68f0279fe4faa706c3de8061d0, type: 3}
     - title: Implement Ban with Current Exceptions (No Streaming)
       description: Apply the regulation to goods and services like hotel bookings
@@ -1670,9 +1670,9 @@ MonoBehaviour:
 
         Regulation seen as a compromise
         between market access and industry interests.'
-      euroscepticismModifier: -0.005
+      euroscepticismModifier: -0.025
       foreignAffairsModifier: 0
-      moneyModifier: -100000000
+      moneyModifier: -200000000
       eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
     - title: Delay or Water Down the Regulation
       description: Allow geoblocking to continue for now, citing the need to protect
@@ -1686,8 +1686,8 @@ MonoBehaviour:
 
         Seen
         as a missed opportunity for digital integration.'
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
+      euroscepticismModifier: 0.08
+      foreignAffairsModifier: -0.08
       moneyModifier: 0
       eventIcon: {fileID: 21300000, guid: 8739a41109808ce4fb03dd93abc8f830, type: 3}
   - eventDate: 25/05/2018
@@ -1722,8 +1722,8 @@ MonoBehaviour:
 
         Trust in EU data
         policies declines, and global leadership is lost.'
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
+      euroscepticismModifier: 0.08
+      foreignAffairsModifier: -0.08
       moneyModifier: 0
       eventIcon: {fileID: 21300000, guid: 8739a41109808ce4fb03dd93abc8f830, type: 3}
     - title: Strictly Enforce GDPR with Full Penalties
@@ -1738,9 +1738,9 @@ MonoBehaviour:
 
         Businesses,
         especially smaller ones, struggle with compliance costs and fear penalties.'
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.01
-      moneyModifier: -250000000
+      euroscepticismModifier: -0.05
+      foreignAffairsModifier: 0.05
+      moneyModifier: -500000000
       eventIcon: {fileID: 21300000, guid: d58e6ab26c0bb8044bd9b3ab2fb062fc, type: 3}
     - title: Phase in Enforcement with Industry Support
       description: Maintain strong rules, but delay penalties and offer support to
@@ -1754,9 +1754,9 @@ MonoBehaviour:
 
         Regulation is respected but seen as
         initially lenient.'
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: 0.01
-      moneyModifier: -100000000
+      euroscepticismModifier: 0.05
+      foreignAffairsModifier: 0.05
+      moneyModifier: -200000000
       eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
   - eventDate: 14/11/2018
     title: International Calls Price Cap
@@ -1796,7 +1796,7 @@ MonoBehaviour:
         flexibility, but consumer groups criticize the lack of enforcement."
       euroscepticismModifier: 0
       foreignAffairsModifier: 0
-      moneyModifier: -50000000
+      moneyModifier: -100000000
       eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
     - title: Leave Pricing to National Regulation and Market Competition
       description: Avoid interference in the telecom market and focus on cross-border
@@ -1810,8 +1810,8 @@ MonoBehaviour:
 
         Telecom companies
         retain autonomy, but the EU is seen as distant from daily concerns.'
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
+      euroscepticismModifier: 0.05
+      foreignAffairsModifier: -0.05
       moneyModifier: 0
       eventIcon: {fileID: 21300000, guid: b2e45f954d737ea488e1e67768c7affb, type: 3}
     - title: Implement a Strict Cap on Call and SMS Prices
@@ -1827,9 +1827,9 @@ MonoBehaviour:
 
         Reinforces the EU''s role in protecting
         consumers and integrating markets.'
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.01
-      moneyModifier: -150000000
+      euroscepticismModifier: -0.05
+      foreignAffairsModifier: 0.05
+      moneyModifier: -300000000
       eventIcon: {fileID: 21300000, guid: 253a6a68f0279fe4faa706c3de8061d0, type: 3}
   - eventDate: 12/12/2018
     title: Japan Trade Agreement
@@ -1859,9 +1859,9 @@ MonoBehaviour:
       consequences: "Public and media attention boosts trust in the EU\u2019s economic
         diplomacy.\n\nStrengthens EU\u2019s soft power in Asia amid global uncertainty.\n\nActivists
         press for better environmental safeguards and oversight tools."
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.02
-      moneyModifier: 300000000
+      euroscepticismModifier: -0.05
+      foreignAffairsModifier: 0.1
+      moneyModifier: 600000000
       eventIcon: {fileID: 21300000, guid: 2d8b1f0ff855a8742b3e08483f948baf, type: 3}
     - title: Sign Quietly and Focus on Monitoring
       description: Avoid political fanfare and emphasize mechanisms to enforce social
@@ -1875,9 +1875,9 @@ MonoBehaviour:
 
         Deal seen as practical
         but not transformative.'
-      euroscepticismModifier: -0.005
-      foreignAffairsModifier: 0.005
-      moneyModifier: 200000000
+      euroscepticismModifier: -0.025
+      foreignAffairsModifier: 0.025
+      moneyModifier: 400000000
       eventIcon: {fileID: 21300000, guid: ffb6a159de1dedd4b9f7caf987f03651, type: 3}
     - title: Delay or Reopen Negotiations over Labor and Climate
       description: Yield to public pressure and demand stronger binding protections
@@ -1891,9 +1891,9 @@ MonoBehaviour:
 
         Public
         debate intensifies over trade policy transparency.'
-      euroscepticismModifier: 0.01
+      euroscepticismModifier: 0.05
       foreignAffairsModifier: 0
-      moneyModifier: -100000000
+      moneyModifier: -200000000
       eventIcon: {fileID: 21300000, guid: 680c7199b323c524da2a6ab0930f9ef6, type: 3}
   - eventDate: 31/03/2019
     title: Copyright Reform
@@ -1932,9 +1932,9 @@ MonoBehaviour:
 
         Internet
         communities stage digital protests across Europe.'
-      euroscepticismModifier: 0.01
+      euroscepticismModifier: 0.05
       foreignAffairsModifier: 0
-      moneyModifier: 100000000
+      moneyModifier: 200000000
       eventIcon: {fileID: 21300000, guid: 85aa794c5a755cb4ba77bdc118c8d040, type: 3}
     - title: Reject or Postpone the Directive
       description: Avoid backlash by scrapping or delaying the law altogether.
@@ -1949,8 +1949,8 @@ MonoBehaviour:
         Opportunity for reform is missed for the foreseeable
         future.'
       euroscepticismModifier: 0
-      foreignAffairsModifier: -0.01
-      moneyModifier: -50000000
+      foreignAffairsModifier: -0.05
+      moneyModifier: -100000000
       eventIcon: {fileID: 21300000, guid: 8739a41109808ce4fb03dd93abc8f830, type: 3}
     - title: Amend the Directive to Weaken Articles 15 and 17
       description: Address public concern while keeping the overall reform.
@@ -1964,8 +1964,8 @@ MonoBehaviour:
         The
         directive is passed, but its legal strength is weaker.'
       euroscepticismModifier: 0
-      foreignAffairsModifier: 0.005
-      moneyModifier: 50000000
+      foreignAffairsModifier: 0.025
+      moneyModifier: 100000000
       eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
   - eventDate: 05/06/2019
     title: Single-Use Plastic Products Ban
@@ -1998,9 +1998,9 @@ MonoBehaviour:
 
         Businesses
         appreciate the breathing room for transition.'
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: 0.01
-      moneyModifier: -100000000
+      euroscepticismModifier: 0.05
+      foreignAffairsModifier: 0.05
+      moneyModifier: -200000000
       eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
     - title: Implement the Ban Fully and On Schedule
       description: Lead global environmental efforts and encourage green industry
@@ -2014,8 +2014,8 @@ MonoBehaviour:
 
         Citizens
         largely support the initiative, increasing trust in the EU.'
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.02
+      euroscepticismModifier: -0.05
+      foreignAffairsModifier: 0.1
       moneyModifier: -180000000
       eventIcon: {fileID: 21300000, guid: 024dd683f49c80c4db3c31ddcf2f9145, type: 3}
     - title: Delay or Water Down the Directive
@@ -2024,8 +2024,8 @@ MonoBehaviour:
       consequences: "Plastic pollution remains a serious issue, frustrating environmentalists.\n\nEU\u2019s
         green credibility weakens in the eyes of global partners.\n\nShort-term business
         relief, but long-term environmental costs rise."
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
+      euroscepticismModifier: 0.08
+      foreignAffairsModifier: -0.08
       moneyModifier: 0
       eventIcon: {fileID: 21300000, guid: 8739a41109808ce4fb03dd93abc8f830, type: 3}
   - eventDate: 11/03/2020
@@ -2066,9 +2066,9 @@ MonoBehaviour:
 
         Recovery is deeply unequal and
         slow, especially in Southern Europe.'
-      euroscepticismModifier: 0.04
-      foreignAffairsModifier: -0.04
-      moneyModifier: -80000000000
+      euroscepticismModifier: 0.15
+      foreignAffairsModifier: -0.15
+      moneyModifier: -160000000000
       eventIcon: {fileID: 21300000, guid: 276431e7a62be5a4a90f4c8788e19672, type: 3}
     - title: Focus on National-Level Health Measures, Offer Flexible EU Support
       description: Let each country manage its own health response, with EU providing
@@ -2082,9 +2082,9 @@ MonoBehaviour:
 
         Lower financial
         burden on EU, but recovery slows in less wealthy nations.'
-      euroscepticismModifier: 0.005
+      euroscepticismModifier: 0.025
       foreignAffairsModifier: 0
-      moneyModifier: -200000000000
+      moneyModifier: -400000000000
       eventIcon: {fileID: 21300000, guid: 1e3b074bfc5e36a4a8d5a1a0ea8809af, type: 3}
     - title: Coordinate a Unified Vaccine Rollout and Recovery Plan
       description: "Prioritize health, trust, and European solidarity \u2014 even
@@ -2098,9 +2098,9 @@ MonoBehaviour:
 
         Conservative fiscal voices
         raise concerns about shared debt and future inflation.'
-      euroscepticismModifier: -0.03
-      foreignAffairsModifier: 0.03
-      moneyModifier: -500000000000
+      euroscepticismModifier: -0.15
+      foreignAffairsModifier: 0.15
+      moneyModifier: -1000000000000
       eventIcon: {fileID: 21300000, guid: 83615320475fa4a47926decddf1ed9d3, type: 3}
   - eventDate: 10/11/2020
     title: EU Budget and Recovery Plan
@@ -2136,9 +2136,9 @@ MonoBehaviour:
 
         EU strengthens
         its capacity for future crisis responses.'
-      euroscepticismModifier: -0.05
-      foreignAffairsModifier: 0.05
-      moneyModifier: -1350000000000
+      euroscepticismModifier: -0.25
+      foreignAffairsModifier: 0.25
+      moneyModifier: -2700000000000
       eventIcon: {fileID: 21300000, guid: 1e3b074bfc5e36a4a8d5a1a0ea8809af, type: 3}
     - title: 'Compromise: More Loans, Fewer Grants, Softer Conditions'
       description: Reduce tension and protect the EU budget, but offer less solidarity.
@@ -2151,8 +2151,8 @@ MonoBehaviour:
 
         Rule-of-law issues remain ambiguous.'
       euroscepticismModifier: 0
-      foreignAffairsModifier: 0.01
-      moneyModifier: -1000000000000
+      foreignAffairsModifier: 0.05
+      moneyModifier: -5000000000000
       eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
     - title: Reject Joint Debt and Focus on National Recovery Plans
       description: Avoid controversial integration steps, but sacrifice unity and
@@ -2166,9 +2166,9 @@ MonoBehaviour:
 
         No new shared financial tools
         are created.'
-      euroscepticismModifier: 0.05
-      foreignAffairsModifier: -0.05
-      moneyModifier: -900000000000
+      euroscepticismModifier: 0.2
+      foreignAffairsModifier: -0.2
+      moneyModifier: -1800000000000
       eventIcon: {fileID: 21300000, guid: 242396770f6d40049b9e2703b5d3cb1d, type: 3}
   - eventDate: 16/12/2020
     title: Rule of Law Legislation
@@ -2203,9 +2203,9 @@ MonoBehaviour:
 
         Other governments
         and citizens rally behind the move.'
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.01
-      moneyModifier: 50000000000
+      euroscepticismModifier: -0.05
+      foreignAffairsModifier: 0.05
+      moneyModifier: 100000000000
       eventIcon: {fileID: 21300000, guid: 7c59abb0970d89d4dada16b5e04eb286, type: 3}
     - title: Drop the Rule-of-Law Clause to Secure the Budget
       description: Prioritize unity and recovery over internal political battles.
@@ -2218,8 +2218,8 @@ MonoBehaviour:
 
         Public confidence in EU
         values declines.'
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: 0.02
+      euroscepticismModifier: 0.08
+      foreignAffairsModifier: 0.08
       moneyModifier: -100000000000
       eventIcon: {fileID: 21300000, guid: e4588d7f3481f4646bbef4202dcdc23d, type: 3}
     - title: Adopt a Weaker Mechanism with Legal Delays
@@ -2227,8 +2227,8 @@ MonoBehaviour:
       consequences: "Budget deal is saved, but rule-of-law breaches continue unchecked
         in some regions.\n\nThe mechanism\u2019s credibility is questioned.\n\nCivil
         society feels the EU hesitated on values."
-      euroscepticismModifier: -0.005
-      foreignAffairsModifier: 0.005
+      euroscepticismModifier: -0.025
+      foreignAffairsModifier: 0.025
       moneyModifier: 0
       eventIcon: {fileID: 21300000, guid: 8739a41109808ce4fb03dd93abc8f830, type: 3}
   - eventDate: 28/04/2021
@@ -2267,9 +2267,9 @@ MonoBehaviour:
 
         Nationalist
         voices rise in the UK and EU alike.'
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
-      moneyModifier: -150000000000
+      euroscepticismModifier: 0.08
+      foreignAffairsModifier: -0.08
+      moneyModifier: -300000000000
       eventIcon: {fileID: 21300000, guid: 680c7199b323c524da2a6ab0930f9ef6, type: 3}
     - title: Sign Trade Deal with Enforcement Rules and Shared Standards
       description: Preserve EU values and limit UK access unless fair competition
@@ -2283,9 +2283,9 @@ MonoBehaviour:
 
         UK must abide by rules to
         retain access, but friction grows.'
-      euroscepticismModifier: -0.005
-      foreignAffairsModifier: 0.01
-      moneyModifier: 160000000000
+      euroscepticismModifier: -0.025
+      foreignAffairsModifier: 0.05
+      moneyModifier: 320000000000
       eventIcon: {fileID: 21300000, guid: 2d8b1f0ff855a8742b3e08483f948baf, type: 3}
     - title: Offer More UK Flexibility to Expedite Deal
       description: Prioritize stability and speed over strict regulation enforcement.
@@ -2299,8 +2299,8 @@ MonoBehaviour:
         Some member states criticize
         perceived UK favoritism.'
       euroscepticismModifier: 0
-      foreignAffairsModifier: 0.005
-      moneyModifier: 130000000000
+      foreignAffairsModifier: 0.025
+      moneyModifier: 260000000000
       eventIcon: {fileID: 21300000, guid: ffb6a159de1dedd4b9f7caf987f03651, type: 3}
   - eventDate: 09/05/2021
     title: Future of Europe Conference
@@ -2345,8 +2345,8 @@ MonoBehaviour:
         Populists criticize the lack
         of real action.'
       euroscepticismModifier: 0
-      foreignAffairsModifier: 0.005
-      moneyModifier: -80000000
+      foreignAffairsModifier: 0.025
+      moneyModifier: -160000000
       eventIcon: {fileID: 21300000, guid: 2631d5d853f48604e9c1d9d5feba51e1, type: 3}
     - title: Fully Support the Conference and Pursue Treaty Reforms
       description: Embrace citizens' ideas with institutional courage, including
@@ -2360,9 +2360,9 @@ MonoBehaviour:
 
         Ambitious reforms
         (e.g. QMV in foreign policy, transnational lists) are proposed.'
-      euroscepticismModifier: -0.02
-      foreignAffairsModifier: 0.02
-      moneyModifier: -300000000
+      euroscepticismModifier: -0.08
+      foreignAffairsModifier: 0.08
+      moneyModifier: -600000000
       eventIcon: {fileID: 21300000, guid: e5ba5d9a13c55b548b43be4752fb5be1, type: 3}
     - title: Dismiss the Conference Outcomes as Non-Binding
       description: Avoid political risk and maintain full national control over EU
@@ -2375,9 +2375,9 @@ MonoBehaviour:
 
 
         Populist forces gain momentum.'
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
-      moneyModifier: -50000000
+      euroscepticismModifier: 0.08
+      foreignAffairsModifier: -0.08
+      moneyModifier: -100000000
       eventIcon: {fileID: 21300000, guid: 1a860719d649094478ef42f7a4787853, type: 3}
   - eventDate: 24/06/2021
     title: European Climate Law
@@ -2423,7 +2423,7 @@ MonoBehaviour:
         Populists criticize the lack
         of real action.'
       euroscepticismModifier: 0
-      foreignAffairsModifier: -0.01
+      foreignAffairsModifier: -0.05
       moneyModifier: 0
       eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
     - title: Postpone Decision Until After Economic Recovery
@@ -2437,8 +2437,8 @@ MonoBehaviour:
 
         Investor confidence in EU climate leadership
         declines'
-      euroscepticismModifier: 0.03
-      foreignAffairsModifier: -0.02
+      euroscepticismModifier: 0.12
+      foreignAffairsModifier: -0.08
       moneyModifier: 0
       eventIcon: {fileID: 21300000, guid: b2eee430adf3310489b7e016c78bd652, type: 3}
     - title: Adopt Binding Targets for 2030 and 2050
@@ -2451,8 +2451,8 @@ MonoBehaviour:
 
 
         Builds global climate credibility'
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.02
+      euroscepticismModifier: -0.05
+      foreignAffairsModifier: 0.1
       moneyModifier: 0
       eventIcon: {fileID: 21300000, guid: 44170b23ca079634b8095b55b39bb1c2, type: 3}
   - eventDate: 24/02/2022
@@ -2500,9 +2500,9 @@ MonoBehaviour:
 
         Strengthens EU
         foreign policy unity long-term'
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: 0.02
-      moneyModifier: -150000000000
+      euroscepticismModifier: 0.05
+      foreignAffairsModifier: 0.1
+      moneyModifier: -300000000000
       eventIcon: {fileID: 21300000, guid: 272d5e991790fbc4e8746fd68afa2a82, type: 3}
     - title: Avoid Major Involvement, Focus on Internal Stability
       description: Prioritize internal cohesion and economic survival.
@@ -2515,8 +2515,8 @@ MonoBehaviour:
 
         Russian aggression emboldened
         by lack of firm opposition'
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: -0.04
+      euroscepticismModifier: 0.05
+      foreignAffairsModifier: -0.18
       moneyModifier: -20000000000
       eventIcon: {fileID: 21300000, guid: 0dcd9993bbba4de4e99f30df4e133efd, type: 3}
     - title: Apply Moderate Sanctions, Focus on Diplomacy
@@ -2524,8 +2524,8 @@ MonoBehaviour:
       consequences: "Slower erosion of Russia\u2019s war economy\n\nViewed as morally
         ambiguous by Ukraine and allies\n\nLess economic disruption, but long-term
         trust damaged"
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: -0.01
+      euroscepticismModifier: 0.05
+      foreignAffairsModifier: -0.05
       moneyModifier: -60000000000
       eventIcon: {fileID: 21300000, guid: f1950177477ad0347aeb5171b1ba2c2f, type: 3}
   - eventDate: 09/05/2022
@@ -2557,9 +2557,9 @@ MonoBehaviour:
     - title: 
       description: 
       consequences: 
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.01
-      moneyModifier: -15000000000
+      euroscepticismModifier: -0.05
+      foreignAffairsModifier: 0.05
+      moneyModifier: -30000000000
       eventIcon: {fileID: 21300000, guid: e5ba5d9a13c55b548b43be4752fb5be1, type: 3}
   - eventDate: 06/07/2022
     title: Digital Services and Markets Act
@@ -2596,15 +2596,15 @@ MonoBehaviour:
         waiting for clarity'
       euroscepticismModifier: 0
       foreignAffairsModifier: 0
-      moneyModifier: -10000000000
+      moneyModifier: -20000000000
       eventIcon: {fileID: 21300000, guid: 8739a41109808ce4fb03dd93abc8f830, type: 3}
     - title: Scale Back Key Provisions to Please Industry
       description: Avoid heavy-handed regulation and keep tech giants close.
       consequences: "Major platforms stay cooperative, but smaller competitors lose
         out\n\nAccusations of selling out to Silicon Valley interests\n\nWeakens
         Europe\u2019s stance on digital sovereignty"
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
+      euroscepticismModifier: 0.08
+      foreignAffairsModifier: -0.08
       moneyModifier: 0
       eventIcon: {fileID: 21300000, guid: 3080445c5bb43e84fbd1bdcf756d4b23, type: 3}
     - title: Pass the Acts and Enforce Strictly
@@ -2618,9 +2618,9 @@ MonoBehaviour:
 
         Boosts digital
         sovereignty and trust in institutions'
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.02
-      moneyModifier: -20000000000
+      euroscepticismModifier: -0.05
+      foreignAffairsModifier: 0.08
+      moneyModifier: -40000000000
       eventIcon: {fileID: 21300000, guid: 272d5e991790fbc4e8746fd68afa2a82, type: 3}
   - eventDate: 25/04/2023
     title: Carbon Border Asjustment Mechanism
@@ -2664,7 +2664,7 @@ MonoBehaviour:
 
         Signals flexibility but risks being seen as indecisive'
       euroscepticismModifier: 0
-      foreignAffairsModifier: 0.01
+      foreignAffairsModifier: 0.05
       moneyModifier: 0
       eventIcon: {fileID: 21300000, guid: 8739a41109808ce4fb03dd93abc8f830, type: 3}
     - title: Adopt Full CBAM with Strong Enforcement
@@ -2678,9 +2678,9 @@ MonoBehaviour:
 
         CBAM revenues help
         fund EU climate transition and innovation'
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: 0.01
-      moneyModifier: 2000000000
+      euroscepticismModifier: 0.05
+      foreignAffairsModifier: 0.05
+      moneyModifier: 4000000000
       eventIcon: {fileID: 21300000, guid: 44170b23ca079634b8095b55b39bb1c2, type: 3}
     - title: Delay or Cancel CBAM to Avoid Trade Fallout
       description: Prioritize global trade stability and avoid accusations of green
@@ -2694,8 +2694,8 @@ MonoBehaviour:
 
         Missed opportunity to
         fund green investment'
-      euroscepticismModifier: 0.01
-      foreignAffairsModifier: -0.01
+      euroscepticismModifier: 0.05
+      foreignAffairsModifier: -0.05
       moneyModifier: 0
       eventIcon: {fileID: 21300000, guid: b2eee430adf3310489b7e016c78bd652, type: 3}
   - eventDate: 21/04/2024
@@ -2730,9 +2730,9 @@ MonoBehaviour:
 
         Criticism
         from civil society and EU institutions about ethical standards.'
-      euroscepticismModifier: 0.04
-      foreignAffairsModifier: -0.02
-      moneyModifier: -100000000
+      euroscepticismModifier: 0.16
+      foreignAffairsModifier: -0.08
+      moneyModifier: -200000000
       eventIcon: {fileID: 21300000, guid: 3080445c5bb43e84fbd1bdcf756d4b23, type: 3}
     - title: Enforce Strict AI Controls Across All Sectors
       description: Implement comprehensive regulations that apply equally to all
@@ -2746,9 +2746,9 @@ MonoBehaviour:
 
         EU
         may lag behind less regulated competitors.'
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.02
-      moneyModifier: -30000000000
+      euroscepticismModifier: -0.05
+      foreignAffairsModifier: 0.1
+      moneyModifier: -60000000000
       eventIcon: {fileID: 21300000, guid: dbe0b1c71fa30524d837ea5e5332207c, type: 3}
     - title: Adopt Risk-Based Approach with Flexibility
       description: Focus strict regulations only on high-risk AI systems, leaving
@@ -2762,7 +2762,7 @@ MonoBehaviour:
 
         Some critics
         worry about loopholes.'
-      euroscepticismModifier: -0.005
+      euroscepticismModifier: -0.025
       foreignAffairsModifier: 0
       moneyModifier: -20000000000
       eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
@@ -2805,8 +2805,8 @@ MonoBehaviour:
       consequences: "Undermines EU\u2019s environmental credibility.\n\nIncreases
         risk of ecosystem degradation.\n\nMay trigger criticism from environmental
         groups."
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
+      euroscepticismModifier: 0.08
+      foreignAffairsModifier: -0.08
       moneyModifier: 0
       eventIcon: {fileID: 21300000, guid: b2eee430adf3310489b7e016c78bd652, type: 3}
     - title: Implement with Flexibility and Support Mechanisms
@@ -2821,8 +2821,8 @@ MonoBehaviour:
 
         Reduces social and economic tensions.'
       euroscepticismModifier: 0
-      foreignAffairsModifier: 0.01
-      moneyModifier: -20000000000
+      foreignAffairsModifier: 0.05
+      moneyModifier: -40000000000
       eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
     - title: Fully Implement the Law with Robust Measures
       description: Lead the EU in ambitious ecosystem restoration, prioritizing environmental
@@ -2835,9 +2835,9 @@ MonoBehaviour:
 
 
         Strengthens EU global climate leadership.'
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.02
-      moneyModifier: -30000000000
+      euroscepticismModifier: -0.05
+      foreignAffairsModifier: 0.1
+      moneyModifier: -60000000000
       eventIcon: {fileID: 21300000, guid: 44170b23ca079634b8095b55b39bb1c2, type: 3}
   - eventDate: 19/11/2024
     title: Forced Labour Ban
@@ -2870,9 +2870,9 @@ MonoBehaviour:
 
         Risk
         of trade disputes with certain countries.'
-      euroscepticismModifier: -0.01
-      foreignAffairsModifier: 0.02
-      moneyModifier: -25000000000
+      euroscepticismModifier: -0.05
+      foreignAffairsModifier: 0.1
+      moneyModifier: -50000000000
       eventIcon: {fileID: 21300000, guid: b41708f4d88d85e46a322efb81229b4c, type: 3}
     - title: Phase in the Ban with Business Support
       description: Introduce the ban gradually, offering training and subsidies to
@@ -2889,8 +2889,8 @@ MonoBehaviour:
         Maintains moderate reputation
         on human rights.'
       euroscepticismModifier: 0
-      foreignAffairsModifier: 0.01
-      moneyModifier: -15000000000
+      foreignAffairsModifier: 0.05
+      moneyModifier: -30000000000
       eventIcon: {fileID: 21300000, guid: f3eabcb1d38b26749a76f2f3122917f2, type: 3}
     - title: Water Down Enforcement and Delay Deadlines
       description: Allow looser compliance rules and extend deadlines to protect
@@ -2898,7 +2898,7 @@ MonoBehaviour:
       consequences: "Weakens EU\u2019s stance against forced labour.\n\nBusinesses
         avoid costly changes but risk long-term reputational damage.\n\nHuman rights
         organizations criticize the EU."
-      euroscepticismModifier: 0.02
-      foreignAffairsModifier: -0.02
-      moneyModifier: -8000000000
+      euroscepticismModifier: 0.08
+      foreignAffairsModifier: -0.08
+      moneyModifier: -16000000000
       eventIcon: {fileID: 21300000, guid: 3080445c5bb43e84fbd1bdcf756d4b23, type: 3}
