@@ -12132,8 +12132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d25c0f274bc928949aebfbfa00e91747, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positiveRevenueColor: {r: 0, g: 1, b: 0, a: 1}
-  negativeRevenueColor: {r: 1, g: 0, b: 0, a: 1}
+  positiveRevenueColor: {r: 0, g: 0.4, b: 0, a: 1}
+  negativeRevenueColor: {r: 0.5, g: 0, b: 0, a: 1}
   particleSystemGO: {fileID: 2044087694}
   quizPopupAnimator: {fileID: 1958161982}
   quizPanel: {fileID: 1958161980}
