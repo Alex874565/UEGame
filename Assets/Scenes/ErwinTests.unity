@@ -2113,7 +2113,7 @@ MonoBehaviour:
   iconPopup: {fileID: 6924751754743845731, guid: c66b9be43c9833149be9732ac132eb3e, type: 3}
   loaderAnimator: {fileID: 341125581}
   loaderAnimationPanel: {fileID: 341125579}
-  animationDuration: 2
+  animationDuration: 3
   consequencePanel1: {fileID: 2014320222}
   consequencePanel2: {fileID: 498728193}
   yourChoice: {fileID: 553342135}
@@ -2993,12 +2993,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 813323391}
+  m_Father: {fileID: 405069633}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_AnchoredPosition: {x: 0, y: 0.000015258789}
+  m_SizeDelta: {x: 1711.6323, y: 962.79004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &341125581
 Animator:
@@ -3822,6 +3822,7 @@ RectTransform:
   - {fileID: 498728194}
   - {fileID: 1958161981}
   - {fileID: 1830389045}
+  - {fileID: 341125580}
   - {fileID: 1648204937}
   - {fileID: 272720176}
   - {fileID: 1990294846}
@@ -9050,7 +9051,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 886626888}
-  - {fileID: 341125580}
   m_Father: {fileID: 206192470}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -18676,7 +18676,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 54.05
+  m_fontSize: 52.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
