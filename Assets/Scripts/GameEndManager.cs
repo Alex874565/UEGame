@@ -17,7 +17,7 @@ public class GameEndManager : MonoBehaviour
     [SerializeField] private Animator losePopupAnimator;
     [SerializeField] private TextMeshProUGUI losePopupTextHeader;
     [SerializeField] private TextMeshProUGUI losePopupTextDescription;
-    private int popup1AnimHash = Animator.StringToHash("Popup");
+    private int popupAnimHash = Animator.StringToHash("Popup1");
 
     [Header("Game Over Screens")]
     public GameObject gameLostScreen;
@@ -49,7 +49,7 @@ public class GameEndManager : MonoBehaviour
         losePopupTextDescription.text = loseDescription;
         gameLostScreen.SetActive(true);
 
-        losePopupAnimator.Play(popup1AnimHash);
+        losePopupAnimator.Play(popupAnimHash);
     }
 
     public void RestartGame()
