@@ -9,18 +9,23 @@ public class PopupManager : MonoBehaviour
     public static PopupManager Instance;
     public Action seenEvent;
 
+    [Header("Revenue Colors")]
     [SerializeField] private Color positiveRevenueColor = new Color(0f, 0.25f, 0f);
     [SerializeField] private Color negativeRevenueColor = new Color(0.25f, 0f, 0f);
-    
+
+    [Header("Particle System")]
     [SerializeField] private GameObject particleSystemGO;
 
     [Header("Quiz UI")]
     [SerializeField] private Animator quizPopupAnimator;
     [SerializeField] private GameObject quizPanel;
+    [SerializeField] private GameObject eventPanel;
+    [SerializeField] private GameObject questionPanel;
 
     [SerializeField] private TextMeshProUGUI eventTitleText;
     [SerializeField] private TextMeshProUGUI eventDateText;
     [SerializeField] private TextMeshProUGUI eventQuestionText;
+    [SerializeField] private TextMeshProUGUI eventDescriptionText;
 
     [Header("Answer Panels")]
     [SerializeField] private GameObject[] answerPanels; // each panel contains title, desc, and button
@@ -61,10 +66,13 @@ public class PopupManager : MonoBehaviour
         eventTitleText.text = "";
         eventDateText.text = "";
         eventQuestionText.text = "";
+        eventDescriptionText.text = "";
 
         // eventTitleText.color = Color.white;
         // eventDateText.color = Color.white;
         // eventQuestionText.color = Color.white;
+        var eventButton = eventPanel.transform.Find("Event Button").GetComponent<Button>();
+        eventButton.onClick.RemoveAllListeners();
 
         for (int i = 0; i < answerPanels.Length; i++)
         {
@@ -98,6 +106,8 @@ public class PopupManager : MonoBehaviour
 
         currentQuiz = quizData;
         quizPanel.SetActive(true);
+        eventPanel.SetActive(false);
+        questionPanel.SetActive(true);
         quizPopupAnimator.Play("QuizPopup");
 
         currentPanelIndex = 0;
@@ -152,6 +162,7 @@ public class PopupManager : MonoBehaviour
             eventTitleText.text = currentEvent.title;
             eventDateText.text = currentEvent.eventDate;
             eventQuestionText.text = "";
+            eventDescriptionText.text = currentEvent.description;
 
             GameObject panel = answerPanels[0];
             panel.SetActive(true);
@@ -167,11 +178,11 @@ public class PopupManager : MonoBehaviour
             moneyModifier.color = 
                 currentEvent.choices[0].moneyModifier > 0 ? positiveRevenueColor: negativeRevenueColor;
 
-            var button = panel.GetComponentInChildren<Button>();
+            var eventButton = eventPanel.transform.Find("Event Button").GetComponent<Button>();
 
             playParticles = false;
 
-            SetButtonListener(button, () =>
+            SetButtonListener(eventButton, () =>
             {
                 VotingLoader.Instance.Show(currentEvent, 0);
                 UpdateResources(0);
@@ -185,6 +196,14 @@ public class PopupManager : MonoBehaviour
             eventTitleText.text = currentEvent.title;
             eventDateText.text = currentEvent.eventDate;
             eventQuestionText.text = currentEvent.question;
+            eventDescriptionText.text = currentEvent.description;
+
+            var eventButton = eventPanel.transform.Find("Event Button").GetComponent<Button>();
+            SetButtonListener(eventButton, () =>
+            {
+                eventPanel.SetActive(false);
+                questionPanel.SetActive(true);
+            });
 
             for (int i = 0; i < answerPanels.Length; i++)
             {
@@ -236,6 +255,7 @@ public class PopupManager : MonoBehaviour
         eventTitleText.text = "Budget Allocation";
         eventDateText.text = budgetData.budgetAllocationDate;
         eventQuestionText.text = "Budget Increased";
+        eventDescriptionText.text = $"You received €{FormatLargeNumber(budgetData.budget)}. Allocate it wisely.";
 
         GameObject panel = answerPanels[0];
         panel.SetActive(true);
@@ -243,14 +263,14 @@ public class PopupManager : MonoBehaviour
         var title = panel.transform.Find("Event Choice Title").GetComponent<TextMeshProUGUI>();
         var desc = panel.transform.Find("Event Description").GetComponent<TextMeshProUGUI>();
         var moneyModifier = panel.transform.Find("Event Money Modifier").GetComponent<TextMeshProUGUI>();
-        var button = panel.GetComponentInChildren<Button>();
+        var eventButton = eventPanel.transform.Find("Event Button").GetComponent<Button>();
 
         title.text = "";
         moneyModifier.text = "";
         desc.text = $"You received €{FormatLargeNumber(budgetData.budget)}. Allocate it wisely.";
         desc.color = positiveRevenueColor;
 
-        SetButtonListener(button, () =>
+        SetButtonListener(eventButton, () =>
         {
             AnswerSelected(-1);
         });
@@ -270,6 +290,7 @@ public class PopupManager : MonoBehaviour
         eventTitleText.text = "Election Results";
         eventDateText.text = DateTime.Now.ToShortDateString();
         eventQuestionText.text = "";
+        eventDescriptionText.text = electionData.description;
 
         GameObject panel = answerPanels[0];
         panel.SetActive(true);
@@ -277,13 +298,13 @@ public class PopupManager : MonoBehaviour
         var title = panel.transform.Find("Event Choice Title").GetComponent<TextMeshProUGUI>();
         var desc = panel.transform.Find("Event Description").GetComponent<TextMeshProUGUI>();
         var moneyModifier = panel.transform.Find("Event Money Modifier").GetComponent<TextMeshProUGUI>();
-        var button = panel.GetComponentInChildren<Button>();
+        var eventButton = eventPanel.transform.Find("Event Button").GetComponent<Button>();
 
         moneyModifier.text = "";
         title.text = electionData.title;
         desc.text = electionData.description;
         
-        SetButtonListener(button, () =>
+        SetButtonListener(eventButton, () =>
         {
             EUStats.Instance.ChangeParty(electionData);
             AnswerSelected(-1);
@@ -304,18 +325,19 @@ public class PopupManager : MonoBehaviour
         eventTitleText.text = memberData.title;
         eventDateText.text = memberData.date;
         eventQuestionText.text = "";
+        eventDescriptionText.text = memberData.description;
 
         GameObject panel = answerPanels[0];
         panel.SetActive(true);
 
         var title = panel.transform.Find("Event Choice Title").GetComponent<TextMeshProUGUI>();
         var desc = panel.transform.Find("Event Description").GetComponent<TextMeshProUGUI>();
-        var button = panel.GetComponentInChildren<Button>();
+        var eventButton = eventPanel.transform.Find("Event Button").GetComponent<Button>();
 
         title.text = "";
         desc.text = memberData.description;
 
-        SetButtonListener(button, () =>
+        SetButtonListener(eventButton, () =>
         {
             EUStats.Instance.UpdateMap(memberData.newMap);
             AnswerSelected(-1);

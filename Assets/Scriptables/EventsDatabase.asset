@@ -520,7 +520,7 @@ MonoBehaviour:
 
       Citizens remained divided
       but acknowledged a more balanced outcome.'
-    eventIcon: {fileID: 0}
+    eventIcon: {fileID: 21300000, guid: ffb6a159de1dedd4b9f7caf987f03651, type: 3}
     choices:
     - title: Approve the Agreement Without Safeguards
       description: Sign the deal quickly to satisfy the U.S. and show unity against
@@ -1135,7 +1135,7 @@ MonoBehaviour:
       foreignAffairsModifier: 0
       moneyModifier: -20000000
       eventIcon: {fileID: 21300000, guid: 2aa6812cde47f26488db8ece1e200181, type: 3}
-    - title: "Embrace the Message \u2013 Prioritize Human-Centered Policie"
+    - title: "Embrace the Message \u2013 Prioritize Human-Centered Policies"
       description: "Publicly affirm the Pope\u2019s speech and initiate new efforts
         to place dignity, social justice, and solidarity at the center of EU action."
       consequences: 'The European Parliament launches initiatives focused on poverty,

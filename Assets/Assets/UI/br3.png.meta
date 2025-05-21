@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: 80765ee4e7a14fb40b67ae5b85a00522
+guid: 286443607066edf41ae94108b5e34241
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6164520924533330789
-    second: FastButtonStatic_0
+      213: -7399493780818612218
+    second: br3_0
   - first:
-      213: -3428050645137808053
-    second: FastButtonStatic_1
+      213: -4532208191869654238
+    second: br3_1
   - first:
-      213: 1833800637260792333
-    second: FastButtonStatic_2
+      213: 1825373786979776639
+    second: br3_2
+  - first:
+      213: 8415024803750660709
+    second: br3_3
+  - first:
+      213: -6746146408938569894
+    second: br3_4
+  - first:
+      213: 7432725655990076498
+    second: br3_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FastButtonStatic_0
+      name: br3_0
       rect:
         serializedVersion: 2
-        x: 91
-        y: 549
-        width: 18
-        height: 9
+        x: 78
+        y: 13
+        width: 450
+        height: 433
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b9c6ab251e8337aa0800000000000000
-      internalID: -6164520924533330789
+      spriteID: 600389c4c97bf4990800000000000000
+      internalID: -7399493780818612218
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FastButtonStatic_1
+      name: br3_1
       rect:
         serializedVersion: 2
-        x: 252
-        y: 548
-        width: 18
-        height: 9
+        x: 442
+        y: 359
+        width: 6
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b452380d91e1d60d0800000000000000
-      internalID: -3428050645137808053
+      spriteID: 22b6e7389ac5a11c0800000000000000
+      internalID: -4532208191869654238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FastButtonStatic_2
+      name: br3_2
       rect:
         serializedVersion: 2
-        x: 61
-        y: 28
-        width: 671
-        height: 506
+        x: 442
+        y: 346
+        width: 6
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,8 +174,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d0280d4b6f7f27910800000000000000
-      internalID: 1833800637260792333
+      spriteID: f783d3bb9c7055910800000000000000
+      internalID: 1825373786979776639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: br3_3
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 326
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56ac8ab697c28c470800000000000000
+      internalID: 8415024803750660709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: br3_4
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 49
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f707c659fd062a0800000000000000
+      internalID: -6746146408938569894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: br3_5
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 38
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25488369a98562760800000000000000
+      internalID: 7432725655990076498
       vertices: []
       indices: 
       edges: []
@@ -185,9 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FastButtonStatic_0: -6164520924533330789
-      FastButtonStatic_1: -3428050645137808053
-      FastButtonStatic_2: 1833800637260792333
+      br3_0: -7399493780818612218
+      br3_1: -4532208191869654238
+      br3_2: 1825373786979776639
+      br3_3: 8415024803750660709
+      br3_4: -6746146408938569894
+      br3_5: 7432725655990076498
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

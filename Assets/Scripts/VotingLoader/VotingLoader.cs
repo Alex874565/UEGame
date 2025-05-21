@@ -9,11 +9,14 @@ public class VotingLoader : MonoBehaviour
 
     [SerializeField] private GameObject iconPopup;
 
+    [Header("Animation")]
     [SerializeField] private Animator loaderAnimator;
     [SerializeField] private GameObject loaderAnimationPanel;
+    [SerializeField] private float animationDuration = 2f;
+
+    [Header("UI")]
     [SerializeField] private GameObject consequencePanel1;
     [SerializeField] private GameObject consequencePanel2;
-    [SerializeField] private float animationDuration = 2f;
 
     [SerializeField] private TextMeshProUGUI yourChoice;
     [SerializeField] private TextMeshProUGUI EUChoice1;
@@ -23,6 +26,7 @@ public class VotingLoader : MonoBehaviour
     [SerializeField] private TextMeshProUGUI EUConsequences2;
     [SerializeField] private Button consequenceBtn1;
     [SerializeField] private Button consequenceBtn2;
+    [SerializeField] private GameObject resourcesCanvas;
 
 
     private void Awake()
@@ -38,6 +42,7 @@ public class VotingLoader : MonoBehaviour
 
     private System.Collections.IEnumerator PlayLoader(EventsDatabase.Event eventData, int answerIndex)
     {
+        resourcesCanvas.SetActive(false);
         loaderAnimationPanel.SetActive(true);
         loaderAnimator.Play("QuizPopup");
         yield return new WaitForSeconds(animationDuration);
@@ -51,7 +56,7 @@ public class VotingLoader : MonoBehaviour
 
             consequencePanel2.SetActive(true);
             consequenceBtn2.onClick.RemoveAllListeners();
-            consequenceBtn2.onClick.AddListener(() => SpawnPopup(eventData, answerIndex));
+            consequenceBtn2.onClick.AddListener(() => { resourcesCanvas.SetActive(true); SpawnPopup(eventData, answerIndex); });
 
         }
         else
@@ -59,7 +64,7 @@ public class VotingLoader : MonoBehaviour
             yourChoice.text = eventData.choices[answerIndex].title;
             yourConsequences.text = eventData.choices[answerIndex].consequences;
 
-            EUChoice2.text = eventData.EuChoice;
+            EUChoice1.text = eventData.EuChoice;
             EUConsequences1.text = eventData.EuChoiceDescription;
 
             consequencePanel1.SetActive(true);
@@ -67,7 +72,7 @@ public class VotingLoader : MonoBehaviour
             Debug.Log("Removing listeners from " + consequenceBtn1.name);
             consequenceBtn1.onClick.RemoveAllListeners();
             consequenceBtn1.onClick.AddListener(
-                () => SpawnPopup(eventData, answerIndex));
+                () => { resourcesCanvas.SetActive(true); SpawnPopup(eventData, answerIndex); });
         }
     }
 
