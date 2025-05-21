@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MembersDatabase
   m_EditorClassIdentifier: 
   memberEvents:
-  - date: 20/01/2003
+  - date: 29/01/2003
     title: Your first member event!
     description: These events change map you see due to the countries that joined
       the UE!

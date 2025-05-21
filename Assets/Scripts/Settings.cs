@@ -9,6 +9,7 @@ public class Settings : MonoBehaviour
     [Header("UI Elements")]
     [SerializeField] private TextMeshProUGUI playText;
     [SerializeField] private Button deleteSaveButton;
+    [SerializeField] private Button playButton;
 
     [SerializeField] private Slider mainVolumeSlider;
     [SerializeField] private Slider SFXVolumeSlider;
@@ -33,6 +34,16 @@ public class Settings : MonoBehaviour
         SavePath = Path.Combine(Application.persistentDataPath, "save.dat");
 
         playText.text = File.Exists(SavePath) ? "Continue" : "New Game";
+        if (File.Exists(SavePath))
+        {
+            playButton.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 170);
+        }
+        else
+        {
+            playButton.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 20);
+        }
+
+        playButton.GetComponent<RectTransform>().anchoredPosition.Set(0, 0);
         deleteSaveButton.gameObject.SetActive(File.Exists(SavePath));
     }
 
@@ -43,6 +54,7 @@ public class Settings : MonoBehaviour
             File.Delete(SavePath);
             Debug.Log("Save file deleted.");
             playText.text = "New Game";
+            playButton.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 20);
             deleteSaveButton.gameObject.SetActive(false);
         }
         else
