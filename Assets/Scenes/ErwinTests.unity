@@ -1803,6 +1803,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 2027897965}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1483577850}
         m_TargetAssemblyTypeName: GameEndManager, Assembly-CSharp
         m_MethodName: RestartGame
@@ -7241,7 +7253,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 644077620}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2027897965}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &644077620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9558,14 +9582,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1086396368}
-        m_TargetAssemblyTypeName: PopupManager, Assembly-CSharp
-        m_MethodName: PlayParticles
+      - m_Target: {fileID: 2027897965}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -9581,6 +9605,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2113331638}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2113331638}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -10775,6 +10811,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 2027897965}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1086396368}
         m_TargetAssemblyTypeName: PopupManager, Assembly-CSharp
         m_MethodName: PlayParticles
@@ -11558,7 +11606,7 @@ MonoBehaviour:
   quizzes: {fileID: 1575516353}
   minForeign: 0.2
   maxEurosceptisism: 0.75
-  minBudget: 6e+10
+  minBudget: 0
   maxQuizTries: 0
 --- !u!4 &1044687286
 Transform:
@@ -12351,7 +12399,7 @@ MonoBehaviour:
   hour: 0
   minute: 0
   endYear: 2025
-  monthlyNegativeAllowance: -1000000000
+  monthlyNegativeAllowance: -10000000000
   defaultTimeScale: 5
   fastForwardTimeScale: 30
   HUDDate: {fileID: 1280413485}
@@ -12360,10 +12408,10 @@ MonoBehaviour:
   fastForwardButton: {fileID: 1906794924}
   pauseSprite: {fileID: 21300000, guid: db65f03ab9654c94ba3da6ca8579b0fd, type: 3}
   playSprite: {fileID: 21300000, guid: 546bd3f4479aba94e9129cba2bbeeb5a, type: 3}
-  fastForwardSprite: {fileID: 21300000, guid: 4b8c4b57a0dabee4ebfb1f24f9d1e99c, type: 3}
-  fastForwardActiveSprite: {fileID: 21300000, guid: 5d23fabc2a323114ba12f771fb71eb5c, type: 3}
-  playActiveSprite: {fileID: 21300000, guid: 58cf10321e02d0c4b993a0be418f7007, type: 3}
-  pauseActiveSprite: {fileID: 21300000, guid: 3dff34e079131104d97a7ba1f05499f9, type: 3}
+  fastForwardSprite: {fileID: 21300000, guid: 89ed511111c61aa40aec588da7cef622, type: 3}
+  fastForwardActiveSprite: {fileID: 21300000, guid: 4289ef5d8c3ae0a47ba2763141085e76, type: 3}
+  playActiveSprite: {fileID: 21300000, guid: fef53bb5c800c4b47b343126c91cf4cd, type: 3}
+  pauseActiveSprite: {fileID: 21300000, guid: b6b1f82f6d26b244cb4a6ef4c68e5100, type: 3}
 --- !u!4 &1091707160
 Transform:
   m_ObjectHideFlags: 0
@@ -12506,9 +12554,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 58cf10321e02d0c4b993a0be418f7007, type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 40cd7ebdcac053e4aba67887c1cdb89b, type: 3}
-    m_SelectedSprite: {fileID: 21300000, guid: 58cf10321e02d0c4b993a0be418f7007, type: 3}
+    m_HighlightedSprite: {fileID: 21300000, guid: 9c6926f681258b54f9291d914ee7b909, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: fef53bb5c800c4b47b343126c91cf4cd, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: fef53bb5c800c4b47b343126c91cf4cd, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -12521,6 +12569,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 2027897965}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1091707159}
         m_TargetAssemblyTypeName: TimeManager, Assembly-CSharp
         m_MethodName: PlayTime
@@ -12587,9 +12647,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 170, y: -100}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 211, y: -147}
+  m_SizeDelta: {x: 150, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1120321967
 GameObject:
   m_ObjectHideFlags: 0
@@ -13412,14 +13472,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1086396368}
-        m_TargetAssemblyTypeName: PopupManager, Assembly-CSharp
-        m_MethodName: PlayParticles
+      - m_Target: {fileID: 2027897965}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -13435,6 +13495,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2113331638}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2113331638}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -14773,14 +14845,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1086396368}
-        m_TargetAssemblyTypeName: PopupManager, Assembly-CSharp
-        m_MethodName: PlayParticles
+      - m_Target: {fileID: 2027897965}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -14796,6 +14868,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2113331638}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2113331638}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -15776,14 +15860,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1086396368}
-        m_TargetAssemblyTypeName: PopupManager, Assembly-CSharp
-        m_MethodName: PlayParticles
+      - m_Target: {fileID: 2027897965}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -15799,6 +15883,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2113331638}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2113331638}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -16612,9 +16708,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 3dff34e079131104d97a7ba1f05499f9, type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: cc91a2a844235cb4d9d68a7c10155e51, type: 3}
-    m_SelectedSprite: {fileID: 21300000, guid: 3dff34e079131104d97a7ba1f05499f9, type: 3}
+    m_HighlightedSprite: {fileID: 21300000, guid: caedf7ba953d8d842974e4ac11887432, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: b6b1f82f6d26b244cb4a6ef4c68e5100, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: db65f03ab9654c94ba3da6ca8579b0fd, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -16627,6 +16723,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 2027897965}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1091707159}
         m_TargetAssemblyTypeName: TimeManager, Assembly-CSharp
         m_MethodName: PauseTime
@@ -16693,9 +16801,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 21, y: -100}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 62, y: -147}
+  m_SizeDelta: {x: 150, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1521437431
 GameObject:
   m_ObjectHideFlags: 0
@@ -17673,7 +17781,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1632640757
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19596,7 +19704,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1843617436}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2027897965}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1843617436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20176,10 +20296,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1171894143}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2027897965}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -20289,16 +20409,16 @@ RectTransform:
   m_GameObject: {fileID: 1906794922}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 405069633}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 328, y: -100}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 369, y: -147}
+  m_SizeDelta: {x: 150, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1906794924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20328,9 +20448,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 5d23fabc2a323114ba12f771fb71eb5c, type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 61b27b1468b249b41ae80a021b9a9cab, type: 3}
-    m_SelectedSprite: {fileID: 21300000, guid: 5d23fabc2a323114ba12f771fb71eb5c, type: 3}
+    m_HighlightedSprite: {fileID: 21300000, guid: 4289ef5d8c3ae0a47ba2763141085e76, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: aca58dab5925dc3478cff445cc60fa45, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: 89ed511111c61aa40aec588da7cef622, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -20343,6 +20463,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 2027897965}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1091707159}
         m_TargetAssemblyTypeName: TimeManager, Assembly-CSharp
         m_MethodName: FastForwardTime
@@ -20375,7 +20507,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4b8c4b57a0dabee4ebfb1f24f9d1e99c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 89ed511111c61aa40aec588da7cef622, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20743,7 +20875,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1000
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5fde75dd01659354ca5a22f6d8f15baf, type: 2}
   m_sharedMaterial: {fileID: 6625447835535577069, guid: 5fde75dd01659354ca5a22f6d8f15baf, type: 2}
@@ -22976,6 +23108,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 2027897965}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1086396368}
         m_TargetAssemblyTypeName: PopupManager, Assembly-CSharp
         m_MethodName: PlayParticles

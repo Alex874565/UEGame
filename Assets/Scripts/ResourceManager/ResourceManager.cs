@@ -34,9 +34,9 @@ public class ResourceManager : MonoBehaviour
     [SerializeField] private int maxQuizTries = 21;
 
     private float currentForeignAffairs = 0.8f;
-    private float currentEurosceptisism = 0.65f;
+    private float currentEurosceptisism = 0.2f;
 
-    private long currentBudget = 1000;
+    private long currentBudget = 0;
     private int currentQuizFails = 0;
 
     private void Awake()
@@ -104,7 +104,7 @@ public class ResourceManager : MonoBehaviour
         UpdateUI();
         if (currentEurosceptisism > maxEurosceptisism)
         {
-            Lose("header1", "description1");
+            Lose("header1", "Your euroscepticism was too high.");
         }
     }
 
@@ -117,7 +117,7 @@ public class ResourceManager : MonoBehaviour
         UpdateUI();
         if (currentForeignAffairs < minForeign)
         {
-            Lose("header2", "description2");
+            Lose("header2", "Your foreign image was too bad.");
         }
     }
 
@@ -130,7 +130,7 @@ public class ResourceManager : MonoBehaviour
         UpdateUI();
         if (currentBudget < minBudget)
         {
-            Lose("header3", "description3");
+            Lose("header3", "You ran out of money.");
         }
     }
 
@@ -143,7 +143,7 @@ public class ResourceManager : MonoBehaviour
         UpdateUI();
         if (currentQuizFails > maxQuizTries)
         {
-            Lose("header4", "description4");
+            Lose("header4", "You failed too many quizzes.");
         }
     }
 

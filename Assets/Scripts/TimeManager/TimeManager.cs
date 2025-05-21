@@ -19,7 +19,7 @@ public class TimeManager : MonoBehaviour
     [SerializeField] private int minute = 0;
     [SerializeField] private int endYear = 2025;
 
-    [SerializeField] private long monthlyNegativeAllowance = -1000000000;
+    [SerializeField] private long monthlyNegativeAllowance = -10000000000;
     [SerializeField] private float defaultTimeScale;
     [SerializeField] private float fastForwardTimeScale;
 
@@ -146,9 +146,9 @@ public class TimeManager : MonoBehaviour
         pauseButton.interactable = false;
         playButton.interactable = true;
         fastForwardButton.interactable = true;
-        pauseButton.GetComponent<Image>().sprite = pauseActiveSprite;
-        playButton.GetComponent<Image>().sprite = playSprite;
-        fastForwardButton.GetComponent<Image>().sprite = fastForwardSprite;
+        pauseButton.transform.localScale = new Vector3(1.25f, 1.25f, 1.25f);
+        playButton.transform.localScale = new Vector3(1, 1, 1);
+        fastForwardButton.transform.localScale = new Vector3(-1, 1, 1);
     }
 
     public void PlayTime()
@@ -157,9 +157,9 @@ public class TimeManager : MonoBehaviour
         pauseButton.interactable = true;
         playButton.interactable = false;
         fastForwardButton.interactable = true;
-        pauseButton.GetComponent<Image>().sprite = pauseSprite;
-        playButton.GetComponent<Image>().sprite = playActiveSprite;
-        fastForwardButton.GetComponent<Image>().sprite = fastForwardSprite;
+        pauseButton.transform.localScale = new Vector3(1, 1, 1);
+        playButton.transform.localScale = new Vector3(1.25f, 1.25f, 1.25f);
+        fastForwardButton.transform.localScale = new Vector3(-1, 1, 1);
     }
 
     public void FastForwardTime()
@@ -168,9 +168,9 @@ public class TimeManager : MonoBehaviour
         pauseButton.interactable = true;
         playButton.interactable = true;
         fastForwardButton.interactable = false;
-        pauseButton.GetComponent<Image>().sprite = pauseSprite;
-        playButton.GetComponent<Image>().sprite = playSprite;
-        fastForwardButton.GetComponent<Image>().sprite = fastForwardActiveSprite;
+        pauseButton.transform.localScale = new Vector3(1, 1, 1);
+        playButton.transform.localScale = new Vector3(1, 1, 1);
+        fastForwardButton.transform.localScale = new Vector3(-1.25f, 1.25f, 1.25f);
     }
 
     public void SetTimeScale(float newTimeScale)
