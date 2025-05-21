@@ -44,7 +44,7 @@ public class VotingLoader : MonoBehaviour
     {
         resourcesCanvas.SetActive(false);
         loaderAnimationPanel.SetActive(true);
-        loaderAnimator.Play("QuizPopup");
+        loaderAnimator.Play("Consequence");
         yield return new WaitForSeconds(animationDuration);
         loaderAnimationPanel.SetActive(false);
 
