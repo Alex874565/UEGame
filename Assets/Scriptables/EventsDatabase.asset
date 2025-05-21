@@ -108,8 +108,8 @@ MonoBehaviour:
 
         Long-term democratic
         legitimacy of the Commission is questioned.'
-      euroscepticismModifier: 0.8
-      foreignAffairsModifier: -0.8
+      euroscepticismModifier: 0.08
+      foreignAffairsModifier: -0.08
       moneyModifier: -200000000
       eventIcon: {fileID: 21300000, guid: 276431e7a62be5a4a90f4c8788e19672, type: 3}
     - title: Unity and Action
@@ -200,8 +200,8 @@ MonoBehaviour:
     - title: 
       description: 
       consequences: 
-      euroscepticismModifier: 0.8
-      foreignAffairsModifier: -0.8
+      euroscepticismModifier: 0.08
+      foreignAffairsModifier: -0.08
       moneyModifier: -400000000
       eventIcon: {fileID: 21300000, guid: e7a8c1b3b4efa2f4b84fdcd2f6f7f773, type: 3}
   - eventDate: 07/07/2005
@@ -1519,7 +1519,7 @@ MonoBehaviour:
         Less political resistance, but slower impact on the
         ground.'
       euroscepticismModifier: 0
-      foreignAffairsModifier: 0.5
+      foreignAffairsModifier: 0.05
       moneyModifier: -6000000000
       eventIcon: {fileID: 21300000, guid: f1950177477ad0347aeb5171b1ba2c2f, type: 3}
   - eventDate: 06/05/2017
