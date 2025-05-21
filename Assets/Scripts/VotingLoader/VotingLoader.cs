@@ -50,14 +50,17 @@ public class VotingLoader : MonoBehaviour
 
         if (eventData.choices.Count == 1)
         {
-
             EUChoice2.text = eventData.EuChoice;
             EUConsequences2.text = eventData.EuChoiceDescription;
 
             consequencePanel2.SetActive(true);
             consequenceBtn2.onClick.RemoveAllListeners();
-            consequenceBtn2.onClick.AddListener(() => { resourcesCanvas.SetActive(true); SpawnPopup(eventData, answerIndex); });
-
+            consequenceBtn2.onClick.AddListener(() => 
+            { 
+                resourcesCanvas.SetActive(true); 
+                SpawnPopup(eventData, answerIndex);
+                EventsManager.Instance.DestroyedEvent();
+            });
         }
         else
         {
@@ -72,7 +75,12 @@ public class VotingLoader : MonoBehaviour
             Debug.Log("Removing listeners from " + consequenceBtn1.name);
             consequenceBtn1.onClick.RemoveAllListeners();
             consequenceBtn1.onClick.AddListener(
-                () => { resourcesCanvas.SetActive(true); SpawnPopup(eventData, answerIndex); });
+                () => 
+                { 
+                    resourcesCanvas.SetActive(true); 
+                    SpawnPopup(eventData, answerIndex);
+                    EventsManager.Instance.DestroyedEvent();
+                });
         }
     }
 

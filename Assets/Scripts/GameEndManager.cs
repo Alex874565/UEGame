@@ -11,7 +11,6 @@ public class GameEndManager : MonoBehaviour
     public ResourceManager resourceManager;
     public TimeManager timeManager;
     public Sprite fullStarSprite;
-    [SerializeField] private Animator quizPopupAnimator;
 
     [Header("Lose Popup")]
     [SerializeField] private Animator losePopupAnimator;

@@ -102,7 +102,6 @@ public class PopupManager : MonoBehaviour
     public void ShowQuizEvent(QuizzesDatabase.Quiz quizData)
     {
         ClearCurrentEventData();
-        seenEvent?.Invoke();
         ResetAllTexts();
 
         currentQuiz = quizData;
@@ -136,6 +135,7 @@ public class PopupManager : MonoBehaviour
 
                 SetButtonListener(button, () =>
                 {
+                    seenEvent?.Invoke();
                     ResourceManager.Instance.UpdateQuizTries(!answer.isCorrect);
                     AnswerSelected(-1);
                 });
@@ -148,7 +148,6 @@ public class PopupManager : MonoBehaviour
     public void ShowMainEvent(EventsDatabase.Event eventData)
     {
         ClearCurrentEventData();
-        seenEvent?.Invoke();
         ResetAllTexts();
         currentEvent = eventData;
         currentPanelIndex = 0;
@@ -243,7 +242,6 @@ public class PopupManager : MonoBehaviour
     public void ShowBudgetEvent(BudgetDatabase.Budget budgetData)
     {
         ClearCurrentEventData();
-        seenEvent?.Invoke();
         ResetAllTexts();
 
         quizPanel.SetActive(true);
@@ -273,6 +271,7 @@ public class PopupManager : MonoBehaviour
 
         SetButtonListener(eventButton, () =>
         {
+            seenEvent?.Invoke();
             AnswerSelected(-1);
         });
     }
@@ -280,7 +279,6 @@ public class PopupManager : MonoBehaviour
     public void ShowElectionEvent(ElectionsDatabase.Election electionData)
     {
         ClearCurrentEventData();
-        seenEvent?.Invoke();
         ResetAllTexts();
 
         quizPanel.SetActive(true);
@@ -307,6 +305,7 @@ public class PopupManager : MonoBehaviour
         
         SetButtonListener(eventButton, () =>
         {
+            seenEvent?.Invoke();
             EUStats.Instance.ChangeParty(electionData);
             AnswerSelected(-1);
         });
@@ -315,7 +314,6 @@ public class PopupManager : MonoBehaviour
     public void ShowMemberEvent(MembersDatabase.MemberEvent memberData)
     {
         ClearCurrentEventData();
-        seenEvent?.Invoke();
         ResetAllTexts();
 
         quizPanel.SetActive(true);
@@ -340,6 +338,7 @@ public class PopupManager : MonoBehaviour
 
         SetButtonListener(eventButton, () =>
         {
+            seenEvent?.Invoke();
             EUStats.Instance.UpdateMap(memberData.newMap);
             AnswerSelected(-1);
         });

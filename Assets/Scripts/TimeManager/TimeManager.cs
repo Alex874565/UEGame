@@ -19,6 +19,7 @@ public class TimeManager : MonoBehaviour
     [SerializeField] private int minute = 0;
     [SerializeField] private int endYear = 2025;
 
+    [SerializeField] private long monthlyNegativeAllowance = -1000000000;
     [SerializeField] private float defaultTimeScale;
     [SerializeField] private float fastForwardTimeScale;
 
@@ -111,6 +112,9 @@ public class TimeManager : MonoBehaviour
         {
             day = 1;
             month++;
+
+            ResourceManager.Instance.UpdateBudget(monthlyNegativeAllowance);
+
             if (month > 12)
             {
                 month = 1;
