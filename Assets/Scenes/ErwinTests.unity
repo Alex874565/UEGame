@@ -12645,7 +12645,7 @@ MonoBehaviour:
   minForeign: 0.2
   maxEurosceptisism: 0.75
   minBudget: 0
-  maxQuizTries: 0
+  maxQuizTries: 10
 --- !u!4 &1044687286
 Transform:
   m_ObjectHideFlags: 0
@@ -24232,8 +24232,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -55769057821599095, guid: 99a871abb92c1c64483b36cabf443806, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 9eb86f47dda1183479099dcb5258337a, type: 3}
-  m_Resource: {fileID: 8300000, guid: 9eb86f47dda1183479099dcb5258337a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a37049fbc50f9984d8a363210246ff1d, type: 3}
+  m_Resource: {fileID: 8300000, guid: a37049fbc50f9984d8a363210246ff1d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

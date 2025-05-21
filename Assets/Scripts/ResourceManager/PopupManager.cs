@@ -136,6 +136,7 @@ public class PopupManager : MonoBehaviour
                 SetButtonListener(button, () =>
                 {
                     seenEvent?.Invoke();
+                    PlayParticles();
                     ResourceManager.Instance.UpdateQuizTries(!answer.isCorrect);
                     AnswerSelected(-1);
                 });
@@ -272,6 +273,7 @@ public class PopupManager : MonoBehaviour
         SetButtonListener(eventButton, () =>
         {
             seenEvent?.Invoke();
+            PlayParticles();
             AnswerSelected(-1);
         });
     }
@@ -305,6 +307,7 @@ public class PopupManager : MonoBehaviour
         
         SetButtonListener(eventButton, () =>
         {
+            PlayParticles();
             seenEvent?.Invoke();
             EUStats.Instance.ChangeParty(electionData);
             AnswerSelected(-1);
@@ -339,6 +342,7 @@ public class PopupManager : MonoBehaviour
         SetButtonListener(eventButton, () =>
         {
             seenEvent?.Invoke();
+            PlayParticles();
             EUStats.Instance.UpdateMap(memberData.newMap);
             AnswerSelected(-1);
         });
