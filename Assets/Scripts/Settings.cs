@@ -15,6 +15,16 @@ public class Settings : MonoBehaviour
     [SerializeField] private Slider SFXVolumeSlider;
     [SerializeField] private Slider musicVolumeSlider;
 
+    [Header("Volume Icons")]
+    [SerializeField] private Image mainVolumeIcon;
+    [SerializeField] private Image sfxVolumeIcon;
+    [SerializeField] private Image musicVolumeIcon;
+
+    [SerializeField] private Sprite muteIcon;
+    [SerializeField] private Sprite lowIcon;
+    [SerializeField] private Sprite midIcon;
+    [SerializeField] private Sprite highIcon;
+
     [Header("Audio Settings")]
     [SerializeField] private AudioMixer mainMixer;
 
@@ -43,7 +53,6 @@ public class Settings : MonoBehaviour
             playButton.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 20);
         }
 
-        playButton.GetComponent<RectTransform>().anchoredPosition.Set(0, 0);
         deleteSaveButton.gameObject.SetActive(File.Exists(SavePath));
     }
 
@@ -76,28 +85,55 @@ public class Settings : MonoBehaviour
         mainMixer.SetFloat(mainMixerKey, ToDecibel(mainVol));
         mainMixer.SetFloat(sfxMixerKey, ToDecibel(sfxVol));
         mainMixer.SetFloat(musicMixerKey, ToDecibel(musicVol));
+
+        UpdateVolumeIcon(mainVolumeIcon, mainVol);
+        UpdateVolumeIcon(sfxVolumeIcon, sfxVol);
+        UpdateVolumeIcon(musicVolumeIcon, musicVol);
     }
 
     public void SetMainMixerVolume(float value)
     {
         PlayerPrefs.SetFloat(mainMixerKey, value);
         mainMixer.SetFloat(mainMixerKey, ToDecibel(value));
+        UpdateVolumeIcon(mainVolumeIcon, value);
     }
 
     public void SetSFXMixerVolume(float value)
     {
         PlayerPrefs.SetFloat(sfxMixerKey, value);
         mainMixer.SetFloat(sfxMixerKey, ToDecibel(value));
+        UpdateVolumeIcon(sfxVolumeIcon, value);
     }
 
     public void SetMusicMixerVolume(float value)
     {
         PlayerPrefs.SetFloat(musicMixerKey, value);
         mainMixer.SetFloat(musicMixerKey, ToDecibel(value));
+        UpdateVolumeIcon(musicVolumeIcon, value);
     }
 
     private float ToDecibel(float value)
     {
         return Mathf.Approximately(value, 0f) ? -80f : Mathf.Log10(value) * 20f;
+    }
+
+    private void UpdateVolumeIcon(Image icon, float value)
+    {
+        if (value <= 0.01f)
+        {
+            icon.sprite = muteIcon;
+        }
+        else if (value <= 0.3f)
+        {
+            icon.sprite = lowIcon;
+        }
+        else if (value <= 0.7f)
+        {
+            icon.sprite = midIcon;
+        }
+        else
+        {
+            icon.sprite = highIcon;
+        }
     }
 }
