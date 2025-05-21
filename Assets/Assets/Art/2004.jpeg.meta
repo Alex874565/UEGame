@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 278449bc70c838842897c6f50316a6c3
+guid: ebb06a3ac03df4a47adf3dcc325c4d52
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2730251173873922541
-    second: 2004-2007 EU maplongboipng_0
+      213: 6502680168006774522
+    second: WhatsApp Image 2025-05-21 at 6.59.50 PM_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 2004-2007 EU maplongboipng_0
+      name: WhatsApp Image 2025-05-21 at 6.59.50 PM_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 1600
+        height: 900
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de139562afcc3e520800000000000000
-      internalID: 2730251173873922541
+      spriteID: afe650ef8292e3a50800000000000000
+      internalID: 6502680168006774522
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      2004-2007 EU maplongboipng_0: 2730251173873922541
+      WhatsApp Image 2025-05-21 at 6.59.50 PM_0: 6502680168006774522
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 415554a963dbc034eba9b0ff5eb46457
+guid: f44d6c78cfb08a0499881faf3461dba9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7632593582041627277
-    second: 2013-2020 EU maplongboipng_0
+      213: 5026777535368145347
+    second: 6e750f82-27d4-4e65-b3a4-6115ab756b47_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 2013-2020 EU maplongboipng_0
+      name: 6e750f82-27d4-4e65-b3a4-6115ab756b47_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 1600
+        height: 900
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8a74847c6b6ce960800000000000000
-      internalID: 7632593582041627277
+      spriteID: 3c928801983b2c540800000000000000
+      internalID: 5026777535368145347
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      2013-2020 EU maplongboipng_0: 7632593582041627277
+      6e750f82-27d4-4e65-b3a4-6115ab756b47_0: 5026777535368145347
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

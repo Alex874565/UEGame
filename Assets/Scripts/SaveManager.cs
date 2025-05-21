@@ -101,7 +101,7 @@ public class SaveManager : MonoBehaviour
         currentData.membersIndex = EventsManager.Instance.MembersIndex;
 
 
-        var election = EUStats.Instance.GetCurrentElection();
+        var election = EUStats.Instance.GetPreviousElection();
         // EU Stats
         if (currentData.savedParties == null)
         {

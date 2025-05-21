@@ -110,6 +110,25 @@ public class EUStats : MonoBehaviour
         }
     }
 
+    public ElectionsDatabase.Election GetPreviousElection()
+    {
+        if (electionData == null)
+        {
+            Debug.LogWarning("Previous election called with empty or null list.");
+            return null;
+        }
+        int currentIndex = EventsManager.Instance.ElectionsDatabase.elections.IndexOf(electionData);
+        if (currentIndex > 0)
+        {
+            electionData = EventsManager.Instance.ElectionsDatabase.elections[currentIndex - 1];
+        }
+        else
+        {
+            electionData = EventsManager.Instance.ElectionsDatabase.elections[0];
+        }
+        return electionData;
+    }
+
     public ElectionsDatabase.Election GetCurrentElection()
     {
         return electionData;

@@ -80,15 +80,15 @@ public class GameEndManager : MonoBehaviour
         money = 100000; // For testing purposes
 
         // Money Stars
-        if (money >= 1000000)
+        if (money >= 1000000000000)
         {
             moneyStarsLevel = 3;
         }
-        else if (money >= 500000)
+        else if (money >= 500000000000)
         {
             moneyStarsLevel = 2;
         }
-        else if (money >= 100000)
+        else if (money >= 0)
         {
             moneyStarsLevel = 1;
         }
@@ -98,11 +98,11 @@ public class GameEndManager : MonoBehaviour
         {
             quizStarsLevel = 3;
         }
-        else if (quizFails == 1)
+        else if (quizFails <= 5)
         {
             quizStarsLevel = 2;
         }
-        else if (quizFails == 2)
+        else
         {
             quizStarsLevel = 1;
         }

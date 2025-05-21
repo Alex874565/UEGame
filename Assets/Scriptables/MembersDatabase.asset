@@ -26,7 +26,7 @@ MonoBehaviour:
       post-socialist economies and cemented EU influence across Central and Eastern
       Europe.
     countryName: Brussels
-    newMap: {fileID: 2730251173873922541, guid: 278449bc70c838842897c6f50316a6c3, type: 3}
+    newMap: {fileID: 6502680168006774522, guid: ebb06a3ac03df4a47adf3dcc325c4d52, type: 3}
   - date: 01/01/2007
     title: Continuing Enlargement into Southeastern Europe
     description: "Following strict reform benchmarks, two Southeast European countries
@@ -42,7 +42,7 @@ MonoBehaviour:
       integration. Accession followed substantial reforms in judiciary, governance,
       and minority rights.
     countryName: Brussels
-    newMap: {fileID: 7632593582041627277, guid: 415554a963dbc034eba9b0ff5eb46457, type: 3}
+    newMap: {fileID: 5026777535368145347, guid: f44d6c78cfb08a0499881faf3461dba9, type: 3}
   - date: 31/01/2020
     title: 'Brexit: The First-Ever Departure'
     description: A major geopolitical rupture occurred as a founding post-1973 member
