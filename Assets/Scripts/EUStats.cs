@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class EUStats : MonoBehaviour
 {
@@ -35,10 +36,7 @@ public class EUStats : MonoBehaviour
     private void Start()
     {
         UpdateElectionUI();
-        if (electionData.parties.Count > 0)
-        {
-            UpdatePartyUI();
-        }
+        UpdatePartyUI(new List<ElectionsDatabase.Party>());
     }
 
     public void Load(SaveData saveData)
@@ -46,10 +44,7 @@ public class EUStats : MonoBehaviour
         electionData = EventsManager.Instance.ElectionsDatabase.elections[saveData.selectedElectionIndex];
 
         UpdateElectionUI();
-        if (saveData.savedParties.Count > 0)
-        {
-            UpdatePartyUI();
-        }
+        UpdatePartyUI(saveData.savedParties);
     }
 
     public void ChangeParty(ElectionsDatabase.Election newParty)
@@ -62,7 +57,7 @@ public class EUStats : MonoBehaviour
         }
 
         UpdateElectionUI();
-        UpdatePartyUI();
+        UpdatePartyUI(newParty.parties);
     }
 
     public void UpdateMap(Sprite newMap)
@@ -91,16 +86,19 @@ public class EUStats : MonoBehaviour
         }
     }
 
-    private void UpdatePartyUI()
+    private void UpdatePartyUI(List<ElectionsDatabase.Party> partiesList)
     {
+        if(partiesList == null || partiesList.Count == 0)
+        {
+            Debug.LogWarning("UpdatePartyUI called with empty or null list.");
+            return;
+        }
         foreach (Transform child in partyListContainer)
         {
             Destroy(child.gameObject);
         }
 
-        Debug.Log("Updating party UI with " + electionData.parties.Count + " parties.");
-
-        foreach (var party in electionData.parties)
+        foreach (var party in partiesList)
         {
             GameObject obj = Instantiate(partyItemPrefab, partyListContainer);
             TextMeshProUGUI label = obj.GetComponentInChildren<TextMeshProUGUI>();

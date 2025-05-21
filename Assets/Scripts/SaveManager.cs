@@ -10,14 +10,7 @@ using UnityEngine.Playables;
 public class SaveData
 {
     public int selectedElectionIndex;
-    public List<PartyData> savedParties = new();
-
-    [Serializable]
-    public class PartyData
-    {
-        public string partyName;
-        public int seats;
-    }
+    public List<ElectionsDatabase.Party> savedParties = new();
 
     public bool finishedTutorial;
 
@@ -103,17 +96,26 @@ public class SaveManager : MonoBehaviour
         currentData.electionIndex = EventsManager.Instance.ElectionIndex;
         currentData.membersIndex = EventsManager.Instance.MembersIndex;
 
-        // EU Stats
-        currentData.savedParties.Clear();
+
         var election = EUStats.Instance.GetCurrentElection();
-        foreach (var party in election.parties)
+        // EU Stats
+        if (currentData.savedParties == null)
         {
-            currentData.savedParties.Add(new SaveData.PartyData
-            {
-                partyName = party.partyName,
-                seats = party.seats
-            });
+            currentData.savedParties = new List<ElectionsDatabase.Party>();
         }
+        else if (election.parties.Count != 0)
+        {
+            currentData.savedParties.Clear();
+            foreach (var party in election.parties)
+            {
+                currentData.savedParties.Add(new ElectionsDatabase.Party
+                {
+                    partyName = party.partyName,
+                    seats = party.seats
+                });
+            }
+        }
+        
         currentData.selectedElectionIndex = EventsManager.Instance.ElectionIndex;
 
         string json = JsonUtility.ToJson(currentData);

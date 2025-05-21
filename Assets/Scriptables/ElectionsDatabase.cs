@@ -29,14 +29,6 @@ public class ElectionsDatabase : ScriptableObject
             new Party { partyName = "NI", seats = 38 }
         };
 
-
-        [System.Serializable]
-        public class Party
-        {
-            public string partyName;
-            public int seats;
-        }
-
         public enum InstitutionType
         {
             Parliament = 1,
@@ -44,5 +36,11 @@ public class ElectionsDatabase : ScriptableObject
             EuropeanCouncil = 3,
             CouncilOfEU = 4
         }
+    }
+    [System.Serializable]
+    public class Party
+    {
+        public string partyName;
+        public int seats;
     }
 }
