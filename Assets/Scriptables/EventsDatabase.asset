@@ -20,9 +20,7 @@ MonoBehaviour:
       on what happened during the UE's timeline.
     question: 
     EuChoice: This is the EU's choice.
-    EuChoiceDescription: 'And this is supposed to be their choice''s description
-
-      .'
+    EuChoiceDescription: And this is supposed to be their choice's description.
     eventIcon: {fileID: 21300000, guid: 272d5e991790fbc4e8746fd68afa2a82, type: 3}
     choices:
     - title: 

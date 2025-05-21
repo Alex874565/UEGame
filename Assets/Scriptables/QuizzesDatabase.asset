@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: QuizzesDatabase
   m_EditorClassIdentifier: 
   quizzes:
-  - quizDate: 01/01/2004
+  - quizDate: 03/01/2003
     quizName: Quiz 1
     question: What is disinformation?
     countryName: Brussels
