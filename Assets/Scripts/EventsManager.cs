@@ -65,14 +65,14 @@ public class EventsManager : MonoBehaviour
     {
         SaveData data = SaveManager.Instance.currentData;
 
-        this.eventIndex = data.eventIndex > 0 ? data.eventIndex - 1 : 0;
-        this.budgetIndex = data.budgetIndex > 0 ? data.budgetIndex - 1 : 0;
-        this.quizIndex = data.quizIndex > 0 ? data.quizIndex - 1 : 0;
-        this.electionIndex = data.electionIndex > 0 ? data.electionIndex - 1 : 0;
-        this.membersIndex = data.membersIndex > 0 ? data.membersIndex - 1 : 0;
+        this.eventIndex = data.eventIndex;
+        this.budgetIndex = data.budgetIndex;
+        this.quizIndex = data.quizIndex;
+        this.electionIndex = data.electionIndex;
+        this.membersIndex = data.membersIndex;
 
         // We know which map we have by the members index.
-        EUStats.Instance.UpdateMap(membersDatabase.memberEvents[membersIndex].newMap);
+        EUStats.Instance.UpdateMap(membersDatabase.memberEvents[membersIndex > 1 ? membersIndex - 1 : 0].newMap);
     }
 
     public void CheckForEvent(string date)
